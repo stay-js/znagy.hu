@@ -1,0 +1,27 @@
+.get-in-touch {
+  min-height: 40vh;
+  margin-bottom: 5rem;
+
+  &-title {
+    margin: 2rem 0 1rem 0;
+    font-family: 'Merriweather', sans-serif;
+  }
+
+  &-content {
+    width: 60%;
+    margin-bottom: 2rem;
+  }
+
+  &-btn {
+    width: fit-content;
+    padding: 1rem 2rem;
+    color: $green-500;
+    border: 1px solid $green-500;
+    transition: all 500ms ease;
+
+    &:hover {
+      color: $blueGray-900;
+      background-color: $green-500;
+    }
+  }
+}

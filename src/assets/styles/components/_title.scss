@@ -1,0 +1,61 @@
+.title {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -4rem;
+
+  &-first-paragraph {
+    font-family: 'Merriweather', sans-serif;
+    color: $green-400;
+    margin-bottom: 0;
+  }
+
+  &-name {
+    font-size: 5rem;
+
+    @media (max-width: 767px) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 367px) {
+      font-size: 2rem;
+    }
+  }
+
+  &-content {
+    font-size: 1.2rem;
+
+    @media (max-width: 767px) {
+      font-size: 1rem;
+    }
+  }
+
+  &-links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &-link {
+    font-size: 2rem;
+    transition: all 300ms ease;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &-btn {
+    width: fit-content;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    color: $green-500;
+    border: 1px solid $green-500;
+    transition: all 500ms ease;
+
+    &:hover {
+      color: $blueGray-900;
+      background-color: $green-500;
+    }
+  }
+}

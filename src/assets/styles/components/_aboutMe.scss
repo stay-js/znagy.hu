@@ -1,0 +1,66 @@
+.about-me {
+  min-height: 60vh;
+  position: relative;
+  margin-bottom: 5rem;
+
+  .flex {
+    gap: 3rem;
+    padding-top: 2rem;
+
+    @media (max-width: 920px) {
+      flex-direction: column;
+    }
+  }
+
+  &-content {
+    width: 60%;
+
+    @media (max-width: 920px) {
+      order: 2;
+      width: 100%;
+    }
+  }
+
+  &-technologies {
+    display: flex;
+    gap: 5rem;
+    margin-left: 2rem;
+
+    &-list {
+      color: $green-400;
+
+      .link {
+        color: $coolGray-400;
+      }
+    }
+
+    @media (max-width: 567px) {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  &-image-container {
+    order: 2;
+    right: 0;
+    margin-right: 2rem;
+
+    @media (max-width: 920px) {
+      order: 1;
+      align-self: center;
+    }
+  }
+
+  &-image {
+    width: 250px;
+    height: 250px;
+    transition: all 300ms ease;
+    border-top: 10px solid $green-400;
+    border-left: 10px solid $green-400;
+
+    &:hover,
+    &:focus {
+      transform: rotateZ(-5deg);
+    }
+  }
+}

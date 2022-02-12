@@ -1,0 +1,12 @@
+@mixin absPosition($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin animation($animation...) {
+  -webkit-animation: $animation;
+  animation: $animation;
+}

@@ -1,0 +1,118 @@
+.contact-page {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+
+  &-content {
+    width: 70%;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &-title {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: fit-content;
+    margin-top: 2rem;
+    padding: 3rem 5rem;
+    box-shadow: 0 30px 60px 30px $coolGray-1000;
+    border-radius: 15px;
+    align-items: center;
+    background: $white;
+    @include animation(translateXBounce2 1s ease-in-out);
+  }
+
+  .button {
+    padding: 0;
+    background: $green-400;
+    color: $white;
+    border: none;
+    cursor: pointer;
+    height: 2rem;
+    box-shadow: 3px 10px 20px 0px $gray-300;
+    transition: background 300ms ease;
+
+    &:hover,
+    &:focus {
+      background: $gray-600;
+    }
+  }
+
+  .input {
+    width: 20rem;
+    label {
+      color: $black;
+      display: block;
+    }
+  }
+
+  input,
+  textarea {
+    -webkit-appearance: none;
+  }
+
+  input,
+  textarea,
+  label {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    width: 20rem;
+    font-size: 0.9rem;
+  }
+
+  label {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+  }
+
+  input {
+    height: 2rem;
+    border: 1px solid $gray-200;
+    background: $white;
+    border-radius: 3px;
+    padding-left: 1rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  textarea {
+    height: 8rem;
+    border: none;
+    border: 1px solid $gray-200;
+    background: $white;
+    border-radius: 3px;
+    resize: none;
+    padding: 0.5rem 1rem;
+    font-family: 'Roboto', sans-serif;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  @media (max-width: 574px) {
+    form {
+      padding: 3rem;
+    }
+
+    input,
+    textarea,
+    label {
+      width: 15rem;
+    }
+
+    .input {
+      width: 15rem;
+    }
+  }
+}
