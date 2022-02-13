@@ -4,7 +4,7 @@
   width: 100%;
   top: 0;
   height: 4rem;
-  z-index: 1;
+  z-index: 10;
   box-shadow: 0px 1px 5px -2px $black;
   background-color: $blueGray-900;
   font-family: 'Roboto', sans-serif;
@@ -69,17 +69,11 @@
     background: $green-400;
     border: 2px solid $green-400;
     border-radius: 5px;
-
-    &-text {
-      color: $white;
-    }
+    color: $white;
 
     &:hover {
       background-color: transparent;
-
-      .navigation-contact-btn-text {
-        color: $green-400;
-      }
+      color: $green-400;
     }
   }
 }

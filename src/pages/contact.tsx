@@ -17,8 +17,8 @@ const Home: NextPage<Props> = (props) => {
         <div className="contact-page-content text-center center">
           <h1 className="contact-page-title">Send me a message!</h1>
           <p>
-            Got somethig you would like to say? Or have a question? Feel free to
-            send me a message using the form down below. I&rsquo;m just a few
+            Got something you would like to say? Or have a question? Feel free
+            to send me a message using the form down below. I&rsquo;m just a few
             clicks away...
           </p>
           <p>

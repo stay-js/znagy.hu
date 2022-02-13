@@ -57,6 +57,7 @@ p {
   &-title {
     position: relative;
     width: fit-content;
+    margin-bottom: 2rem;
 
     &::after {
       content: '';
@@ -89,6 +90,10 @@ p {
   &:hover {
     background-size: 100% 2px;
   }
+}
+
+.order-2 {
+  order: 2;
 }
 
 .content {

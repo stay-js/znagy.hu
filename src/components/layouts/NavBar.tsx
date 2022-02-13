@@ -27,21 +27,19 @@ const NavBar: React.FC<Props> = () => {
               <a className="navigation-link">About</a>
             </Link>
           </li>
-          {/* <li className="navigation-item">
+          <li className="navigation-item">
             <Link href="/#projects">
               <a className="navigation-link">Projects</a>
             </Link>
-          </li> */}
+          </li>
           <li className="navigation-item">
             <Link href="/#get-in-touch">
               <a className="navigation-link">Get In Touch</a>
             </Link>
           </li>
-          <div className="navigation-contact-btn">
-            <Link href="/contact">
-              <a className="navigation-contact-btn-text no-dec">Contatct</a>
-            </Link>
-          </div>
+          <Link href="/contact">
+            <a className="navigation-contact-btn no-dec">Contatct</a>
+          </Link>
         </ol>
 
         <div
@@ -69,13 +67,13 @@ const NavBar: React.FC<Props> = () => {
               </a>
             </Link>
           </li>
-          {/* <li className="hamburger-navigation-item">
+          <li className="hamburger-navigation-item">
             <Link href="/#projects">
               <a className="hamburger-navigation-link" onClick={closeHamburger}>
                 Projects
               </a>
             </Link>
-          </li> */}
+          </li>
           <li className="hamburger-navigation-item">
             <Link href="/#get-in-touch">
               <a className="hamburger-navigation-link" onClick={closeHamburger}>
