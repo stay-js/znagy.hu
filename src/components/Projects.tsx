@@ -59,25 +59,25 @@ const Projects: React.FC<Props> = (props) => {
                     Discord.js
                   </a>
                 </Link>
+                .
               </p>
               <p>
                 All 70+ commands are listed on the website, which is built with
                 plain HTML and CSS.
               </p>
               <p>
-                Later on I'll transfer the BOT from JavaScripu to TypeScript,
-                update to the latest Discord.js, and maybe I'll open source the
-                project.
+                Later on I&rsquo;ll transfer the BOT from JavaScript to
+                TypeScript, update to the latest version of Discord.js, and
+                maybe I&rsquo;ll open source the project.
               </p>
             </div>
             <ul className="project-tools no-list-style">
-              <li>TypeScript</li>
-              <li>React</li>
-              <li>Next.js</li>
-              <li>Vercel</li>
-              <li>Express</li>
-              <li>Nodemailer</li>
+              <li>JavaScript</li>
+              <li>Discord.js</li>
               <li>Heroku</li>
+              <li>HTML5</li>
+              <li>CSS</li>
+              <li>Netlify</li>
             </ul>
           </div>
         </article>
