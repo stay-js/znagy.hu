@@ -43,20 +43,32 @@ const Projects: React.FC<Props> = (props) => {
 
         <article className="project">
           <Link href="https://anything.stayy.xyz">
-            <a className="project-image order-2" target="_blank">
+            <a target="_blank" className="project-image order-2">
               <div className="project-image-blur" />
               <Image src={anything} layout="responsive" />
             </a>
           </Link>
 
           <div className="project-content">
-            <h1 className="project-title">REGALE Energy Zrt.</h1>
+            <h1 className="project-title">Anything</h1>
             <div className="project-description">
               <p>
-                This is my current project. A company website for REGALE Energy
-                Zrt.
+                A Discord BOT build back in 2020, with JavaScript, and
+                <Link href="https://discord.js.org/">
+                  <a target="_blank" className="link">
+                    Discord.js
+                  </a>
+                </Link>
               </p>
-              <p>Single page web app built using Next.js and Sass.</p>
+              <p>
+                All 70+ commands are listed on the website, which is built with
+                plain HTML and CSS.
+              </p>
+              <p>
+                Later on I'll transfer the BOT from JavaScripu to TypeScript,
+                update to the latest Discord.js, and maybe I'll open source the
+                project.
+              </p>
             </div>
             <ul className="project-tools no-list-style">
               <li>TypeScript</li>

@@ -8,7 +8,7 @@ const GetInTouch: React.FC<Props> = (props) => {
       <h2 className="section-title">
         <span className="section-number">3.</span>Get In Touch
       </h2>
-      <h1 className="get-in-touch-title">Hi!</h1>
+      <h1 className="get-in-touch-title">Hello!</h1>
       <div className="get-in-touch-content">
         <p>
           Got something you would like to say? Or have a question? Feel free to
