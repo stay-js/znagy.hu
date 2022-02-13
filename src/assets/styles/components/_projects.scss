@@ -14,10 +14,11 @@
   position: relative;
 
   &-link {
+    margin-left: 0.75rem;
     transition: color 300ms ease;
 
     &:hover {
-      color: $white;
+      color: $green-400;
     }
   }
 
@@ -64,8 +65,8 @@
 
   &-tools {
     display: flex;
-    gap: 0.25rem;
-    font-family: "PT Mono", sans-serif;
+    gap: 1rem;
+    font-family: 'PT Mono', sans-serif;
     font-size: 0.8rem;
     font-weight: 400;
     color: $coolGray-400;

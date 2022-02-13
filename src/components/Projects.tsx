@@ -10,14 +10,14 @@ const Projects: React.FC<Props> = (props) => {
       </h2>
       <div className="projects-container">
         <article className="project">
-          <h1 className="project-title">
-            REGALE Energy Zrt.{' '}
-            <Link href="https://regale.vercel.app/">
-              <a target="_blank" className="project-link no-dec">
-                <i className="fa-solid fa-arrow-up-right-from-square" />
-              </a>
-            </Link>
-          </h1>
+          <Link href="https://regale.vercel.app/">
+            <a target="_blank" className="project-title no-dec">
+              <h1 className="project-title">
+                REGALE Energy Zrt.
+                <i className="project-link fa-solid fa-arrow-up-right-from-square" />
+              </h1>
+            </a>
+          </Link>
           <div className="project-description">
             <p>This is my current project.</p>
             <p>A company website for REGALE Energy Zrt.</p>
@@ -48,14 +48,14 @@ const Projects: React.FC<Props> = (props) => {
         </article>
 
         <article className="project">
-          <h1 className="project-title">
-            Anything{' '}
-            <Link href="https://anything.stayy.xyz/">
-              <a target="_blank" className="project-link no-dec">
-                <i className="fa-solid fa-arrow-up-right-from-square" />
-              </a>
-            </Link>
-          </h1>
+          <Link href="https://anything.stayy.xyz/">
+            <a target="_blank" className="project-title no-dec">
+              <h1 className="project-title">
+                Anything
+                <i className="project-link fa-solid fa-arrow-up-right-from-square" />
+              </h1>
+            </a>
+          </Link>
           <div className="project-description">
             <p>
               A Discord BOT build back in 2020, with{' '}
