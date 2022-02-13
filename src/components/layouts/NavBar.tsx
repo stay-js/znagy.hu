@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import me from '../../assets/images/me.jpg';
+import me from '../../assets/images/me.png';
 
 interface Props {}
 
