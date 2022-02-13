@@ -7,8 +7,7 @@
     gap: 3rem;
 
     @media (max-width: 920px) {
-      gap: 1.5rem;
-      //flex-direction: column;
+      flex-direction: column;
     }
   }
 
@@ -35,8 +34,8 @@
     }
 
     @media (max-width: 567px) {
-      flex-direction: column;
-      gap: 0;
+      //flex-direction: column;
+      gap: 2rem;
     }
   }
 
