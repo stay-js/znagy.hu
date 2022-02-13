@@ -22,7 +22,7 @@ const Projects: React.FC<Props> = (props) => {
             <h1 className="project-title">
               REGALE Energy Zrt.{' '}
               <Link href="https://regale.vercel.app/">
-                <a target="_blank" className="projects-link no-dec">
+                <a target="_blank" className="project-link no-dec">
                   <i className="fa-solid fa-arrow-up-right-from-square" />
                 </a>
               </Link>
@@ -67,7 +67,7 @@ const Projects: React.FC<Props> = (props) => {
             <h1 className="project-title">
               Anything{' '}
               <Link href="https://anything.stayy.xyz/">
-                <a target="_blank" className="projects-link no-dec">
+                <a target="_blank" className="project-link no-dec">
                   <i className="fa-solid fa-arrow-up-right-from-square" />
                 </a>
               </Link>
