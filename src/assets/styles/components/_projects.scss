@@ -11,17 +11,16 @@
 }
 
 .project {
-  display: flex;
-  gap: 2rem;
   position: relative;
 
-  &-link{
+  &-link {
     transition: color 300ms ease;
 
-    &:hover{
+    &:hover {
       color: $white;
     }
   }
+
   &-description {
     position: relative;
     margin: 1rem 0;
@@ -66,9 +65,10 @@
   &-tools {
     display: flex;
     gap: 0.25rem;
-    font-family: 'PT Mono', sans-serif;
+    font-family: "PT Mono", sans-serif;
     font-size: 0.8rem;
     font-weight: 400;
     color: $coolGray-400;
+    flex-wrap: wrap;
   }
 }
