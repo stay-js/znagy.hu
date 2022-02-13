@@ -2,8 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import regale from '../assets/images/regale.png';
 import anything from '../assets/images/anything.png';
-import flappy from '../assets/images/flappy.png';
-import calc from '../assets/images/calc.png';
 
 interface Props {}
 
@@ -15,15 +13,20 @@ const Projects: React.FC<Props> = (props) => {
       </h2>
       <div className="projects-container">
         <article className="project">
-          <Link href="https://regale.vercel.app/">
-            <a className="project-image" target="_blank">
-              <div className="project-image-blur" />
-              <Image src={regale} layout="responsive" />
-            </a>
-          </Link>
+          <div className="project-image">
+            <div className="project-image-blur" />
+            <Image src={regale} layout="responsive" />
+          </div>
 
           <div className="project-content">
-            <h1 className="project-title">REGALE Energy Zrt.</h1>
+            <h1 className="project-title">
+              REGALE Energy Zrt.{' '}
+              <Link href="https://regale.vercel.app/">
+                <a target="_blank" className="no-dec">
+                  <i className="fa-solid fa-arrow-up-right-from-square" />
+                </a>
+              </Link>
+            </h1>
             <div className="project-description">
               <p>This is my current project.</p>
               <p>A company website for REGALE Energy Zrt.</p>
@@ -45,7 +48,6 @@ const Projects: React.FC<Props> = (props) => {
             </div>
             <ul className="project-tools no-list-style">
               <li>TypeScript</li>
-              <li>React</li>
               <li>Next.js</li>
               <li>Vercel</li>
               <li>Express</li>
@@ -55,16 +57,21 @@ const Projects: React.FC<Props> = (props) => {
           </div>
         </article>
 
-        <article className="project">
-          <Link href="https://anything.stayy.xyz">
-            <a target="_blank" className="project-image order-2">
-              <div className="project-image-blur" />
-              <Image src={anything} layout="responsive" />
-            </a>
-          </Link>
+        <article className="project second">
+          <div className="project-image">
+            <div className="project-image-blur" />
+            <Image src={anything} layout="responsive" />
+          </div>
 
           <div className="project-content">
-            <h1 className="project-title">Anything</h1>
+            <h1 className="project-title">
+              Anything{' '}
+              <Link href="https://anything.stayy.xyz/">
+                <a target="_blank" className="no-dec">
+                  <i className="fa-solid fa-arrow-up-right-from-square" />
+                </a>
+              </Link>
+            </h1>
             <div className="project-description">
               <p>
                 A Discord BOT build back in 2020, with{' '}
