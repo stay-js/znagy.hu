@@ -15,6 +15,13 @@
   gap: 2rem;
   position: relative;
 
+  &-link{
+    transition: color 300ms ease;
+
+    &:hover{
+      color: $white;
+    }
+  }
   &-description {
     position: relative;
     margin: 1rem 0;
