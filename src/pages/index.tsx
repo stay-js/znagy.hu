@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Title from '../components/Title';
 import AboutMe from '../components/AboutMe';
-// import Projects from '../components/Projects';
+import Projects from '../components/Projects';
 import GetInTouch from '../components/GetInTouch';
 
 interface Props {}
@@ -18,7 +18,7 @@ const Home: NextPage<Props> = (props) => {
       <main>
         <Title />
         <AboutMe />
-        {/* <Projects /> */}
+        <Projects />
         <GetInTouch />
       </main>
     </>

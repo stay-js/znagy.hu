@@ -2,4 +2,57 @@
   min-height: 60vh;
   position: relative;
   margin-bottom: 5rem;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+.project {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+
+  &-description {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: $blueGray-700;
+    border-radius: 5px;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &-image {
+    width: 60%;
+    position: relative;
+
+    &-blur {
+      position: absolute;
+      background-color: $blueGray-700;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      opacity: 0.7;
+      transition: opacity 300ms ease;
+
+      &:hover {
+        opacity: 0;
+      }
+    }
+  }
+
+  &-tools {
+    display: flex;
+    gap: 0.25rem;
+    font-family: 'PT Mono', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: $coolGray-400;
+  }
 }
