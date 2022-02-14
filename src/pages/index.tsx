@@ -12,6 +12,7 @@ const Home: NextPage<Props> = (props) => {
     <>
       <Head>
         <title>Home - stay</title>
+        <meta name="author" content="stay" />
         <meta name="description" content="Home - stay" />
         <meta
           name="keywords"
@@ -25,7 +26,10 @@ const Home: NextPage<Props> = (props) => {
         <meta property="og:url" content="https://stayy.xyz/" />
         <meta property="og:image" content="https://stayy.xyz/images/me.png" />
         <meta property="og:description" content="Homepage" />
-        <meta name="theme-color" content="#FF0000" />
+
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
       </Head>
 
       <main>
