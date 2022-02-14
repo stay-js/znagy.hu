@@ -16,6 +16,8 @@ const Home: NextPage<Props> = (props) => {
           content="stay, Zétény, Nagy, Zétény Nagy, Full stack dev, Full stack developer, IT, IT Student, Kyokushin, Kyokushin Karate, Muay Thai, Thai Box, Thai-Boxing, Hungary, JavaScript, TypeScript, Node.js, Express, React, Next.js, Sass, SCSS, 
           HTML, HTML5, CSS, CSS3 Nodemailer, Vercel, Netlify, Heroku, Discord.js, REGALE Energy Zrt., Anything"
         />
+        <meta name="url" content="https://stayy.xyz/contact" />
+
         <meta property="og:title" content="Contact - stay" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://stayy.xyz/contact" />
