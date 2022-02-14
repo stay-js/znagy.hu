@@ -20,7 +20,7 @@ const Home: NextPage<Props> = (props) => {
         />
         <meta property="og:title" content="Home - stay" />
         <meta property="og:url" content="https://stayy.xyz/" />
-        <meta property="og:img" content="/images/me.png" />
+        <meta property="og:img" content="https://stayy.xyz/images/me.png" />
       </Head>
 
       <main>
