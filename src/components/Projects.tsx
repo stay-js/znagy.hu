@@ -39,11 +39,10 @@ const Projects: React.FC<Props> = (props) => {
           </div>
           <ul className="project-tools no-list-style">
             <li>TypeScript</li>
+            <li>React</li>
             <li>Next.js</li>
-            <li>Vercel</li>
-            <li>Express</li>
             <li>Nodemailer</li>
-            <li>Heroku</li>
+            <li>Vercel</li>
           </ul>
         </article>
 
