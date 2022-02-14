@@ -17,8 +17,11 @@ const Home: NextPage<Props> = (props) => {
           HTML, HTML5, CSS, CSS3 Nodemailer, Vercel, Netlify, Heroku, Discord.js, REGALE Energy Zrt., Anything"
         />
         <meta property="og:title" content="Contact - stay" />
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://stayy.xyz/contact" />
-        <meta property="og:img" content="https://stayy.xyz/images/me.png" />
+        <meta property="og:image" content="https://stayy.xyz/images/me.png" />
+        <meta property="og:description" content="Contactpage" />
+        <meta name="theme-color" content="#FF0000" />
       </Head>
 
       <main className="contact-page content">
