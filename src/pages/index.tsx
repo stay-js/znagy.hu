@@ -13,7 +13,10 @@ const Home: NextPage<Props> = (props) => {
       <Head>
         <title>stay</title>
         <meta name="author" content="stay" />
-        <meta name="description" content="stay" />
+        <meta
+          name="description"
+          content="Full stack developer wannabe. IT Student. Kyokushin. Muay Thai."
+        />
         <meta
           name="keywords"
           content="stay, Zétény, Nagy, Zétény Nagy, Full stack dev, Full stack developer, IT, IT Student, Kyokushin, Kyokushin Karate, Muay Thai, Thai Box, Thai-Boxing, Hungary, JavaScript, TypeScript, Node.js, Express, React, Next.js, Sass, SCSS, 
@@ -24,14 +27,20 @@ const Home: NextPage<Props> = (props) => {
         <meta property="og:title" content="stay" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://stayy.xyz/" />
-        <meta property="og:description" content="Homepage" />
+        <meta
+          property="og:description"
+          content="Full stack developer wannabe. IT Student. Kyokushin. Muay Thai."
+        />
         <meta property="og:image" content="https://stayy.xyz/images/me.png" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="stayy.xyz" />
         <meta property="twitter:url" content="https://stayy.xyz/" />
         <meta name="twitter:title" content="stay" />
-        <meta name="twitter:description" content="Homepage" />
+        <meta
+          name="twitter:description"
+          content="Full stack developer wannabe. IT Student. Kyokushin. Muay Thai."
+        />
         <meta name="twitter:image" content="https://stayy.xyz/images/me.png" />
 
         <meta name="robots" content="index, follow" />

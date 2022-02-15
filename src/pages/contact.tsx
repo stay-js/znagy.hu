@@ -11,7 +11,12 @@ const Home: NextPage<Props> = (props) => {
       <Head>
         <title>Contact - stay</title>
         <meta name="author" content="stay" />
-        <meta name="description" content="Contact page" />
+        <meta
+          name="description"
+          content="Got something you would like to say? Or have a question? Feel free
+            to send me a message using the form down below. I&rsquo;m just a few
+            clicks away..."
+        />
         <meta
           name="keywords"
           content="stay, Zétény, Nagy, Zétény Nagy, Full stack dev, Full stack developer, IT, IT Student, Kyokushin, Kyokushin Karate, Muay Thai, Thai Box, Thai-Boxing, Hungary, JavaScript, TypeScript, Node.js, Express, React, Next.js, Sass, SCSS, 
@@ -22,14 +27,24 @@ const Home: NextPage<Props> = (props) => {
         <meta property="og:title" content="Contact - stay" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://stayy.xyz/contact/" />
-        <meta property="og:description" content="Contact page" />
+        <meta
+          property="og:description"
+          content="Got something you would like to say? Or have a question? Feel free
+            to send me a message using the form down below. I&rsquo;m just a few
+            clicks away..."
+        />
         <meta property="og:image" content="https://stayy.xyz/images/me.png" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="stayy.xyz" />
         <meta property="twitter:url" content="https://stayy.xyz/contact/" />
         <meta name="twitter:title" content="Contact - stay" />
-        <meta name="twitter:description" content="Contact page" />
+        <meta
+          name="twitter:description"
+          content="Got something you would like to say? Or have a question? Feel free
+            to send me a message using the form down below. I&rsquo;m just a few
+            clicks away..."
+        />
         <meta name="twitter:image" content="https://stayy.xyz/images/me.png" />
 
         <meta name="robots" content="index, follow" />
