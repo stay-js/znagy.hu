@@ -1,4 +1,4 @@
-import '../assets/styles/style.scss';
+import '../styles/style.scss';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import NavBar from '../components/layouts/NavBar';

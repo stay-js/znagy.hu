@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import me from '../assets/images/me.png';
 
 interface Props {}
 
@@ -13,7 +12,7 @@ const AboutMe: React.FC<Props> = (props) => {
       <div className="flex">
         <div className="about-me-image-container">
           <div className="about-me-image">
-            <Image src={me} layout="responsive" />
+            <Image src="/images/me.png" layout="fill" />
           </div>
         </div>
         <div className="about-me-content">

@@ -34,7 +34,6 @@
     }
 
     @media (max-width: 567px) {
-      //flex-direction: column;
       gap: 2rem;
     }
   }
@@ -52,8 +51,9 @@
   }
 
   &-image {
-    width: 250px;
-    height: 250px;
+    position: relative;
+    width: 256px;
+    height: 256px;
     transition: all 300ms ease;
     border-top: 10px solid $green-400;
     border-left: 10px solid $green-400;

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import me from '../../assets/images/me.png';
 
 interface Props {}
 
@@ -17,7 +16,7 @@ const NavBar: React.FC<Props> = () => {
         <div className="navigation-logo">
           <Link href="/">
             <div className="navigation-logo-image">
-              <Image src={me} layout="responsive" />
+              <Image src="/images/me.png" width={48} height={48} />
             </div>
           </Link>
         </div>
