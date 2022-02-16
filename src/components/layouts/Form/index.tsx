@@ -5,7 +5,7 @@ import FormError from './FormError';
 
 interface Props {}
 
-const Form: React.FC<Props> = () => {
+const Form: React.FC<Props> = (props) => {
   const {
     handleChange,
     handleSubmit,

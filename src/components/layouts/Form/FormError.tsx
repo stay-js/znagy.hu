@@ -1,6 +1,6 @@
 interface Props {}
 
-const FormError: React.FC<Props> = () => {
+const FormError: React.FC<Props> = (props) => {
   return (
     <div className="center">
       <p>

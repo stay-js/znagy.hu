@@ -1,6 +1,6 @@
 interface Props {}
 
-const FormLoading: React.FC<Props> = () => {
+const FormLoading: React.FC<Props> = (props) => {
   return (
     <div className="center">
       <div className="form-loading">

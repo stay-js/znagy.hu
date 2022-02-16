@@ -1,6 +1,6 @@
 interface Props {}
 
-const FormSuccess: React.FC<Props> = () => {
+const FormSuccess: React.FC<Props> = (props) => {
   return (
     <div className="center">
       <div className="form-success">
