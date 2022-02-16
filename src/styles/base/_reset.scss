@@ -24,3 +24,21 @@ html {
   border-radius: 5px;
   background-color: $trueGray-500;
 }
+
+.no-dec {
+  text-decoration: none;
+  color: $coolGray-400;
+}
+
+.no-list-style {
+  list-style: none;
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
