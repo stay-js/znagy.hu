@@ -73,7 +73,7 @@ const Projects: React.FC<Props> = (props) => {
             </p>
             <p>
               All 70+ commands are listed on the website, which is built with
-              plain HTML and CSS.
+              plain HTML5 and CSS3.
             </p>
             <p>
               Later on I&rsquo;ll transfer the BOT from{' '}
@@ -102,7 +102,7 @@ const Projects: React.FC<Props> = (props) => {
             <li>Discord.js</li>
             <li>Heroku</li>
             <li>HTML5</li>
-            <li>CSS</li>
+            <li>CSS3</li>
             <li>Netlify</li>
           </ul>
         </article>

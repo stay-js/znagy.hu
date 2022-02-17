@@ -20,7 +20,8 @@ const Home: NextPage<Props> = (props) => {
         <meta
           name="keywords"
           content="stay, Zétény, Nagy, Zétény Nagy, Full stack dev, Full stack developer, IT, IT Student, Kyokushin, Kyokushin Karate, Muay Thai, Thai Box, Thai-Boxing, Hungary, JavaScript, TypeScript, Node.js, Express, React, Next.js, Sass, SCSS, 
-          HTML, HTML5, CSS, CSS3 Nodemailer, Vercel, Netlify, Heroku, Discord.js, REGALE Energy Zrt., Anything"
+          HTML, HTML5, CSS, CSS3 Nodemailer, Vercel, Netlify, Heroku, Discord.js, REGALE Energy Zrt., Anything, Resume, Education, Skills, Hobbies, IT, Web Development, Web Developer, Data modeling, Data structuring, DevOps, Cloud, Networking, Languages & Libraries, Technologies, Platforms, School, 
+          Újlaki Általános Iskola, BMSzC Neumann János Informatikai Technikum"
         />
         <meta name="url" content="https://stayy.xyz/" />
 
@@ -50,7 +51,7 @@ const Home: NextPage<Props> = (props) => {
         <meta name="rating" content="general" />
       </Head>
 
-      <main>
+      <main className="landing-page">
         <Title />
         <AboutMe />
         <Projects />

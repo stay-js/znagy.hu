@@ -32,12 +32,12 @@ const NavBar: React.FC<Props> = (props) => {
             </Link>
           </li>
           <li className="navigation-item">
-            <Link href="/#get-in-touch">
+            <Link href="/contact">
               <a className="navigation-link">Get In Touch</a>
             </Link>
           </li>
-          <Link href="/contact">
-            <a className="navigation-contact-btn no-dec">Contatct</a>
+          <Link href="/resume">
+            <a className="navigation-btn no-dec">Resume</a>
           </Link>
         </ol>
 
@@ -74,16 +74,16 @@ const NavBar: React.FC<Props> = (props) => {
             </Link>
           </li>
           <li className="hamburger-navigation-item">
-            <Link href="/#get-in-touch">
+            <Link href="/contact">
               <a className="hamburger-navigation-link" onClick={closeHamburger}>
                 Get In Touch
               </a>
             </Link>
           </li>
           <li className="hamburger-navigation-item">
-            <Link href="/contact">
+            <Link href="/resume">
               <a className="hamburger-navigation-link" onClick={closeHamburger}>
-                Contact
+                Resume
               </a>
             </Link>
           </li>
