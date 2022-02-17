@@ -34,6 +34,7 @@ const Home: NextPage<Props> = (props) => {
             clicks away..."
         />
         <meta property="og:image" content="https://stayy.xyz/images/me.png" />
+        <meta name="theme-color" content="#8f30ea" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="stayy.xyz" />
