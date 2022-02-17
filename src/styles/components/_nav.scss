@@ -106,16 +106,15 @@
       width: 24%;
       height: 100vh;
       top: 4rem;
-      right: 0;
+      right: -100%;
       flex-direction: column;
       align-items: center;
       text-align: center;
       list-style: none;
-      transform: translateX(100%);
       transition: all 500ms ease-in-out;
 
       &.active {
-        transform: translateX(0);
+        right: 0;
       }
 
       @media (max-width: 1356px) {
