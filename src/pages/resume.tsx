@@ -148,7 +148,7 @@ const Home: NextPage<Props> = (props) => {
               Web Dev.
             </p>
             <p className="resume-hobbies-content">
-              I do Kyokushin Karate since 2013, I started doing Thai-Boxing
+              I do Kyokushin Karate since 2013, and I started doing Thai-Boxing
               since 2020.
             </p>
           </section>
