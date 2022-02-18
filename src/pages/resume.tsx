@@ -149,7 +149,7 @@ const Home: NextPage<Props> = (props) => {
             </p>
             <p className="resume-hobbies-content">
               I do Kyokushin Karate since 2013, and I started doing Thai-Boxing
-              since 2020.
+              in 2020.
             </p>
           </section>
         </div>
