@@ -22,6 +22,9 @@ const handler: NextApiHandler = async (
     optionsSuccessStatus: 200,
   });
 
+  if (req.headers.origin !== 'https://stayy.xyz')
+    return res.status(403).send('403 Forbidden');
+
   if (req.method !== 'POST')
     return res.status(405).send('405 Method Not Allowed');
 
