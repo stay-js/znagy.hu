@@ -1,4 +1,5 @@
 import type { NextApiHandler, NextApiRequest, NextApiResponse } from 'next';
+import NextCors from 'nextjs-cors';
 import nodemailer from 'nodemailer';
 import 'dotenv/config';
 
@@ -14,10 +15,19 @@ const handler: NextApiHandler = async (
   req: NextApiRequest,
   res: NextApiResponse
 ) => {
-  console.log(process.env.NODEMAILER_USER);
+  await NextCors(req, res, {
+    origin: 'https://stayy.xyz',
+    methods: ['POST'],
+    credentials: true,
+    optionsSuccessStatus: 200,
+  });
+
+  if (req.method !== 'POST')
+    return res.status(405).send('405 Method Not Allowed');
 
   const { name, email, msg } = req.body;
-  const message = msg.replace(/\n/g, '<br />');
+
+  if (!name || !email || !msg) return res.status(400).send('400 Bad Request');
 
   const mailOptions = {
     from: `stay Mail - noreply<${process.env.NODEMAILER_USER}>`,
@@ -34,20 +44,21 @@ const handler: NextApiHandler = async (
     <div>
     Message:
     <br />
-    ${message}
+    ${msg.replace(/\n/g, '<br />')}
     </div>
     `,
   };
 
-  transporter.sendMail(mailOptions, (error, results) => {
-    if (!results || error) {
-      res.status(503).send('Something went wrong!' + error);
-      console.log('Something went wrong!' + error);
-    } else {
-      res.status(200).send(results.response);
-      console.log(results.response);
-    }
-  });
+  transporter
+    .sendMail(mailOptions)
+    .then((result) => {
+      console.log(result);
+      res.status(200).send(result);
+    })
+    .catch((error) => {
+      console.log(error);
+      res.status(502).send(error);
+    });
 };
 
 export default handler;

@@ -2,10 +2,6 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import validate from '../providers/validateInfo';
 
-interface ApiResponse {
-  status: Number;
-}
-
 const useForm = () => {
   const [values, setValues] = useState({
     name: '',
@@ -37,12 +33,13 @@ const useForm = () => {
     const submitForm = async () => {
       setIsSubmitted(true);
 
-      const sendEmail = async (): Promise<ApiResponse> => {
-        return await axios.post('/api/send-email/', values);
-      };
-
-      sendEmail()
-        .then((result) => checkResult(result))
+      axios
+        .post('/api/send-email/', values)
+        .then((result) => {
+          if (result.status !== 200) return setIsSuccessful(false);
+          setIsSuccessful(true);
+          setIsProcessing(false);
+        })
         .catch((error) => {
           console.log(error);
           setIsProcessing(false);
@@ -57,13 +54,6 @@ const useForm = () => {
       setIsSubmitting(false);
     }
   }, [isSubmitting, errors, values]);
-
-  const checkResult = (result: ApiResponse) => {
-    if (result.status !== 200) return setIsSuccessful(false);
-
-    setIsSuccessful(true);
-    setIsProcessing(false);
-  };
 
   return {
     handleChange,
