@@ -13,6 +13,11 @@
 .project {
   position: relative;
 
+  &-title {
+    color: $coolGray-400;
+    text-decoration: none;
+  }
+
   &-link {
     margin-left: 0.75rem;
     transition: color 300ms ease;

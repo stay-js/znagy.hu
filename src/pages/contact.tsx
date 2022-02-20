@@ -38,7 +38,7 @@ const Home: NextPage<Props> = (props) => {
       </Head>
 
       <main className="contact-page content">
-        <div className="contact-page-content text-center center">
+        <div className="contact-page-content center">
           <h1 className="contact-page-title">Send me a message!</h1>
           <p>
             Got something you would like to say? Or have a question? Feel free

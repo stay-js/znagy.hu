@@ -10,38 +10,38 @@ const Title: React.FC<Props> = (props) => {
       <p className="title-content">
         Full stack developer wannabe. IT Student. Kyokushin. Muay Thai.
       </p>
-      <ul className="title-links no-list-style">
+      <ul className="title-links">
         <li>
           <Link href="https://github.com/stay-js">
-            <a target="_blank" className="title-link no-dec">
+            <a target="_blank" className="title-link">
               <i className="fab fa-github" />
             </a>
           </Link>
         </li>
         <li>
           <Link href="https://www.facebook.com/nagy.zeteny.06/">
-            <a target="_blank" className="title-link no-dec">
+            <a target="_blank" className="title-link">
               <i className="fab fa-facebook" />
             </a>
           </Link>
         </li>
         <li>
           <Link href="mailto:nagyzeteny6@gmail.com">
-            <a target="_blank" className="title-link no-dec">
+            <a target="_blank" className="title-link">
               <i className="fas fa-envelope" />
             </a>
           </Link>
         </li>
         <li>
           <Link href="https://www.youtube.com/channel/UCEGp1S_QTS3goAVX1cVw-tQ">
-            <a target="_blank" className="title-link no-dec">
+            <a target="_blank" className="title-link">
               <i className="fab fa-youtube" />
             </a>
           </Link>
         </li>
       </ul>
       <Link href="#about">
-        <a className="title-btn no-dec">More About Me</a>
+        <a className="title-btn">More About Me</a>
       </Link>
     </section>
   );

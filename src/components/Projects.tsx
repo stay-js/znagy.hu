@@ -11,7 +11,7 @@ const Projects: React.FC<Props> = (props) => {
       <div className="projects-container">
         <article className="project">
           <Link href="https://regale.vercel.app/">
-            <a target="_blank" className="project-title no-dec">
+            <a target="_blank" className="project-title">
               <h1 className="project-title">
                 REGALE Energy Zrt.
                 <i className="project-link fa-solid fa-arrow-up-right-from-square" />
@@ -48,7 +48,7 @@ const Projects: React.FC<Props> = (props) => {
 
         <article className="project">
           <Link href="https://anything.stayy.xyz/">
-            <a target="_blank" className="project-title no-dec">
+            <a target="_blank" className="project-title">
               <h1 className="project-title">
                 Anything
                 <i className="project-link fa-solid fa-arrow-up-right-from-square" />
