@@ -9,7 +9,7 @@ const Home: NextPage<Props> = (props) => {
     <>
       <Head>
         <title>Resume - stay</title>
-        <meta property="og:title" content="Resume - stay" />
+        <meta property="og:title" content="Resume - stay" key="title" />
         <meta name="twitter:title" content="Resume - stay" />
 
         <meta name="url" content="https://stayy.xyz/resume" />
