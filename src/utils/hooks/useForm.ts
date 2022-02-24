@@ -34,7 +34,7 @@ const useForm = () => {
       setIsSubmitted(true);
 
       axios
-        .post('/api/send-email/', values)
+        .post('https://api.stayy.xyz/send-email/', values)
         .then((result) => {
           if (result.status !== 200) return setIsSuccessful(false);
           setIsSuccessful(true);
