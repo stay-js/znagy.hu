@@ -16,7 +16,7 @@ const NavBar: React.FC<Props> = (props) => {
         <div className="navigation-logo">
           <Link href="/">
             <div className="navigation-logo-image">
-              <Image src="/images/me.png" width={48} height={48} />
+              <Image src="/images/me.png" alt="logo" width={48} height={48} />
             </div>
           </Link>
         </div>
@@ -36,9 +36,11 @@ const NavBar: React.FC<Props> = (props) => {
               <a className="navigation-link">Get In Touch</a>
             </Link>
           </li>
-          <Link href="/resume">
-            <a className="navigation-btn no-dec">Resume</a>
-          </Link>
+          <li style={{ listStyle: 'none' }}>
+            <Link href="/resume">
+              <a className="navigation-btn no-dec">Resume</a>
+            </Link>
+          </li>
         </ol>
 
         <div

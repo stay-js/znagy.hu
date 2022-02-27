@@ -13,28 +13,28 @@ const Title: React.FC<Props> = (props) => {
       <ul className="title-links">
         <li>
           <Link href="https://github.com/stay-js">
-            <a target="_blank" className="title-link">
+            <a target="_blank" className="title-link" title="GitHub">
               <i className="fab fa-github" />
             </a>
           </Link>
         </li>
         <li>
           <Link href="https://www.facebook.com/nagy.zeteny.06/">
-            <a target="_blank" className="title-link">
+            <a target="_blank" className="title-link" title="Facebook">
               <i className="fab fa-facebook" />
             </a>
           </Link>
         </li>
         <li>
           <Link href="mailto:nagyzeteny6@gmail.com">
-            <a target="_blank" className="title-link">
+            <a target="_blank" className="title-link" title="E-mail">
               <i className="fas fa-envelope" />
             </a>
           </Link>
         </li>
         <li>
           <Link href="https://www.youtube.com/channel/UCEGp1S_QTS3goAVX1cVw-tQ">
-            <a target="_blank" className="title-link">
+            <a target="_blank" className="title-link" title="YouTube">
               <i className="fab fa-youtube" />
             </a>
           </Link>

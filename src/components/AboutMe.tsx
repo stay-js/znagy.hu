@@ -12,7 +12,7 @@ const AboutMe: React.FC<Props> = (props) => {
       <div className="flex">
         <div className="about-me-image-container">
           <div className="about-me-image">
-            <Image src="/images/me.png" layout="fill" />
+            <Image src="/images/me.png" alt="me" layout="fill" />
           </div>
         </div>
         <div className="about-me-content">
