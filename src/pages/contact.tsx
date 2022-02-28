@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
-import Form from '../components/layouts/Form';
+import { Form } from '../components';
 
 interface Props {}
 

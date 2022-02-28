@@ -1,9 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Title from '../components/Title';
-import AboutMe from '../components/AboutMe';
-import Projects from '../components/Projects';
-import GetInTouch from '../components/GetInTouch';
+import { Title, AboutMe, Projects, GetInTouch } from '../components';
 
 interface Props {}
 

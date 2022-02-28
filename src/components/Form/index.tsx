@@ -1,4 +1,4 @@
-import useForm from '../../../utils/hooks/useForm';
+import useForm from '../../utils/hooks/useForm';
 import FormLoading from './FormLoading';
 import FormSuccess from './FormSuccess';
 import FormError from './FormError';
