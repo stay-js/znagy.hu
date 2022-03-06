@@ -4,7 +4,9 @@ import nodemailer from 'nodemailer';
 let router = express.Router();
 
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  host: 'smtp.rackhost.hu',
+  port: 465,
+  secure: true,
   auth: {
     user: process.env.NODEMAILER_USER,
     pass: process.env.NODEMAILER_PASS,
