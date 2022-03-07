@@ -48,5 +48,7 @@
     font-weight: 400;
     color: $coolGray-400;
     flex-wrap: wrap;
+    list-style: none;
+    max-width: 75ch;
   }
 }

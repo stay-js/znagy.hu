@@ -9,28 +9,28 @@ const Home: NextPage<Props> = (props) => {
     <>
       <Head>
         <title>stay</title>
-        <meta property="og:title" content="stay" key="title" />
-        <meta name="twitter:title" content="stay" />
+        <meta property='og:title' content='stay' key='title' />
+        <meta name='twitter:title' content='stay' />
 
-        <meta name="url" content="https://stayy.xyz/" />
-        <meta property="og:url" content="https://stayy.xyz/" />
-        <meta property="twitter:url" content="https://stayy.xyz/" />
+        <meta name='url' content='https://stayy.xyz/' />
+        <meta property='og:url' content='https://stayy.xyz/' />
+        <meta property='twitter:url' content='https://stayy.xyz/' />
 
         <meta
-          name="description"
-          content="Full stack developer wannabe. IT Student. Kyokushin. Muay Thai."
+          name='description'
+          content='Full stack developer wannabe. IT Student. Kyokushin. Muay Thai.'
         />
         <meta
-          property="og:description"
-          content="Full stack developer wannabe. IT Student. Kyokushin. Muay Thai."
+          property='og:description'
+          content='Full stack developer wannabe. IT Student. Kyokushin. Muay Thai.'
         />
         <meta
-          name="twitter:description"
-          content="Full stack developer wannabe. IT Student. Kyokushin. Muay Thai."
+          name='twitter:description'
+          content='Full stack developer wannabe. IT Student. Kyokushin. Muay Thai.'
         />
       </Head>
 
-      <main className="landing-page">
+      <main className='landing-page'>
         <Title />
         <AboutMe />
         <Projects />

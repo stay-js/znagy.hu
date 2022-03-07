@@ -17,43 +17,43 @@ const Form: React.FC<Props> = (props) => {
   }: Record<string, any> = useForm();
 
   return (
-    <form onSubmit={handleSubmit} className="center">
-      <div className="input">
+    <form onSubmit={handleSubmit} className='form'>
+      <div className='input'>
         <label>Name:</label>
         <input
-          type="text"
-          id="name"
-          name="name"
+          type='text'
+          id='name'
+          name='name'
           value={values.name}
           onChange={handleChange}
         />
         {errors.name && <p>{errors.name}</p>}
       </div>
 
-      <div className="input">
+      <div className='input'>
         <label>E-mail:</label>
         <input
-          type="text"
-          id="email"
-          name="email"
+          type='text'
+          id='email'
+          name='email'
           value={values.email}
           onChange={handleChange}
         />
         {errors.email && <p>{errors.email}</p>}
       </div>
 
-      <div className="input">
+      <div className='input'>
         <label>Message:</label>
         <textarea
-          id="msg"
-          name="msg"
+          id='msg'
+          name='msg'
           value={values.msg}
           onChange={handleChange}
         />
         {errors.msg && <p>{errors.msg}</p>}
       </div>
 
-      <input type="submit" value="Submit" className="button" />
+      <input type='submit' value='Submit' className='button' />
 
       {isSubmitted &&
         (isProcessing ? (

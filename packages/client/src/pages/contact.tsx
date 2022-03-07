@@ -10,50 +10,52 @@ const Home: NextPage<Props> = (props) => {
     <>
       <Head>
         <title>Contact - stay</title>
-        <meta property="og:title" content="Contact - stay" key="title" />
-        <meta name="twitter:title" content="Contact - stay" />
+        <meta property='og:title' content='Contact - stay' key='title' />
+        <meta name='twitter:title' content='Contact - stay' />
 
-        <meta name="url" content="https://stayy.xyz/contact" />
-        <meta property="og:url" content="https://stayy.xyz/contact" />
-        <meta property="twitter:url" content="https://stayy.xyz/contact" />
+        <meta name='url' content='https://stayy.xyz/contact' />
+        <meta property='og:url' content='https://stayy.xyz/contact' />
+        <meta property='twitter:url' content='https://stayy.xyz/contact' />
 
         <meta
-          name="description"
-          content="Got something you would like to say? Or have a question? Feel free
+          name='description'
+          content='Got something you would like to say? Or have a question? Feel free
           to send me a message using the form down below. I&rsquo;m just a few
-          clicks away..."
+          clicks away...'
         />
         <meta
-          property="og:description"
-          content="Got something you would like to say? Or have a question? Feel free
+          property='og:description'
+          content='Got something you would like to say? Or have a question? Feel free
           to send me a message using the form down below. I&rsquo;m just a few
-          clicks away..."
+          clicks away...'
         />
         <meta
-          name="twitter:description"
-          content="Got something you would like to say? Or have a question? Feel free
+          name='twitter:description'
+          content='Got something you would like to say? Or have a question? Feel free
           to send me a message using the form down below. I&rsquo;m just a few
-          clicks away..."
+          clicks away...'
         />
       </Head>
 
-      <main className="contact-page content">
-        <div className="contact-page-content center">
-          <h1 className="contact-page-title">Send me a message!</h1>
-          <p>
+      <main className='contact-page content'>
+        <div className='contact-page-content'>
+          <h1 className='contact-page-title'>Send me a message!</h1>
+          <p className='contact-page-text'>
             Got something you would like to say? Or have a question? Feel free
             to send me a message using the form down below. I&rsquo;m just a few
             clicks away...
           </p>
-          <p>
+          <p className='contact-page-text'>
             Or you can just send me an e-mail at:{' '}
-            <Link href="mailto:nagyzeteny6@gmail.com">
-              <a className="link">nagyzeteny6@gmail.com</a>
+            <Link href='mailto:nagyzeteny6@gmail.com'>
+              <a className='link'>nagyzeteny6@gmail.com</a>
             </Link>
           </p>
         </div>
 
-        <Form />
+        <div className='form-container'>
+          <Form />
+        </div>
       </main>
     </>
   );
