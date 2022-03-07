@@ -10,7 +10,7 @@ const Projects: React.FC<Props> = (props) => {
       </h2>
       <div className="projects-container">
         <article className="project">
-          <Link href="https://regale.vercel.app/">
+          <Link href="#projects">
             <a target="_blank" className="project-title">
               <h1 className="project-title">
                 REGALE Energy Zrt.
