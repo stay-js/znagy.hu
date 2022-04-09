@@ -103,7 +103,7 @@ const Home: NextPage<Props> = (props) => {
                 <h4>Újlaki Általános Iskola</h4>
                 <p>01/08/2013 - 15/06/2021</p>
                 <p>
-                  <b>Address:</b> Ürömi utca 64 , 1023, Budapest, Magyarország
+                  <b>Address:</b> Ürömi utca 64, 1023, Budapest, Hungary
                 </p>
                 <Link href='http://ujlaki.ultranet.hu/'>
                   <a className='link' target='_blank'>
@@ -117,7 +117,7 @@ const Home: NextPage<Props> = (props) => {
                 <h4>BMSzC Neumann János Informatikai Technikum</h4>
                 <p> 01/09/2021 - Current</p>
                 <p>
-                  <b>Address:</b> Kerepesi út 124, 1144, Budapest, Magyarország
+                  <b>Address:</b> Kerepesi út 124, 1144, Budapest, Hungary
                 </p>
                 <Link href='http://www.njszki.hu/'>
                   <a className='link' target='_blank'>
