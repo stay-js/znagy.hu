@@ -22,7 +22,7 @@ app.use(express.raw());
 const emailRequestLimiter = rateLimit({
   windowMs: 1 * 60 * 1000,
   max: 10,
-  message: 'You are being rate limited',
+  message: { msg: 'You are being rate limited' },
 });
 
 app.use((req, res, next) => {
@@ -33,7 +33,7 @@ app.use((req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-  res.status(200).send({ message: 'stay API' });
+  res.status(200).send({ msg: 'stay API' });
 });
 
 import emailRoute from './routes/send-email';
