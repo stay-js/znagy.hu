@@ -6,15 +6,12 @@ let router = express.Router();
 
 router.get('/', (req, res) => {
   const ip = requestIp.getClientIp(req);
-  if (!ip) return res.send(400).send("Can't Fetch IP");
+  if (!ip) return res.send(400).send({ msg: "Can't Fetch IP" });
 
   const location = lookup(ip);
-  if (!location) return res.send(400).send("Can't Fetch Location");
+  if (!location) return res.send(400).send({ msg: "Can't Fetch Location" });
 
-  res.status(200).send({
-    ip: ip,
-    location: location,
-  });
+  res.status(200).send({ ip, location });
 });
 
 export = router;
