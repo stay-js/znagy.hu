@@ -1,7 +1,7 @@
 import '../styles/style.scss';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import { NavBar } from '../components';
+import Nav from '../components/Nav';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
           content='https://stayy.xyz/images/me.png'
           key='image'
         />
-        <meta name='theme-color' content='#8f30ea' />
+        <meta name='theme-color' content='#22c55e' />
 
         <meta name='twitter:card' content='summary_large_image' />
         <meta property='twitter:domain' content='stayy.xyz' />
@@ -39,7 +39,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <div>
-        <NavBar />
+        <Nav />
         <Component {...pageProps} />
       </div>
     </>

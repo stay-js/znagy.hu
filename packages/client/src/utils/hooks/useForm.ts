@@ -2,29 +2,31 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import validate from '../providers/validateInfo';
 
-const useForm = () => {
-  const [values, setValues] = useState({
-    name: '',
-    email: '',
-    msg: '',
-  });
+const defaultValues = {
+  name: '',
+  email: '',
+  msg: '',
+};
 
+const useForm = () => {
   const [errors, setErrors] = useState({});
+  const [values, setValues] = useState(defaultValues);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSuccessful, setIsSuccessful] = useState(Boolean);
   const [isProcessing, setIsProcessing] = useState(true);
 
   const handleChange = (e: any) => {
-    const { name, value } = e.target;
+    const { key, value } = e;
     setValues({
       ...values,
-      [name]: value,
+      [key]: value,
     });
   };
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
+
     setErrors(validate(values));
     setIsSubmitting(true);
   };
@@ -49,6 +51,7 @@ const useForm = () => {
 
     if (Object.keys(errors).length === 0 && isSubmitting) {
       submitForm();
+      setValues(defaultValues);
       setIsSubmitting(false);
     } else {
       setIsSubmitting(false);

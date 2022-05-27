@@ -1,0 +1,123 @@
+@use '../../../../styles/abstracts' as *;
+
+.loading {
+  width: fit-content;
+  margin: 2rem auto;
+}
+
+.loader {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 3px solid transparent;
+  border-top-color: $black;
+  @include animation(spin 1s linear infinite);
+
+  &:before,
+  &:after {
+    content: '';
+    @include absPosition(5px, 5px, 5px, 5px);
+    border-radius: 50px;
+    border: 3px solid transparent;
+    border-top-color: $black;
+    @include animation(spinreverse 5s linear infinite);
+  }
+
+  &:before {
+    top: 12px;
+    left: 12px;
+    bottom: 12px;
+    right: 12px;
+    @include animation(spinreverse 10s linear infinite);
+  }
+}
+
+.success {
+  width: 100px;
+  height: 50px;
+  margin: 2rem auto;
+}
+
+.checkmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: $white;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px $success;
+  @include animation(
+    fill 0.4s ease-in-out 0.4s forwards,
+    scale 0.3s ease-in-out 0.9s both
+  );
+}
+
+.check {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  @include animation(stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards);
+}
+
+.circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: $success;
+  fill: none;
+  @include animation(stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards);
+}
+
+/*
+* Animation
+*/
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    tranform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    tranform: rotate(360deg);
+  }
+}
+
+@keyframes spinreverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+    tranform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    tranform: rotate(-360deg);
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+  50% {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px $success;
+  }
+}

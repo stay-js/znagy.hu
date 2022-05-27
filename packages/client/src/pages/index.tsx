@@ -1,10 +1,15 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Title, AboutMe, Projects, GetInTouch } from '../components';
+import {
+  Title,
+  AboutMe,
+  Projects,
+  GetInTouch,
+} from '../components/LandingPage';
 
 interface Props {}
 
-const Home: NextPage<Props> = (props) => {
+const LandingPage: NextPage<Props> = (props) => {
   return (
     <>
       <Head>
@@ -30,7 +35,7 @@ const Home: NextPage<Props> = (props) => {
         />
       </Head>
 
-      <main className='landing-page'>
+      <main>
         <Title />
         <AboutMe />
         <Projects />
@@ -40,4 +45,4 @@ const Home: NextPage<Props> = (props) => {
   );
 };
 
-export default Home;
+export default LandingPage;

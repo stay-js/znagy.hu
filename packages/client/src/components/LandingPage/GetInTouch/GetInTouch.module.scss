@@ -1,0 +1,30 @@
+@use '../../../styles/abstracts' as *;
+
+.get-in-touch {
+  min-height: 40vh;
+  margin-bottom: 5rem;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+  font-family: 'Merriweather', sans-serif;
+}
+
+.content {
+  max-width: 60ch;
+  margin-bottom: 2rem;
+}
+
+.button {
+  width: fit-content;
+  padding: 1rem 2rem;
+  color: $green-500;
+  text-decoration: none;
+  border: 1px solid $green-500;
+  transition: all 500ms ease;
+
+  &:hover {
+    color: $blueGray-900;
+    background-color: $green-500;
+  }
+}

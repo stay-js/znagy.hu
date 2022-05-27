@@ -1,0 +1,47 @@
+@use '../../../styles/abstracts' as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  gap: 1.5rem;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 3rem 5rem;
+  box-shadow: 0 30px 60px 30px $coolGray-1000;
+  border-radius: 15px;
+  align-items: center;
+  background: $white;
+  @include animation(translateXBounce2 1s ease-in-out);
+
+  &-container {
+    max-width: 30rem;
+    margin-inline: auto;
+  }
+
+  @media (max-width: 574px) {
+    padding: 3rem;
+  }
+}
+
+.button {
+  width: 100%;
+  height: 2.25rem;
+  border: none;
+  border-radius: 3px;
+  background: $green-400;
+  color: $white;
+  cursor: pointer;
+  box-shadow: 3px 10px 20px 0px $gray-300;
+  transition: background-color 300ms ease;
+
+  &:hover,
+  &:focus {
+    background-color: $gray-600;
+  }
+}
+
+.input {
+  width: 100%;
+}
