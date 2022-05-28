@@ -36,8 +36,7 @@
   box-shadow: 3px 10px 20px 0px $gray-300;
   transition: background-color 300ms ease;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: $gray-600;
   }
 }
