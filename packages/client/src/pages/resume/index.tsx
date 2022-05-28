@@ -102,7 +102,7 @@ const Resume: NextPage<Props> = (props) => {
               <h3>Elementary School</h3>
               <div>
                 <h4>Újlaki Általános Iskola</h4>
-                <p>01/08/2013 - 15/06/2021</p>
+                <p>01/09/2013 - 15/06/2021</p>
                 <p>
                   <b>Address:</b> Ürömi utca 64, 1023, Budapest, Hungary
                 </p>
