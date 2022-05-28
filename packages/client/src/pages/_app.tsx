@@ -1,6 +1,7 @@
 import '../styles/style.scss';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { MantineProvider } from '@mantine/core';
 import Nav from '../components/Nav';
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -26,7 +27,7 @@ export default function App({ Component, pageProps }: AppProps) {
           content='https://stayy.xyz/images/me.png'
           key='image'
         />
-        <meta name='theme-color' content='#22c55e' />
+        <meta name='theme-color' content='#0f172a' />
 
         <meta name='twitter:card' content='summary_large_image' />
         <meta property='twitter:domain' content='stayy.xyz' />
@@ -39,8 +40,10 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <div>
-        <Nav />
-        <Component {...pageProps} />
+        <MantineProvider theme={{ primaryColor: 'green' }}>
+          <Nav />
+          <Component {...pageProps} />
+        </MantineProvider>
       </div>
     </>
   );

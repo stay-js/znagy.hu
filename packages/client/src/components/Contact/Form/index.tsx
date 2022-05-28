@@ -1,5 +1,5 @@
-import { Checkbox, TextInput, Textarea, NativeSelect } from '@mantine/core';
-import { Mail, Phone, ClipboardList, User } from 'tabler-icons-react';
+import { TextInput, Textarea } from '@mantine/core';
+import { Mail, User } from 'tabler-icons-react';
 import useForm from '../../../utils/hooks/useForm';
 import { Error, Loading, Success } from './Status';
 import style from './Form.module.scss';
