@@ -4,7 +4,7 @@ interface Props {}
 
 const FormSuccess: React.FC<Props> = (props) => {
   return (
-    <div className='center'>
+    <div>
       <div className={style.success}>
         <svg className={style.checkmark} viewBox='0 0 52 52'>
           <circle className={style.circle} cx='26' cy='26' r='25' fill='none' />
@@ -15,7 +15,7 @@ const FormSuccess: React.FC<Props> = (props) => {
           />
         </svg>
       </div>
-      <p className='text-center'>Message sent successfully!</p>
+      <p style={{ textAlign: 'center' }}>Message sent successfully!</p>
     </div>
   );
 };
