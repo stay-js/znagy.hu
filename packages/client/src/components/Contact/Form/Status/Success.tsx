@@ -15,7 +15,7 @@ const FormSuccess: React.FC<Props> = (props) => {
           />
         </svg>
       </div>
-      <p>Message sent successfully!</p>
+      <p className='text-center'>Message sent successfully!</p>
     </div>
   );
 };

@@ -8,7 +8,7 @@ const FormLoading: React.FC<Props> = (props) => {
       <div className={style.loading}>
         <span className={style.loader} />
       </div>
-      <p>Please wait, processing...</p>
+      <p className='text-center'>Please wait, processing...</p>
     </div>
   );
 };
