@@ -48,7 +48,7 @@
   stroke: $white;
   stroke-miterlimit: 10;
   margin: 10% auto;
-  box-shadow: inset 0px 0px 0px $success;
+  box-shadow: inset 0px 0px 0px $green-400;
   @include animation(
     fill 0.4s ease-in-out 0.4s forwards,
     scale 0.3s ease-in-out 0.9s both
@@ -68,7 +68,7 @@
   stroke-dashoffset: 166;
   stroke-width: 2;
   stroke-miterlimit: 10;
-  stroke: $success;
+  stroke: $green-400;
   fill: none;
   @include animation(stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards);
 }
@@ -118,6 +118,6 @@
 
 @keyframes fill {
   100% {
-    box-shadow: inset 0px 0px 0px 30px $success;
+    box-shadow: inset 0px 0px 0px 30px $green-400;
   }
 }
