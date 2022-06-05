@@ -5,7 +5,7 @@ const FormError: React.FC<Props> = (props) => {
     <div>
       <p style={{ textAlign: 'center' }}>
         <i style={{ marginRight: '0.5rem' }} className='fas fa-times-circle' />
-        Somethnig went wrong, pleas try again later!
+        Somethnig went wrong, Please try again later!
       </p>
     </div>
   );

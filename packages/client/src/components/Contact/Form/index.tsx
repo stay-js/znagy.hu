@@ -20,46 +20,43 @@ const Form: React.FC<Props> = (props) => {
   return (
     <div className={style['form-container']}>
       <form onSubmit={handleSubmit} className={style.form}>
-        <div className={style.input}>
-          <TextInput
-            label='Name:'
-            icon={<User size={18} />}
-            id='name'
-            placeholder='Example Peter'
-            value={values.name}
-            onChange={(event) =>
-              handleChange({ key: 'name', value: event.currentTarget.value })
-            }
-            error={errors.name}
-          />
-        </div>
+        <TextInput
+          className={style.input}
+          label='Name:'
+          icon={<User size={18} />}
+          id='name'
+          placeholder='Example Peter'
+          value={values.name}
+          onChange={(event) =>
+            handleChange({ key: 'name', value: event.currentTarget.value })
+          }
+          error={errors.name}
+        />
 
-        <div className={style.input}>
-          <TextInput
-            label='E-mail:'
-            icon={<Mail size={18} />}
-            id='email'
-            placeholder='example@gmail.com'
-            value={values.email}
-            onChange={(event) =>
-              handleChange({ key: 'email', value: event.currentTarget.value })
-            }
-            error={errors.email}
-          />
-        </div>
+        <TextInput
+          className={style.input}
+          label='E-mail:'
+          icon={<Mail size={18} />}
+          id='email'
+          placeholder='example@gmail.com'
+          value={values.email}
+          onChange={(event) =>
+            handleChange({ key: 'email', value: event.currentTarget.value })
+          }
+          error={errors.email}
+        />
 
-        <div className={style.input}>
-          <Textarea
-            label='Message:'
-            placeholder='Please try to describe your question in as much detail as possible.'
-            minRows={5}
-            value={values.msg}
-            onChange={(event) =>
-              handleChange({ key: 'msg', value: event.currentTarget.value })
-            }
-            error={errors.msg}
-          />
-        </div>
+        <Textarea
+          className={style.input}
+          label='Message:'
+          placeholder='Please try to describe your question in as much detail as possible.'
+          minRows={5}
+          value={values.msg}
+          onChange={(event) =>
+            handleChange({ key: 'msg', value: event.currentTarget.value })
+          }
+          error={errors.msg}
+        />
 
         <input type='submit' value='Submit' className={style.button} />
 
