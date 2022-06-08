@@ -1,6 +1,6 @@
+import { useLayoutEffect, useState } from 'react';
 import NavBar from './NavBar';
 import Hamburger from './Hamburger';
-import { useLayoutEffect, useState } from 'react';
 
 interface Props {}
 

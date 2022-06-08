@@ -5,7 +5,7 @@ interface Props {
 }
 
 const validateInfo = (values: Props) => {
-  let errors: Record<string, string> = {};
+  const errors: Record<string, string> = {};
 
   if (!values.name) {
     errors.name = 'Please specify a name!';

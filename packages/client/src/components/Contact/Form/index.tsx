@@ -22,46 +22,40 @@ const Form: React.FC<Props> = (props) => {
       <form onSubmit={handleSubmit} className={style.form}>
         <TextInput
           className={style.input}
-          label='Name:'
+          label="Name:"
           icon={<User size={18} />}
-          id='name'
-          placeholder='Example Peter'
+          id="name"
+          placeholder="Example Peter"
           value={values.name}
-          onChange={(event) =>
-            handleChange({ key: 'name', value: event.currentTarget.value })
-          }
+          onChange={(event) => handleChange({ key: 'name', value: event.currentTarget.value })}
           error={errors.name}
         />
 
         <TextInput
           className={style.input}
-          label='E-mail:'
+          label="E-mail:"
           icon={<Mail size={18} />}
-          id='email'
-          placeholder='example@gmail.com'
+          id="email"
+          placeholder="example@gmail.com"
           value={values.email}
-          onChange={(event) =>
-            handleChange({ key: 'email', value: event.currentTarget.value })
-          }
+          onChange={(event) => handleChange({ key: 'email', value: event.currentTarget.value })}
           error={errors.email}
         />
 
         <Textarea
           className={style.input}
-          label='Message:'
-          placeholder='Please try to describe your question in as much detail as possible.'
+          label="Message:"
+          placeholder="Please try to describe your question in as much detail as possible."
           minRows={5}
           value={values.msg}
-          onChange={(event) =>
-            handleChange({ key: 'msg', value: event.currentTarget.value })
-          }
+          onChange={(event) => handleChange({ key: 'msg', value: event.currentTarget.value })}
           error={errors.msg}
         />
 
-        <input type='submit' value='Submit' className={style.button} />
+        <input type="submit" value="Submit" className={style.button} />
 
-        {isSubmitted &&
-          (isProcessing ? <Loading /> : isSuccessful ? <Success /> : <Error />)}
+        {isSubmitted
+          && (isProcessing ? <Loading /> : isSuccessful ? <Success /> : <Error />)}
       </form>
     </div>
   );

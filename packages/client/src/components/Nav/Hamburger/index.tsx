@@ -16,15 +16,15 @@ const Hamburger: React.FC<Props> = (props) => {
     <>
       <nav className={style.navigation}>
         <div className={style.logo}>
-          <Link href='/'>
+          <Link href="/">
             <div className={style['logo-image']}>
-              <Image src='/images/me.png' alt='' width={48} height={48} />
+              <Image src="/images/me.png" alt="" width={48} height={48} />
             </div>
           </Link>
         </div>
 
         <div
-          className={isToggled ? style.icon + ' ' + style.active : style.icon}
+          className={isToggled ? `${style.icon} ${style.active}` : style.icon}
           onClick={toggleHamburger}
         >
           <span className={style.bar} />
@@ -36,7 +36,7 @@ const Hamburger: React.FC<Props> = (props) => {
       <nav>
         <ul
           className={
-            isToggled ? style.hamburger + ' ' + style.active : style.hamburger
+            isToggled ? `${style.hamburger} ${style.active}` : style.hamburger
           }
         >
           {navItems.map((item, index) => (
