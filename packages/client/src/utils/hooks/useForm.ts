@@ -18,6 +18,7 @@ const useForm = () => {
 
   const handleChange = (e: any) => {
     const { key, value } = e;
+
     setValues({
       ...values,
       [key]: value,
@@ -42,9 +43,7 @@ const useForm = () => {
           setIsSuccessful(true);
           setIsProcessing(false);
         })
-        .catch((error) => {
-          console.error(error);
-
+        .catch(() => {
           setIsProcessing(false);
           setIsSuccessful(false);
         });
