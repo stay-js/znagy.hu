@@ -1,4 +1,4 @@
-@use '../../../../styles/abstracts' as *;
+@use '../../../styles/abstracts' as *;
 
 .loading {
   width: fit-content;
@@ -49,10 +49,7 @@
   stroke-miterlimit: 10;
   margin: 10% auto;
   box-shadow: inset 0px 0px 0px $green-400;
-  @include animation(
-    fill 0.4s ease-in-out 0.4s forwards,
-    scale 0.3s ease-in-out 0.9s both
-  );
+  @include animation(fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both);
 }
 
 .check {

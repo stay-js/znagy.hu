@@ -1,15 +1,11 @@
 import Link from 'next/link';
 import style from './Title.module.scss';
 
-interface Props {}
-
-const Title: React.FC<Props> = (props) => (
+const Title: React.FC = () => (
   <section className={`${style.title} content`}>
     <p className={style['first-paragraph']}>Hi, my name is</p>
     <h1 className={style.name}>Zétény Nagy.</h1>
-    <p className={style.content}>
-      Full stack developer wannabe. IT Student. Kyokushin. Muay Thai.
-    </p>
+    <p className={style.content}>Full stack developer wannabe. IT Student. Kyokushin. Muay Thai.</p>
     <ul className={style.links}>
       <li>
         <Link href="https://github.com/stay-js">

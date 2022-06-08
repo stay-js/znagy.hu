@@ -1,12 +1,10 @@
 import { TextInput, Textarea } from '@mantine/core';
 import { Mail, User } from 'tabler-icons-react';
-import useForm from '../../../utils/hooks/useForm';
+import useForm from '../../utils/hooks/useForm';
 import { Error, Loading, Success } from './Status';
 import style from './Form.module.scss';
 
-interface Props {}
-
-const Form: React.FC<Props> = (props) => {
+const Form: React.FC = () => {
   const {
     handleChange,
     handleSubmit,
@@ -54,8 +52,9 @@ const Form: React.FC<Props> = (props) => {
 
         <input type="submit" value="Submit" className={style.button} />
 
-        {isSubmitted
-          && (isProcessing ? <Loading /> : isSuccessful ? <Success /> : <Error />)}
+        {isSubmitted && isProcessing && <Loading />}
+        {isSubmitted && !isProcessing && isSuccessful && <Success />}
+        {isSubmitted && !isProcessing && !isSuccessful && <Error />}
       </form>
     </div>
   );

@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
     `Number: ${number}
       <br />
       <a href="https://api.stayy.xyz/rng?min=${min}&max=${max}">Generate New Number</a>
-      `
+      `,
   );
 });
 

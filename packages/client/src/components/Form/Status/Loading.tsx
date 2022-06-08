@@ -1,8 +1,6 @@
 import style from './Status.module.scss';
 
-interface Props {}
-
-const FormLoading: React.FC<Props> = (props) => (
+const FormLoading: React.FC = () => (
   <div>
     <div className={style.loading}>
       <span className={style.loader} />

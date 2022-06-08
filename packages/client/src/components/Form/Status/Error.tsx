@@ -1,6 +1,4 @@
-interface Props {}
-
-const FormError: React.FC<Props> = (props) => (
+const FormError: React.FC = () => (
   <div>
     <p style={{ textAlign: 'center' }}>
       <i style={{ marginRight: '0.5rem' }} className="fas fa-times-circle" />

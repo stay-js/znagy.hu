@@ -2,9 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import style from './AboutMe.module.scss';
 
-interface Props {}
-
-const AboutMe: React.FC<Props> = (props) => (
+const AboutMe: React.FC = () => (
   <section className={`${style.about} content`} id="about">
     <h2 className="section-title">
       <span className="section-number">1.</span>
@@ -19,8 +17,7 @@ const AboutMe: React.FC<Props> = (props) => (
       <div className={style.content}>
         <p>Glad you are here! </p>
         <p>
-          My name is Zétény, I&rsquo;m from Hungary. Currently studying in
-{' '}
+          My name is Zétény, I&rsquo;m from Hungary. Currently studying in{' '}
           <Link href="http://njszg.hu">
             <a target="_blank" className="link">
               BMSzC Neumann János Informatikai Technikum
@@ -29,9 +26,9 @@ const AboutMe: React.FC<Props> = (props) => (
           .
         </p>
         <p>
-          My intrest in development started in 2015. I love doing Kyokushin
-          Karate and Thai-Boxing. My favourite subjects are Maths and Chemistry.
-          I want to be a Full Stack web developer when I grow up.
+          My intrest in development started in 2015. I love doing Kyokushin Karate and Thai-Boxing.
+          My favourite subjects are Maths and Chemistry. I want to be a Full Stack web developer
+          when I grow up.
         </p>
         <p>Here are a few technologies I have an understanding of:</p>
         <div className={style.technologies}>

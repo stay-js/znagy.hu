@@ -3,9 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import style from './Resume.module.scss';
 
-interface Props {}
-
-const Resume: NextPage<Props> = (props) => (
+const Resume: NextPage = () => (
   <>
     <Head>
       <title>Resume - stay</title>
@@ -54,9 +52,8 @@ const Resume: NextPage<Props> = (props) => (
             </a>
           </Link>
           <p className={style['header-content']}>
-            I consider myself as a Web Developer, but I am interested in several
-            areas of IT, eg. Web Development, Data modeling / structuring,
-            DevOps, Cloud and Networking.
+            I consider myself as a Web Developer, but I am interested in several areas of IT, eg.
+            Web Development, Data modeling / structuring, DevOps, Cloud and Networking.
           </p>
         </section>
 
@@ -134,12 +131,10 @@ const Resume: NextPage<Props> = (props) => (
           <h1 className={style.title}>Hobbies</h1>
 
           <p className={style.hobbies}>
-            My hobbies are sports, video games, and of course IT, especially Web
-            Dev.
+            My hobbies are sports, video games, and of course IT, especially Web Dev.
           </p>
           <p className={style.hobbies}>
-            I do Kyokushin Karate since 2013, and I started doing Thai-Boxing in
-            2020.
+            I do Kyokushin Karate since 2013, and I started doing Thai-Boxing in 2020.
           </p>
         </section>
       </div>

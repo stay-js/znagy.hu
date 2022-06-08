@@ -2,9 +2,7 @@ import { useLayoutEffect, useState } from 'react';
 import NavBar from './NavBar';
 import Hamburger from './Hamburger';
 
-interface Props {}
-
-const Nav: React.FC<Props> = (props) => {
+const Nav: React.FC = () => {
   const [width, setWidth] = useState(Number);
 
   useLayoutEffect(() => {

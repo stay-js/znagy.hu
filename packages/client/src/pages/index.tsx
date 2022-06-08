@@ -1,15 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import {
-  Title,
-  AboutMe,
-  Projects,
-  GetInTouch,
-} from '../components/LandingPage';
+import { Title, AboutMe, Projects, GetInTouch } from '../components/LandingPage';
 
-interface Props {}
-
-const LandingPage: NextPage<Props> = (props) => (
+const LandingPage: NextPage = () => (
   <>
     <Head>
       <title>stay</title>

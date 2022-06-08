@@ -22,11 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" key="og_type" />
         <meta property="og:site_name" content="Zétény Nagy" key="site_name" />
-        <meta
-          property="og:image"
-          content="https://stayy.xyz/images/me.png"
-          key="image"
-        />
+        <meta property="og:image" content="https://stayy.xyz/images/me.png" key="image" />
         <meta name="theme-color" content="#0f172a" />
 
         <meta name="twitter:card" content="summary_large_image" />

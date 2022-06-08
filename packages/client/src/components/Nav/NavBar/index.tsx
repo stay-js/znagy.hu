@@ -3,9 +3,7 @@ import Image from 'next/image';
 import navItems from '../../../utils/providers/navItems';
 import style from './NavBar.module.scss';
 
-interface Props {}
-
-const NavBar: React.FC<Props> = (props) => (
+const NavBar: React.FC = () => (
   <nav className={style.navigation}>
     <div className={style.logo}>
       <Link href="/">
@@ -15,18 +13,15 @@ const NavBar: React.FC<Props> = (props) => (
       </Link>
     </div>
     <ul className={style.list}>
-      {navItems.map((item, index) => (
-        <li key={index}>
+      {navItems.map((item) => (
+        <li key={item.id}>
           <Link href={item.path!}>
             <a className={item.button ? style.button : style.item}>
               {item.button ? (
                 item.name
               ) : (
                 <>
-                  <span className={style.number}>
-{index + 1}
-.
-                  </span>
+                  <span className={style.number}>{item.number}.</span>
                   {item.name}
                 </>
               )}

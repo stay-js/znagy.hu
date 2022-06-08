@@ -1,12 +1,10 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
-import { Form } from '../../components/Contact';
+import Form from '../../components/Form';
 import style from './Contact.module.scss';
 
-interface Props {}
-
-const Contact: NextPage<Props> = (props) => (
+const Contact: NextPage = () => (
   <>
     <Head>
       <title>Contact - stay</title>
@@ -41,13 +39,11 @@ const Contact: NextPage<Props> = (props) => (
       <h1 className={style.title}>Send me a message!</h1>
       <div className={style.content}>
         <p style={{ margin: 0 }}>
-          Got something you would like to say? Or have a question? Feel free to
-          send me a message using the form down below. I&rsquo;m just a few
-          clicks away...
+          Got something you would like to say? Or have a question? Feel free to send me a message
+          using the form down below. I&rsquo;m just a few clicks away...
         </p>
         <p style={{ margin: 0 }}>
-          Or you can just send me an e-mail at:
-{' '}
+          Or you can just send me an e-mail at:{' '}
           <Link href="mailto:nagyzeteny6@gmail.com">
             <a className="link">nagyzeteny6@gmail.com</a>
           </Link>

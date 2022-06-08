@@ -12,7 +12,7 @@ app.use(
     origin: '*',
     methods: ['GET', 'POST'],
     credentials: true,
-  })
+  }),
 );
 
 app.use(express.urlencoded({ extended: true }));
