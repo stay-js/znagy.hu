@@ -2,6 +2,11 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import validate from '../providers/validateInfo';
 
+interface InputEvent {
+  key: string;
+  value: string;
+}
+
 const defaultValues = {
   name: '',
   email: '',
@@ -16,16 +21,14 @@ const useForm = () => {
   const [isSuccessful, setIsSuccessful] = useState(Boolean);
   const [isProcessing, setIsProcessing] = useState(true);
 
-  const handleChange = (e: any) => {
-    const { key, value } = e;
-
+  const handleChange = ({ key, value }: InputEvent) => {
     setValues({
       ...values,
       [key]: value,
     });
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     setErrors(validate(values));
@@ -35,13 +38,15 @@ const useForm = () => {
   useEffect(() => {
     const submitForm = async () => {
       setIsSubmitted(true);
+      setIsProcessing(true);
 
       axios
         .post('https://api.stayy.xyz/send-email/', values)
         .then((result) => {
-          if (result.status !== 200) return setIsSuccessful(false);
-          setIsSuccessful(true);
           setIsProcessing(false);
+
+          if (result.status === 200) setIsSuccessful(true);
+          else setIsSuccessful(false);
         })
         .catch(() => {
           setIsProcessing(false);
