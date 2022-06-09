@@ -1,7 +1,14 @@
 import * as express from 'express';
+import rateLimit from 'express-rate-limit';
 import nodemailer from 'nodemailer';
 
 let router = express.Router();
+
+const requestLimiter = rateLimit({
+  windowMs: 1 * 60 * 1000,
+  max: 2,
+  message: { msg: 'You are being rate limited' },
+});
 
 const transporter = nodemailer.createTransport({
   host: 'smtp.rackhost.hu',
@@ -13,7 +20,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-router.post('/', (req, res) => {
+router.post('/', requestLimiter, (req, res) => {
   if (req.headers.origin !== 'https://stayy.xyz') return res.sendStatus(403);
 
   const { name, email, msg } = req.body;

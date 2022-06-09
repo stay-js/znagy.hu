@@ -12,7 +12,6 @@ router.get('/', (req, res) => {
   if (isNaN(max)) res.status(400).send({ msg: 'MAX is not a number' });
 
   let number = Math.floor(Math.random() * (max - min + 1) + min);
-
   if (number < min) number = min;
   if (number > max) number = max;
 
