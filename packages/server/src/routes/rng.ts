@@ -8,8 +8,8 @@ router.get('/', (req, res) => {
   if (!min) res.status(400).send({ msg: 'No MIN value' });
   if (!max) res.status(400).send({ msg: 'No MAX value' });
 
-  if (Number.isNaN(min)) res.status(400).send({ msg: 'MIN is not a number' });
-  if (Number.isNaN(max)) res.status(400).send({ msg: 'MAX is not a number' });
+  if (Number.isNaN(Number(min))) res.status(400).send({ msg: 'MIN is not a number' });
+  if (Number.isNaN(Number(max))) res.status(400).send({ msg: 'MAX is not a number' });
 
   let number = Math.floor(Math.random() * (max - min + 1) + min);
   if (number < min) number = min;
