@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import validate from '../providers/validateInfo';
+import validate from '../providers/validate';
 
 interface InputEvent {
   key: string;

@@ -4,7 +4,7 @@ interface Props {
   msg: string;
 }
 
-const validateInfo = (values: Props) => {
+const validateForm = (values: Props) => {
   const errors: Record<string, string> = {};
 
   if (!values.name) errors.name = 'Please specify a name!';
@@ -19,4 +19,4 @@ const validateInfo = (values: Props) => {
   return errors;
 };
 
-export default validateInfo;
+export default validateForm;
