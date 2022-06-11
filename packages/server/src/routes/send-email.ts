@@ -2,7 +2,7 @@ import * as express from 'express';
 import rateLimit from 'express-rate-limit';
 import nodemailer from 'nodemailer';
 
-let router = express.Router();
+const router = express.Router();
 
 const requestLimiter = rateLimit({
   windowMs: 1 * 60 * 1000,

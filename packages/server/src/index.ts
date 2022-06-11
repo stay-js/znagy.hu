@@ -2,6 +2,12 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 
+import emailRoute from './routes/send-email';
+import locationRoute from './routes/location';
+import ipRoute from './routes/ip';
+import rngRoute from './routes/rng';
+import rtpRoute from './routes/rtp';
+
 const PORT = process.env.PORT || 3001;
 
 const app = express();
@@ -28,12 +34,6 @@ app.use((req, res, next) => {
 app.get('/', (req, res) => {
   res.status(200).send({ msg: 'stay API' });
 });
-
-import emailRoute from './routes/send-email';
-import locationRoute from './routes/location';
-import ipRoute from './routes/ip';
-import rngRoute from './routes/rng';
-import rtpRoute from './routes/rtp';
 
 app.use('/send-email', emailRoute);
 app.use('/location', locationRoute);

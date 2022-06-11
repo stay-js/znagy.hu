@@ -1,6 +1,6 @@
 import * as express from 'express';
 
-let router = express.Router();
+const router = express.Router();
 
 router.get('/', (req, res) => {
   const items = req.body;

@@ -1,7 +1,7 @@
 import * as express from 'express';
 import requestIp from 'request-ip';
 
-let router = express.Router();
+const router = express.Router();
 
 router.get('/', (req, res) => {
   const ip = requestIp.getClientIp(req);
