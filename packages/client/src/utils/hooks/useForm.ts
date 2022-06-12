@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+import axios, { AxiosResponse } from 'axios';
 import validate from '../providers/validate';
 
 import InputEvent from '../../interfaces/InputEvent.interface';
@@ -40,7 +40,7 @@ const useForm = () => {
 
       axios
         .post('https://api.stayy.xyz/send-email/', values)
-        .then((res) => {
+        .then((res: AxiosResponse) => {
           setIsProcessing(false);
 
           if (res.status === 200) setIsSuccessful(true);
