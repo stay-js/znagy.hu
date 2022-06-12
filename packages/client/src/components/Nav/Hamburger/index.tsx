@@ -6,7 +6,7 @@ import navItems from '../../../utils/providers/navItems';
 import style from './Hamburger.module.scss';
 
 const Hamburger: React.FC = () => {
-  const [isToggled, setIsToggled] = useState(false);
+  const [isToggled, setIsToggled] = useState<boolean>(false);
 
   const toggleHamburger = () => setIsToggled(!isToggled);
   const closeHamburger = () => setIsToggled(false);

@@ -1,11 +1,7 @@
-interface Props {
-  name: string;
-  email: string;
-  msg: string;
-}
+import { FormProps, FormErrors } from '../../interfaces/Form.interface';
 
-const validateForm = (values: Props) => {
-  const errors: Record<string, string> = {};
+const validateForm = (values: FormProps): FormErrors => {
+  const errors: FormErrors = {};
 
   if (!values.name) errors.name = 'Please specify a name!';
   if (!values.msg) errors.msg = 'Please specify a message!';

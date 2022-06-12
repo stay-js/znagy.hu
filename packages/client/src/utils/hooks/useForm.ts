@@ -2,24 +2,22 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import validate from '../providers/validate';
 
-interface InputEvent {
-  key: string;
-  value: string;
-}
+import InputEvent from '../../interfaces/InputEvent.interface';
+import { FormProps, FormErrors } from '../../interfaces/Form.interface';
 
-const defaultValues = {
+const defaultValues: FormProps = {
   name: '',
   email: '',
   msg: '',
 };
 
 const useForm = () => {
-  const [errors, setErrors] = useState({});
-  const [values, setValues] = useState(defaultValues);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [isSuccessful, setIsSuccessful] = useState(Boolean);
-  const [isProcessing, setIsProcessing] = useState(true);
+  const [errors, setErrors] = useState<FormErrors>({});
+  const [values, setValues] = useState<FormProps>(defaultValues);
+  const [isSubmitting, setIsSubmitting] = useState<Boolean | null>(null);
+  const [isSubmitted, setIsSubmitted] = useState<Boolean | null>(null);
+  const [isSuccessful, setIsSuccessful] = useState<Boolean | null>(null);
+  const [isProcessing, setIsProcessing] = useState<Boolean | null>(null);
 
   const handleChange = ({ key, value }: InputEvent) => {
     setValues({
