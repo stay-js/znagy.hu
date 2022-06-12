@@ -42,10 +42,10 @@ const useForm = () => {
 
       axios
         .post('https://api.stayy.xyz/send-email/', values)
-        .then((result) => {
+        .then((res) => {
           setIsProcessing(false);
 
-          if (result.status === 200) setIsSuccessful(true);
+          if (res.status === 200) setIsSuccessful(true);
           else setIsSuccessful(false);
         })
         .catch(() => {
