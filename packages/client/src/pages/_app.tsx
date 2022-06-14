@@ -38,6 +38,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <div>
         <MantineProvider theme={{ primaryColor: 'green' }}>
           <Nav />
+          {/* eslint-disable-next-line react/jsx-props-no-spreading */}
           <Component {...pageProps} />
         </MantineProvider>
       </div>
