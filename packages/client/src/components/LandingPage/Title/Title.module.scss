@@ -56,12 +56,12 @@
   margin-top: 2rem;
   padding: 1rem 2rem;
   text-decoration: none;
-  color: $green-500;
-  border: 1px solid $green-500;
+  color: $green-400;
+  border: 1px solid $green-400;
   transition: all 500ms ease;
 
   &:hover {
     color: $blueGray-900;
-    background-color: $green-500;
+    background-color: $green-400;
   }
 }

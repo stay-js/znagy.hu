@@ -6,9 +6,9 @@ import style from './Resume.module.scss';
 const Resume: NextPage = () => (
   <>
     <Head>
-      <title>Resume - stay</title>
-      <meta property="og:title" content="Resume - stay" key="title" />
-      <meta name="twitter:title" content="Resume - stay" />
+      <title>Resume - Zétény Nagy</title>
+      <meta property="og:title" content="Resume - Zétény Nagy" key="title" />
+      <meta name="twitter:title" content="Resume - Zétény Nagy" />
 
       <meta name="url" content="https://stayy.xyz/resume" />
       <meta property="og:url" content="https://stayy.xyz/resume" />

@@ -18,13 +18,13 @@
 .button {
   width: fit-content;
   padding: 1rem 2rem;
-  color: $green-500;
+  color: $green-400;
   text-decoration: none;
-  border: 1px solid $green-500;
+  border: 1px solid $green-400;
   transition: all 500ms ease;
 
   &:hover {
     color: $blueGray-900;
-    background-color: $green-500;
+    background-color: $green-400;
   }
 }

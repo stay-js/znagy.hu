@@ -7,9 +7,9 @@ import style from './Contact.module.scss';
 const Contact: NextPage = () => (
   <>
     <Head>
-      <title>Contact - stay</title>
-      <meta property="og:title" content="Contact - stay" key="title" />
-      <meta name="twitter:title" content="Contact - stay" />
+      <title>Contact - Zétény Nagy</title>
+      <meta property="og:title" content="Contact - Zétény Nagy" key="title" />
+      <meta name="twitter:title" content="Contact - Zétény Nagy" />
 
       <meta name="url" content="https://stayy.xyz/contact" />
       <meta property="og:url" content="https://stayy.xyz/contact" />

@@ -5,9 +5,9 @@ import { Title, AboutMe, Projects, GetInTouch } from '../components/LandingPage'
 const LandingPage: NextPage = () => (
   <>
     <Head>
-      <title>stay</title>
-      <meta property="og:title" content="stay" key="title" />
-      <meta name="twitter:title" content="stay" />
+      <title>Zétény Nagy</title>
+      <meta property="og:title" content="Zétény Nagy" key="title" />
+      <meta name="twitter:title" content="Zétény Nagy" />
 
       <meta name="url" content="https://stayy.xyz/" />
       <meta property="og:url" content="https://stayy.xyz/" />
