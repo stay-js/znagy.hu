@@ -39,7 +39,7 @@ const useForm = () => {
       setIsProcessing(true);
 
       axios
-        .post('https://api.stayy.xyz/send-email/', values)
+        .post('https://api.znagy.hu/send-email/', values)
         .then((res: AxiosResponse) => {
           setIsProcessing(false);
 
