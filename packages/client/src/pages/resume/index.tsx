@@ -79,6 +79,8 @@ const Resume: NextPage = () => (
                 <li>Node.js</li>
                 <li>Yarn</li>
                 <li>NPM</li>
+                <li>Git</li>
+                <li>GitHub</li>
                 <li>MongoDB</li>
               </ul>
             </div>
@@ -86,6 +88,8 @@ const Resume: NextPage = () => (
             <div>
               <p>Platforms</p>
               <ul className="no-list-style">
+                <li>DigitalOcean</li>
+                <li>Linode</li>
                 <li>Heroku</li>
                 <li>Netlify</li>
                 <li>Vercel</li>
@@ -134,7 +138,8 @@ const Resume: NextPage = () => (
             My hobbies are sports, video games, and of course IT, especially Web Dev.
           </p>
           <p className={style.hobbies}>
-            I do Kyokushin Karate since 2013, and I started doing Thai-Boxing in 2020.
+            I do Kyokushin Karate (2.kyu - brown belt) since 2013, and I started doing Thai-Boxing
+            (Muay Thai) in 2021.
           </p>
         </section>
       </div>
