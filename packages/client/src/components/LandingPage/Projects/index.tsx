@@ -68,7 +68,7 @@ const Projects: React.FC = () => (
       </article>
 
       <article className={style.project}>
-        <Link href="https://anything.stayy.xyz/">
+        <Link href="https://anything.znagy.hu/">
           <a target="_blank" className={style['project-title']}>
             <h1>
               Anything

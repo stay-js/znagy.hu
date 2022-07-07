@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
   res.status(200).send(
     `Number: ${number}
       <br />
-      <a href="https://api.stayy.xyz/rng?min=${min}&max=${max}">Generate New Number</a>
+      <a href="https://api.znagy.hu/rng?min=${min}&max=${max}">Generate New Number</a>
       `,
   );
 });

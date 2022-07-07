@@ -10,9 +10,9 @@ const Resume: NextPage = () => (
       <meta property="og:title" content="Resume - Zétény Nagy" key="title" />
       <meta name="twitter:title" content="Resume - Zétény Nagy" />
 
-      <meta name="url" content="https://stayy.xyz/resume" />
-      <meta property="og:url" content="https://stayy.xyz/resume" />
-      <meta property="twitter:url" content="https://stayy.xyz/resume" />
+      <meta name="url" content="https://znagy.hu/resume" />
+      <meta property="og:url" content="https://znagy.hu/resume" />
+      <meta property="twitter:url" content="https://znagy.hu/resume" />
 
       <meta
         name="description"

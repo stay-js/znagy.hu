@@ -21,7 +21,7 @@ const transporter = nodemailer.createTransport({
 });
 
 router.post('/', requestLimiter, (req, res) => {
-  if (req.headers.origin !== 'https://stayy.xyz') return res.sendStatus(403);
+  if (req.headers.origin !== 'https://znagy.hu') return res.sendStatus(403);
 
   const { name, email, msg } = req.body;
   if (!name || !email || !msg) return res.sendStatus(400);

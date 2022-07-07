@@ -11,9 +11,9 @@ const Contact: NextPage = () => (
       <meta property="og:title" content="Contact - Zétény Nagy" key="title" />
       <meta name="twitter:title" content="Contact - Zétény Nagy" />
 
-      <meta name="url" content="https://stayy.xyz/contact" />
-      <meta property="og:url" content="https://stayy.xyz/contact" />
-      <meta property="twitter:url" content="https://stayy.xyz/contact" />
+      <meta name="url" content="https://znagy.hu/contact" />
+      <meta property="og:url" content="https://znagy.hu/contact" />
+      <meta property="twitter:url" content="https://znagy.hu/contact" />
 
       <meta
         name="description"

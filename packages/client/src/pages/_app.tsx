@@ -22,12 +22,12 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" key="og_type" />
         <meta property="og:site_name" content="Zétény Nagy" key="site_name" />
-        <meta property="og:image" content="https://stayy.xyz/images/me.png" key="image" />
+        <meta property="og:image" content="https://znagy.hu/images/me.png" key="image" />
         <meta name="theme-color" content="#0f172a" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="stayy.xyz" />
-        <meta name="twitter:image" content="https://stayy.xyz/images/me.png" />
+        <meta property="twitter:domain" content="znagy.hu" />
+        <meta name="twitter:image" content="https://znagy.hu/images/me.png" />
 
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
