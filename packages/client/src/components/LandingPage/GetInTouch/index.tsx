@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Button from '../../Button';
 import style from './GetInTouch.module.scss';
 
 const GetInTouch: React.FC = () => (
@@ -15,9 +15,7 @@ const GetInTouch: React.FC = () => (
       </p>
     </div>
 
-    <Link href="/contact">
-      <a className={style.button}>Contact</a>
-    </Link>
+    <Button href="/contact">Contact</Button>
   </section>
 );
 

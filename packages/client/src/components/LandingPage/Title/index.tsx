@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Button from '../../Button';
 import style from './Title.module.scss';
 
 const Title: React.FC = () => (
@@ -36,9 +37,7 @@ const Title: React.FC = () => (
         </Link>
       </li>
     </ul>
-    <Link href="#about">
-      <a className={style.button}>More About Me</a>
-    </Link>
+    <Button href="#about">More About Me</Button>
   </section>
 );
 
