@@ -17,7 +17,7 @@ const AboutMe: React.FC = () => (
       <div className={style.content}>
         <p>Glad you are here! </p>
         <p>
-          My name is Zétény AKA stay, I&rsquo;m from Hungary. Currently studying in{' '}
+          My name is Zétény Nagy AKA stay, I&rsquo;m from Budapest, Hungary. Currently studying in{' '}
           <Link href="http://njszg.hu">
             <a target="_blank" className="link">
               BMSzC Neumann János Informatikai Technikum
@@ -26,9 +26,10 @@ const AboutMe: React.FC = () => (
           .
         </p>
         <p>
-          My intrest in development started in 2015. I love doing Kyokushin Karate and Thai-Boxing
-          (Muay Thai). My favourite subjects are Maths and Chemistry. I want to be a Full Stack web
-          developer when I grow up.
+          My intrest in web development started long ago, back in my early elementary school days.
+          My favourite subject is maths since first grade. Also I love doing Kyokushin Karate and
+          Thai-Boxing (Muay Thai). I will improve my coding and fighting skills especially because I
+          want to be a Full Stack web developer...
         </p>
         <p>Here are a few technologies I have an understanding of:</p>
         <div className={style.technologies}>
