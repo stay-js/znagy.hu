@@ -1,4 +1,4 @@
-import { FormProps, FormErrors } from '../../interfaces/Form.interface';
+import { FormProps, FormErrors } from '../interfaces/Form.interface';
 
 const validateForm = (values: FormProps): FormErrors => {
   const errors: FormErrors = {};

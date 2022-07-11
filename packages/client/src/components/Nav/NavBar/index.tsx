@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import navItems from '../../../utils/providers/navItems';
+import navItems from '../../../utils/navItems';
 import style from './NavBar.module.scss';
 
 const NavBar: React.FC = () => (
