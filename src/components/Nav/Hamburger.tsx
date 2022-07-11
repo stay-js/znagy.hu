@@ -7,9 +7,6 @@ import navItems from '../../utils/navItems';
 const Hamburger: React.FC = () => {
   const [isToggled, setIsToggled] = useState<boolean>(false);
 
-  const toggleHamburger = () => setIsToggled(!isToggled);
-  const closeHamburger = () => setIsToggled(false);
-
   return (
     <nav className="fixed top-0 z-50 flex items-center w-full h-16 font-sans shadow-md bg-slate-900 place-content-between no-select">
       <div className="ml-6">
@@ -20,7 +17,12 @@ const Hamburger: React.FC = () => {
         </Link>
       </div>
 
-      <Burger className="mr-6" color="white" opened={isToggled} onClick={toggleHamburger} />
+      <Burger
+        className="mr-6"
+        color="white"
+        opened={isToggled}
+        onClick={() => setIsToggled(!isToggled)}
+      />
 
       <ul
         className={`${
