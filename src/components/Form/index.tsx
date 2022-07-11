@@ -2,10 +2,10 @@ import type { AxiosResponse } from 'axios';
 import { TextInput, Textarea } from '@mantine/core';
 import { Mail, User } from 'tabler-icons-react';
 import { useEffect, useState } from 'react';
-import { Error, Loading, Success } from './Status';
-import style from './Form.module.scss';
 import axios from 'axios';
+import { Error, Loading, Success } from './Status';
 import validate from '../../utils/validate';
+import style from './Form.module.scss';
 
 import type InputEvent from '../../interfaces/InputEvent.interface';
 import type { FormProps, FormErrors } from '../../interfaces/Form.interface';

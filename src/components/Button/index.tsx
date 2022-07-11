@@ -6,9 +6,9 @@ interface Props {
   children: React.ReactNode;
 }
 
-const Button: React.FC<Props> = (props) => (
-  <Link href={props.href}>
-    <a className={style.button}>{props.children}</a>
+const Button: React.FC<Props> = ({ href, children }) => (
+  <Link href={href}>
+    <a className={style.button}>{children}</a>
   </Link>
 );
 
