@@ -1,8 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
-import Form from '../../components/Form';
-import style from './Contact.module.scss';
+import Form from '../components/Form';
 
 const Contact: NextPage = () => (
   <>
@@ -35,14 +34,14 @@ const Contact: NextPage = () => (
       />
     </Head>
 
-    <main className={`${style['contact-page']} content`}>
-      <h1 className={style.title}>Send me a message!</h1>
-      <div className={style.content}>
-        <p style={{ margin: 0 }}>
+    <main className="mb-20 font-sans text-sm content">
+      <h1 className="my-4 font-serif text-3xl text-center">Send me a message!</h1>
+      <div className="max-w-[75ch] mx-auto text-center">
+        <p className="m-0">
           Got something you would like to say? Or have a question? Feel free to send me a message
           using the form down below. I&rsquo;m just a few clicks away...
         </p>
-        <p style={{ margin: 0 }}>
+        <p className="m-0">
           Or you can just send me an e-mail at:{' '}
           <Link href="mailto:nagyzeteny6@gmail.com">
             <a className="link">nagyzeteny6@gmail.com</a>

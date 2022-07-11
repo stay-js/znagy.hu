@@ -1,24 +1,25 @@
 import Link from 'next/link';
-import style from './Projects.module.scss';
+import SectionTitle from './SectionTitle';
 
 const Projects: React.FC = () => (
-  <section className={`${style.projects} content`} id="projects">
-    <h2 className="section-title">
-      <span className="section-number">2.</span>
-      Projects
-    </h2>
-    <div className={style.container}>
-      <article className={style.project}>
-        <a className={style['project-title']}>
+  <section className="relative min-h-[60ch] mb-20 content" id="projects">
+    <SectionTitle title="Projects" number={2} />
+
+    <div className="flex flex-col gap-16">
+      <article>
+        <a className="text-gray-400">
           <h1>
             REGALE Energy Zrt.
-            <i className={`${style['project-link']} fa-solid fa-arrow-up-right-from-square`} />
+            <i className="ml-3 transition-colors hover:text-green-500 fa-solid fa-arrow-up-right-from-square" />
           </h1>
         </a>
-        <div className={style['project-description']}>
-          <p>This is my current project. (I&rsquo;ll publish the link when it&rsquo;s done.)</p>
-          <p>A company website for REGALE Energy Zrt.</p>
-          <p>
+
+        <div className="p-4 my-4 bg-slate-700 rounded max-w-[60ch]">
+          <p className="m-0">
+            This is my current project. (I&rsquo;ll publish the link when it&rsquo;s done.)
+          </p>
+          <p className="m-0">A company website for REGALE Energy Zrt.</p>
+          <p className="m-0">
             Single page web app built with{' '}
             <Link href="https://nextjs.org/">
               <a target="_blank" className="link">
@@ -33,7 +34,7 @@ const Projects: React.FC = () => (
             </Link>
             .
           </p>
-          <p>
+          <p className="m-0">
             Backend server built using{' '}
             <Link href="https://expressjs.com/">
               <a target="_blank" className="link">
@@ -55,7 +56,7 @@ const Projects: React.FC = () => (
             .
           </p>
         </div>
-        <ul className={style['project-tools']}>
+        <ul className="flex gap-4 text-gray-400 text-[0.8rem] flex-wrap max-w-[75ch] font-mono">
           <li>TypeScript</li>
           <li>React</li>
           <li>Next.js</li>
@@ -67,17 +68,18 @@ const Projects: React.FC = () => (
         </ul>
       </article>
 
-      <article className={style.project}>
+      <article>
         <Link href="https://anything.znagy.hu/">
-          <a target="_blank" className={style['project-title']}>
+          <a target="_blank" className="text-gray-400">
             <h1>
               Anything
-              <i className={`${style['project-link']} fa-solid fa-arrow-up-right-from-square`} />
+              <i className="ml-3 transition-colors hover:text-green-500 fa-solid fa-arrow-up-right-from-square" />
             </h1>
           </a>
         </Link>
-        <div className={style['project-description']}>
-          <p>
+
+        <div className="p-4 my-4 bg-slate-700 rounded max-w-[60ch]">
+          <p className="m-0">
             A Discord BOT build back in 2020, with{' '}
             <Link href="https://discord.js.org/">
               <a target="_blank" className="link">
@@ -92,10 +94,10 @@ const Projects: React.FC = () => (
             </Link>
             .
           </p>
-          <p>
+          <p className="m-0">
             All 70+ commands are listed on the website, which is built with plain HTML5 and CSS3.
           </p>
-          <p>
+          <p className="m-0">
             Later on I&rsquo;ll migrate the BOT from{' '}
             <Link href="https://www.javascript.com/">
               <a target="_blank" className="link">
@@ -117,7 +119,7 @@ const Projects: React.FC = () => (
             , and maybe I&rsquo;ll open source the project.
           </p>
         </div>
-        <ul className={style['project-tools']}>
+        <ul className="flex gap-4 text-gray-400 text-[0.8rem] flex-wrap max-w-[75ch] font-mono">
           <li>JavaScript</li>
           <li>Discord.js</li>
           <li>Heroku</li>

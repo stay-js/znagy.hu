@@ -1,25 +1,23 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import style from './AboutMe.module.scss';
+import SectionTitle from './SectionTitle';
 
 const AboutMe: React.FC = () => (
-  <section className={`${style.about} content`} id="about">
-    <h2 className="section-title">
-      <span className="section-number">1.</span>
-      About Me
-    </h2>
-    <div className={style.flex}>
-      <div className={style['image-container']}>
-        <div className={style.image}>
+  <section className="min-h-[60vh] relative mb-20 content" id="about">
+    <SectionTitle title="About Me" number={1} />
+
+    <div className="flex flex-col gap-12 lg:flex-row">
+      <div className="self-center lg:order-2">
+        <div className="relative w-64 h-64 border-t-[10px] border-l-[10px] border-green-500 transition-all duration-300 hover:-rotate-6 focus:-rotate-6">
           <Image src="/images/me.png" alt="me" layout="fill" />
         </div>
       </div>
-      <div className={style.content}>
+      <div className="w-full lg:w-[60%]">
         <p>Glad you are here! </p>
         <p>
           My name is Zétény Nagy AKA stay, I&rsquo;m from Budapest, Hungary. Currently studying in{' '}
           <Link href="http://njszg.hu">
-            <a target="_blank" className="link">
+            <a target="_blank" className="text-green-500 link">
               BMSzC Neumann János Informatikai Technikum
             </a>
           </Link>
@@ -32,8 +30,8 @@ const AboutMe: React.FC = () => (
           want to be a Full Stack web developer...
         </p>
         <p>Here are a few technologies I have an understanding of:</p>
-        <div className={style.technologies}>
-          <ul className={style['technologies-list']}>
+        <div className="flex gap-20 ml-8">
+          <ul className="text-green-500 list-disc">
             <li>
               <Link href="https://www.javascript.com/">
                 <a target="_blank" className="link">
@@ -56,7 +54,7 @@ const AboutMe: React.FC = () => (
               </Link>
             </li>
           </ul>
-          <ul className={style['technologies-list']}>
+          <ul className="text-green-500 list-disc">
             <li>
               <Link href="https://expressjs.com/">
                 <a target="_blank" className="link">

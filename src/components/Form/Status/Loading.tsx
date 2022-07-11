@@ -5,7 +5,7 @@ const FormLoading: React.FC = () => (
     <div className={style.loading}>
       <span className={style.loader} />
     </div>
-    <p style={{ textAlign: 'center' }}>Please wait, processing...</p>
+    <p className="text-center">Please wait, processing...</p>
   </div>
 );
 

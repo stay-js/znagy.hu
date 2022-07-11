@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Error, Loading, Success } from './Status';
 import validate from '../../utils/validate';
-import style from './Form.module.scss';
 
 import type InputEvent from '../../interfaces/InputEvent.interface';
 import type { FormProps, FormErrors } from '../../interfaces/Form.interface';
@@ -62,10 +61,10 @@ const Form: React.FC = () => {
   }, [isSubmitting, errors, values]);
 
   return (
-    <div className={style['form-container']}>
-      <form onSubmit={handleSubmit} className={style.form}>
+    <div className="md:max-w-lg max-w-[90%] mx-auto mt-5">
+      <form onSubmit={handleSubmit} className="p-12 bg-white shadow-2xl sm:px-20 rounded-2xl">
         <TextInput
-          className={style.input}
+          className="mb-4"
           label="Name:"
           icon={<User size={18} />}
           id="name"
@@ -76,7 +75,7 @@ const Form: React.FC = () => {
         />
 
         <TextInput
-          className={style.input}
+          className="mb-4"
           label="E-mail:"
           icon={<Mail size={18} />}
           id="email"
@@ -87,7 +86,7 @@ const Form: React.FC = () => {
         />
 
         <Textarea
-          className={style.input}
+          className="mb-4"
           label="Message:"
           placeholder="Please try to describe your question in as much detail as possible."
           minRows={5}
@@ -96,7 +95,11 @@ const Form: React.FC = () => {
           error={errors.msg}
         />
 
-        <input type="submit" value="Submit" className={style.button} />
+        <input
+          className="w-full text-white transition-colors duration-150 bg-green-500 rounded appearance-none cursor-pointer h-9 hover:bg-gray-600"
+          type="submit"
+          value="Elküldöm"
+        />
 
         {isSubmitted && isProcessing && <Loading />}
         {isSubmitted && !isProcessing && isSuccessful && <Success />}
