@@ -20,22 +20,22 @@ const Projects: React.FC = () => (
           </p>
           <p className="m-0">A company website for REGALE Energy Zrt.</p>
           <p className="m-0">
-            Single page web app built with{' '}
+            Front-end built with{' '}
             <Link href="https://nextjs.org/">
               <a target="_blank" className="link">
                 Next.js
               </a>
             </Link>{' '}
             and{' '}
-            <Link href="https://sass-lang.com/">
+            <Link href="https://tailwindcss.com">
               <a target="_blank" className="link">
-                Sass
+                Tailwind CSS
               </a>
             </Link>
             .
           </p>
           <p className="m-0">
-            Backend server built using{' '}
+            Back-end built using{' '}
             <Link href="https://expressjs.com/">
               <a target="_blank" className="link">
                 Express
@@ -47,10 +47,16 @@ const Projects: React.FC = () => (
                 Nodemailer
               </a>
             </Link>{' '}
-            and{' '}
+            ,{' '}
             <Link href="https://www.mongodb.com/">
               <a target="_blank" className="link">
                 MondoDB
+              </a>
+            </Link>
+            and{' '}
+            <Link href="https://www.prisma.io">
+              <a target="_blank" className="link">
+                Prisma
               </a>
             </Link>
             .
@@ -63,7 +69,8 @@ const Projects: React.FC = () => (
           <li>Vercel</li>
           <li>Express</li>
           <li>Nodemailer</li>
-          <li>DigitalOcean</li>
+          <li>Prisma</li>
+          <li>Linode</li>
           <li>Ubuntu</li>
         </ul>
       </article>

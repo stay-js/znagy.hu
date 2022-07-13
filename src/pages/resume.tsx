@@ -85,9 +85,10 @@ const Resume: NextPage = () => (
                 <li>Node.js</li>
                 <li>Yarn</li>
                 <li>NPM</li>
+                <li>MongoDB</li>
+                <li>Prisma</li>
                 <li>Git</li>
                 <li>GitHub</li>
-                <li>MongoDB</li>
               </ul>
             </div>
 
