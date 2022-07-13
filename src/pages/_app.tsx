@@ -35,13 +35,11 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="rating" content="general" />
       </Head>
 
-      <div>
-        <MantineProvider theme={{ primaryColor: 'green' }}>
-          <Nav />
-          {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-          <Component {...pageProps} />
-        </MantineProvider>
-      </div>
+      <MantineProvider theme={{ primaryColor: 'green' }}>
+        <Nav />
+        {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+        <Component {...pageProps} />
+      </MantineProvider>
     </>
   );
 }
