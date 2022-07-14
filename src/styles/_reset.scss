@@ -1,3 +1,5 @@
+@use './abstracts' as *;
+
 * {
   margin: 0;
   padding: 0;
@@ -12,17 +14,17 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: $trueGray-800;
+  background-color: $neutral-800;
 }
 
 ::-webkit-scrollbar {
-  background-color: $trueGray-800;
+  background-color: $neutral-800;
   width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background-color: $trueGray-500;
+  background-color: $neutral-500;
 }
 
 .no-select {

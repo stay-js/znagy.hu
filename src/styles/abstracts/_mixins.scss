@@ -5,8 +5,3 @@
   bottom: $bottom;
   left: $left;
 }
-
-@mixin animation($animation...) {
-  -webkit-animation: $animation;
-  animation: $animation;
-}

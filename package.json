@@ -14,13 +14,19 @@
     "@mantine/core": "^4.2.10",
     "@mantine/hooks": "^4.2.10",
     "@mantine/next": "^4.2.10",
-    "axios": "^0.27.2",
+    "@trpc/client": "^9.26.0",
+    "@trpc/next": "^9.26.0",
+    "@trpc/react": "^9.26.0",
+    "@trpc/server": "^9.26.0",
     "next": "^12.1.6",
     "nodemailer": "^6.7.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-query": "^3.39.1",
     "sass": "^1.53.0",
-    "tabler-icons-react": "^1.51.0"
+    "superjson": "^1.9.1",
+    "tabler-icons-react": "^1.51.0",
+    "zod": "^3.17.3"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.1.6",

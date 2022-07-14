@@ -12,7 +12,7 @@
   border-radius: 50px;
   border: 3px solid transparent;
   border-top-color: $black;
-  @include animation(spin 1s linear infinite);
+  animation: spin 1s linear infinite;
 
   &:before,
   &:after {
@@ -21,7 +21,7 @@
     border-radius: 50px;
     border: 3px solid transparent;
     border-top-color: $black;
-    @include animation(spinreverse 5s linear infinite);
+    animation: spinreverse 5s linear infinite;
   }
 
   &:before {
@@ -29,7 +29,7 @@
     left: 12px;
     bottom: 12px;
     right: 12px;
-    @include animation(spinreverse 10s linear infinite);
+    animation: spinreverse 10s linear infinite;
   }
 }
 
@@ -48,8 +48,8 @@
   stroke: $white;
   stroke-miterlimit: 10;
   margin: 10% auto;
-  box-shadow: inset 0px 0px 0px $green-400;
-  @include animation(fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both);
+  box-shadow: inset 0px 0px 0px $green-500;
+  animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
 }
 
 .check {
@@ -57,7 +57,7 @@
   transform-origin: 50% 50%;
   stroke-dasharray: 48;
   stroke-dashoffset: 48;
-  @include animation(stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards);
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
 }
 
 .circle {
@@ -65,9 +65,9 @@
   stroke-dashoffset: 166;
   stroke-width: 2;
   stroke-miterlimit: 10;
-  stroke: $green-400;
+  stroke: $green-500;
   fill: none;
-  @include animation(stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards);
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
 }
 
 /*
@@ -115,6 +115,6 @@
 
 @keyframes fill {
   100% {
-    box-shadow: inset 0px 0px 0px 30px $green-400;
+    box-shadow: inset 0px 0px 0px 30px $green-500;
   }
 }

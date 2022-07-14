@@ -1,8 +1,7 @@
-import type { AxiosResponse } from 'axios';
 import { TextInput, Textarea } from '@mantine/core';
 import { Mail, User } from 'tabler-icons-react';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+import { useState } from 'react';
+import trpc from '../../utils/trpc';
 import { Error, Loading, Success } from './Status';
 import validate from '../../utils/validate';
 
@@ -18,47 +17,22 @@ const defaultValues: FormProps = {
 const Form: React.FC = () => {
   const [errors, setErrors] = useState<FormErrors>({});
   const [values, setValues] = useState<FormProps>(defaultValues);
-  const [isSubmitting, setIsSubmitting] = useState<Boolean | null>(null);
-  const [isSubmitted, setIsSubmitted] = useState<Boolean | null>(null);
-  const [isSuccessful, setIsSuccessful] = useState<Boolean | null>(null);
-  const [isProcessing, setIsProcessing] = useState<Boolean | null>(null);
+
+  const { mutate, isSuccess, isLoading, isError } = trpc.useMutation(['email.send']);
 
   const handleChange = ({ key, value }: InputEvent) => setValues({ ...values, [key]: value });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    setErrors(validate(values));
-    setIsSubmitting(true);
-  };
+    const newErrors = validate(values);
+    setErrors(newErrors);
 
-  useEffect(() => {
-    const submitForm = async () => {
-      setIsSubmitted(true);
-      setIsProcessing(true);
-
-      axios
-        .post('/api/send-email/', values)
-        .then((res: AxiosResponse) => {
-          setIsProcessing(false);
-
-          if (res.status === 200) setIsSuccessful(true);
-          else setIsSuccessful(false);
-        })
-        .catch(() => {
-          setIsProcessing(false);
-          setIsSuccessful(false);
-        });
-    };
-
-    if (Object.keys(errors).length === 0 && isSubmitting) {
-      submitForm();
+    if (Object.keys(newErrors).length === 0) {
+      mutate(values);
       setValues(defaultValues);
-      setIsSubmitting(false);
-    } else {
-      setIsSubmitting(false);
     }
-  }, [isSubmitting, errors, values]);
+  };
 
   return (
     <div className="md:max-w-lg max-w-[90%] mx-auto mt-5">
@@ -101,9 +75,9 @@ const Form: React.FC = () => {
           value="Elküldöm"
         />
 
-        {isSubmitted && isProcessing && <Loading />}
-        {isSubmitted && !isProcessing && isSuccessful && <Success />}
-        {isSubmitted && !isProcessing && !isSuccessful && <Error />}
+        {isLoading && <Loading />}
+        {isSuccess && <Success />}
+        {isError && <Error />}
       </form>
     </div>
   );

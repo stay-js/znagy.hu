@@ -1,7 +1,9 @@
+@use './abstracts' as *;
+
 body {
   overflow-x: hidden;
   z-index: -1;
-  background-color: $blueGray-900;
+  background-color: $slate-900;
 }
 
 main {
@@ -16,7 +18,7 @@ main {
 p {
   line-height: 1.4;
   margin-bottom: 1rem;
-  color: $coolGray-400;
+  color: $gray-400;
 }
 
 .link {
