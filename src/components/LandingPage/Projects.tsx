@@ -59,7 +59,6 @@ const Projects: React.FC = () => (
             </Link>{' '}
             (/api).
           </p>
-          <p className="m-0"></p>
         </div>
         <ul className="flex gap-4 text-gray-400 text-[0.8rem] flex-wrap max-w-[70ch] font-mono">
           <li>TypeScript</li>
