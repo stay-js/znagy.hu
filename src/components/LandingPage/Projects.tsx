@@ -2,7 +2,7 @@ import Link from 'next/link';
 import SectionTitle from './SectionTitle';
 
 const Projects: React.FC = () => (
-  <section className="relative min-h-[60ch] mb-20 content" id="projects">
+  <section className="relative mb-20 content" id="projects">
     <SectionTitle title="Projects" number={2} />
 
     <div className="flex flex-col gap-16 item">

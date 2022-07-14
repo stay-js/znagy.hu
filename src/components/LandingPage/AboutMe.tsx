@@ -3,7 +3,7 @@ import Image from 'next/image';
 import SectionTitle from './SectionTitle';
 
 const AboutMe: React.FC = () => (
-  <section className="min-h-[60vh] relative mb-20 content" id="about">
+  <section className="relative mb-20 content" id="about">
     <SectionTitle title="About Me" number={1} />
 
     <div className="flex flex-col gap-12 lg:flex-row">
