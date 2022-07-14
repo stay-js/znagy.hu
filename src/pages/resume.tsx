@@ -72,9 +72,10 @@ const Resume: NextPage = () => (
                 <li>Next.js</li>
                 <li>React</li>
                 <li>tRPC</li>
+                <li>Prisma</li>
                 <li>Express.js</li>
-                <li>Bootstrap</li>
                 <li>Tailwind CSS</li>
+                <li>Bootstrap</li>
                 <li>Sass</li>
                 <li>CSS3</li>
                 <li>HTML5</li>
@@ -87,7 +88,6 @@ const Resume: NextPage = () => (
                 <li>Yarn</li>
                 <li>NPM</li>
                 <li>MongoDB</li>
-                <li>Prisma</li>
                 <li>Git</li>
                 <li>GitHub</li>
               </ul>
@@ -98,9 +98,10 @@ const Resume: NextPage = () => (
               <ul className="text-neutral-600">
                 <li>DigitalOcean</li>
                 <li>Linode</li>
-                <li>Heroku</li>
-                <li>Netlify</li>
                 <li>Vercel</li>
+                <li>Netlify</li>
+                <li>Railway</li>
+                <li>Heroku</li>
               </ul>
             </div>
           </div>
