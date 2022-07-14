@@ -46,13 +46,13 @@ const Projects: React.FC = () => (
               <a target="_blank" className="link">
                 Nodemailer
               </a>
-            </Link>{' '}
+            </Link>
             ,{' '}
             <Link href="https://www.mongodb.com/">
               <a target="_blank" className="link">
                 MondoDB
               </a>
-            </Link>
+            </Link>{' '}
             and{' '}
             <Link href="https://www.prisma.io">
               <a target="_blank" className="link">
