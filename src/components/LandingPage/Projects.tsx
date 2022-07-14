@@ -62,7 +62,6 @@ const Projects: React.FC = () => (
         </div>
         <ul className="flex gap-4 text-gray-400 text-[0.8rem] flex-wrap max-w-[70ch] font-mono">
           <li>TypeScript</li>
-          <li>React</li>
           <li>Next.js</li>
           <li>tRPC</li>
           <li>Nodemailer</li>
@@ -158,9 +157,9 @@ const Projects: React.FC = () => (
           </p>
           <p className="m-0">
             Back-end:{' '}
-            <Link href="https://expressjs.com/">
+            <Link href="https://trpc.io">
               <a target="_blank" className="link">
-                Express
+                tRPC
               </a>
             </Link>
             ,{' '}
@@ -181,19 +180,23 @@ const Projects: React.FC = () => (
                 Prisma
               </a>
             </Link>
-            .
+            , running on{' '}
+            <Link href="https://vercel.com/docs/concepts/functions/serverless-functions">
+              <a target="_blank" className="link">
+                Vercel Serverless
+              </a>
+            </Link>{' '}
+            (/api).
           </p>
         </div>
         <ul className="flex gap-4 text-gray-400 text-[0.8rem] flex-wrap max-w-[70ch] font-mono">
           <li>TypeScript</li>
-          <li>React</li>
           <li>Next.js</li>
-          <li>Vercel</li>
-          <li>Express</li>
+          <li>tRPC</li>
           <li>Nodemailer</li>
+          <li>MongoDB</li>
           <li>Prisma</li>
-          <li>Linode</li>
-          <li>Ubuntu</li>
+          <li>Vercel</li>
         </ul>
       </article>
     </div>
