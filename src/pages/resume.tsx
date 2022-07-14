@@ -71,6 +71,7 @@ const Resume: NextPage = () => (
                 <li>TypeScript</li>
                 <li>Next.js</li>
                 <li>React</li>
+                <li>tRPC</li>
                 <li>Express.js</li>
                 <li>Bootstrap</li>
                 <li>Tailwind CSS</li>

@@ -5,20 +5,24 @@ const Projects: React.FC = () => (
   <section className="relative min-h-[60ch] mb-20 content" id="projects">
     <SectionTitle title="Projects" number={2} />
 
-    <div className="flex flex-col gap-16">
+    <div className="flex flex-col gap-16 item">
       <article>
-        <a className="text-gray-400">
-          <h1>
-            REGALE Energy Zrt.
-            <i className="ml-3 transition-colors hover:text-green-500 fa-solid fa-arrow-up-right-from-square" />
-          </h1>
-        </a>
+        <div className="flex text-gray-400">
+          <h1>Portfolio (znagy.hu)</h1>
+          <Link href="https://github.com/stay-js/stay">
+            <a target="_blank">
+              <i className="ml-3 transition-colors hover:text-green-500 fab fa-github" />
+            </a>
+          </Link>
+          <Link href="https://znagy.hu/">
+            <a target="_blank">
+              <i className="ml-3 transition-colors hover:text-green-500 fa-solid fa-arrow-up-right-from-square" />
+            </a>
+          </Link>
+        </div>
 
         <div className="p-4 my-4 bg-slate-700 rounded max-w-[60ch]">
-          <p className="m-0">
-            This is my current project. (I&rsquo;ll publish the link when it&rsquo;s done.)
-          </p>
-          <p className="m-0">A company website for REGALE Energy Zrt.</p>
+          <p className="m-0">Simple portfolio website.</p>
           <p className="m-0">
             Front-end built with{' '}
             <Link href="https://nextjs.org/">
@@ -36,54 +40,46 @@ const Projects: React.FC = () => (
           </p>
           <p className="m-0">
             Back-end built using{' '}
-            <Link href="https://expressjs.com/">
+            <Link href="https://trpc.io">
               <a target="_blank" className="link">
-                Express
+                tRPC
               </a>
-            </Link>
-            ,{' '}
+            </Link>{' '}
+            and{' '}
             <Link href="https://nodemailer.com/">
               <a target="_blank" className="link">
                 Nodemailer
               </a>
             </Link>
-            ,{' '}
-            <Link href="https://www.mongodb.com/">
+            , running on{' '}
+            <Link href="https://vercel.com/docs/concepts/functions/serverless-functions">
               <a target="_blank" className="link">
-                MondoDB
+                Vercel Serverless
               </a>
             </Link>{' '}
-            and{' '}
-            <Link href="https://www.prisma.io">
-              <a target="_blank" className="link">
-                Prisma
-              </a>
-            </Link>
-            .
+            (/api).
           </p>
+          <p className="m-0"></p>
         </div>
-        <ul className="flex gap-4 text-gray-400 text-[0.8rem] flex-wrap max-w-[75ch] font-mono">
+        <ul className="flex gap-4 text-gray-400 text-[0.8rem] flex-wrap max-w-[70ch] font-mono">
           <li>TypeScript</li>
           <li>React</li>
           <li>Next.js</li>
-          <li>Vercel</li>
-          <li>Express</li>
+          <li>tRPC</li>
           <li>Nodemailer</li>
-          <li>Prisma</li>
-          <li>Linode</li>
-          <li>Ubuntu</li>
+          <li>Vercel</li>
         </ul>
       </article>
 
       <article>
-        <Link href="https://anything.znagy.hu/">
-          <a target="_blank" className="text-gray-400">
-            <h1>
-              Anything
+        <div className="flex text-gray-400">
+          <h1>Anything</h1>
+          <Link href="https://anything.znagy.hu/">
+            <a target="_blank">
               <i className="ml-3 transition-colors hover:text-green-500 fa-solid fa-arrow-up-right-from-square" />
-            </h1>
-          </a>
-        </Link>
+            </a>
+          </Link>
+        </div>
 
         <div className="p-4 my-4 bg-slate-700 rounded max-w-[60ch]">
           <p className="m-0">
@@ -126,13 +122,79 @@ const Projects: React.FC = () => (
             , and maybe I&rsquo;ll open source the project.
           </p>
         </div>
-        <ul className="flex gap-4 text-gray-400 text-[0.8rem] flex-wrap max-w-[75ch] font-mono">
+        <ul className="flex gap-4 text-gray-400 text-[0.8rem] flex-wrap max-w-[70ch] font-mono">
           <li>JavaScript</li>
           <li>Discord.js</li>
           <li>Heroku</li>
           <li>HTML5</li>
           <li>CSS3</li>
           <li>Netlify</li>
+        </ul>
+      </article>
+
+      <article>
+        <div className="flex text-gray-400">
+          <h1>REGALE Energy Zrt.</h1>
+        </div>
+
+        <div className="p-4 my-4 bg-slate-700 rounded max-w-[60ch]">
+          <p className="m-0">
+            This is my current project. (I&rsquo;ll publish the link when it&rsquo;s done.)
+          </p>
+          <p className="m-0">A company website for REGALE Energy Zrt.</p>
+          <p className="m-0">
+            Front-end:{' '}
+            <Link href="https://nextjs.org/">
+              <a target="_blank" className="link">
+                Next.js
+              </a>
+            </Link>{' '}
+            and{' '}
+            <Link href="https://tailwindcss.com">
+              <a target="_blank" className="link">
+                Tailwind CSS
+              </a>
+            </Link>
+            .
+          </p>
+          <p className="m-0">
+            Back-end:{' '}
+            <Link href="https://expressjs.com/">
+              <a target="_blank" className="link">
+                Express
+              </a>
+            </Link>
+            ,{' '}
+            <Link href="https://nodemailer.com/">
+              <a target="_blank" className="link">
+                Nodemailer
+              </a>
+            </Link>
+            ,{' '}
+            <Link href="https://www.mongodb.com/">
+              <a target="_blank" className="link">
+                MondoDB
+              </a>
+            </Link>{' '}
+            and{' '}
+            <Link href="https://www.prisma.io">
+              <a target="_blank" className="link">
+                Prisma
+              </a>
+            </Link>
+            .
+          </p>
+        </div>
+        <ul className="flex gap-4 text-gray-400 text-[0.8rem] flex-wrap max-w-[70ch] font-mono">
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>Vercel</li>
+          <li>Express</li>
+          <li>Nodemailer</li>
+          <li>Prisma</li>
+          <li>Linode</li>
+          <li>Ubuntu</li>
         </ul>
       </article>
     </div>
