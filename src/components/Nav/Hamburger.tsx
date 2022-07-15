@@ -8,7 +8,7 @@ const Hamburger: React.FC = () => {
   const [isToggled, setIsToggled] = useState<boolean>(false);
 
   return (
-    <nav className="fixed top-0 z-50 flex items-center w-full h-16 font-sans shadow-md bg-slate-900 place-content-between no-select">
+    <nav className="fixed top-0 z-50 flex items-center w-full h-16 font-sans shadow-md select-none bg-slate-900 place-content-between">
       <div className="ml-6">
         <Link href="/">
           <div className="w-10 h-10 overflow-hidden rounded-full cursor-pointer hover:outline outline-1 outline-white outline-offset-1">
@@ -27,7 +27,7 @@ const Hamburger: React.FC = () => {
       <ul
         className={`${
           isToggled ? 'right-0' : 'right-[-100%]'
-        } flex flex-col fixed w-full top-16 h-screen z-50 items-center bg-white transition-all duration-500 ease-in-out no-select`}
+        } flex flex-col fixed w-full top-16 h-screen z-50 items-center bg-white transition-all duration-500 ease-in-out select-none`}
       >
         {navItems.map((item) => (
           <li key={item.id}>

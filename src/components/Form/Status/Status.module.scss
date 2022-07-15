@@ -17,7 +17,11 @@
   &:before,
   &:after {
     content: '';
-    @include absPosition(5px, 5px, 5px, 5px);
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
     border-radius: 50px;
     border: 3px solid transparent;
     border-top-color: $black;
@@ -33,7 +37,7 @@
   }
 }
 
-.success {
+.green-500 {
   width: 100px;
   height: 50px;
   margin: 2rem auto;

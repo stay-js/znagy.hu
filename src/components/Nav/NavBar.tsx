@@ -3,7 +3,7 @@ import Image from 'next/image';
 import navItems from '../../utils/navItems';
 
 const NavBar: React.FC = () => (
-  <nav className="fixed top-0 z-50 flex items-center w-full h-16 font-sans shadow-md bg-slate-900 place-content-between no-select">
+  <nav className="fixed top-0 z-50 flex items-center w-full h-16 font-sans shadow-md select-none bg-slate-900 place-content-between">
     <div className="ml-6">
       <Link href="/">
         <div className="w-10 h-10 overflow-hidden rounded-full cursor-pointer hover:outline outline-1 outline-white outline-offset-1">
