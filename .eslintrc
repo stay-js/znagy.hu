@@ -36,7 +36,9 @@
     "jsx-a11y/anchor-is-valid": "off", // next/link breaks it so i have to turn it off
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/no-static-element-interactions": "off",
-    "no-console": "off", //api routes (error log)
-    "import/no-anonymous-default-export": "off" //api routes
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "operator-linebreak": "off",
+    "no-console": "off",
+    "@typescript-eslint/no-unused-expressions": "off"
   }
 }
