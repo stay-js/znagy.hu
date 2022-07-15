@@ -1,6 +1,7 @@
 import '../styles/style.scss';
 import type { AppType } from 'next/dist/shared/lib/utils';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import { withTRPC } from '@trpc/next';
 import superjson from 'superjson';
 import { MantineProvider } from '@mantine/core';
@@ -26,6 +27,10 @@ const App: AppType = ({ Component, pageProps }) => (
       <meta property="og:site_name" content="Zétény Nagy" key="site_name" />
       <meta property="og:image" content="https://znagy.hu/images/me.png" key="image" />
       <meta name="theme-color" content="#0f172a" />
+
+      <meta name="url" content={`https://znagy.hu${useRouter().pathname}`} />
+      <meta property="og:url" content={`https://znagy.hu${useRouter().pathname}`} />
+      <meta property="twitter:url" content={`https://znagy.hu${useRouter().pathname}`} />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:domain" content="znagy.hu" />

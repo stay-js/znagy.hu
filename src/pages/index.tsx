@@ -9,10 +9,6 @@ const LandingPage: NextPage = () => (
       <meta property="og:title" content="Zétény Nagy" key="title" />
       <meta name="twitter:title" content="Zétény Nagy" />
 
-      <meta name="url" content="https://znagy.hu/" />
-      <meta property="og:url" content="https://znagy.hu/" />
-      <meta property="twitter:url" content="https://znagy.hu/" />
-
       <meta
         name="description"
         content="Full stack developer wannabe. IT Student. Kyokushin. Muay Thai."
