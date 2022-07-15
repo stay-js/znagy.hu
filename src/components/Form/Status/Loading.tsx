@@ -1,11 +1,9 @@
-import style from './Status.module.scss';
+import { Loader } from '@mantine/core';
 
 const FormLoading: React.FC = () => (
-  <div>
-    <div className={style.loading}>
-      <span className={style.loader} />
-    </div>
-    <p className="text-center">Please wait, processing...</p>
+  <div className="flex flex-col items-center gap-2 mt-4 text-black">
+    <Loader className="mx-auto" />
+    Please wait, processing...
   </div>
 );
 

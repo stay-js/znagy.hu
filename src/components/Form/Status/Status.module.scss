@@ -1,46 +1,9 @@
 @use '../../../styles/abstracts' as *;
 
-.loading {
-  width: fit-content;
-  margin: 2rem auto;
-}
-
-.loader {
-  display: block;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  border: 3px solid transparent;
-  border-top-color: $black;
-  animation: spin 1s linear infinite;
-
-  &:before,
-  &:after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    bottom: 5px;
-    left: 5px;
-    right: 5px;
-    border-radius: 50px;
-    border: 3px solid transparent;
-    border-top-color: $black;
-    animation: spinreverse 5s linear infinite;
-  }
-
-  &:before {
-    top: 12px;
-    left: 12px;
-    bottom: 12px;
-    right: 12px;
-    animation: spinreverse 10s linear infinite;
-  }
-}
-
 .success {
   width: 100px;
   height: 50px;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 .checkmark {
@@ -57,7 +20,6 @@
 }
 
 .check {
-  -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
   stroke-dasharray: 48;
   stroke-dashoffset: 48;
@@ -74,31 +36,6 @@
   animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
 }
 
-/*
-* Animation
-*/
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    tranform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    tranform: rotate(360deg);
-  }
-}
-
-@keyframes spinreverse {
-  0% {
-    -webkit-transform: rotate(0deg);
-    tranform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-360deg);
-    tranform: rotate(-360deg);
-  }
-}
-
 @keyframes stroke {
   100% {
     stroke-dashoffset: 0;
@@ -108,11 +45,9 @@
 @keyframes scale {
   0%,
   100% {
-    -webkit-transform: none;
     transform: none;
   }
   50% {
-    -webkit-transform: scale3d(1.1, 1.1, 1);
     transform: scale3d(1.1, 1.1, 1);
   }
 }
