@@ -33,7 +33,7 @@ const Hamburger: React.FC = () => {
           <li key={item.id}>
             <Link href={item.path}>
               <a
-                className="block mt-8 transition-colors duration-150 hover:text-green-500"
+                className="block mt-8 text-black transition-colors duration-150 hover:text-green-500"
                 onClick={() => setIsToggled(false)}
               >
                 {item.name}
