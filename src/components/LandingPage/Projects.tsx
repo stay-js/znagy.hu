@@ -31,7 +31,7 @@ const Projects: React.FC = () => (
               </a>
             </Link>{' '}
             and{' '}
-            <Link href="https://tailwindcss.com">
+            <Link href="https://tailwindcss.com/">
               <a target="_blank" className="link">
                 Tailwind CSS
               </a>
@@ -40,7 +40,7 @@ const Projects: React.FC = () => (
           </p>
           <p className="m-0">
             Back-end built using{' '}
-            <Link href="https://trpc.io">
+            <Link href="https://trpc.io/">
               <a target="_blank" className="link">
                 tRPC
               </a>
@@ -148,7 +148,7 @@ const Projects: React.FC = () => (
               </a>
             </Link>{' '}
             and{' '}
-            <Link href="https://tailwindcss.com">
+            <Link href="https://tailwindcss.com/">
               <a target="_blank" className="link">
                 Tailwind CSS
               </a>
@@ -157,7 +157,7 @@ const Projects: React.FC = () => (
           </p>
           <p className="m-0">
             Back-end:{' '}
-            <Link href="https://trpc.io">
+            <Link href="https://trpc.io/">
               <a target="_blank" className="link">
                 tRPC
               </a>
@@ -175,7 +175,7 @@ const Projects: React.FC = () => (
               </a>
             </Link>{' '}
             and{' '}
-            <Link href="https://www.prisma.io">
+            <Link href="https://www.prisma.io/">
               <a target="_blank" className="link">
                 Prisma
               </a>

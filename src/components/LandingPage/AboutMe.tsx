@@ -16,7 +16,7 @@ const AboutMe: React.FC = () => (
         <p>Glad you are here! </p>
         <p>
           My name is Zétény Nagy AKA stay, I&rsquo;m from Budapest, Hungary. Currently studying in{' '}
-          <Link href="http://njszg.hu">
+          <Link href="http://njszg.hu/">
             <a target="_blank" className="text-green-500 link">
               BMSzC Neumann János Informatikai Technikum
             </a>
@@ -29,16 +29,9 @@ const AboutMe: React.FC = () => (
           Thai-Boxing (Muay Thai). I will improve my coding and fighting skills especially because I
           want to be a Full Stack web developer...
         </p>
-        <p>Here are a few technologies I have an understanding of:</p>
+        <p>Favourite technologies/things I use:</p>
         <div className="flex gap-20 ml-8">
           <ul className="text-green-500 list-disc">
-            <li>
-              <Link href="https://www.javascript.com/">
-                <a target="_blank" className="link">
-                  JavaScript
-                </a>
-              </Link>
-            </li>
             <li>
               <Link href="https://www.typescriptlang.org/">
                 <a target="_blank" className="link">
@@ -47,32 +40,39 @@ const AboutMe: React.FC = () => (
               </Link>
             </li>
             <li>
-              <Link href="https://nodejs.org/">
+              <Link href="https://nextjs.org/">
                 <a target="_blank" className="link">
-                  Node.js
+                  Next.js
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="https://trpc.io/">
+                <a target="_blank" className="link">
+                  tRPC
                 </a>
               </Link>
             </li>
           </ul>
           <ul className="text-green-500 list-disc">
             <li>
-              <Link href="https://expressjs.com/">
+              <Link href="https://www.prisma.io/">
                 <a target="_blank" className="link">
-                  Express
+                  Prisma
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="https://reactjs.org/">
+              <Link href="https://tailwindcss.com/">
                 <a target="_blank" className="link">
-                  React
+                  Tailwind CSS
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="https://nextjs.org/">
+              <Link href="https://vercel.com/">
                 <a target="_blank" className="link">
-                  Next.js
+                  Vercel
                 </a>
               </Link>
             </li>
