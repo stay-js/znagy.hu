@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import SectionTitle from './SectionTitle';
 
 const Projects: React.FC = () => (
@@ -10,13 +11,19 @@ const Projects: React.FC = () => (
         <div className="flex text-gray-400">
           <h1>Portfolio (znagy.hu)</h1>
           <Link href="https://github.com/stay-js/stay">
-            <a target="_blank">
-              <i className="ml-3 transition-colors hover:text-green-500 fab fa-github" />
+            <a
+              target="_blank"
+              className="flex items-center ml-3 transition-colors hover:text-green-500"
+            >
+              <FaGithub />
             </a>
           </Link>
           <Link href="https://znagy.hu/">
-            <a target="_blank">
-              <i className="ml-3 transition-colors hover:text-green-500 fa-solid fa-arrow-up-right-from-square" />
+            <a
+              target="_blank"
+              className="flex items-center ml-3 transition-colors hover:text-green-500"
+            >
+              <FaExternalLinkAlt />
             </a>
           </Link>
         </div>
@@ -73,8 +80,11 @@ const Projects: React.FC = () => (
         <div className="flex text-gray-400">
           <h1>Anything</h1>
           <Link href="https://anything.znagy.hu/">
-            <a target="_blank">
-              <i className="ml-3 transition-colors hover:text-green-500 fa-solid fa-arrow-up-right-from-square" />
+            <a
+              target="_blank"
+              className="flex items-center ml-3 transition-colors hover:text-green-500"
+            >
+              <FaExternalLinkAlt />
             </a>
           </Link>
         </div>

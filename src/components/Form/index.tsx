@@ -1,6 +1,6 @@
 import { TextInput, Textarea } from '@mantine/core';
-import { Mail, User } from 'tabler-icons-react';
 import { useState } from 'react';
+import { TbUser, TbMail } from 'react-icons/tb';
 import trpc from '../../utils/trpc';
 import { Error, Loading, Success } from './Status';
 import validate from '../../utils/validate';
@@ -40,7 +40,7 @@ const Form: React.FC = () => {
         <TextInput
           className="mb-4"
           label="Name:"
-          icon={<User size={18} />}
+          icon={<TbUser size={18} />}
           id="name"
           placeholder="Example Peter"
           value={values.name}
@@ -51,7 +51,7 @@ const Form: React.FC = () => {
         <TextInput
           className="mb-4"
           label="E-mail:"
-          icon={<Mail size={18} />}
+          icon={<TbMail size={18} />}
           id="email"
           placeholder="example@gmail.com"
           value={values.email}

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Button from '../Button';
+import { FaGithub, FaFacebook, FaEnvelope, FaYoutube } from 'react-icons/fa';
 
 const Title: React.FC = () => (
   <section className="flex flex-col justify-center min-h-screen gap-0 mt-[-4rem] content">
@@ -9,26 +10,42 @@ const Title: React.FC = () => (
 
     <div className="flex gap-4">
       <Link href="https://github.com/stay-js">
-        <a target="_blank" title="GitHub">
-          <i className="text-3xl text-gray-400 transition-colors duration-300 hover:text-white fab fa-github" />
+        <a
+          target="_blank"
+          title="GitHub"
+          className="text-gray-400 transition-colors duration-300 hover:text-white"
+        >
+          <FaGithub size={32} />
         </a>
       </Link>
 
       <Link href="https://www.facebook.com/nagy.zeteny.06/">
-        <a target="_blank" title="Facebook">
-          <i className="text-3xl text-gray-400 transition-colors duration-300 hover:text-white fab fa-facebook" />
+        <a
+          target="_blank"
+          title="Facebook"
+          className="text-gray-400 transition-colors duration-300 hover:text-white"
+        >
+          <FaFacebook size={32} />
         </a>
       </Link>
 
       <Link href="mailto:nagyzeteny6@gmail.com">
-        <a target="_blank" title="E-mail">
-          <i className="text-3xl text-gray-400 transition-colors duration-300 hover:text-white fas fa-envelope" />
+        <a
+          target="_blank"
+          title="E-mail"
+          className="text-gray-400 transition-colors duration-300 hover:text-white"
+        >
+          <FaEnvelope size={32} />
         </a>
       </Link>
 
       <Link href="https://www.youtube.com/channel/UCEGp1S_QTS3goAVX1cVw-tQ">
-        <a target="_blank" title="YouTube">
-          <i className="text-3xl text-gray-400 transition-colors duration-300 hover:text-white fab fa-youtube" />
+        <a
+          target="_blank"
+          title="YouTube"
+          className="text-gray-400 transition-colors duration-300 hover:text-white"
+        >
+          <FaYoutube size={32} />
         </a>
       </Link>
     </div>
