@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Button from '../Button';
 import { FaGithub, FaFacebook, FaEnvelope, FaYoutube } from 'react-icons/fa';
+import Button from '../Button';
 
 const Title: React.FC = () => (
   <section className="flex flex-col justify-center min-h-screen gap-0 mt-[-4rem] content">
