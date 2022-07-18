@@ -2,14 +2,15 @@ import { z } from 'zod';
 import nodemailer from 'nodemailer';
 import { TRPCError } from '@trpc/server';
 import { createRouter } from './context';
+import { env } from '../env';
 
 const transporter = nodemailer.createTransport({
   host: 'smtp.rackhost.hu',
   port: 465,
   secure: true,
   auth: {
-    user: process.env.NODEMAILER_USER,
-    pass: process.env.NODEMAILER_PASS,
+    user: env.NODEMAILER_USER,
+    pass: env.NODEMAILER_PASS,
   },
 });
 
@@ -23,8 +24,8 @@ const emailRouter = createRouter().mutation('send', {
     const { name, email, msg } = input;
 
     const mailOptions = {
-      from: `stay Mail - noreply<${process.env.NODEMAILER_USER}>`,
-      to: process.env.NODEMAILER_RECIEVER,
+      from: `stay Mail - noreply<${env.NODEMAILER_USER}>`,
+      to: env.NODEMAILER_RECIEVER,
       subject: 'New Message',
       html: `
         <div>
