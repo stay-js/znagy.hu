@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Title, AboutMe, Projects, GetInTouch } from '../components/LandingPage';
+import { Hero, AboutMe, Projects, GetInTouch } from '../components/LandingPage';
 
 const LandingPage: NextPage = () => (
   <>
@@ -24,7 +24,7 @@ const LandingPage: NextPage = () => (
     </Head>
 
     <main>
-      <Title />
+      <Hero />
       <AboutMe />
       <Projects />
       <GetInTouch />

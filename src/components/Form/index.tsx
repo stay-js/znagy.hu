@@ -6,17 +6,17 @@ import { Error, Loading, Success } from './Status';
 import validate from '../../utils/validate';
 
 import type InputEvent from '../../interfaces/InputEvent.interface';
-import type { FormProps, FormErrors } from '../../interfaces/Form.interface';
+import type { FormProps as Props, FormErrors as Errors } from '../../interfaces/Form.interface';
 
-const defaultValues: FormProps = {
+const defaultValues: Props = {
   name: '',
   email: '',
   msg: '',
 };
 
 const Form: React.FC = () => {
-  const [errors, setErrors] = useState<FormErrors>({});
-  const [values, setValues] = useState<FormProps>(defaultValues);
+  const [errors, setErrors] = useState<Errors>({});
+  const [values, setValues] = useState<Props>(defaultValues);
 
   const { mutate, isSuccess, isLoading, isError } = trpc.useMutation(['email.send']);
 
