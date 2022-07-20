@@ -3,7 +3,12 @@ import { FaGithub, FaFacebook, FaEnvelope, FaYoutube } from 'react-icons/fa';
 import Button from '../Button';
 
 const Title: React.FC = () => (
-  <section className="flex flex-col justify-center min-h-screen gap-0 mt-[-4rem] content">
+  <section
+    className="flex flex-col justify-center content"
+    style={{
+      minHeight: 'calc(100vh - 5rem)',
+    }}
+  >
     <p className="mb-0 font-serif text-green-500">Hi, my name is</p>
     <h1 className="text-4xl sm:text-5xl md:text-[5rem] mb-2 font-bold">Zétény Nagy.</h1>
     <p className="md:text-xl">Full stack developer wannabe. IT Student. Kyokushin. Muay Thai.</p>

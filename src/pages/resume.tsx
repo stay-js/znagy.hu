@@ -37,7 +37,7 @@ const Resume: NextPage = () => (
       `}
     </style>
 
-    <main className="mb-20 text-neutral-800">
+    <main className="text-neutral-800">
       <div className="content">
         <section>
           <h1 className="my-3 text-5xl font-bold">Zétény Nagy</h1>

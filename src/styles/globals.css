@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  color-scheme: dark;
+}
+
 html {
   @apply antialiased scroll-pt-20 scroll-smooth;
 }
@@ -12,18 +16,6 @@ body {
 
 main {
   @apply mx-auto my-20;
-}
-
-::-webkit-scrollbar-track {
-  @apply bg-neutral-800;
-}
-
-::-webkit-scrollbar {
-  @apply w-2 bg-neutral-800;
-}
-
-::-webkit-scrollbar-thumb {
-  @apply rounded bg-neutral-500;
 }
 
 p {

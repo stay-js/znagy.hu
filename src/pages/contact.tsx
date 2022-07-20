@@ -30,7 +30,7 @@ const Contact: NextPage = () => (
       />
     </Head>
 
-    <main className="mb-20 font-sans text-sm content">
+    <main className="font-sans text-sm content">
       <h1 className="my-4 font-serif text-3xl text-center">Send me a message!</h1>
       <div className="max-w-[75ch] mx-auto text-center">
         <p className="m-0">
