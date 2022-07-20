@@ -9,6 +9,90 @@ const Projects: React.FC = () => (
     <div className="flex flex-col gap-16 item">
       <article>
         <div className="flex text-gray-400">
+          <h1>Todo App</h1>
+          <Link href="https://github.com/stay-js/todo">
+            <a
+              target="_blank"
+              className="flex items-center ml-3 transition-colors hover:text-green-500"
+            >
+              <FaGithub />
+            </a>
+          </Link>
+          <Link href="https://todo.znagy.hu">
+            <a
+              target="_blank"
+              className="flex items-center ml-3 transition-colors hover:text-green-500"
+            >
+              <FaExternalLinkAlt />
+            </a>
+          </Link>
+        </div>
+
+        <div className="p-4 my-4 bg-slate-700 rounded max-w-[60ch]">
+          <p className="m-0">Simple Todo App with GitHub authentication.</p>
+          <p className="m-0">
+            Front-end:{' '}
+            <Link href="https://nextjs.org/">
+              <a target="_blank" className="link">
+                Next.js
+              </a>
+            </Link>{' '}
+            and{' '}
+            <Link href="https://tailwindcss.com/">
+              <a target="_blank" className="link">
+                Tailwind CSS
+              </a>
+            </Link>
+            .
+          </p>
+          <p className="m-0">
+            Back-end:{' '}
+            <Link href="https://trpc.io/">
+              <a target="_blank" className="link">
+                tRPC
+              </a>
+            </Link>
+            ,{' '}
+            <Link href="https://next-auth.js.org">
+              <a target="_blank" className="link">
+                NextAuth.js
+              </a>
+            </Link>
+            ,{' '}
+            <Link href="https://planetscale.com">
+              <a target="_blank" className="link">
+                PlanetScale
+              </a>
+            </Link>{' '}
+            (MySQL) and{' '}
+            <Link href="https://www.prisma.io/">
+              <a target="_blank" className="link">
+                Prisma
+              </a>
+            </Link>
+            , running on{' '}
+            <Link href="https://vercel.com/docs/concepts/functions/serverless-functions">
+              <a target="_blank" className="link">
+                Vercel Serverless
+              </a>
+            </Link>{' '}
+            (/api).
+          </p>
+        </div>
+        <ul className="flex gap-4 text-gray-400 text-[0.8rem] flex-wrap max-w-[70ch] font-mono">
+          <li>TypeScript</li>
+          <li>Next.js</li>
+          <li>Tailwind CSS</li>
+          <li>tRPC</li>
+          <li>NextAuth.js</li>
+          <li>MySQL</li>
+          <li>Prisma</li>
+          <li>Vercel</li>
+        </ul>
+      </article>
+
+      <article>
+        <div className="flex text-gray-400">
           <h1>Portfolio (znagy.hu)</h1>
           <Link href="https://github.com/stay-js/stay">
             <a
@@ -31,7 +115,7 @@ const Projects: React.FC = () => (
         <div className="p-4 my-4 bg-slate-700 rounded max-w-[60ch]">
           <p className="m-0">Simple portfolio website.</p>
           <p className="m-0">
-            Front-end built with{' '}
+            Front-end:{' '}
             <Link href="https://nextjs.org/">
               <a target="_blank" className="link">
                 Next.js
@@ -46,7 +130,7 @@ const Projects: React.FC = () => (
             .
           </p>
           <p className="m-0">
-            Back-end built using{' '}
+            Back-end:{' '}
             <Link href="https://trpc.io/">
               <a target="_blank" className="link">
                 tRPC
@@ -70,6 +154,7 @@ const Projects: React.FC = () => (
         <ul className="flex gap-4 text-gray-400 text-[0.8rem] flex-wrap max-w-[70ch] font-mono">
           <li>TypeScript</li>
           <li>Next.js</li>
+          <li>Tailwind CSS</li>
           <li>tRPC</li>
           <li>Nodemailer</li>
           <li>Vercel</li>
@@ -202,6 +287,7 @@ const Projects: React.FC = () => (
         <ul className="flex gap-4 text-gray-400 text-[0.8rem] flex-wrap max-w-[70ch] font-mono">
           <li>TypeScript</li>
           <li>Next.js</li>
+          <li>Tailwind CSS</li>
           <li>tRPC</li>
           <li>Nodemailer</li>
           <li>MongoDB</li>

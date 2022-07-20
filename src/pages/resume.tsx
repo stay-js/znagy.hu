@@ -84,6 +84,8 @@ const Resume: NextPage = () => (
                 <li>Yarn</li>
                 <li>NPM</li>
                 <li>MongoDB</li>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
                 <li>Git</li>
                 <li>GitHub</li>
               </ul>
@@ -97,6 +99,7 @@ const Resume: NextPage = () => (
                 <li>Vercel</li>
                 <li>Netlify</li>
                 <li>Railway</li>
+                <li>PlanetScale</li>
                 <li>Heroku</li>
               </ul>
             </div>
