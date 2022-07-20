@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply antialiased scroll-pt-20 scroll-smooth;
+}
+
+body {
+  @apply overflow-x-hidden font-sans text-white bg-slate-900 -z-10;
+}
+
+main {
+  @apply mx-auto my-20;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-neutral-800;
+}
+
+::-webkit-scrollbar {
+  @apply w-2 bg-neutral-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded bg-neutral-500;
+}
+
+p {
+  @apply mb-4 text-gray-400;
+}
+
+.link {
+  @apply transition-all duration-200 bg-left-bottom bg-no-repeat bg-gradient-to-r from-green-400 to-green-700 bg-[length:0%_2px] hover:bg-[length:100%_2px];
+}
+
+.content {
+  @apply mx-auto w-[80%] lg:w-[65%] 2xl:w-[55%];
+}

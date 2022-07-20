@@ -1,4 +1,4 @@
-import '../styles/style.scss';
+import '../styles/globals.css';
 import type { AppType } from 'next/dist/shared/lib/utils';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
