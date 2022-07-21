@@ -72,6 +72,7 @@ const Resume: NextPage = () => (
                 <li>Express.js</li>
                 <li>Tailwind CSS</li>
                 <li>Bootstrap</li>
+                <li>Mantine</li>
                 <li>Sass</li>
                 <li>CSS3</li>
                 <li>HTML5</li>

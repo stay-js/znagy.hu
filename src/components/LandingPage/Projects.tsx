@@ -18,7 +18,7 @@ const Projects: React.FC = () => (
               <FaGithub />
             </a>
           </Link>
-          <Link href="https://todo.znagy.hu">
+          <Link href="https://todo.znagy.hu/">
             <a
               target="_blank"
               className="flex items-center ml-3 transition-colors hover:text-green-500"
@@ -36,11 +36,17 @@ const Projects: React.FC = () => (
               <a target="_blank" className="link">
                 Next.js
               </a>
-            </Link>{' '}
-            and{' '}
+            </Link>
+            ,{' '}
             <Link href="https://tailwindcss.com/">
               <a target="_blank" className="link">
                 Tailwind CSS
+              </a>
+            </Link>{' '}
+            and{' '}
+            <Link href="https://mantine.dev/">
+              <a target="_blank" className="link">
+                Mantine
               </a>
             </Link>
             .
@@ -83,6 +89,7 @@ const Projects: React.FC = () => (
           <li>TypeScript</li>
           <li>Next.js</li>
           <li>Tailwind CSS</li>
+          <li>Mantine</li>
           <li>tRPC</li>
           <li>NextAuth.js</li>
           <li>MySQL</li>
@@ -120,11 +127,17 @@ const Projects: React.FC = () => (
               <a target="_blank" className="link">
                 Next.js
               </a>
-            </Link>{' '}
-            and{' '}
+            </Link>
+            ,{' '}
             <Link href="https://tailwindcss.com/">
               <a target="_blank" className="link">
                 Tailwind CSS
+              </a>
+            </Link>{' '}
+            and{' '}
+            <Link href="https://mantine.dev/">
+              <a target="_blank" className="link">
+                Mantine
               </a>
             </Link>
             .
@@ -155,6 +168,7 @@ const Projects: React.FC = () => (
           <li>TypeScript</li>
           <li>Next.js</li>
           <li>Tailwind CSS</li>
+          <li>Mantine</li>
           <li>tRPC</li>
           <li>Nodemailer</li>
           <li>Vercel</li>
@@ -241,11 +255,17 @@ const Projects: React.FC = () => (
               <a target="_blank" className="link">
                 Next.js
               </a>
-            </Link>{' '}
-            and{' '}
+            </Link>
+            ,{' '}
             <Link href="https://tailwindcss.com/">
               <a target="_blank" className="link">
                 Tailwind CSS
+              </a>
+            </Link>{' '}
+            and{' '}
+            <Link href="https://mantine.dev/">
+              <a target="_blank" className="link">
+                Mantine
               </a>
             </Link>
             .
@@ -288,6 +308,7 @@ const Projects: React.FC = () => (
           <li>TypeScript</li>
           <li>Next.js</li>
           <li>Tailwind CSS</li>
+          <li>Mantine</li>
           <li>tRPC</li>
           <li>Nodemailer</li>
           <li>MongoDB</li>
