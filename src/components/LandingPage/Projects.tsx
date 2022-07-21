@@ -284,12 +284,12 @@ const Projects: React.FC = () => (
               </a>
             </Link>
             ,{' '}
-            <Link href="https://www.mongodb.com/">
+            <Link href="https://planetscale.com">
               <a target="_blank" className="link">
-                MondoDB
+                PlanetScale
               </a>
             </Link>{' '}
-            and{' '}
+            (MySQL) and{' '}
             <Link href="https://www.prisma.io/">
               <a target="_blank" className="link">
                 Prisma
@@ -311,7 +311,7 @@ const Projects: React.FC = () => (
           <li>Mantine</li>
           <li>tRPC</li>
           <li>Nodemailer</li>
-          <li>MongoDB</li>
+          <li>MySQL</li>
           <li>Prisma</li>
           <li>Vercel</li>
         </ul>
