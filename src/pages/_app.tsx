@@ -42,7 +42,7 @@ const App: AppType = ({ Component, pageProps }) => (
       <meta name="rating" content="general" />
     </Head>
 
-    <MantineProvider theme={{ primaryColor: 'green' }}>
+    <MantineProvider theme={{ primaryColor: 'green', fontFamily: 'Roboto' }}>
       <Nav />
       {/* eslint-disable-next-line react/jsx-props-no-spreading */}
       <Component {...pageProps} />
