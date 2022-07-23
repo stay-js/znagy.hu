@@ -29,14 +29,14 @@ const Hamburger: React.FC = () => {
           isToggled ? 'right-0' : 'right-[-100%]'
         } flex flex-col fixed w-full top-16 h-screen z-50 items-center bg-white transition-all duration-500 ease-in-out select-none`}
       >
-        {navItems.map((item) => (
-          <li key={item.id}>
-            <Link href={item.path}>
+        {navItems.map(({ id, path, name }) => (
+          <li key={id}>
+            <Link href={path}>
               <a
                 className="block mt-8 text-black transition-colors duration-150 hover:text-green-500"
                 onClick={() => setIsToggled(false)}
               >
-                {item.name}
+                {name}
               </a>
             </Link>
           </li>
