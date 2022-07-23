@@ -36,7 +36,10 @@ const Form: React.FC = () => {
 
   return (
     <div className="md:max-w-lg max-w-[90%] mx-auto mt-5">
-      <form onSubmit={handleSubmit} className="p-12 bg-white shadow-2xl sm:px-20 rounded-2xl">
+      <form
+        onSubmit={handleSubmit}
+        className="p-8 bg-white shadow-2xl sm:p-12 md:px-20 rounded-2xl"
+      >
         <TextInput
           className="mb-4"
           label="Name:"

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaGithub, FaFacebook, FaEnvelope, FaYoutube } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaEnvelope, FaYoutube } from 'react-icons/fa';
 import Button from '../Button';
 
 const Title: React.FC = () => (
@@ -24,13 +24,13 @@ const Title: React.FC = () => (
         </a>
       </Link>
 
-      <Link href="https://www.facebook.com/nagy.zeteny.06/">
+      <Link href="https://twitter.com/stay0y0">
         <a
           target="_blank"
-          title="Facebook"
+          title="Twitter"
           className="text-gray-400 transition-colors duration-300 hover:text-white"
         >
-          <FaFacebook size={32} />
+          <FaTwitter size={32} />
         </a>
       </Link>
 
