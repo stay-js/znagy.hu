@@ -18,6 +18,12 @@ const navItems = [
     id: 'cl5xslkek000o09jq6h050ig1',
   },
   {
+    name: 'Links',
+    path: '/links',
+    number: 4,
+    id: 'cl5yban4b000109l02mvdeh0e',
+  },
+  {
     name: 'Resume',
     path: '/resume',
     button: true,
