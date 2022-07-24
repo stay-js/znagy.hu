@@ -2,7 +2,7 @@ import { z } from 'zod';
 import nodemailer from 'nodemailer';
 import { TRPCError } from '@trpc/server';
 import { createRouter } from './context';
-import { env } from '../env';
+import { env } from '../../env/server-env.mjs';
 
 const transporter = nodemailer.createTransport({
   host: 'smtp.rackhost.hu',

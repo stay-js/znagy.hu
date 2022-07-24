@@ -6,6 +6,7 @@ import { withTRPC } from '@trpc/next';
 import superjson from 'superjson';
 import { MantineProvider } from '@mantine/core';
 import type { AppRouter } from '../server/router';
+import { env } from '../env/client-env.mjs';
 import Nav from '../components/Nav';
 
 const App: AppType = ({ Component, pageProps }) => (
@@ -52,8 +53,8 @@ const App: AppType = ({ Component, pageProps }) => (
 
 export default withTRPC<AppRouter>({
   config() {
-    const url = process.env.NEXT_PUBLIC_VERCEL_URL
-      ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/trpc`
+    const url = env.NEXT_PUBLIC_VERCEL_URL
+      ? `https://${env.NEXT_PUBLIC_VERCEL_URL}/api/trpc`
       : 'http://localhost:3000/api/trpc';
 
     return {
