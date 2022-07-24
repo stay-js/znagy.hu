@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { useState } from 'react';
 import { Burger } from '@mantine/core';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
 import navItems from '../../utils/navItems';
 
 const Hamburger: React.FC = () => {

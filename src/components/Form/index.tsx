@@ -1,12 +1,11 @@
+import type { FormProps as Props, FormErrors as Errors } from '../../interfaces/Form.interface';
+import type InputEvent from '../../interfaces/InputEvent.interface';
 import { TextInput, Textarea } from '@mantine/core';
 import { useState } from 'react';
 import { TbUser, TbMail } from 'react-icons/tb';
 import trpc from '../../utils/trpc';
-import { Error, Loading, Success } from './Status';
 import validate from '../../utils/validate';
-
-import type InputEvent from '../../interfaces/InputEvent.interface';
-import type { FormProps as Props, FormErrors as Errors } from '../../interfaces/Form.interface';
+import { Error, Loading, Success } from './Status';
 
 const defaultValues: Props = {
   name: '',

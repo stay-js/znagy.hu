@@ -1,13 +1,13 @@
-import '../styles/globals.css';
+import type { AppRouter } from '../server/router';
 import type { AppType } from 'next/dist/shared/lib/utils';
+import { MantineProvider } from '@mantine/core';
+import { withTRPC } from '@trpc/next';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { withTRPC } from '@trpc/next';
 import superjson from 'superjson';
-import { MantineProvider } from '@mantine/core';
-import type { AppRouter } from '../server/router';
-import { env } from '../env/client-env.mjs';
 import Nav from '../components/Nav';
+import { env } from '../env/client-env.mjs';
+import '../styles/globals.css';
 
 const App: AppType = ({ Component, pageProps }) => (
   <>
@@ -45,7 +45,6 @@ const App: AppType = ({ Component, pageProps }) => (
 
     <MantineProvider theme={{ primaryColor: 'green', fontFamily: 'Roboto' }}>
       <Nav />
-      {/* eslint-disable-next-line react/jsx-props-no-spreading */}
       <Component {...pageProps} />
     </MantineProvider>
   </>

@@ -1,11 +1,11 @@
 import type { NextPage } from 'next';
+import Image from 'next/future/image';
 import Head from 'next/head';
 import Link from 'next/link';
-import Image from 'next/future/image';
 import { BsGlobe } from 'react-icons/bs';
-import { TbClipboardList } from 'react-icons/tb';
-import { SiRailway } from 'react-icons/si';
 import { FaGithub, FaTwitter, FaEnvelope, FaYoutube } from 'react-icons/fa';
+import { SiRailway } from 'react-icons/si';
+import { TbClipboardList } from 'react-icons/tb';
 
 const Item: React.FC<{ href: string; children: React.ReactNode }> = ({ href, children }) => (
   <li>

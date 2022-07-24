@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import NavBar from './NavBar';
 import Hamburger from './Hamburger';
+import NavBar from './NavBar';
 
 const Nav: React.FC = () => {
   const [width, setWidth] = useState<number | null>(null);
