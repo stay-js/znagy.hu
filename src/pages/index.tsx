@@ -23,6 +23,14 @@ const LandingPage: NextPage = () => (
       />
     </Head>
 
+    <style>
+      {`
+        html {
+          scroll-behavior: smooth;
+        }
+      `}
+    </style>
+
     <main>
       <Hero />
       <AboutMe />
