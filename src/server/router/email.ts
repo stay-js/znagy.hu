@@ -20,7 +20,7 @@ const emailRouter = createRouter().mutation('send', {
     email: z.string().email(),
     msg: z.string(),
   }),
-  async resolve({ input: { name, email, msg } }) {
+  resolve: async ({ input: { name, email, msg } }) => {
     const mailOptions = {
       from: `stay Mail - noreply<${env.NODEMAILER_USER}>`,
       to: env.NODEMAILER_RECIEVER,
