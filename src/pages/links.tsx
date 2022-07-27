@@ -96,6 +96,9 @@ const Links: NextPage = () => (
       <div className="w-full max-w-xl">
         <h3 className="mb-2 text-lg font-bold text-center">Projects:</h3>
         <ul className="flex flex-col w-full gap-4">
+          <Item href="https://random.znagy.hu/">
+            Random Generator(CUID, GUID, UUID, Number, Color, etc)
+          </Item>
           <Item href="https://todo.znagy.hu/">Todo App</Item>
           <Item href="https://anything.znagy.hu/">Anything (Discord BOT)</Item>
           <Item href="https://flappy.znagy.hu/">Flappy Matykusz</Item>
