@@ -100,6 +100,60 @@ const Projects: React.FC = () => (
 
       <article>
         <div className="flex text-gray-400">
+          <h1>Stay Random</h1>
+          <Link href="https://github.com/stay-js/random">
+            <a
+              target="_blank"
+              className="flex items-center ml-3 transition-colors hover:text-green-500"
+            >
+              <FaGithub />
+            </a>
+          </Link>
+          <Link href="https://random.znagy.hu/">
+            <a
+              target="_blank"
+              className="flex items-center ml-3 transition-colors hover:text-green-500"
+            >
+              <FaExternalLinkAlt />
+            </a>
+          </Link>
+        </div>
+
+        <div className="p-4 my-4 bg-slate-700 rounded max-w-[60ch]">
+          <p className="m-0">Random Generator (CUID, GUID, UUID, Number, Color, etc.).</p>
+          <p className="m-0">
+            Front-end:{' '}
+            <Link href="https://nextjs.org/">
+              <a target="_blank" className="link">
+                Next.js
+              </a>
+            </Link>
+            ,{' '}
+            <Link href="https://tailwindcss.com/">
+              <a target="_blank" className="link">
+                Tailwind CSS
+              </a>
+            </Link>{' '}
+            and{' '}
+            <Link href="https://mantine.dev/">
+              <a target="_blank" className="link">
+                Mantine
+              </a>
+            </Link>
+            .
+          </p>
+        </div>
+        <ul className="flex gap-4 text-gray-400 text-[0.8rem] flex-wrap max-w-[70ch] font-mono">
+          <li>TypeScript</li>
+          <li>Next.js</li>
+          <li>Tailwind CSS</li>
+          <li>Mantine</li>
+          <li>Vercel</li>
+        </ul>
+      </article>
+
+      <article>
+        <div className="flex text-gray-400">
           <h1>Portfolio (znagy.hu)</h1>
           <Link href="https://github.com/stay-js/stay">
             <a
