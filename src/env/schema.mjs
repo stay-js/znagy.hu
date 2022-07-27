@@ -1,14 +1,14 @@
 // @ts-check
 import { z } from 'zod';
 
-export const serverEnvSchema = z.object({
+export const serverSchema = z.object({
   NODEMAILER_USER: z.string().email(),
   NODEMAILER_PASS: z.string(),
   NODEMAILER_RECIEVER: z.string().email(),
   NODE_ENV: z.enum(['development', 'test', 'production']),
 });
 
-export const clientEnvSchema = z.object({
+export const clientSchema = z.object({
   NEXT_PUBLIC_VERCEL_URL: z.string(),
 });
 

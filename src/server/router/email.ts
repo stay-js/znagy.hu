@@ -1,7 +1,7 @@
 import { TRPCError } from '@trpc/server';
 import nodemailer from 'nodemailer';
 import { z } from 'zod';
-import { env } from '../../env/server-env.mjs';
+import { env } from '../../env/server.mjs';
 import { createRouter } from './context';
 
 const transporter = nodemailer.createTransport({

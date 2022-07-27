@@ -6,7 +6,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import superjson from 'superjson';
 import Nav from '../components/Nav';
-import { env } from '../env/client-env.mjs';
+import { env } from '../env/client.mjs';
 import '../styles/globals.css';
 
 const App: AppType = ({ Component, pageProps }) => (
