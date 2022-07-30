@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/future/image';
 import Link from 'next/link';
 import SectionTitle from './SectionTitle';
 
@@ -8,9 +8,13 @@ const AboutMe: React.FC = () => (
 
     <div className="flex flex-col gap-12 lg:flex-row">
       <div className="self-center lg:order-2">
-        <div className="relative w-64 h-64 border-t-[10px] border-l-[10px] border-green-500 transition-all duration-300 hover:-rotate-6 focus:-rotate-6">
-          <Image src="/images/me.png" alt="me" layout="fill" />
-        </div>
+        <Image
+          className="relative w-64 h-64 border-t-[10px] border-l-[10px] border-green-500 transition-all duration-300 hover:-rotate-6 focus:-rotate-6"
+          src="/images/me.png"
+          alt="me"
+          width={720}
+          height={720}
+        />
       </div>
       <div className="w-full lg:w-[60%]">
         <p>Glad you are here! </p>
