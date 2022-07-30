@@ -6,7 +6,7 @@ const ThemeToggle: React.FC = () => {
 
   return (
     <button
-      className="border rounded p-1"
+      className="p-2 bg-neutral-200 border border-neutral-400 dark:border-neutral-300 rounded-lg dark:bg-neutral-600 transition-all"
       type="button"
       onClick={() => toggleColorScheme()}
       title="Toggle color scheme"

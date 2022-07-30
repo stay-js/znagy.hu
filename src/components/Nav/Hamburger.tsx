@@ -1,17 +1,23 @@
 import { Burger } from '@mantine/core';
 import Link from 'next/link';
 import { useState } from 'react';
+import { useMantineColorScheme } from '@mantine/core';
 import navItems from '../../utils/navItems';
 import ThemeToggle from './ThemeToggle';
 
 const Hamburger: React.FC = () => {
   const [isToggled, setIsToggled] = useState<boolean>(false);
+  const { colorScheme } = useMantineColorScheme();
 
   return (
-    <nav className="fixed top-0 z-50 px-6 flex items-center w-full h-16 font-sans shadow-md select-none bg-slate-900 place-content-between">
+    <nav className="fixed top-0 z-50 px-6 flex items-center w-full h-16 font-sans shadow-md select-none bg-neutral-200 dark:bg-neutral-900 place-content-between">
       <ThemeToggle />
 
-      <Burger color="white" opened={isToggled} onClick={() => setIsToggled(!isToggled)} />
+      <Burger
+        color={colorScheme === 'dark' ? 'white' : 'black'}
+        opened={isToggled}
+        onClick={() => setIsToggled(!isToggled)}
+      />
 
       <ul
         className={`${
