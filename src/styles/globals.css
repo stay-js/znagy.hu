@@ -2,16 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  color-scheme: dark;
-}
-
 html {
   @apply antialiased scroll-pt-20;
 }
 
 body {
-  @apply overflow-x-hidden font-sans text-white bg-slate-900 -z-10;
+  @apply overflow-x-hidden font-sans text-black bg-neutral-100 -z-10 dark:text-white dark:bg-neutral-900;
 }
 
 main {
@@ -19,7 +15,7 @@ main {
 }
 
 p {
-  @apply mb-4 text-gray-400;
+  @apply mb-4 dark:text-neutral-100 text-neutral-900;
 }
 
 .link {
