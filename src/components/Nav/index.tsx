@@ -1,19 +1,13 @@
-import { useEffect, useState } from 'react';
-import Hamburger from './Hamburger';
-import NavBar from './NavBar';
+import ThemeToggle from './ThemeToggle';
+import Navigation from './Navigation';
 
-const Nav: React.FC = () => {
-  const [width, setWidth] = useState<number | null>(null);
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-
-    window.addEventListener('resize', () => setWidth(window.innerWidth));
-  }, [width]);
-
-  if (!width || width < 1024) return <Hamburger />;
-
-  return <NavBar />;
-};
+const Nav: React.FC = () => (
+  <nav className="fixed top-0 z-50 flex items-center w-full h-16 font-sans shadow select-none bg-neutral-100 dark:bg-neutral-900">
+    <div className="flex items-center place-content-between content">
+      <ThemeToggle />
+      <Navigation />
+    </div>
+  </nav>
+);
 
 export default Nav;
