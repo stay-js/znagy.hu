@@ -11,7 +11,7 @@ const ThemeToggle: React.FC = () => {
       onClick={() => toggleColorScheme()}
       title="Toggle color scheme"
     >
-      {colorScheme === 'dark' ? <TbMoon size={22} /> : <TbSun size={22} />}
+      {colorScheme === 'dark' ? <TbSun size={22} /> : <TbMoon size={22} />}
     </button>
   );
 };
