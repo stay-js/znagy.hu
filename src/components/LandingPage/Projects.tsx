@@ -318,6 +318,7 @@ const Projects: React.FC = () => (
             <h1 className="text-lg font-semibold dark:text-neutral-200 text-neutral-800">
               {title}
             </h1>
+
             {github && (
               <Link href={github}>
                 <a
@@ -328,6 +329,7 @@ const Projects: React.FC = () => (
                 </a>
               </Link>
             )}
+
             {url && (
               <Link href={url}>
                 <a
