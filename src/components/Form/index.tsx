@@ -1,11 +1,26 @@
-import type { FormProps as Props, FormErrors as Errors } from '../../interfaces/Form.interface';
-import type InputEvent from '../../interfaces/InputEvent.interface';
 import { TextInput, Textarea } from '@mantine/core';
 import { useState } from 'react';
 import { TbUser, TbMail } from 'react-icons/tb';
 import trpc from '../../utils/trpc';
 import validate from '../../utils/validate';
 import { Error, Loading, Success } from './Status';
+
+interface Props {
+  name: string;
+  email: string;
+  msg: string;
+}
+
+interface Errors {
+  name?: string;
+  email?: string;
+  msg?: string;
+}
+
+interface InputEvent {
+  key: string;
+  value: string;
+}
 
 const defaultValues: Props = {
   name: '',
