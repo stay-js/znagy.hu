@@ -3,7 +3,7 @@ import navItems from '../../utils/navItems';
 import ThemeToggle from './ThemeToggle';
 
 const NavBar: React.FC = () => (
-  <nav className="fixed flex items-center top-0 z-50 w-full h-16 font-sans shadow-md select-none bg-neutral-200 dark:bg-neutral-900">
+  <nav className="fixed flex items-center top-0 z-50 w-full h-16 font-sans shadow select-none bg-neutral-100 dark:bg-neutral-900">
     <div className="content flex items-center place-content-between">
       <ThemeToggle />
 
@@ -11,7 +11,7 @@ const NavBar: React.FC = () => (
         {navItems.map(({ id, path, name }) => (
           <li key={id}>
             <Link href={path}>
-              <a className="px-3 py-2 rounded-md dark:hover:bg-neutral-800 hover:bg-neutral-400 transition-colors">
+              <a className="px-3 py-2 rounded-md dark:hover:bg-neutral-800 hover:bg-neutral-300 transition-colors">
                 {name}
               </a>
             </Link>

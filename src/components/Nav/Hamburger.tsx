@@ -10,7 +10,7 @@ const Hamburger: React.FC = () => {
   const { colorScheme } = useMantineColorScheme();
 
   return (
-    <nav className="fixed top-0 z-50 px-6 flex items-center w-full h-16 font-sans shadow-md select-none bg-neutral-200 dark:bg-neutral-900 place-content-between">
+    <nav className="fixed top-0 z-50 px-6 flex items-center w-full h-16 font-sans shadow select-none bg-neutral-100 dark:bg-neutral-900 place-content-between">
       <ThemeToggle />
 
       <Burger
