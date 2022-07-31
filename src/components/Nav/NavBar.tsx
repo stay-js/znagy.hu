@@ -7,17 +7,11 @@ const NavBar: React.FC = () => (
     <div className="content flex items-center place-content-between">
       <ThemeToggle />
 
-      <ul className="flex gap-4">
-        {navItems.map(({ id, path, button, name }) => (
+      <ul className="flex">
+        {navItems.map(({ id, path, name }) => (
           <li key={id}>
             <Link href={path}>
-              <a
-                className={
-                  button
-                    ? 'bg-green-500 px-4 py-2 rounded border-solid border-2 border-green-500 hover:text-green-500 hover:bg-transparent transition-all duration-150'
-                    : 'hover:text-green-500 duration-150 transition-colors text-sm md:text-base'
-                }
-              >
+              <a className="px-3 py-2 rounded-md dark:hover:bg-neutral-800 hover:bg-neutral-400 transition-colors">
                 {name}
               </a>
             </Link>

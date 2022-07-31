@@ -27,7 +27,6 @@ const navItems = [
   {
     name: 'Links',
     path: '/links',
-    button: true,
     id: 'cl68bk4fw00062069lgxgpid3',
   },
 ];

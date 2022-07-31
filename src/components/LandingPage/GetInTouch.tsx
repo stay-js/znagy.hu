@@ -1,4 +1,4 @@
-import Button from '../Button';
+import Link from 'next/link';
 import SectionTitle from './SectionTitle';
 
 const GetInTouch: React.FC = () => (
@@ -13,7 +13,11 @@ const GetInTouch: React.FC = () => (
       </p>
     </div>
 
-    <Button href="/contact">Contact</Button>
+    <Link href="/contact">
+      <a className="mt-8 px-8 py-4 text-green-500 border-[1px] border-green-500 transition-all duration-500 hover:text-slate-900 hover:bg-green-500 w-fit">
+        Contact
+      </a>
+    </Link>
   </section>
 );
 

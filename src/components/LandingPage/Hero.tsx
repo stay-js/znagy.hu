@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { FaGithub, FaTwitter, FaEnvelope, FaYoutube } from 'react-icons/fa';
-import Button from '../Button';
+import { TbArrowNarrowDown } from 'react-icons/tb';
 
 const Title: React.FC = () => (
   <section
@@ -9,18 +9,22 @@ const Title: React.FC = () => (
       minHeight: 'calc(100vh - 5rem)',
     }}
   >
-    <p className="mb-0 font-serif text-green-500">Hi, my name is</p>
-    <h1 className="text-4xl sm:text-5xl md:text-[5rem] mb-2 font-bold">Zétény Nagy.</h1>
+    <h1 className="text-4xl sm:text-5xl md:text-[5rem] mb-2 font-bold">
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-green-500">
+        Zétény
+      </span>{' '}
+      Nagy.
+    </h1>
     <p className="md:text-xl">Full stack developer wannabe. IT Student. Kyokushin. Muay Thai.</p>
 
-    <div className="flex gap-4">
+    <div className="flex gap-2">
       <Link href="https://github.com/stay-js">
         <a
           target="_blank"
           title="GitHub"
-          className="text-gray-400 transition-colors duration-300 hover:text-white"
+          className="grid w-10 h-10 text-white transition-colors rounded-full place-items-center dark:border-0 border border-neutral-700 bg-neutral-700 hover:bg-white hover:text-zinc-900"
         >
-          <FaGithub size={32} />
+          <FaGithub />
         </a>
       </Link>
 
@@ -28,9 +32,9 @@ const Title: React.FC = () => (
         <a
           target="_blank"
           title="Twitter"
-          className="text-gray-400 transition-colors duration-300 hover:text-white"
+          className="grid w-10 h-10 text-white transition-colors rounded-full place-items-center dark:border-0 border border-neutral-700 bg-neutral-700 hover:bg-white hover:text-zinc-900"
         >
-          <FaTwitter size={32} />
+          <FaTwitter />
         </a>
       </Link>
 
@@ -38,23 +42,28 @@ const Title: React.FC = () => (
         <a
           target="_blank"
           title="E-mail"
-          className="text-gray-400 transition-colors duration-300 hover:text-white"
+          className="grid w-10 h-10 text-white transition-colors rounded-full place-items-center dark:border-0 border border-neutral-700 bg-neutral-700 hover:bg-white hover:text-zinc-900"
         >
-          <FaEnvelope size={32} />
+          <FaEnvelope />
         </a>
       </Link>
 
       <Link href="https://www.youtube.com/channel/UCEGp1S_QTS3goAVX1cVw-tQ">
         <a
-          target="_blank"
           title="YouTube"
-          className="text-gray-400 transition-colors duration-300 hover:text-white"
+          className="grid w-10 h-10 text-white transition-colors rounded-full place-items-center dark:border-0 border border-neutral-700 bg-neutral-700 hover:bg-white hover:text-zinc-900"
         >
-          <FaYoutube size={32} />
+          <FaYoutube />
         </a>
       </Link>
     </div>
-    <Button href="#about">More About Me</Button>
+
+    <Link href="#about">
+      <a className="mt-8 flex gap-1 items-center px-8 py-4 text-green-500 rounded-lg border border-green-500 transition-all duration-500 hover:text-neutral-200 dark:hover:text-slate-900 hover:bg-gradient-to-r from-teal-400 to-green-500 w-fit">
+        <TbArrowNarrowDown size={18} />
+        More About Me
+      </a>
+    </Link>
   </section>
 );
 
