@@ -30,7 +30,7 @@ const Contact: NextPage = () => (
       />
     </Head>
 
-    <main className="font-sans text-sm content">
+    <main className="font-sans content">
       <h1 className="my-4 font-serif text-3xl text-center">Send me a message!</h1>
       <div className="max-w-[75ch] mx-auto text-center">
         <p className="m-0">
@@ -40,7 +40,9 @@ const Contact: NextPage = () => (
         <p className="m-0">
           Or you can just send me an e-mail at:{' '}
           <Link href="mailto:nagyzeteny6@gmail.com">
-            <a className="link">nagyzeteny6@gmail.com</a>
+            <a className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-green-500">
+              nagyzeteny6@gmail.com
+            </a>
           </Link>
         </p>
       </div>
