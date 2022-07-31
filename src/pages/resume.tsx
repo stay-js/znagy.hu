@@ -29,21 +29,13 @@ const Resume: NextPage = () => (
       />
     </Head>
 
-    <style>
-      {`
-        body {
-          background: white;
-        }
-      `}
-    </style>
-
-    <main className="text-neutral-800">
+    <main>
       <div className="content">
         <section>
           <h1 className="my-3 text-5xl font-bold">Zétény Nagy</h1>
           <Link href="https://github.com/stay-js">
             <a
-              className="block mb-12 text-2xl font-medium text-gray-600 w-fit link"
+              className="block mb-12 text-2xl font-medium text-gray-600 dark:text-neutral-200 w-fit link"
               target="_blank"
             >
               github.com/stay-js
@@ -62,7 +54,7 @@ const Resume: NextPage = () => (
           <div className="grid gap-4 md:grid-cols-3 md:gap-0">
             <div>
               <p className="font-bold text-neutral-900">Languages & Libraries</p>
-              <ul className="text-neutral-600">
+              <ul className="text-neutral-600 dark:text-neutral-300">
                 <li>JavaScript</li>
                 <li>TypeScript</li>
                 <li>Next.js</li>
@@ -80,7 +72,7 @@ const Resume: NextPage = () => (
             </div>
             <div>
               <p className="font-bold text-neutral-900">Technologies</p>
-              <ul className="text-neutral-600">
+              <ul className="text-neutral-600 dark:text-neutral-300">
                 <li>Node.js</li>
                 <li>Yarn</li>
                 <li>NPM</li>
@@ -94,7 +86,7 @@ const Resume: NextPage = () => (
 
             <div>
               <p className="font-bold text-neutral-900">Platforms</p>
-              <ul className="text-neutral-600">
+              <ul className="text-neutral-600 dark:text-neutral-300">
                 <li>DigitalOcean</li>
                 <li>Linode</li>
                 <li>Vercel</li>

@@ -1,33 +1,33 @@
 const navItems = [
   {
+    name: 'Home',
+    path: '/',
+    id: 'cl68bjhzy00002069nuqv0q32',
+  },
+  {
     name: 'About',
     path: '/#about',
-    number: 1,
-    id: 'cl5xsle40000m09jq8cleg30a',
+    id: 'cl68bjos300022069yru9txtt',
   },
   {
     name: 'Projects',
     path: '/#projects',
-    number: 2,
-    id: 'cl5xslh7x000n09jq2smqf9wd',
+    id: 'cl68bjsqz000320695i0i22zo',
   },
   {
     name: 'Get In Touch',
     path: '/contact',
-    number: 3,
-    id: 'cl5xslkek000o09jq6h050ig1',
+    id: 'cl68bjw9y00042069z3z6g22a',
   },
   {
     name: 'Resume',
     path: '/resume',
-    number: 4,
-    id: 'cl5xslrxe000p09jqg86d2kmp',
+    id: 'cl68bk08d00052069yqkq8el9',
   },
   {
     name: 'Links',
-    path: '/links',
-    button: true,
-    id: 'cl5yban4b000109l02mvdeh0e',
+    path: 'https://links.znagy.hu/',
+    id: 'cl68bk4fw00062069lgxgpid3',
   },
 ];
 
