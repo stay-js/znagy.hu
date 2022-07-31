@@ -26,7 +26,7 @@ const navItems = [
   },
   {
     name: 'Links',
-    path: '/links',
+    path: 'https://links.znagy.hu/',
     id: 'cl68bk4fw00062069lgxgpid3',
   },
 ];

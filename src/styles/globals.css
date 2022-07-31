@@ -25,14 +25,3 @@ p {
 .content {
   @apply mx-auto w-[80%] lg:w-[65%] 2xl:w-[55%];
 }
-
-.card {
-  display: block;
-  padding: 1px;
-  background-clip: content-box, border-box;
-  background-image: linear-gradient(black, black), linear-gradient(to right, gray, gray);
-}
-
-.card:hover {
-  background-image: linear-gradient(black, black), linear-gradient(to right, red, red);
-}

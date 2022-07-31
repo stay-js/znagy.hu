@@ -8,8 +8,8 @@ const Projects: React.FC = () => (
 
     <div className="flex flex-col gap-16 item">
       <article>
-        <div className="flex text-gray-400">
-          <h1>Todo App</h1>
+        <div className="flex">
+          <h1 className="text-lg font-semibold dark:text-neutral-200 text-neutral-800">Todo App</h1>
           <Link href="https://github.com/stay-js/todo">
             <a
               target="_blank"
@@ -29,8 +29,8 @@ const Projects: React.FC = () => (
         </div>
 
         <div className="p-4 my-4 bg-slate-700 rounded max-w-[60ch]">
-          <p className="m-0">Simple Todo App with GitHub authentication.</p>
-          <p className="m-0">
+          <p className="m-0 text-neutral-200">Simple Todo App with GitHub authentication.</p>
+          <p className="m-0 text-neutral-200">
             Front-end:{' '}
             <Link href="https://nextjs.org/">
               <a target="_blank" className="link">
@@ -51,7 +51,7 @@ const Projects: React.FC = () => (
             </Link>
             .
           </p>
-          <p className="m-0">
+          <p className="m-0 text-neutral-200">
             Back-end:{' '}
             <Link href="https://trpc.io/">
               <a target="_blank" className="link">
@@ -85,7 +85,7 @@ const Projects: React.FC = () => (
             (/api).
           </p>
         </div>
-        <ul className="flex gap-4 text-gray-400 text-[0.8rem] flex-wrap max-w-[70ch] font-mono">
+        <ul className="flex gap-4 text-[0.8rem] flex-wrap max-w-[70ch] text-neutral-600 dark:text-neutral-300 font-mono">
           <li>TypeScript</li>
           <li>Next.js</li>
           <li>Tailwind CSS</li>
@@ -99,8 +99,10 @@ const Projects: React.FC = () => (
       </article>
 
       <article>
-        <div className="flex text-gray-400">
-          <h1>Stay Random</h1>
+        <div className="flex">
+          <h1 className="text-lg font-semibold dark:text-neutral-200 text-neutral-800">
+            Stay Random
+          </h1>
           <Link href="https://github.com/stay-js/random">
             <a
               target="_blank"
@@ -120,8 +122,10 @@ const Projects: React.FC = () => (
         </div>
 
         <div className="p-4 my-4 bg-slate-700 rounded max-w-[60ch]">
-          <p className="m-0">Random Generator (CUID, GUID, UUID, Number, Color, etc.).</p>
-          <p className="m-0">
+          <p className="m-0 text-neutral-200">
+            Random Generator (CUID, GUID, UUID, Number, Color, etc.).
+          </p>
+          <p className="m-0 text-neutral-200">
             Front-end:{' '}
             <Link href="https://nextjs.org/">
               <a target="_blank" className="link">
@@ -143,7 +147,7 @@ const Projects: React.FC = () => (
             .
           </p>
         </div>
-        <ul className="flex gap-4 text-gray-400 text-[0.8rem] flex-wrap max-w-[70ch] font-mono">
+        <ul className="flex gap-4 text-[0.8rem] flex-wrap max-w-[70ch] text-neutral-600 dark:text-neutral-300 font-mono">
           <li>TypeScript</li>
           <li>Next.js</li>
           <li>Tailwind CSS</li>
@@ -153,8 +157,10 @@ const Projects: React.FC = () => (
       </article>
 
       <article>
-        <div className="flex text-gray-400">
-          <h1>Portfolio (znagy.hu)</h1>
+        <div className="flex">
+          <h1 className="text-lg font-semibold dark:text-neutral-200 text-neutral-800">
+            Portfolio (znagy.hu)
+          </h1>
           <Link href="https://github.com/stay-js/stay">
             <a
               target="_blank"
@@ -174,8 +180,8 @@ const Projects: React.FC = () => (
         </div>
 
         <div className="p-4 my-4 bg-slate-700 rounded max-w-[60ch]">
-          <p className="m-0">Simple portfolio website.</p>
-          <p className="m-0">
+          <p className="m-0 text-neutral-200">Simple portfolio website.</p>
+          <p className="m-0 text-neutral-200">
             Front-end:{' '}
             <Link href="https://nextjs.org/">
               <a target="_blank" className="link">
@@ -196,7 +202,7 @@ const Projects: React.FC = () => (
             </Link>
             .
           </p>
-          <p className="m-0">
+          <p className="m-0 text-neutral-200">
             Back-end:{' '}
             <Link href="https://trpc.io/">
               <a target="_blank" className="link">
@@ -218,7 +224,7 @@ const Projects: React.FC = () => (
             (/api).
           </p>
         </div>
-        <ul className="flex gap-4 text-gray-400 text-[0.8rem] flex-wrap max-w-[70ch] font-mono">
+        <ul className="flex gap-4 text-[0.8rem] flex-wrap max-w-[70ch] text-neutral-600 dark:text-neutral-300 font-mono">
           <li>TypeScript</li>
           <li>Next.js</li>
           <li>Tailwind CSS</li>
@@ -230,8 +236,8 @@ const Projects: React.FC = () => (
       </article>
 
       <article>
-        <div className="flex text-gray-400">
-          <h1>Anything</h1>
+        <div className="flex">
+          <h1 className="text-lg font-semibold dark:text-neutral-200 text-neutral-800">Anything</h1>
           <Link href="https://anything.znagy.hu/">
             <a
               target="_blank"
@@ -243,7 +249,7 @@ const Projects: React.FC = () => (
         </div>
 
         <div className="p-4 my-4 bg-slate-700 rounded max-w-[60ch]">
-          <p className="m-0">
+          <p className="m-0 text-neutral-200">
             A Discord BOT build back in 2020, with{' '}
             <Link href="https://discord.js.org/">
               <a target="_blank" className="link">
@@ -258,10 +264,10 @@ const Projects: React.FC = () => (
             </Link>
             .
           </p>
-          <p className="m-0">
+          <p className="m-0 text-neutral-200">
             All 70+ commands are listed on the website, which is built with plain HTML5 and CSS3.
           </p>
-          <p className="m-0">
+          <p className="m-0 text-neutral-200">
             Later on I&rsquo;ll migrate the BOT from{' '}
             <Link href="https://www.javascript.com/">
               <a target="_blank" className="link">
@@ -283,7 +289,7 @@ const Projects: React.FC = () => (
             , and maybe I&rsquo;ll open source the project.
           </p>
         </div>
-        <ul className="flex gap-4 text-gray-400 text-[0.8rem] flex-wrap max-w-[70ch] font-mono">
+        <ul className="flex gap-4 text-[0.8rem] flex-wrap max-w-[70ch] text-neutral-600 dark:text-neutral-300 font-mono">
           <li>JavaScript</li>
           <li>Discord.js</li>
           <li>Heroku</li>
@@ -294,16 +300,18 @@ const Projects: React.FC = () => (
       </article>
 
       <article>
-        <div className="flex text-gray-400">
-          <h1>REGALE Energy Zrt.</h1>
+        <div className="flex">
+          <h1 className="text-lg font-semibold dark:text-neutral-200 text-neutral-800">
+            REGALE Energy Zrt.
+          </h1>
         </div>
 
         <div className="p-4 my-4 bg-slate-700 rounded max-w-[60ch]">
-          <p className="m-0">
+          <p className="m-0 text-neutral-200">
             This is my current project. (I&rsquo;ll publish the link when it&rsquo;s done.)
           </p>
-          <p className="m-0">A company website for REGALE Energy Zrt.</p>
-          <p className="m-0">
+          <p className="m-0 text-neutral-200">A company website for REGALE Energy Zrt.</p>
+          <p className="m-0 text-neutral-200">
             Front-end:{' '}
             <Link href="https://nextjs.org/">
               <a target="_blank" className="link">
@@ -324,7 +332,7 @@ const Projects: React.FC = () => (
             </Link>
             .
           </p>
-          <p className="m-0">
+          <p className="m-0 text-neutral-200">
             Back-end:{' '}
             <Link href="https://trpc.io/">
               <a target="_blank" className="link">
@@ -358,7 +366,7 @@ const Projects: React.FC = () => (
             (/api).
           </p>
         </div>
-        <ul className="flex gap-4 text-gray-400 text-[0.8rem] flex-wrap max-w-[70ch] font-mono">
+        <ul className="flex gap-4 text-[0.8rem] flex-wrap max-w-[70ch] text-neutral-600 dark:text-neutral-300 font-mono">
           <li>TypeScript</li>
           <li>Next.js</li>
           <li>Tailwind CSS</li>
