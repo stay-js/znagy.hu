@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/future/image';
 import { Hero, AboutMe, Projects, GetInTouch } from '../components/LandingPage';
 
 const LandingPage: NextPage = () => (

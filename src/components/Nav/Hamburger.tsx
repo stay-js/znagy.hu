@@ -1,7 +1,7 @@
 import { Burger } from '@mantine/core';
+import { useMantineColorScheme } from '@mantine/core';
 import Link from 'next/link';
 import { useState } from 'react';
-import { useMantineColorScheme } from '@mantine/core';
 import navItems from '../../utils/navItems';
 import ThemeToggle from './ThemeToggle';
 

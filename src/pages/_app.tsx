@@ -1,14 +1,14 @@
 import type { AppRouter } from '../server/router';
 import type { AppType } from 'next/dist/shared/lib/utils';
 import { MantineProvider, ColorSchemeProvider, ColorScheme } from '@mantine/core';
+import { useLocalStorage, useColorScheme } from '@mantine/hooks';
 import { withTRPC } from '@trpc/next';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 import superjson from 'superjson';
 import Nav from '../components/Nav';
 import { env } from '../env/client.mjs';
-import { useEffect } from 'react';
-import { useLocalStorage, useColorScheme } from '@mantine/hooks';
 import '../styles/globals.css';
 
 const App: AppType = ({ Component, pageProps }) => {
@@ -27,7 +27,7 @@ const App: AppType = ({ Component, pageProps }) => {
     } else {
       document.documentElement.classList.remove('dark');
     }
-  }, [colorScheme]);
+  }, [colorScheme, preferredColorScheme]);
 
   return (
     <>
