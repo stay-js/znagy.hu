@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root.dark {
+  color-scheme: dark;
+}
+
+:root {
+  color-scheme: light;
+}
+
 html {
   @apply antialiased scroll-pt-20;
 }
