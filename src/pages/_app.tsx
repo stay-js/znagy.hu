@@ -7,7 +7,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import superjson from 'superjson';
-import Nav from '../components/Nav';
+import Navigation from '../components/Navigation';
 import { env } from '../env/client.mjs';
 import '../styles/globals.css';
 
@@ -66,7 +66,7 @@ const App: AppType = ({ Component, pageProps }) => {
         <MantineProvider
           theme={{ colorScheme: colorScheme!, primaryColor: 'green', fontFamily: 'Roboto' }}
         >
-          <Nav />
+          <Navigation />
           <Component {...pageProps} />
         </MantineProvider>
       </ColorSchemeProvider>
