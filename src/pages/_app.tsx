@@ -63,9 +63,7 @@ const App: AppType = ({ Component, pageProps }) => {
       </Head>
 
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
-        <MantineProvider
-          theme={{ colorScheme: colorScheme!, primaryColor: 'green', fontFamily: 'Roboto' }}
-        >
+        <MantineProvider theme={{ colorScheme, primaryColor: 'green', fontFamily: 'Roboto' }}>
           <Navigation />
           <Component {...pageProps} />
         </MantineProvider>
