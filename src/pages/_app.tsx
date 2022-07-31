@@ -12,22 +12,21 @@ import { env } from '../env/client.mjs';
 import '../styles/globals.css';
 
 const App: AppType = ({ Component, pageProps }) => {
-  const preferredColorScheme = useColorScheme();
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
     key: 'theme',
-    defaultValue: preferredColorScheme,
+    defaultValue: 'light',
     getInitialValueInEffect: true,
   });
 
   const toggleColorScheme = () => setColorScheme(colorScheme === 'dark' ? 'light' : 'dark');
 
   useEffect(() => {
-    if (colorScheme === 'dark' || (!colorScheme && preferredColorScheme === 'dark')) {
+    if (colorScheme === 'dark') {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
     }
-  }, [colorScheme, preferredColorScheme]);
+  }, [colorScheme]);
 
   return (
     <>
@@ -63,7 +62,7 @@ const App: AppType = ({ Component, pageProps }) => {
         <meta name="rating" content="general" />
       </Head>
 
-      <ColorSchemeProvider colorScheme={colorScheme!} toggleColorScheme={toggleColorScheme!}>
+      <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
         <MantineProvider
           theme={{ colorScheme: colorScheme!, primaryColor: 'green', fontFamily: 'Roboto' }}
         >
