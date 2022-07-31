@@ -8,7 +8,7 @@ const FormSuccess: React.FC = () => (
       height={80}
       width={80}
     />
-    <p className="text-center">Message sent successfully!</p>
+    Message sent successfully!
   </div>
 );
 
