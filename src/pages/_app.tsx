@@ -1,7 +1,7 @@
 import type { AppRouter } from '../server/router';
 import type { AppType } from 'next/dist/shared/lib/utils';
 import { MantineProvider, ColorSchemeProvider, ColorScheme } from '@mantine/core';
-import { useLocalStorage, useColorScheme } from '@mantine/hooks';
+import { useLocalStorage } from '@mantine/hooks';
 import { withTRPC } from '@trpc/next';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
