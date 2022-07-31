@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
 import { Burger, useMantineColorScheme } from '@mantine/core';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 import navItems from '../../utils/navItems';
 
 const Navigation: React.FC = () => {
