@@ -2,7 +2,6 @@ import { TextInput, Textarea } from '@mantine/core';
 import { useState } from 'react';
 import { TbUser, TbMail } from 'react-icons/tb';
 import trpc from '../../utils/trpc';
-import validate from '../../utils/validate';
 import { Error, Loading, Success } from './Status';
 
 interface Props {
@@ -26,6 +25,21 @@ const defaultValues: Props = {
   name: '',
   email: '',
   msg: '',
+};
+
+const validate = (values: Props): Errors => {
+  const errors: Errors = {};
+
+  if (!values.name) errors.name = 'Please specify a name!';
+  if (!values.msg) errors.msg = 'Please specify a message!';
+
+  if (!values.email) {
+    errors.email = 'Please specify an e-mail address!';
+  } else if (!/\S+@\S+\.\S+/.test(values.email)) {
+    errors.email = 'Please provide a valid e-mail address!';
+  }
+
+  return errors;
 };
 
 const Form: React.FC = () => {
