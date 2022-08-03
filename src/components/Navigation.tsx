@@ -2,7 +2,7 @@ import { Burger, useMantineColorScheme } from '@mantine/core';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { TbSun, TbMoon } from 'react-icons/tb';
-import navItems from '../utils/navItems';
+import navItems from '@utils/navItems';
 
 const Navigation: React.FC = () => {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();

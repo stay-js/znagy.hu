@@ -1,7 +1,7 @@
 import { TextInput, Textarea } from '@mantine/core';
 import { useState } from 'react';
 import { TbUser, TbMail } from 'react-icons/tb';
-import trpc from '../../utils/trpc';
+import trpc from '@utils/trpc';
 import { Error, Loading, Success } from './Status';
 
 interface Props {
