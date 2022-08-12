@@ -14,7 +14,7 @@ import '@styles/globals.css';
 const App: AppType = ({ Component, pageProps }) => {
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
     key: 'theme',
-    defaultValue: 'light',
+    defaultValue: 'dark',
     getInitialValueInEffect: true,
   });
 
@@ -46,7 +46,6 @@ const App: AppType = ({ Component, pageProps }) => {
         <meta property="og:type" content="website" key="og_type" />
         <meta property="og:site_name" content="Zétény Nagy" key="site_name" />
         <meta property="og:image" content="https://znagy.hu/images/me.png" key="image" />
-        <meta name="theme-color" content="#0f172a" />
 
         <meta name="url" content={`https://znagy.hu${useRouter().pathname}`} />
         <meta property="og:url" content={`https://znagy.hu${useRouter().pathname}`} />
