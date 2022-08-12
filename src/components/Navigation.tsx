@@ -40,7 +40,7 @@ const Navigation: React.FC = () => {
                 isToggled ? 'left-0' : 'left-[-100%]'
               } flex flex-col px-8 fixed w-full top-16 h-screen z-50 bg-white dark:bg-neutral-900 transition-all duration-500 ease-in-out select-none`}
             >
-              {navItems.map(({ id, path, name }) => (
+              {navItems.map(({ id, path, name }, index) => (
                 <li key={id}>
                   <Link href={path}>
                     <a
