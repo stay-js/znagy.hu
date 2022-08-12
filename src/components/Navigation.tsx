@@ -37,14 +37,14 @@ const Navigation: React.FC = () => {
 
             <ul
               className={`${
-                isToggled ? 'right-0' : 'right-[-100%]'
-              } flex flex-col fixed w-full top-16 h-screen z-50 items-center bg-white transition-all duration-500 ease-in-out select-none`}
+                isToggled ? 'left-0' : 'left-[-100%]'
+              } flex flex-col px-8 fixed w-full top-16 h-screen z-50 bg-white dark:bg-neutral-900 transition-all duration-500 ease-in-out select-none`}
             >
               {navItems.map(({ id, path, name }) => (
                 <li key={id}>
                   <Link href={path}>
                     <a
-                      className="block mt-8 text-black transition-colors duration-150 hover:text-green-500"
+                      className="relative block w-full mt-8 text-black font-bold dark:text-white dark:after:bg-neutral-600 after:bg-neutral-300 after:block after:w-full after:h-[1px] after:-bottom-4 after:absolute"
                       onClick={() => setIsToggled(false)}
                     >
                       {name}
