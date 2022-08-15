@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 import Form from '@components/Form';
+import Title from '@components/Title';
 
 const Contact: NextPage = () => (
   <>
@@ -31,8 +32,7 @@ const Contact: NextPage = () => (
     </Head>
 
     <main className="font-sans content">
-      <h1 className="my-4 font-serif text-3xl text-center">Send me a message!</h1>
-      <div className="max-w-[75ch] mx-auto text-center">
+      <Title title="Send me a message!">
         <p className="m-0">
           Got something you would like to say? Or have a question? Feel free to send me a message
           using the form down below. I&rsquo;m just a few clicks away...
@@ -45,7 +45,7 @@ const Contact: NextPage = () => (
             </a>
           </Link>
         </p>
-      </div>
+      </Title>
 
       <Form />
     </main>

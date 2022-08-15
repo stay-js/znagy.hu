@@ -3,6 +3,7 @@ import Image from 'next/future/image';
 import Head from 'next/head';
 import Link from 'next/link';
 import { TbKeyboard, TbMouse, TbHeadphones } from 'react-icons/tb';
+import Title from '@components/Title';
 
 const Contact: NextPage = () => (
   <>
@@ -26,14 +27,11 @@ const Contact: NextPage = () => (
     </Head>
 
     <main className="font-sans content">
-      <h1 className="my-4 font-bold text-5xl text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-green-500">
-        Setup
-      </h1>
-      <p className="max-w-[75ch] mx-auto text-center">
+      <Title title="Setup">
         These are the things that I use everyday, hope you find it interesting...
-      </p>
+      </Title>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 mt-12 gap-4">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
         {[
           {
             title: 'Apple MacBook Pro 14"',
