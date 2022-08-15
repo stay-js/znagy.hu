@@ -85,6 +85,20 @@ const Contact: NextPage = () => (
             ),
           },
           {
+            title: 'Home Server',
+            image: '/images/server.jpg',
+            body: (
+              <ul>
+                <li>Intel® Core™ i5-4460</li>
+                <li>GIGABYTE B85M-D2V</li>
+                <li>16GB DDR3 RAM</li>
+                <li>Seasonic SSP-350SE Active PFC F3</li>
+                <li>Crucial BX500 240GB SSD</li>
+                <li>Samsung 870 EVO 1TB SSD</li>
+              </ul>
+            ),
+          },
+          {
             title: 'Apple iPhone XR',
             image: '/images/apple-iphone-xr.jpg',
             url: 'https://support.apple.com/kb/SP781?locale=en_US',
@@ -106,20 +120,6 @@ const Contact: NextPage = () => (
                 <li>Spatial Audio</li>
                 <li>Adaptive EQ</li>
                 <li>Sweat and water resistant (IPX4)</li>
-              </ul>
-            ),
-          },
-          {
-            title: 'Home Server',
-            image: '/images/server.jpg',
-            body: (
-              <ul>
-                <li>Intel® Core™ i5-4460</li>
-                <li>GIGABYTE B85M-D2V</li>
-                <li>16GB DDR3 RAM</li>
-                <li>Seasonic SSP-350SE Active PFC F3</li>
-                <li>Crucial BX500 240GB SSD</li>
-                <li>Samsung 870 EVO 1TB SSD</li>
               </ul>
             ),
           },
