@@ -10,7 +10,7 @@ const AboutMe: React.FC = () => (
       <div className="self-center lg:order-2">
         <Image
           className="relative w-64 h-64 border-t-[10px] border-l-[10px] border-green-500 transition-all duration-300 hover:-rotate-6 focus:-rotate-6"
-          src="/images/me.png"
+          src="/images/me.jpg"
           alt="me"
           width={720}
           height={720}
@@ -32,6 +32,13 @@ const AboutMe: React.FC = () => (
           My favourite subject is maths since first grade. Also I love doing Kyokushin Karate and
           Thai-Boxing (Muay Thai). I will improve my coding and fighting skills especially because I
           want to be a Full Stack web developer...
+        </p>
+        <p>
+          If you are interested check out my{' '}
+          <Link href="/setup">
+            <a className="text-green-500 link">setup</a>
+          </Link>
+          .
         </p>
         <p>Favourite technologies/things I use:</p>
         <div className="flex gap-20 ml-8">
