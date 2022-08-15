@@ -109,13 +109,36 @@ const Contact: NextPage = () => (
               </ul>
             ),
           },
+          {
+            title: 'Home Server',
+            image: '/images/server.jpg',
+            body: (
+              <ul>
+                <li>Intel® Core™ i5-4460</li>
+                <li>GIGABYTE B85M-D2V</li>
+                <li>16GB DDR3 RAM</li>
+                <li>Seasonic SSP-350SE Active PFC F3</li>
+                <li>Crucial BX500 240GB SSD</li>
+                <li>Samsung 870 EVO 1TB SSD</li>
+              </ul>
+            ),
+          },
         ].map(({ title, image, url, body }) => (
           <div
             key={url}
             className="flex flex-col gap-4 px-4 py-8 bg-white rounded-lg text-black shadow-lg h-fit"
           >
             <h1 className="text-center text-xl font-bold">{title}</h1>
-            {image && <Image src={image} width={512} height={512} title={title} alt={title} />}
+            {image && (
+              <Image
+                src={image}
+                width={512}
+                height={512}
+                title={title}
+                alt={title}
+                className="select-none"
+              />
+            )}
             {body}
             {url && (
               <Link href={url}>
