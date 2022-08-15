@@ -90,8 +90,8 @@ const Contact: NextPage = () => (
             body: (
               <ul>
                 <li>Intel® Core™ i5-4460</li>
-                <li>GIGABYTE B85M-D2V</li>
                 <li>16GB DDR3 RAM</li>
+                <li>GIGABYTE B85M-D2V</li>
                 <li>Seasonic SSP-350SE Active PFC F3</li>
                 <li>Crucial BX500 240GB SSD</li>
                 <li>Samsung 870 EVO 1TB SSD</li>
