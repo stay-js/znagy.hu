@@ -5,11 +5,6 @@ const navItems = [
     id: 'cl68bjhzy00002069nuqv0q32',
   },
   {
-    name: 'About',
-    path: '/#about',
-    id: 'cl68bjos300022069yru9txtt',
-  },
-  {
     name: 'Projects',
     path: '/#projects',
     id: 'cl68bjsqz000320695i0i22zo',
