@@ -48,7 +48,7 @@ const Contact: NextPage = () => (
             ),
           },
           {
-            title: 'Acer NITRO VG240YS IPS 165 Hz',
+            title: 'Acer NITRO VG240YS',
             image: '/images/acer-vg240ys.jpg',
             url: 'https://www.acer.com/ac/en/GB/content/model/UM.QV0EE.S01',
             body: (
