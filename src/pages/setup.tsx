@@ -36,7 +36,7 @@ const Contact: NextPage = () => (
       <div className="grid sm:grid-cols-2 md:grid-cols-3 mt-12 gap-4">
         {[
           {
-            title: 'Macbook Pro 14"',
+            title: 'Apple MacBook Pro 14"',
             image: '/images/macbook-pro-14.jpg',
             url: 'https://www.apple.com/macbook-pro-14-and-16',
             body: (
