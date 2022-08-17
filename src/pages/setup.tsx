@@ -46,6 +46,31 @@ const Contact: NextPage = () => (
             ),
           },
           {
+            title: 'Apple iPhone XR',
+            image: '/images/apple-iphone-xr.jpg',
+            url: 'https://support.apple.com/kb/SP781?locale=en_US',
+            body: (
+              <ul>
+                <li>Apple A12 Bionic</li>
+                <li>3GB memory</li>
+                <li>64GB storage</li>
+              </ul>
+            ),
+          },
+          {
+            title: 'Apple AirPods 3',
+            image: '/images/apple-airpods-3.jpg',
+            url: 'https://www.apple.com/shop/product/MME73AM/A/airpods-3rd-generation',
+            body: (
+              <ul>
+                <li>Apple H1 headphone chip</li>
+                <li>Spatial Audio</li>
+                <li>Adaptive EQ</li>
+                <li>Sweat and water resistant (IPX4)</li>
+              </ul>
+            ),
+          },
+          {
             title: 'Acer NITRO VG240YS',
             image: '/images/acer-vg240ys.jpg',
             url: 'https://www.acer.com/ac/en/GB/content/model/UM.QV0EE.S01',
@@ -56,6 +81,20 @@ const Contact: NextPage = () => (
                 <li>HDR10</li>
                 <li>165 Hz Refresh Rate</li>
                 <li>2 ms Response Time</li>
+              </ul>
+            ),
+          },
+          {
+            title: 'Home Server',
+            image: '/images/server.jpg',
+            body: (
+              <ul>
+                <li>Intel® Core™ i5-4460</li>
+                <li>16GB DDR3 RAM</li>
+                <li>GIGABYTE B85M-D2V</li>
+                <li>Seasonic SSP-350SE Active PFC F3</li>
+                <li>Crucial BX500 240GB SSD</li>
+                <li>Samsung 870 EVO 1TB SSD</li>
               </ul>
             ),
           },
@@ -81,45 +120,6 @@ const Contact: NextPage = () => (
                     <a target="_blank">SPC Gear Viro</a>
                   </Link>
                 </li>
-              </ul>
-            ),
-          },
-          {
-            title: 'Home Server',
-            image: '/images/server.jpg',
-            body: (
-              <ul>
-                <li>Intel® Core™ i5-4460</li>
-                <li>16GB DDR3 RAM</li>
-                <li>GIGABYTE B85M-D2V</li>
-                <li>Seasonic SSP-350SE Active PFC F3</li>
-                <li>Crucial BX500 240GB SSD</li>
-                <li>Samsung 870 EVO 1TB SSD</li>
-              </ul>
-            ),
-          },
-          {
-            title: 'Apple iPhone XR',
-            image: '/images/apple-iphone-xr.jpg',
-            url: 'https://support.apple.com/kb/SP781?locale=en_US',
-            body: (
-              <ul>
-                <li>Apple A12 Bionic</li>
-                <li>3GB memory</li>
-                <li>64GB storage</li>
-              </ul>
-            ),
-          },
-          {
-            title: 'Apple AirPods 3',
-            image: '/images/apple-airpods-3.jpg',
-            url: 'https://www.apple.com/shop/product/MME73AM/A/airpods-3rd-generation',
-            body: (
-              <ul>
-                <li>Apple H1 headphone chip</li>
-                <li>Spatial Audio</li>
-                <li>Adaptive EQ</li>
-                <li>Sweat and water resistant (IPX4)</li>
               </ul>
             ),
           },
