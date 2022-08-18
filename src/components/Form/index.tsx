@@ -64,19 +64,17 @@ const Form: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      autoComplete="off" // disable autocomplete until I fix the highlighting issue
       className="sm:max-w-lg max-w-[90%] flex flex-col gap-4 mx-auto mt-5 text-sm p-8 dark:bg-neutral-800 bg-white shadow-2xl sm:p-12 md:px-20 rounded-2xl"
     >
       <div className="flex flex-col gap-1">
-        <label htmlFor="name" className="dark:text-neutral-300 font-medium text-sm">
+        <label htmlFor="name" className="dark:text-neutral-300 font-medium text-sm w-fit">
           Name:
         </label>
 
-        <div className="flex gap-2 items-center dark:bg-[#25262b] h-10 rounded border-neutral-300 dark:border-[#373A40] border pl-3 font-bold focus:outline-teal-500">
-          <TbUser size={18} className="text-neutral-400" />
-
+        <div className="relative flex items-center">
+          <TbUser size={18} className="text-neutral-400 absolute left-3 pointer-events-none" />
           <input
-            className="w-full h-full text-black dark:text-white dark:bg-[#25262b] font-normal outline-none"
+            className="text-black dark:text-white pl-10 dark:bg-[#25262b] h-10 w-full rounded border-neutral-300 dark:border-[#373A40] border"
             type="text"
             id="name"
             placeholder="Example Peter"
@@ -86,20 +84,19 @@ const Form: React.FC = () => {
         </div>
 
         {errors.name && (
-          <p className="text-xs text-red-500 dark:text-red-500 mb-0">{errors.name}</p>
+          <p className="text-xs dark:text-red-500 text-red-500 mb-0">{errors.name}</p>
         )}
       </div>
 
       <div className="flex flex-col gap-1">
-        <label htmlFor="email" className="dark:text-neutral-300 font-medium text-sm">
+        <label htmlFor="email" className="dark:text-neutral-300 font-medium text-sm w-fit">
           E-mail:
         </label>
 
-        <div className="flex gap-2 items-center dark:bg-[#25262b] h-10 rounded border-neutral-300 dark:border-[#373A40] border pl-3 font-bold">
-          <TbMail size={18} className="text-neutral-400" />
-
+        <div className="relative flex items-center">
+          <TbMail size={18} className="text-neutral-400 absolute left-3 pointer-events-none" />
           <input
-            className="w-full h-full text-black dark:text-white dark:bg-[#25262b] font-normal outline-none"
+            className="text-black dark:text-white pl-10 dark:bg-[#25262b] h-10 w-full rounded border-neutral-300 dark:border-[#373A40] border"
             type="text"
             id="email"
             placeholder="example@gmail.com"
@@ -114,12 +111,12 @@ const Form: React.FC = () => {
       </div>
 
       <div className="flex flex-col gap-1">
-        <label htmlFor="msg" className="dark:text-neutral-300 font-medium text-sm">
+        <label htmlFor="msg" className="dark:text-neutral-300 font-medium text-sm w-fit">
           Message:
         </label>
 
         <textarea
-          className="w-full text-black dark:text-white font-normal outline-none dark:bg-[#25262b] rounded border-neutral-300 dark:border-[#373A40] border px-3 py-2 resize-none"
+          className="w-full text-black dark:text-white dark:bg-[#25262b] rounded border-neutral-300 dark:border-[#373A40] border px-3 py-2 resize-none"
           id="msg"
           rows={6}
           placeholder="Please try to describe your question in as much detail as possible."
