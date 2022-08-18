@@ -1,11 +1,11 @@
-import { Burger, useMantineColorScheme } from '@mantine/core';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { TbSun, TbMoon } from 'react-icons/tb';
 import navItems from '@utils/navItems';
+import useColorScheme from '@utils/useColorScheme';
 
 const Navigation: React.FC = () => {
-  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+  const { colorScheme, toggleColorScheme } = useColorScheme();
   const [isToggled, setIsToggled] = useState<boolean>(false);
   const [width, setWidth] = useState<number | null>(null);
 
@@ -29,18 +29,30 @@ const Navigation: React.FC = () => {
 
         {!width || width < 1024 ? (
           <>
-            <Burger
-              color={colorScheme === 'dark' ? 'white' : 'black'}
-              opened={isToggled}
-              onClick={() => setIsToggled(!isToggled)}
-            />
+            <button type="button" className="w-6 h-6" onClick={() => setIsToggled(!isToggled)}>
+              <span
+                className={`${
+                  isToggled ? 'rotate-45' : '-translate-y-2'
+                } block absolute h-[2px] w-6 bg-current transition-all duration-500`}
+              />
+              <span
+                className={`${
+                  isToggled && 'opacity-0'
+                } block absolute h-[2px] w-6 bg-current transition-all duration-500`}
+              />
+              <span
+                className={`${
+                  isToggled ? '-rotate-45' : 'translate-y-2'
+                } block absolute h-[2px] w-6 bg-current transition-all duration-500`}
+              />
+            </button>
 
             <ul
               className={`${
                 isToggled ? 'left-0' : 'left-[-100%]'
               } flex flex-col px-8 fixed w-full top-16 h-screen z-50 bg-white dark:bg-neutral-900 transition-all duration-500 ease-in-out select-none`}
             >
-              {navItems.map(({ id, path, name }, index) => (
+              {navItems.map(({ id, path, name }) => (
                 <li key={id}>
                   <Link href={path}>
                     <a
