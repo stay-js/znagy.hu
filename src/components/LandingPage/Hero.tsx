@@ -4,13 +4,13 @@ import { TbArrowNarrowDown } from 'react-icons/tb';
 
 const Title: React.FC = () => (
   <section
-    className="flex flex-col justify-center content"
+    className="content flex flex-col justify-center"
     style={{
       minHeight: 'calc(100vh - 5rem)',
     }}
   >
-    <h1 className="text-4xl sm:text-5xl md:text-[5rem] mb-2 font-bold">
-      <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-green-500">
+    <h1 className="mb-2 text-4xl font-bold sm:text-5xl md:text-[5rem]">
+      <span className="bg-gradient-to-r from-teal-400 to-green-500 bg-clip-text text-transparent">
         Zétény
       </span>{' '}
       Nagy.
@@ -22,7 +22,7 @@ const Title: React.FC = () => (
         <a
           target="_blank"
           title="GitHub"
-          className="grid w-10 h-10 text-white transition-colors rounded-full place-items-center dark:border-0 border border-neutral-700 bg-neutral-700 hover:bg-white hover:text-zinc-900"
+          className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 bg-neutral-700 text-white transition-colors hover:bg-white hover:text-zinc-900 dark:border-0"
         >
           <FaGithub />
         </a>
@@ -32,7 +32,7 @@ const Title: React.FC = () => (
         <a
           target="_blank"
           title="Twitter"
-          className="grid w-10 h-10 text-white transition-colors rounded-full place-items-center dark:border-0 border border-neutral-700 bg-neutral-700 hover:bg-white hover:text-zinc-900"
+          className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 bg-neutral-700 text-white transition-colors hover:bg-white hover:text-zinc-900 dark:border-0"
         >
           <FaTwitter />
         </a>
@@ -42,7 +42,7 @@ const Title: React.FC = () => (
         <a
           target="_blank"
           title="E-mail"
-          className="grid w-10 h-10 text-white transition-colors rounded-full place-items-center dark:border-0 border border-neutral-700 bg-neutral-700 hover:bg-white hover:text-zinc-900"
+          className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 bg-neutral-700 text-white transition-colors hover:bg-white hover:text-zinc-900 dark:border-0"
         >
           <FaEnvelope />
         </a>
@@ -51,7 +51,7 @@ const Title: React.FC = () => (
       <Link href="https://www.youtube.com/channel/UCEGp1S_QTS3goAVX1cVw-tQ">
         <a
           title="YouTube"
-          className="grid w-10 h-10 text-white transition-colors rounded-full place-items-center dark:border-0 border border-neutral-700 bg-neutral-700 hover:bg-white hover:text-zinc-900"
+          className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 bg-neutral-700 text-white transition-colors hover:bg-white hover:text-zinc-900 dark:border-0"
         >
           <FaYoutube />
         </a>
@@ -59,7 +59,7 @@ const Title: React.FC = () => (
     </div>
 
     <Link href="#about">
-      <a className="mt-8 flex gap-1 items-center px-6 py-4 text-green-500 rounded outline outline-1 hover:outline-0 outline-green-500 transition-colors duration-500 hover:text-neutral-100 dark:hover:text-slate-900 hover:bg-gradient-to-r from-teal-400 to-green-500 w-fit">
+      <a className="mt-8 flex w-fit items-center gap-1 rounded from-teal-400 to-green-500 px-6 py-4 text-green-500 outline outline-1 outline-green-500 transition-colors duration-500 hover:bg-gradient-to-r hover:text-neutral-100 hover:outline-0 dark:hover:text-slate-900">
         <TbArrowNarrowDown size={18} />
         More About Me
       </a>

@@ -64,17 +64,17 @@ const Form: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="sm:max-w-lg max-w-[90%] flex flex-col gap-4 mx-auto mt-5 text-sm p-8 dark:bg-neutral-800 bg-white shadow-2xl sm:p-12 md:px-20 rounded-2xl"
+      className="mx-auto mt-5 flex max-w-[90%] flex-col gap-4 rounded-2xl bg-white p-8 text-sm shadow-2xl dark:bg-neutral-800 sm:max-w-lg sm:p-12 md:px-20"
     >
       <div className="flex flex-col gap-1">
-        <label htmlFor="name" className="dark:text-neutral-300 font-medium text-sm w-fit">
+        <label htmlFor="name" className="w-fit text-sm font-medium dark:text-neutral-300">
           Name:
         </label>
 
         <div className="relative flex items-center">
-          <TbUser size={18} className="text-neutral-400 absolute left-3 pointer-events-none" />
+          <TbUser size={18} className="pointer-events-none absolute left-3 text-neutral-400" />
           <input
-            className="text-black dark:text-white pl-10 dark:bg-[#25262b] h-10 w-full rounded border-neutral-300 dark:border-[#373A40] border"
+            className="h-10 w-full rounded border border-neutral-300 pl-10 text-black dark:border-[#373A40] dark:bg-[#25262b] dark:text-white"
             type="text"
             id="name"
             placeholder="Example Peter"
@@ -84,19 +84,19 @@ const Form: React.FC = () => {
         </div>
 
         {errors.name && (
-          <p className="text-xs dark:text-red-500 text-red-500 mb-0">{errors.name}</p>
+          <p className="mb-0 text-xs text-red-500 dark:text-red-500">{errors.name}</p>
         )}
       </div>
 
       <div className="flex flex-col gap-1">
-        <label htmlFor="email" className="dark:text-neutral-300 font-medium text-sm w-fit">
+        <label htmlFor="email" className="w-fit text-sm font-medium dark:text-neutral-300">
           E-mail:
         </label>
 
         <div className="relative flex items-center">
-          <TbMail size={18} className="text-neutral-400 absolute left-3 pointer-events-none" />
+          <TbMail size={18} className="pointer-events-none absolute left-3 text-neutral-400" />
           <input
-            className="text-black dark:text-white pl-10 dark:bg-[#25262b] h-10 w-full rounded border-neutral-300 dark:border-[#373A40] border"
+            className="h-10 w-full rounded border border-neutral-300 pl-10 text-black dark:border-[#373A40] dark:bg-[#25262b] dark:text-white"
             type="text"
             id="email"
             placeholder="example@gmail.com"
@@ -106,17 +106,17 @@ const Form: React.FC = () => {
         </div>
 
         {errors.email && (
-          <p className="text-xs dark:text-red-500 text-red-500 mb-0">{errors.email}</p>
+          <p className="mb-0 text-xs text-red-500 dark:text-red-500">{errors.email}</p>
         )}
       </div>
 
       <div className="flex flex-col gap-1">
-        <label htmlFor="msg" className="dark:text-neutral-300 font-medium text-sm w-fit">
+        <label htmlFor="msg" className="w-fit text-sm font-medium dark:text-neutral-300">
           Message:
         </label>
 
         <textarea
-          className="w-full text-black dark:text-white dark:bg-[#25262b] rounded border-neutral-300 dark:border-[#373A40] border px-3 py-2 resize-none"
+          className="w-full resize-none rounded border border-neutral-300 px-3 py-2 text-black dark:border-[#373A40] dark:bg-[#25262b] dark:text-white"
           id="msg"
           rows={6}
           placeholder="Please try to describe your question in as much detail as possible."
@@ -124,11 +124,11 @@ const Form: React.FC = () => {
           onChange={(event) => handleChange({ key: 'msg', value: event.currentTarget.value })}
         />
 
-        {errors.msg && <p className="text-xs text-red-500 dark:text-red-500 mb-0">{errors.msg}</p>}
+        {errors.msg && <p className="mb-0 text-xs text-red-500 dark:text-red-500">{errors.msg}</p>}
       </div>
 
       <input
-        className="h-10 w-full text-green-500 rounded outline outline-1 hover:outline-0 outline-green-500 transition-colors duration-500 hover:text-neutral-100 dark:hover:text-slate-900 hover:bg-gradient-to-r from-teal-400 to-green-500 cursor-pointer"
+        className="h-10 w-full cursor-pointer rounded from-teal-400 to-green-500 text-green-500 outline outline-1 outline-green-500 transition-colors duration-500 hover:bg-gradient-to-r hover:text-neutral-100 hover:outline-0 dark:hover:text-slate-900"
         type="submit"
         value="Send"
       />

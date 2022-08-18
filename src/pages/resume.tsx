@@ -35,20 +35,20 @@ const Resume: NextPage = () => (
           <h1 className="my-3 text-5xl font-bold">Zétény Nagy</h1>
           <Link href="https://github.com/stay-js">
             <a
-              className="block mb-12 text-2xl font-medium text-gray-600 dark:text-neutral-200 w-fit link"
+              className="link mb-12 block w-fit text-2xl font-medium text-gray-600 dark:text-neutral-200"
               target="_blank"
             >
               github.com/stay-js
             </a>
           </Link>
-          <p className="text-xl text-neutral-800 max-w-[60ch]">
+          <p className="max-w-[60ch] text-xl text-neutral-800">
             I consider myself as a Web Developer, but I am interested in several areas of IT, eg.
             Web Development, Data modeling / structuring, DevOps, Cloud and Networking.
           </p>
         </section>
 
         <section>
-          <h1 className="relative mt-10 mb-4 text-xl font-semibold tracking-widest uppercase after:bg-gray-600 after:w-full after:h-[2px] after:block">
+          <h1 className="relative mt-10 mb-4 text-xl font-semibold uppercase tracking-widest after:block after:h-[2px] after:w-full after:bg-gray-600">
             Skills
           </h1>
           <div className="grid gap-4 md:grid-cols-3 md:gap-0">
@@ -100,7 +100,7 @@ const Resume: NextPage = () => (
         </section>
 
         <section>
-          <h1 className="relative mt-10 mb-4 text-xl font-semibold tracking-widest uppercase after:bg-gray-600 after:w-full after:h-[2px] after:block">
+          <h1 className="relative mt-10 mb-4 text-xl font-semibold uppercase tracking-widest after:block after:h-[2px] after:w-full after:bg-gray-600">
             Education
           </h1>
           <div className="grid gap-8" style={{ gridTemplateColumns: '1fr 2fr' }}>
@@ -112,7 +112,7 @@ const Resume: NextPage = () => (
                 <b>Address:</b> Ürömi utca 64, 1023, Budapest, Hungary
               </p>
               <Link href="http://ujlaki.ultranet.hu/">
-                <a className="text-green-500 link" target="_blank">
+                <a className="link text-green-500" target="_blank">
                   ujlaki.ultranet.hu
                 </a>
               </Link>
@@ -126,7 +126,7 @@ const Resume: NextPage = () => (
                 <b>Address:</b> Kerepesi út 124, 1144, Budapest, Hungary
               </p>
               <Link href="http://www.njszki.hu/">
-                <a className="text-green-500 link" target="_blank">
+                <a className="link text-green-500" target="_blank">
                   www.njszki.hu
                 </a>
               </Link>
@@ -135,7 +135,7 @@ const Resume: NextPage = () => (
         </section>
 
         <section>
-          <h1 className="relative mt-10 mb-4 text-xl font-semibold tracking-widest uppercase after:bg-gray-600 after:w-full after:h-[2px] after:block">
+          <h1 className="relative mt-10 mb-4 text-xl font-semibold uppercase tracking-widest after:block after:h-[2px] after:w-full after:bg-gray-600">
             Hobbies
           </h1>
 

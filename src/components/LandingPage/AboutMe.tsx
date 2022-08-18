@@ -3,13 +3,13 @@ import Link from 'next/link';
 import SectionTitle from './SectionTitle';
 
 const AboutMe: React.FC = () => (
-  <section className="relative mb-20 content" id="about">
+  <section className="content relative mb-20" id="about">
     <SectionTitle title="About Me" number={1} />
 
     <div className="flex flex-col gap-12 lg:flex-row">
       <div className="self-center lg:order-2">
         <Image
-          className="relative w-64 h-64 border-t-[10px] border-l-[10px] border-green-500 transition-all duration-300 hover:-rotate-6 focus:-rotate-6"
+          className="relative h-64 w-64 border-t-[10px] border-l-[10px] border-green-500 transition-all duration-300 hover:-rotate-6 focus:-rotate-6"
           src="/images/me.jpg"
           alt="me"
           width={720}
@@ -21,7 +21,7 @@ const AboutMe: React.FC = () => (
         <p>
           My name is Zétény Nagy AKA stay, I&rsquo;m from Budapest, Hungary. Currently studying in{' '}
           <Link href="http://njszg.hu/">
-            <a target="_blank" className="text-green-500 link">
+            <a target="_blank" className="link text-green-500">
               BMSzC Neumann János Informatikai Technikum
             </a>
           </Link>
@@ -36,13 +36,13 @@ const AboutMe: React.FC = () => (
         <p>
           If you are interested check out my{' '}
           <Link href="/setup">
-            <a className="text-green-500 link">setup</a>
+            <a className="link text-green-500">setup</a>
           </Link>
           .
         </p>
         <p>Favourite technologies/things I use:</p>
-        <div className="flex gap-20 ml-8">
-          <ul className="text-green-500 list-disc">
+        <div className="ml-8 flex gap-20">
+          <ul className="list-disc text-green-500">
             <li>
               <Link href="https://www.typescriptlang.org/">
                 <a target="_blank" className="link">
@@ -65,7 +65,7 @@ const AboutMe: React.FC = () => (
               </Link>
             </li>
           </ul>
-          <ul className="text-green-500 list-disc">
+          <ul className="list-disc text-green-500">
             <li>
               <Link href="https://www.prisma.io/">
                 <a target="_blank" className="link">

@@ -16,10 +16,10 @@ const Navigation: React.FC = () => {
   }, [width]);
 
   return (
-    <nav className="fixed top-0 z-50 flex items-center w-full h-16 font-sans shadow select-none bg-neutral-100 dark:bg-neutral-900">
-      <div className="flex items-center place-content-between content">
+    <nav className="fixed top-0 z-50 flex h-16 w-full select-none items-center bg-neutral-100 font-sans shadow dark:bg-neutral-900">
+      <div className="content flex place-content-between items-center">
         <button
-          className="p-2 ring-neutral-400 hover:ring-2 rounded-lg bg-neutral-300 dark:bg-neutral-600 transition-all"
+          className="rounded-lg bg-neutral-300 p-2 ring-neutral-400 transition-all hover:ring-2 dark:bg-neutral-600"
           type="button"
           onClick={() => toggleColorScheme()}
           title="Toggle color scheme"
@@ -29,34 +29,34 @@ const Navigation: React.FC = () => {
 
         {!width || width < 1024 ? (
           <>
-            <button type="button" className="w-6 h-6" onClick={() => setIsToggled(!isToggled)}>
+            <button type="button" className="h-6 w-6" onClick={() => setIsToggled(!isToggled)}>
               <span
                 className={`${
                   isToggled ? 'rotate-45' : '-translate-y-2'
-                } block absolute h-[2px] w-6 bg-current transition-all duration-500`}
+                } absolute block h-[2px] w-6 bg-current transition-all duration-500`}
               />
               <span
                 className={`${
                   isToggled && 'opacity-0'
-                } block absolute h-[2px] w-6 bg-current transition-all duration-500`}
+                } absolute block h-[2px] w-6 bg-current transition-all duration-500`}
               />
               <span
                 className={`${
                   isToggled ? '-rotate-45' : 'translate-y-2'
-                } block absolute h-[2px] w-6 bg-current transition-all duration-500`}
+                } absolute block h-[2px] w-6 bg-current transition-all duration-500`}
               />
             </button>
 
             <ul
               className={`${
                 isToggled ? 'left-0' : 'left-[-100%]'
-              } flex flex-col px-8 fixed w-full top-16 h-screen z-50 bg-white dark:bg-neutral-900 transition-all duration-500 ease-in-out select-none`}
+              } fixed top-16 z-50 flex h-screen w-full select-none flex-col bg-white px-8 transition-all duration-500 ease-in-out dark:bg-neutral-900`}
             >
               {navItems.map(({ id, path, name }) => (
                 <li key={id}>
                   <Link href={path}>
                     <a
-                      className="relative block w-full mt-8 text-black font-bold dark:text-white dark:after:bg-neutral-600 after:bg-neutral-300 after:block after:w-full after:h-[1px] after:-bottom-4 after:absolute"
+                      className="relative mt-8 block w-full font-bold text-black after:absolute after:-bottom-4 after:block after:h-[1px] after:w-full after:bg-neutral-300 dark:text-white dark:after:bg-neutral-600"
                       onClick={() => setIsToggled(false)}
                     >
                       {name}
@@ -71,7 +71,7 @@ const Navigation: React.FC = () => {
             {navItems.map(({ id, path, name }) => (
               <li key={id}>
                 <Link href={path}>
-                  <a className="px-3 py-2 rounded-md dark:hover:bg-neutral-800 hover:bg-neutral-300 transition-colors">
+                  <a className="rounded-md px-3 py-2 transition-colors hover:bg-neutral-300 dark:hover:bg-neutral-800">
                     {name}
                   </a>
                 </Link>

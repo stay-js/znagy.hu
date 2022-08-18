@@ -26,12 +26,12 @@ const Contact: NextPage = () => (
       />
     </Head>
 
-    <main className="font-sans content">
+    <main className="content font-sans">
       <Title title="Setup">
         These are the things that I use everyday, hope you find it interesting...
       </Title>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
         {[
           {
             title: 'Apple MacBook Pro 14"',
@@ -102,19 +102,19 @@ const Contact: NextPage = () => (
             title: 'Peripherals',
             body: (
               <ul>
-                <li className="flex gap-1 items-center">
+                <li className="flex items-center gap-1">
                   <TbKeyboard size={28} color="cyan" />
                   <Link href="https://www.redragonzone.com/products/redragon-k550-rgb-yama-131-key-rgb-led-illuminated-backlit-mechanical-keyboard">
                     <a target="_blank">Redragon Yama K550</a>
                   </Link>
                 </li>
-                <li className="flex gap-1 items-center">
+                <li className="flex items-center gap-1">
                   <TbMouse size={28} color="violet" />
                   <Link href="https://www.gloriousgaming.com/products/glorious-model-o-black">
                     <a target="_blank">Glorious Model O</a>
                   </Link>
                 </li>
-                <li className="flex gap-1 items-center">
+                <li className="flex items-center gap-1">
                   <TbHeadphones size={28} color="orange" />
                   <Link href="https://spcgear.com/en/product/viro/">
                     <a target="_blank">SPC Gear Viro</a>
@@ -126,7 +126,7 @@ const Contact: NextPage = () => (
         ].map(({ title, image, url, body }) => (
           <div
             key={url}
-            className="flex flex-col gap-4 px-4 py-8 bg-white rounded-lg text-black shadow-lg h-fit"
+            className="flex h-fit flex-col gap-4 rounded-lg bg-white px-4 py-8 text-black shadow-lg"
           >
             <h1 className="text-center text-xl font-bold">{title}</h1>
             {image && (
