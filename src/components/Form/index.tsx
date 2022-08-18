@@ -128,7 +128,7 @@ const Form: React.FC = () => {
       </div>
 
       <input
-        className="h-9 w-full text-green-500 rounded outline outline-1 hover:outline-0 outline-green-500 transition-colors duration-500 hover:text-neutral-100 dark:hover:text-slate-900 hover:bg-gradient-to-r from-teal-400 to-green-500 cursor-pointer"
+        className="h-10 w-full text-green-500 rounded outline outline-1 hover:outline-0 outline-green-500 transition-colors duration-500 hover:text-neutral-100 dark:hover:text-slate-900 hover:bg-gradient-to-r from-teal-400 to-green-500 cursor-pointer"
         type="submit"
         value="Send"
       />
