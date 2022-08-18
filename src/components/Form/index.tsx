@@ -64,6 +64,7 @@ const Form: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit}
+      autoComplete="off" // disable autocomplete until I fix the highlighting issue
       className="sm:max-w-lg max-w-[90%] flex flex-col gap-4 mx-auto mt-5 text-sm p-8 dark:bg-neutral-800 bg-white shadow-2xl sm:p-12 md:px-20 rounded-2xl"
     >
       <div className="flex flex-col gap-1">
