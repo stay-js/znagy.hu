@@ -21,17 +21,11 @@ const Projects: React.FC = () => (
                   <a target="_blank" className="link">
                     Next.js
                   </a>
-                </Link>
-                ,{' '}
+                </Link>{' '}
+                and{' '}
                 <Link href="https://tailwindcss.com/">
                   <a target="_blank" className="link">
                     Tailwind CSS
-                  </a>
-                </Link>{' '}
-                and{' '}
-                <Link href="https://mantine.dev/">
-                  <a target="_blank" className="link">
-                    Mantine
                   </a>
                 </Link>
                 .

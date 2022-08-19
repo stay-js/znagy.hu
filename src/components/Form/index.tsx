@@ -73,6 +73,7 @@ const Form: React.FC = () => {
 
         <div className="relative flex items-center">
           <TbUser size={18} className="pointer-events-none absolute left-3 text-neutral-400" />
+
           <input
             className="h-10 w-full rounded border border-neutral-300 pl-10 pr-2 text-black dark:border-[#373A40] dark:bg-[#25262b] dark:text-white"
             type="text"
@@ -95,6 +96,7 @@ const Form: React.FC = () => {
 
         <div className="relative flex items-center">
           <TbMail size={18} className="pointer-events-none absolute left-3 text-neutral-400" />
+
           <input
             className="h-10 w-full rounded border border-neutral-300 pl-10 pr-2 text-black dark:border-[#373A40] dark:bg-[#25262b] dark:text-white"
             type="text"
