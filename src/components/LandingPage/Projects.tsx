@@ -305,7 +305,7 @@ const Projects: React.FC = () => (
                 (/api).
               </p>
               <p className="mb-0 text-neutral-200">
-                I can't publish the link right now... I'll later on.
+                I can&rsquo;t publish the link right now... I&rsquo;ll later on.
               </p>
             </>
           ),
