@@ -67,7 +67,7 @@ const Form: React.FC = () => {
       className="mx-auto mt-5 flex max-w-[90%] flex-col gap-4 rounded-2xl bg-white p-8 text-sm shadow-2xl dark:bg-neutral-800 sm:max-w-lg sm:p-12 md:px-20"
     >
       <div className="flex flex-col gap-1">
-        <label htmlFor="name" className="w-fit text-sm font-medium dark:text-neutral-300">
+        <label htmlFor="name" className="w-fit font-medium dark:text-neutral-300">
           Name:
         </label>
 
@@ -90,7 +90,7 @@ const Form: React.FC = () => {
       </div>
 
       <div className="flex flex-col gap-1">
-        <label htmlFor="email" className="w-fit text-sm font-medium dark:text-neutral-300">
+        <label htmlFor="email" className="w-fit font-medium dark:text-neutral-300">
           E-mail:
         </label>
 
@@ -113,7 +113,7 @@ const Form: React.FC = () => {
       </div>
 
       <div className="flex flex-col gap-1">
-        <label htmlFor="msg" className="w-fit text-sm font-medium dark:text-neutral-300">
+        <label htmlFor="msg" className="w-fit font-medium dark:text-neutral-300">
           Message:
         </label>
 
