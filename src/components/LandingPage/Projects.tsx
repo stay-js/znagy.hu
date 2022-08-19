@@ -69,7 +69,6 @@ const Projects: React.FC = () => (
             'TypeScript',
             'Next.js',
             'Tailwind CSS',
-            'Mantine',
             'tRPC',
             'NextAuth.js',
             'MySQL',
@@ -92,24 +91,18 @@ const Projects: React.FC = () => (
                   <a target="_blank" className="link">
                     Next.js
                   </a>
-                </Link>
-                ,{' '}
+                </Link>{' '}
+                and{' '}
                 <Link href="https://tailwindcss.com/">
                   <a target="_blank" className="link">
                     Tailwind CSS
-                  </a>
-                </Link>{' '}
-                and{' '}
-                <Link href="https://mantine.dev/">
-                  <a target="_blank" className="link">
-                    Mantine
                   </a>
                 </Link>
                 .
               </p>
             </>
           ),
-          tags: ['TypeScript', 'Next.js', 'Tailwind CSS', 'Mantine', 'Vercel'],
+          tags: ['TypeScript', 'Next.js', 'Tailwind CSS', 'Vercel'],
         },
         {
           title: 'Portfolio (znagy.hu)',
@@ -179,8 +172,19 @@ const Projects: React.FC = () => (
                 .
               </p>
               <p className="mb-0 text-neutral-200">
-                All 70+ commands are listed on the website, which is built with plain HTML5 and
-                CSS3.
+                All 70+ commands are listed on the website, which is built with{' '}
+                <Link href="https://astro.build/">
+                  <a target="_blank" className="link">
+                    Astro
+                  </a>
+                </Link>{' '}
+                and{' '}
+                <Link href="https://tailwindcss.com/">
+                  <a target="_blank" className="link">
+                    Tailwind CSS
+                  </a>
+                </Link>
+                .
               </p>
               <p className="mb-0 text-neutral-200">
                 Later on I&rsquo;ll migrate the BOT from{' '}
@@ -210,8 +214,7 @@ const Projects: React.FC = () => (
             'Discord.js',
             'MongoDB',
             'Heroku',
-            'Vite',
-            'HTML5',
+            'Astro',
             'Tailwind CSS',
             'Netlify',
           ],

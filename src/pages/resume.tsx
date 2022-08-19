@@ -59,6 +59,8 @@ const Resume: NextPage = () => (
                 <li>TypeScript</li>
                 <li>Next.js</li>
                 <li>React</li>
+                <li>Astro</li>
+                <li>Vite</li>
                 <li>tRPC</li>
                 <li>Prisma</li>
                 <li>Express.js</li>
