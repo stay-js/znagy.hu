@@ -86,7 +86,7 @@ const Projects: React.FC = () => (
                 Random Generator (CUID, GUID, UUID, Number, Color, etc.).
               </p>
               <p className="mb-0 text-neutral-200">
-                Front-end:{' '}
+                Made with{' '}
                 <Link href="https://nextjs.org/">
                   <a target="_blank" className="link">
                     Next.js
@@ -150,6 +150,32 @@ const Projects: React.FC = () => (
             </>
           ),
           tags: ['TypeScript', 'Next.js', 'Tailwind CSS', 'tRPC', 'Nodemailer', 'Vercel'],
+        },
+        {
+          title: 'Flappy Matykusz',
+          url: 'https://flappy.znagy.hu/',
+          github: 'https://github.com/stay-js/flappy-matykusz',
+          desc: (
+            <>
+              <p className="mb-0 text-neutral-200">Flappy Matykusz a cheap flappy bird clone...</p>
+              <p className="mb-0 text-neutral-200">
+                Made with{' '}
+                <Link href="https://vitejs.dev/">
+                  <a target="_blank" className="link">
+                    Vite
+                  </a>
+                </Link>{' '}
+                and{' '}
+                <Link href="https://tailwindcss.com/">
+                  <a target="_blank" className="link">
+                    Tailwind CSS
+                  </a>
+                </Link>
+                .
+              </p>
+            </>
+          ),
+          tags: ['TypeScript', 'Vite', 'Tailwind CSS', 'Netlify'],
         },
         {
           title: 'Anything',
@@ -223,10 +249,7 @@ const Projects: React.FC = () => (
           title: 'REGALE Energy Zrt.',
           desc: (
             <>
-              <p className="mb-0 text-neutral-200">
-                This is my current project. (I&rsquo;ll publish the link when it&rsquo;s done.)
-              </p>
-              <p className="mb-0 text-neutral-200">A company website for REGALE Energy Zrt.</p>
+              <p className="mb-0 text-neutral-200">A marketing website for REGALE Energy Zrt.</p>
               <p className="mb-0 text-neutral-200">
                 Front-end:{' '}
                 <Link href="https://nextjs.org/">
@@ -280,6 +303,9 @@ const Projects: React.FC = () => (
                   </a>
                 </Link>{' '}
                 (/api).
+              </p>
+              <p className="mb-0 text-neutral-200">
+                I can't publish the link right now... I'll later on.
               </p>
             </>
           ),
