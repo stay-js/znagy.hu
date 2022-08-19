@@ -26,7 +26,7 @@ const Contact: NextPage = () => (
       />
     </Head>
 
-    <main className="content font-sans">
+    <main className="content">
       <Title title="Setup">
         These are the things that I use everyday, hope you find it interesting...
       </Title>

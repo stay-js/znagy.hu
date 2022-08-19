@@ -322,7 +322,7 @@ const Projects: React.FC = () => (
             )}
           </div>
 
-          <div className="my-4 max-w-[60ch] rounded bg-slate-700 p-4">{desc}</div>
+          <div className="my-4 max-w-[60ch] rounded bg-slate-700 p-4 font-medium">{desc}</div>
 
           <ul className="flex max-w-[70ch] flex-wrap gap-4 font-mono text-[0.8rem] text-neutral-600 dark:text-neutral-300">
             {tags.map((tag) => (

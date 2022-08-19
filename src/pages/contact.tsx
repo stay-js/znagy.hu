@@ -31,7 +31,7 @@ const Contact: NextPage = () => (
       />
     </Head>
 
-    <main className="content font-sans">
+    <main className="content">
       <Title title="Send me a message!">
         <p className="m-0">
           Got something you would like to say? Or have a question? Feel free to send me a message

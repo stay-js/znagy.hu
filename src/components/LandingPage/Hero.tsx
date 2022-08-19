@@ -15,7 +15,9 @@ const Title: React.FC = () => (
       </span>{' '}
       Nagy.
     </h1>
-    <p className="md:text-xl">Full stack developer wannabe. IT Student. Kyokushin. Muay Thai.</p>
+    <p className="font-medium md:text-xl">
+      Full stack developer wannabe. IT Student. Kyokushin. Muay Thai.
+    </p>
 
     <div className="flex gap-2">
       <Link href="https://github.com/stay-js">
