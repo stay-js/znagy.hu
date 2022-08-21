@@ -21,11 +21,17 @@ const Projects: React.FC = () => (
                   <a target="_blank" className="link">
                     Next.js
                   </a>
-                </Link>{' '}
-                and{' '}
+                </Link>
+                ,{' '}
                 <Link href="https://tailwindcss.com/">
                   <a target="_blank" className="link">
                     Tailwind CSS
+                  </a>
+                </Link>{' '}
+                and{' '}
+                <Link href="https://headlessui.com/">
+                  <a target="_blank" className="link">
+                    Headless UI
                   </a>
                 </Link>
                 .
@@ -117,11 +123,17 @@ const Projects: React.FC = () => (
                   <a target="_blank" className="link">
                     Next.js
                   </a>
-                </Link>{' '}
-                and{' '}
+                </Link>
+                ,{' '}
                 <Link href="https://tailwindcss.com/">
                   <a target="_blank" className="link">
                     Tailwind CSS
+                  </a>
+                </Link>{' '}
+                and{' '}
+                <Link href="https://headlessui.com/">
+                  <a target="_blank" className="link">
+                    Headless UI
                   </a>
                 </Link>
                 .

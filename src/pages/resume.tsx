@@ -65,9 +65,10 @@ const Resume: NextPage = () => (
                 <li>Prisma</li>
                 <li>Express.js</li>
                 <li>Tailwind CSS</li>
-                <li>Bootstrap</li>
+                <li>Headless UI</li>
                 <li>Mantine</li>
-                <li>Sass</li>
+                <li>Bootstrap</li>
+                <li>Sass/SCSS</li>
                 <li>CSS3</li>
                 <li>HTML5</li>
               </ul>
