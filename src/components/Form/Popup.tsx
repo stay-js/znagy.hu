@@ -33,34 +33,28 @@ const Popup: React.FC<{
             leaveTo="opacity-0 scale-95"
           >
             <Dialog.Panel className="flex w-full max-w-[90%] flex-col gap-4 rounded-2xl bg-white p-6 shadow-xl dark:bg-neutral-900 sm:max-w-md">
-              {isSuccess ? (
-                <div className="flex flex-col gap-2">
-                  <Dialog.Title className="text-lg font-bold text-neutral-900 dark:text-neutral-50">
-                    Message Sent Successfully
-                  </Dialog.Title>
+              <div className="flex flex-col gap-2">
+                <Dialog.Title className="text-lg font-bold text-neutral-900 dark:text-neutral-50">
+                  {isSuccess ? ' Message Sent Successfully' : 'Something went wrong'}
+                </Dialog.Title>
 
-                  <Dialog.Description className="mb-0 text-sm text-neutral-500 dark:text-neutral-200">
-                    Thank you for sending me a message. I will get back to you as soon as possible.
-                  </Dialog.Description>
-                </div>
-              ) : (
-                <div className="flex flex-col gap-2">
-                  <Dialog.Title className="text-lg font-bold text-neutral-900 dark:text-neutral-50">
-                    Something went wrong
-                  </Dialog.Title>
-
-                  <Dialog.Description className="mb-0 text-sm text-neutral-500 dark:text-neutral-200">
-                    Something went wrong, please try again later! If the problem persists, please
-                    contact me at{' '}
-                    <Link href="mailto:nagyzeteny6@gmail.com">
-                      <a className="bg-gradient-to-r from-teal-400 to-green-500 bg-clip-text text-transparent">
-                        nagyzeteny6@gmail.com
-                      </a>
-                    </Link>
-                    .
-                  </Dialog.Description>
-                </div>
-              )}
+                <Dialog.Description className="mb-0 text-sm text-neutral-500 dark:text-neutral-200">
+                  {isSuccess ? (
+                    'Thank you for sending me a message. I will get back to you as soon as possible.'
+                  ) : (
+                    <>
+                      Something went wrong, please try again later! If the problem persists, please
+                      contact me at{' '}
+                      <Link href="mailto:nagyzeteny6@gmail.com">
+                        <a className="bg-gradient-to-r from-teal-400 to-green-500 bg-clip-text text-transparent">
+                          nagyzeteny6@gmail.com
+                        </a>
+                      </Link>
+                      .
+                    </>
+                  )}
+                </Dialog.Description>
+              </div>
 
               <button
                 type="button"
