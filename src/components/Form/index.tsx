@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { TbUser, TbMail } from 'react-icons/tb';
 import trpc from '@utils/trpc';
-import { Error, Loading, Success } from './Status';
+import Loading from './Loading';
+import Popup from './Popup';
 
 interface Props {
   name: string;
@@ -44,8 +45,11 @@ const validate = (values: Props): Errors => {
 const Form: React.FC = () => {
   const [errors, setErrors] = useState<Errors>({});
   const [values, setValues] = useState<Props>(defaultValues);
+  const [isPopupOpen, setIsPopupOpen] = useState<boolean>(false);
 
-  const { mutate, isSuccess, isLoading, isError } = trpc.useMutation(['email.send']);
+  const { mutate, isLoading, isSuccess } = trpc.useMutation(['email.send'], {
+    onSettled: () => setIsPopupOpen(true),
+  });
 
   const handleChange = ({ key, value }: InputEvent) => setValues({ ...values, [key]: value });
 
@@ -136,8 +140,8 @@ const Form: React.FC = () => {
       />
 
       {isLoading && <Loading />}
-      {isSuccess && <Success />}
-      {isError && <Error />}
+
+      <Popup isOpen={isPopupOpen} setIsOpen={setIsPopupOpen} isSuccess={isSuccess} />
     </form>
   );
 };
