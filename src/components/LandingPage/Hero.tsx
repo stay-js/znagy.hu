@@ -61,9 +61,11 @@ const Title: React.FC = () => (
     </div>
 
     <Link href="#about">
-      <a className="mt-8 flex w-fit items-center gap-1 rounded from-teal-400 to-green-500 px-6 py-4 text-green-500 outline outline-1 outline-green-500 transition-colors duration-500 hover:bg-gradient-to-r hover:text-neutral-100 hover:outline-0 dark:hover:text-slate-900">
-        <TbArrowNarrowDown size={18} />
-        More About Me
+      <a className="group mt-8 flex w-fit items-center rounded-lg bg-gradient-to-br from-green-400 to-blue-600 p-[2px] font-medium text-gray-900 hover:from-green-400 hover:to-blue-600 hover:text-white dark:text-white">
+        <span className="flex w-fit items-center justify-center rounded-md bg-neutral-100 px-6 py-3 transition-all group-hover:bg-opacity-0 dark:bg-neutral-900">
+          <TbArrowNarrowDown size={18} />
+          More About Me
+        </span>
       </a>
     </Link>
   </section>

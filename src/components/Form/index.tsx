@@ -133,11 +133,14 @@ const Form: React.FC = () => {
         {errors.msg && <p className="mb-0 text-xs text-red-500 dark:text-red-500">{errors.msg}</p>}
       </div>
 
-      <input
-        className="h-10 w-full cursor-pointer rounded from-teal-400 to-green-500 text-green-500 outline outline-1 outline-green-500 transition-colors duration-500 hover:bg-gradient-to-r hover:text-neutral-100 hover:outline-0 dark:hover:text-slate-900"
+      <button
         type="submit"
-        value="Send"
-      />
+        className="group flex w-full items-center rounded-lg bg-gradient-to-br from-green-400 to-blue-600 p-[2px] font-medium text-gray-900 hover:from-green-400 hover:to-blue-600 hover:text-white dark:text-white"
+      >
+        <span className="flex w-full items-center justify-center rounded-md bg-white px-6 py-3 transition-all group-hover:bg-opacity-0 dark:bg-neutral-800">
+          Send
+        </span>
+      </button>
 
       {isLoading && <Loading />}
 

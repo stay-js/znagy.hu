@@ -64,10 +64,12 @@ const Popup: React.FC<{
 
               <button
                 type="button"
-                className="w-fit rounded bg-green-100 px-4 py-2 text-sm font-medium text-green-900 hover:bg-green-200"
+                className="group flex w-fit items-center rounded-lg bg-gradient-to-br from-green-400 to-blue-600 p-[2px] font-medium text-gray-900 hover:from-green-400 hover:to-blue-600 hover:text-white dark:text-white"
                 onClick={() => setIsOpen(false)}
               >
-                Got it!
+                <span className="flex w-fit items-center justify-center rounded-md bg-white px-4 py-2 text-sm transition-all group-hover:bg-opacity-0 dark:bg-neutral-900">
+                  Got it!
+                </span>
               </button>
             </Dialog.Panel>
           </Transition.Child>
