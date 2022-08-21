@@ -32,24 +32,24 @@ const Popup: React.FC<{
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <Dialog.Panel className="flex w-full max-w-[90%] flex-col gap-4 rounded-2xl bg-white p-6 shadow-xl sm:max-w-md">
+            <Dialog.Panel className="flex w-full max-w-[90%] flex-col gap-4 rounded-2xl bg-white p-6 shadow-xl dark:bg-neutral-900 sm:max-w-md">
               {isSuccess ? (
                 <div className="flex flex-col gap-2">
-                  <Dialog.Title className="text-lg font-bold text-neutral-900">
+                  <Dialog.Title className="text-lg font-bold text-neutral-900 dark:text-neutral-50">
                     Message Sent Successfully
                   </Dialog.Title>
 
-                  <Dialog.Description className="mb-0 text-sm text-neutral-500 dark:text-neutral-500">
+                  <Dialog.Description className="mb-0 text-sm text-neutral-500 dark:text-neutral-200">
                     Thank you for sending me a message. I will get back to you as soon as possible.
                   </Dialog.Description>
                 </div>
               ) : (
                 <div className="flex flex-col gap-2">
-                  <Dialog.Title className="text-lg font-bold text-neutral-900">
+                  <Dialog.Title className="text-lg font-bold text-neutral-900 dark:text-neutral-50">
                     Something went wrong
                   </Dialog.Title>
 
-                  <Dialog.Description className="mb-0 text-sm text-neutral-500 dark:text-neutral-500">
+                  <Dialog.Description className="mb-0 text-sm text-neutral-500 dark:text-neutral-200">
                     Something went wrong, please try again later! If the problem persists, please
                     contact me at{' '}
                     <Link href="mailto:nagyzeteny6@gmail.com">
