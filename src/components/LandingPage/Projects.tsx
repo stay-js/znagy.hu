@@ -75,6 +75,7 @@ const Projects: React.FC = () => (
             'TypeScript',
             'Next.js',
             'Tailwind CSS',
+            'Headless UI',
             'tRPC',
             'NextAuth.js',
             'MySQL',
@@ -161,7 +162,15 @@ const Projects: React.FC = () => (
               </p>
             </>
           ),
-          tags: ['TypeScript', 'Next.js', 'Tailwind CSS', 'tRPC', 'Nodemailer', 'Vercel'],
+          tags: [
+            'TypeScript',
+            'Next.js',
+            'Tailwind CSS',
+            'Headless UI',
+            'tRPC',
+            'Nodemailer',
+            'Vercel',
+          ],
         },
         {
           title: 'Flappy Matykusz',
