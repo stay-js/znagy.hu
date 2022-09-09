@@ -1,3 +1,4 @@
+import disableScroll from 'disable-scroll';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { TbSun, TbMoon } from 'react-icons/tb';
@@ -9,11 +10,27 @@ const Navigation: React.FC = () => {
   const [isToggled, setIsToggled] = useState<boolean>(false);
   const [width, setWidth] = useState<number | null>(null);
 
+  const handleClose = () => {
+    setIsToggled(false);
+    disableScroll.off();
+  };
+
+  const handleToggle = () => {
+    setIsToggled(!isToggled);
+
+    if (isToggled) disableScroll.off();
+    else disableScroll.on();
+  };
+
+  const handleResize = () => setWidth(window.innerWidth);
+
   useEffect(() => {
     setWidth(window.innerWidth);
 
-    window.addEventListener('resize', () => setWidth(window.innerWidth));
-  }, [width]);
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <nav className="fixed top-0 z-10 flex h-16 w-full select-none items-center bg-neutral-100 shadow dark:bg-neutral-900">
@@ -21,7 +38,7 @@ const Navigation: React.FC = () => {
         <button
           className="rounded-lg bg-neutral-300 p-2 ring-neutral-400 transition-all hover:ring-2 dark:bg-neutral-600"
           type="button"
-          onClick={() => toggleColorScheme()}
+          onClick={toggleColorScheme}
           title="Toggle color scheme"
         >
           {colorScheme === 'dark' ? <TbSun size={22} /> : <TbMoon size={22} />}
@@ -29,7 +46,7 @@ const Navigation: React.FC = () => {
 
         {!width || width < 1024 ? (
           <>
-            <button type="button" className="h-6 w-6" onClick={() => setIsToggled(!isToggled)}>
+            <button type="button" className="h-6 w-6" onClick={handleToggle}>
               <span
                 className={`${
                   isToggled ? 'rotate-45' : '-translate-y-2'
@@ -57,7 +74,7 @@ const Navigation: React.FC = () => {
                   <Link href={path}>
                     <a
                       className="relative mt-8 block w-full font-bold text-black after:absolute after:-bottom-4 after:block after:h-[1px] after:w-full after:bg-neutral-300 dark:text-white dark:after:bg-neutral-600"
-                      onClick={() => setIsToggled(false)}
+                      onClick={handleClose}
                     >
                       {name}
                     </a>
