@@ -277,17 +277,11 @@ const Projects: React.FC = () => (
                   <a target="_blank" className="link">
                     Next.js
                   </a>
-                </Link>
-                ,{' '}
+                </Link>{' '}
+                and{' '}
                 <Link href="https://tailwindcss.com/">
                   <a target="_blank" className="link">
                     Tailwind CSS
-                  </a>
-                </Link>{' '}
-                and{' '}
-                <Link href="https://mantine.dev/">
-                  <a target="_blank" className="link">
-                    Mantine
                   </a>
                 </Link>
                 .
@@ -325,16 +319,12 @@ const Projects: React.FC = () => (
                 </Link>{' '}
                 (/api).
               </p>
-              <p className="mb-0 text-neutral-200">
-                I can&rsquo;t publish the link right now... I&rsquo;ll later on.
-              </p>
             </>
           ),
           tags: [
             'TypeScript',
             'Next.js',
             'Tailwind CSS',
-            'Mantine',
             'tRPC',
             'Nodemailer',
             'MySQL',
