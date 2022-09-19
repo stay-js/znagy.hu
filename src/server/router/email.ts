@@ -6,7 +6,7 @@ import { createRouter } from './context';
 
 const transporter = nodemailer.createTransport({
   host: env.NODEMAILER_HOST,
-  port: env.NODEMAILER_PORT,
+  port: Number(env.NODEMAILER_PORT),
   secure: true,
   auth: {
     user: env.NODEMAILER_USER,
