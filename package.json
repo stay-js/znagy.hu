@@ -10,7 +10,7 @@
     "lint:fix": "eslint --fix ."
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.0",
+    "@headlessui/react": "^1.7.2",
     "@trpc/client": "^9.27.2",
     "@trpc/next": "^9.27.2",
     "@trpc/react": "^9.27.2",
@@ -22,18 +22,18 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-query": "^3.39.1",
-    "superjson": "^1.9.1",
-    "zod": "^3.19.0"
+    "superjson": "^1.10.0",
+    "zod": "^3.19.1"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.3.0",
-    "@types/node": "^18.7.16",
-    "@types/nodemailer": "^6.4.5",
-    "@types/react": "18.0.18",
-    "@typescript-eslint/eslint-plugin": "^5.36.2",
-    "@typescript-eslint/parser": "^5.36.2",
-    "autoprefixer": "^10.4.8",
-    "eslint": "^8.23.0",
+    "@types/node": "^18.7.18",
+    "@types/nodemailer": "^6.4.6",
+    "@types/react": "18.0.20",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "autoprefixer": "^10.4.11",
+    "eslint": "^8.23.1",
     "eslint-config-next": "^12.3.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-react-app": "^7.0.1",
