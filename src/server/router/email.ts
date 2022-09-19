@@ -5,8 +5,8 @@ import { env } from '@env/server.mjs';
 import { createRouter } from './context';
 
 const transporter = nodemailer.createTransport({
-  host: 'smtp.rackhost.hu',
-  port: 465,
+  host: env.NODEMAILER_HOST,
+  port: env.NODEMAILER_PORT,
   secure: true,
   auth: {
     user: env.NODEMAILER_USER,
