@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://znagy.hu
+
+# Sitemaps
+Sitemap: https://znagy.hu/sitemap.xml
