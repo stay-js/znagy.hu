@@ -36,7 +36,6 @@ const App: AppType = ({ Component, pageProps }) => (
       <meta name="twitter:image" content="https://znagy.hu/images/me.png" />
 
       <meta name="robots" content="index, follow" />
-      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="English" />
       <meta name="rating" content="general" />
     </Head>
