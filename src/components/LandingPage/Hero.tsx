@@ -30,7 +30,7 @@ const Title: React.FC = () => (
         </a>
       </Link>
 
-      <Link href="https://twitter.com/stay0y0">
+      <Link href="https://twitter.com/znagyy">
         <a
           target="_blank"
           title="Twitter"
