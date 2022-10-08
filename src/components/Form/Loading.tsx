@@ -1,5 +1,5 @@
 const Loading: React.FC = () => (
-  <div className="mt-4 flex flex-col items-center gap-2 ">
+  <div className="flex flex-col items-center gap-2 ">
     <svg className="h-8 w-8 animate-spin" fill="none" viewBox="0 0 24 24">
       <circle className="stroke-green-500 opacity-25" cx="12" cy="12" r="10" strokeWidth="4" />
       <path

@@ -23,7 +23,7 @@ const LandingPage: NextPage = () => (
       />
     </Head>
 
-    <main>
+    <main className="flex flex-col gap-20">
       <Hero />
       <AboutMe />
       <Projects />

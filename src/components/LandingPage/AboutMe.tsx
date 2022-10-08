@@ -3,7 +3,7 @@ import Link from 'next/link';
 import SectionTitle from './SectionTitle';
 
 const AboutMe: React.FC = () => (
-  <section className="content relative mb-20" id="about">
+  <section className="content relative flex flex-col gap-4" id="about">
     <SectionTitle title="About Me" number={1} />
 
     <div className="flex flex-col gap-12 lg:flex-row">
@@ -16,7 +16,8 @@ const AboutMe: React.FC = () => (
           height={720}
         />
       </div>
-      <div className="w-full lg:w-[60%]">
+
+      <div className="flex w-full flex-col gap-4 lg:w-[60%]">
         <p>Glad you are here! </p>
         <p>
           My name is Zétény Nagy AKA stay, I&rsquo;m from Budapest, Hungary. Currently studying in{' '}

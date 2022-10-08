@@ -3,10 +3,10 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import SectionTitle from './SectionTitle';
 
 const Projects: React.FC = () => (
-  <section className="content relative mb-20" id="projects">
+  <section className="content flex flex-col gap-4" id="projects">
     <SectionTitle title="Projects" number={2} />
 
-    <div className="item flex flex-col gap-16">
+    <div className="flex flex-col gap-16">
       {[
         {
           title: 'Todo App',
@@ -14,8 +14,8 @@ const Projects: React.FC = () => (
           github: 'https://github.com/stay-js/todo',
           desc: (
             <>
-              <p className="mb-0 text-neutral-200">Simple Todo App with GitHub authentication.</p>
-              <p className="mb-0 text-neutral-200">
+              <p className="text-neutral-200">Simple Todo App with GitHub authentication.</p>
+              <p className="text-neutral-200">
                 Front-end:{' '}
                 <Link href="https://nextjs.org/">
                   <a target="_blank" className="link">
@@ -36,7 +36,7 @@ const Projects: React.FC = () => (
                 </Link>
                 .
               </p>
-              <p className="mb-0 text-neutral-200">
+              <p className="text-neutral-200">
                 Back-end:{' '}
                 <Link href="https://trpc.io/">
                   <a target="_blank" className="link">
@@ -89,10 +89,10 @@ const Projects: React.FC = () => (
           github: 'https://github.com/stay-js/random',
           desc: (
             <>
-              <p className="mb-0 text-neutral-200">
+              <p className="text-neutral-200">
                 Random Generator (CUID, GUID, UUID, Number, Color, etc.).
               </p>
-              <p className="mb-0 text-neutral-200">
+              <p className="text-neutral-200">
                 Made with{' '}
                 <Link href="https://nextjs.org/">
                   <a target="_blank" className="link">
@@ -117,8 +117,8 @@ const Projects: React.FC = () => (
           github: 'https://github.com/stay-js/stay',
           desc: (
             <>
-              <p className="mb-0 text-neutral-200">Simple portfolio website.</p>
-              <p className="mb-0 text-neutral-200">
+              <p className="text-neutral-200">Simple portfolio website.</p>
+              <p className="text-neutral-200">
                 Front-end:{' '}
                 <Link href="https://nextjs.org/">
                   <a target="_blank" className="link">
@@ -139,7 +139,7 @@ const Projects: React.FC = () => (
                 </Link>
                 .
               </p>
-              <p className="mb-0 text-neutral-200">
+              <p className="text-neutral-200">
                 Back-end:{' '}
                 <Link href="https://trpc.io/">
                   <a target="_blank" className="link">
@@ -178,8 +178,8 @@ const Projects: React.FC = () => (
           github: 'https://github.com/stay-js/flappy-matykusz',
           desc: (
             <>
-              <p className="mb-0 text-neutral-200">Flappy Matykusz a cheap flappy bird clone...</p>
-              <p className="mb-0 text-neutral-200">
+              <p className="text-neutral-200">Flappy Matykusz a cheap flappy bird clone...</p>
+              <p className="text-neutral-200">
                 Made with{' '}
                 <Link href="https://vitejs.dev/">
                   <a target="_blank" className="link">
@@ -203,7 +203,7 @@ const Projects: React.FC = () => (
           url: 'https://anything.znagy.hu/',
           desc: (
             <>
-              <p className="mb-0 text-neutral-200">
+              <p className="text-neutral-200">
                 A Discord BOT build back in 2020, with{' '}
                 <Link href="https://discord.js.org/">
                   <a target="_blank" className="link">
@@ -218,7 +218,7 @@ const Projects: React.FC = () => (
                 </Link>
                 .
               </p>
-              <p className="mb-0 text-neutral-200">
+              <p className="text-neutral-200">
                 All 70+ commands are listed on the website, which is built with{' '}
                 <Link href="https://astro.build/">
                   <a target="_blank" className="link">
@@ -233,7 +233,7 @@ const Projects: React.FC = () => (
                 </Link>
                 .
               </p>
-              <p className="mb-0 text-neutral-200">
+              <p className="text-neutral-200">
                 Later on I&rsquo;ll migrate the BOT from{' '}
                 <Link href="https://www.javascript.com/">
                   <a target="_blank" className="link">
@@ -270,8 +270,8 @@ const Projects: React.FC = () => (
           title: 'REGALE Energy Zrt.',
           desc: (
             <>
-              <p className="mb-0 text-neutral-200">A marketing website for REGALE Energy Zrt.</p>
-              <p className="mb-0 text-neutral-200">
+              <p className="text-neutral-200">A marketing website for REGALE Energy Zrt.</p>
+              <p className="text-neutral-200">
                 Front-end:{' '}
                 <Link href="https://nextjs.org/">
                   <a target="_blank" className="link">
@@ -292,7 +292,7 @@ const Projects: React.FC = () => (
                 </Link>
                 .
               </p>
-              <p className="mb-0 text-neutral-200">
+              <p className="text-neutral-200">
                 Back-end:{' '}
                 <Link href="https://trpc.io/">
                   <a target="_blank" className="link">
@@ -340,8 +340,8 @@ const Projects: React.FC = () => (
           ],
         },
       ].map(({ title, url, github, desc, tags }) => (
-        <article key={title}>
-          <div className="flex">
+        <article key={title} className="flex max-w-[60ch] flex-col gap-4">
+          <div className="flex gap-3">
             <h1 className="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
               {title}
             </h1>
@@ -350,7 +350,7 @@ const Projects: React.FC = () => (
               <Link href={github}>
                 <a
                   target="_blank"
-                  className="ml-3 flex items-center transition-colors hover:text-green-500"
+                  className="flex items-center transition-colors hover:text-green-500"
                 >
                   <FaGithub />
                 </a>
@@ -361,7 +361,7 @@ const Projects: React.FC = () => (
               <Link href={url}>
                 <a
                   target="_blank"
-                  className="ml-3 flex items-center transition-colors hover:text-green-500"
+                  className="flex items-center transition-colors hover:text-green-500"
                 >
                   <FaExternalLinkAlt />
                 </a>
@@ -369,9 +369,9 @@ const Projects: React.FC = () => (
             )}
           </div>
 
-          <div className="my-4 max-w-[60ch] rounded bg-slate-700 p-4 font-medium">{desc}</div>
+          <div className="rounded bg-slate-700 p-4 font-medium">{desc}</div>
 
-          <ul className="flex max-w-[70ch] flex-wrap gap-4 font-mono text-[0.8rem] text-neutral-600 dark:text-neutral-300">
+          <ul className="flex flex-wrap gap-4 font-mono text-xs text-neutral-600 dark:text-neutral-300">
             {tags.map((tag) => (
               <li key={tag}>{tag}</li>
             ))}

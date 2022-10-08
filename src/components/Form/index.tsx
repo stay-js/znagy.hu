@@ -68,7 +68,7 @@ const Form: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="mx-auto mt-5 flex max-w-[90%] flex-col gap-4 rounded-2xl bg-white p-8 text-sm shadow-2xl dark:bg-neutral-800 sm:max-w-lg sm:p-12 md:px-20"
+      className="flex min-w-[30rem] flex-col gap-4 rounded-2xl bg-white p-8 text-sm shadow-2xl dark:bg-neutral-800 sm:p-12 md:px-20"
     >
       <div className="flex flex-col gap-1">
         <label htmlFor="name" className="w-fit font-medium dark:text-neutral-300">
@@ -89,7 +89,7 @@ const Form: React.FC = () => {
         </div>
 
         {errors.name && (
-          <p className="mb-0 text-xs text-red-500 dark:text-red-500">{errors.name}</p>
+          <span className="text-xs text-red-500 dark:text-red-500">{errors.name}</span>
         )}
       </div>
 
@@ -112,7 +112,7 @@ const Form: React.FC = () => {
         </div>
 
         {errors.email && (
-          <p className="mb-0 text-xs text-red-500 dark:text-red-500">{errors.email}</p>
+          <span className="text-xs text-red-500 dark:text-red-500">{errors.email}</span>
         )}
       </div>
 
@@ -130,7 +130,7 @@ const Form: React.FC = () => {
           onChange={(event) => handleChange({ key: 'msg', value: event.currentTarget.value })}
         />
 
-        {errors.msg && <p className="mb-0 text-xs text-red-500 dark:text-red-500">{errors.msg}</p>}
+        {errors.msg && <span className="text-xs text-red-500 dark:text-red-500">{errors.msg}</span>}
       </div>
 
       <button

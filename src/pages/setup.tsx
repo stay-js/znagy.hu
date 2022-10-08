@@ -26,7 +26,7 @@ const Contact: NextPage = () => (
       />
     </Head>
 
-    <main className="content">
+    <main className="content flex flex-col gap-8">
       <Title title="Setup">
         These are the things that I use everyday, hope you find it interesting...
       </Title>

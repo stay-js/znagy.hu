@@ -4,20 +4,22 @@ import { TbArrowNarrowDown } from 'react-icons/tb';
 
 const Title: React.FC = () => (
   <section
-    className="content flex flex-col justify-center"
+    className="content flex flex-col justify-center gap-6"
     style={{
       minHeight: 'calc(100vh - 5rem)',
     }}
   >
-    <h1 className="mb-2 text-4xl font-bold sm:text-5xl md:text-[5rem]">
-      <span className="bg-gradient-to-r from-teal-400 to-green-500 bg-clip-text text-transparent">
-        Zétény
-      </span>{' '}
-      Nagy.
-    </h1>
-    <p className="font-medium md:text-xl">
-      Full stack developer wannabe. IT Student. Kyokushin. Muay Thai.
-    </p>
+    <div className="flex flex-col gap-2">
+      <h1 className="text-4xl font-bold sm:text-5xl md:text-[5rem]">
+        <span className="bg-gradient-to-r from-teal-400 to-green-500 bg-clip-text text-transparent">
+          Zétény
+        </span>{' '}
+        Nagy.
+      </h1>
+      <p className="font-medium md:text-xl">
+        Full stack developer wannabe. IT Student. Kyokushin. Muay Thai.
+      </p>
+    </div>
 
     <div className="flex gap-2">
       <Link href="https://github.com/stay-js">
@@ -61,7 +63,7 @@ const Title: React.FC = () => (
     </div>
 
     <button
-      className="group mt-8 flex w-fit items-center rounded-lg bg-gradient-to-br from-green-400 to-blue-600 p-[2px] font-medium text-gray-900 hover:from-green-400 hover:to-blue-600 hover:text-white dark:text-white"
+      className="group flex w-fit items-center rounded-lg bg-gradient-to-br from-green-400 to-blue-600 p-[2px] font-medium text-gray-900 hover:from-green-400 hover:to-blue-600 hover:text-white dark:text-white"
       type="button"
       onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
     >

@@ -23,7 +23,7 @@ main {
 }
 
 p {
-  @apply mb-4 text-neutral-900 dark:text-neutral-100;
+  @apply text-neutral-900 dark:text-neutral-100;
 }
 
 .link {
