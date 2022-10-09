@@ -5,6 +5,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import superjson from 'superjson';
 import Navigation from '@components/Navigation';
+import ScrollTop from '@components/ScrollTop';
 import { env } from '@env/client.mjs';
 import '@styles/globals.css';
 
@@ -40,6 +41,7 @@ const App: AppType = ({ Component, pageProps }) => (
       <meta name="rating" content="general" />
     </Head>
 
+    <ScrollTop />
     <Navigation />
     <Component {...pageProps} />
   </>
