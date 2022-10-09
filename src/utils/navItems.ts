@@ -10,7 +10,7 @@ const navItems = [
     id: 'cl68bjsqz000320695i0i22zo',
   },
   {
-    name: 'Get In Touch',
+    name: 'Contact',
     path: '/contact',
     id: 'cl68bjw9y00042069z3z6g22a',
   },

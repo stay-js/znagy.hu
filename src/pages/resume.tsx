@@ -1,34 +1,13 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import Link from 'next/link';
+import Layout from '@layouts/Layout';
 
 const Resume: NextPage = () => (
-  <>
-    <Head>
-      <title>Resume - Zétény Nagy</title>
-      <meta property="og:title" content="Resume - Zétény Nagy" key="title" />
-      <meta name="twitter:title" content="Resume - Zétény Nagy" />
-
-      <meta
-        name="description"
-        content="I consider myself as a Web Developer, but I am interested in
-          several areas of IT, eg. Web Development, Data modeling /
-          structuring, DevOps, Cloud and Networking."
-      />
-      <meta
-        property="og:description"
-        content="I consider myself as a Web Developer, but I am interested in
-          several areas of IT, eg. Web Development, Data modeling /
-          structuring, DevOps, Cloud and Networking."
-      />
-      <meta
-        name="twitter:description"
-        content="I consider myself as a Web Developer, but I am interested in
-          several areas of IT, eg. Web Development, Data modeling /
-          structuring, DevOps, Cloud and Networking."
-      />
-    </Head>
-
+  <Layout
+    path="/resume"
+    title="Resume - Zétény Nagy"
+    desc=" I consider myself as a Web Developer, but I am interested in several areas of IT, eg. Web Development, Data modeling / structuring, DevOps, Cloud and Networking."
+  >
     <main className="content flex flex-col gap-10">
       <section className="flex flex-col gap-12">
         <div className="flex flex-col gap-3">
@@ -155,7 +134,7 @@ const Resume: NextPage = () => (
         </p>
       </section>
     </main>
-  </>
+  </Layout>
 );
 
 export default Resume;

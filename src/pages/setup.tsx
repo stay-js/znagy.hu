@@ -1,31 +1,16 @@
 import type { NextPage } from 'next';
 import Image from 'next/future/image';
-import Head from 'next/head';
 import Link from 'next/link';
 import { TbKeyboard, TbMouse, TbHeadphones } from 'react-icons/tb';
 import Title from '@components/Title';
+import Layout from '@layouts/Layout';
 
 const Contact: NextPage = () => (
-  <>
-    <Head>
-      <title>Setup - Zétény Nagy</title>
-      <meta property="og:title" content="Setup - Zétény Nagy" key="title" />
-      <meta name="twitter:title" content="Setup - Zétény Nagy" />
-
-      <meta
-        name="description"
-        content="These are the things that I use everyday, hope you find it interesting..."
-      />
-      <meta
-        property="og:description"
-        content="These are the things that I use everyday, hope you find it interesting..."
-      />
-      <meta
-        name="twitter:description"
-        content="These are the things that I use everyday, hope you find it interesting..."
-      />
-    </Head>
-
+  <Layout
+    path="/setup"
+    title="Setup - Zétény Nagy"
+    desc="These are the things that I use everyday, hope you find it interesting..."
+  >
     <main className="content flex flex-col gap-8">
       <Title title="Setup">
         These are the things that I use everyday, hope you find it interesting...
@@ -151,7 +136,7 @@ const Contact: NextPage = () => (
         ))}
       </div>
     </main>
-  </>
+  </Layout>
 );
 
 export default Contact;

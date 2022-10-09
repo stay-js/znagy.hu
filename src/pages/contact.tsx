@@ -1,36 +1,15 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import Link from 'next/link';
 import Form from '@components/Form';
 import Title from '@components/Title';
+import Layout from '@layouts/Layout';
 
 const Contact: NextPage = () => (
-  <>
-    <Head>
-      <title>Contact - Zétény Nagy</title>
-      <meta property="og:title" content="Contact - Zétény Nagy" key="title" />
-      <meta name="twitter:title" content="Contact - Zétény Nagy" />
-
-      <meta
-        name="description"
-        content="Got something you would like to say? Or have a question? Feel free
-          to send me a message using the form down below. I&rsquo;m just a few
-          clicks away..."
-      />
-      <meta
-        property="og:description"
-        content="Got something you would like to say? Or have a question? Feel free
-          to send me a message using the form down below. I&rsquo;m just a few
-          clicks away..."
-      />
-      <meta
-        name="twitter:description"
-        content="Got something you would like to say? Or have a question? Feel free
-          to send me a message using the form down below. I&rsquo;m just a few
-          clicks away..."
-      />
-    </Head>
-
+  <Layout
+    path="/contact"
+    title="Contact - Zétény Nagy"
+    desc="Got something you would like to say? Or have a question? Feel free to send me a message using the form down below. I&rsquo;m just a few clicks away..."
+  >
     <main className="content flex flex-col items-center gap-8">
       <Title title="Send me a message!">
         <p>
@@ -49,7 +28,7 @@ const Contact: NextPage = () => (
 
       <Form />
     </main>
-  </>
+  </Layout>
 );
 
 export default Contact;
