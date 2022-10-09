@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
-import { Hero, AboutMe, Projects, GetInTouch } from '@components/LandingPage';
+import { Hero, AboutMe, Projects, GetInTouch } from '@components/Home';
 import Layout from '@layouts/Layout';
 
-const LandingPage: NextPage = () => (
+const Home: NextPage = () => (
   <Layout
     path="/"
     title="Home - Zétény Nagy"
@@ -17,4 +17,4 @@ const LandingPage: NextPage = () => (
   </Layout>
 );
 
-export default LandingPage;
+export default Home;
