@@ -16,10 +16,12 @@ const Navigation: React.FC = () => {
   };
 
   const handleToggle = () => {
-    setIsToggled(!isToggled);
+    setIsToggled((value) => {
+      if (value) disableScroll.off();
+      else disableScroll.on();
 
-    if (isToggled) disableScroll.off();
-    else disableScroll.on();
+      return !value;
+    });
   };
 
   const handleResize = () => setWidth(window.innerWidth);

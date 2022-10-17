@@ -19,7 +19,11 @@ const Contact: NextPage = () => (
         <p>
           Or you can just send me an e-mail at:{' '}
           <Link href="mailto:nagyzeteny6@gmail.com">
-            <a className="bg-gradient-to-r from-teal-400 to-green-500 bg-clip-text text-transparent">
+            <a
+              className="bg-gradient-to-r from-teal-400 to-green-500 bg-clip-text text-transparent"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               nagyzeteny6@gmail.com
             </a>
           </Link>

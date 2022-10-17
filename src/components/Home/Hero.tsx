@@ -24,9 +24,10 @@ const Title: React.FC = () => (
     <div className="flex gap-2">
       <Link href="https://github.com/stay-js">
         <a
-          target="_blank"
-          title="GitHub"
           className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 bg-neutral-700 text-white transition-colors hover:bg-white hover:text-zinc-900 dark:border-0"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="GitHub"
         >
           <FaGithub />
         </a>
@@ -34,9 +35,10 @@ const Title: React.FC = () => (
 
       <Link href="https://twitter.com/znagyy">
         <a
-          target="_blank"
-          title="Twitter"
           className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 bg-neutral-700 text-white transition-colors hover:bg-white hover:text-zinc-900 dark:border-0"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Twitter"
         >
           <FaTwitter />
         </a>
@@ -44,9 +46,10 @@ const Title: React.FC = () => (
 
       <Link href="mailto:nagyzeteny6@gmail.com">
         <a
-          target="_blank"
-          title="E-mail"
           className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 bg-neutral-700 text-white transition-colors hover:bg-white hover:text-zinc-900 dark:border-0"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="E-mail"
         >
           <FaEnvelope />
         </a>
@@ -54,8 +57,10 @@ const Title: React.FC = () => (
 
       <Link href="https://www.youtube.com/channel/UCEGp1S_QTS3goAVX1cVw-tQ">
         <a
-          title="YouTube"
           className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 bg-neutral-700 text-white transition-colors hover:bg-white hover:text-zinc-900 dark:border-0"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="YouTube"
         >
           <FaYoutube />
         </a>

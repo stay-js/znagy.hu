@@ -22,7 +22,7 @@ const AboutMe: React.FC = () => (
         <p>
           My name is Zétény Nagy AKA stay, I&rsquo;m from Budapest, Hungary. Currently studying in{' '}
           <Link href="http://njszg.hu/">
-            <a target="_blank" className="link text-green-500">
+            <a className="link text-green-500" target="_blank" rel="noopener noreferrer">
               BMSzC Neumann János Informatikai Technikum
             </a>
           </Link>
@@ -46,21 +46,21 @@ const AboutMe: React.FC = () => (
           <ul className="list-disc text-green-500">
             <li>
               <Link href="https://www.typescriptlang.org/">
-                <a target="_blank" className="link">
+                <a className="link" target="_blank" rel="noopener noreferrer">
                   TypeScript
                 </a>
               </Link>
             </li>
             <li>
               <Link href="https://nextjs.org/">
-                <a target="_blank" className="link">
+                <a className="link" target="_blank" rel="noopener noreferrer">
                   Next.js
                 </a>
               </Link>
             </li>
             <li>
               <Link href="https://trpc.io/">
-                <a target="_blank" className="link">
+                <a className="link" target="_blank" rel="noopener noreferrer">
                   tRPC
                 </a>
               </Link>
@@ -69,21 +69,21 @@ const AboutMe: React.FC = () => (
           <ul className="list-disc text-green-500">
             <li>
               <Link href="https://www.prisma.io/">
-                <a target="_blank" className="link">
+                <a className="link" target="_blank" rel="noopener noreferrer">
                   Prisma
                 </a>
               </Link>
             </li>
             <li>
               <Link href="https://tailwindcss.com/">
-                <a target="_blank" className="link">
+                <a className="link" target="_blank" rel="noopener noreferrer">
                   Tailwind CSS
                 </a>
               </Link>
             </li>
             <li>
               <Link href="https://vercel.com/">
-                <a target="_blank" className="link">
+                <a className="link" target="_blank" rel="noopener noreferrer">
                   Vercel
                 </a>
               </Link>

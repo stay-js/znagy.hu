@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 const useColorScheme = () => {
   const [colorScheme, setColorScheme] = useState<'light' | 'dark' | null>(null);
 
-  const toggleColorScheme = () => setColorScheme(colorScheme === 'dark' ? 'light' : 'dark');
+  const toggleColorScheme = () => setColorScheme((value) => (value === 'dark' ? 'light' : 'dark'));
 
   useEffect(() => {
     if (!colorScheme) {

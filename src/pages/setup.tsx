@@ -90,19 +90,25 @@ const Contact: NextPage = () => (
                 <li className="flex items-center gap-1">
                   <TbKeyboard size={28} color="cyan" />
                   <Link href="https://www.redragonzone.com/products/redragon-k550-rgb-yama-131-key-rgb-led-illuminated-backlit-mechanical-keyboard">
-                    <a target="_blank">Redragon Yama K550</a>
+                    <a target="_blank" rel="noopener noreferrer">
+                      Redragon Yama K550
+                    </a>
                   </Link>
                 </li>
                 <li className="flex items-center gap-1">
                   <TbMouse size={28} color="violet" />
                   <Link href="https://www.gloriousgaming.com/products/glorious-model-o-black">
-                    <a target="_blank">Glorious Model O</a>
+                    <a target="_blank" rel="noopener noreferrer">
+                      Glorious Model O
+                    </a>
                   </Link>
                 </li>
                 <li className="flex items-center gap-1">
                   <TbHeadphones size={28} color="orange" />
                   <Link href="https://spcgear.com/en/product/viro/">
-                    <a target="_blank">SPC Gear Viro</a>
+                    <a target="_blank" rel="noopener noreferrer">
+                      SPC Gear Viro
+                    </a>
                   </Link>
                 </li>
               </ul>
@@ -127,7 +133,7 @@ const Contact: NextPage = () => (
             {body}
             {url && (
               <Link href={url}>
-                <a target="_blank" className="text-sm font-bold">
+                <a className="text-sm font-bold" target="_blank" rel="noopener noreferrer">
                   More...
                 </a>
               </Link>

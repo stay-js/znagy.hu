@@ -16,6 +16,7 @@ const Resume: NextPage = () => (
             <a
               className="link block w-fit text-2xl font-medium text-gray-600 dark:text-neutral-200"
               target="_blank"
+              rel="noopener noreferrer"
             >
               github.com/stay-js
             </a>
@@ -98,7 +99,7 @@ const Resume: NextPage = () => (
               <b>Address:</b> Ürömi utca 64, 1023, Budapest, Hungary
             </p>
             <Link href="http://ujlaki.ultranet.hu/">
-              <a className="link text-green-500" target="_blank">
+              <a className="link text-green-500" target="_blank" rel="noopener noreferrer">
                 ujlaki.ultranet.hu
               </a>
             </Link>
@@ -112,7 +113,7 @@ const Resume: NextPage = () => (
               <b>Address:</b> Kerepesi út 124, 1144, Budapest, Hungary
             </p>
             <Link href="http://www.njszki.hu/">
-              <a className="link text-green-500" target="_blank">
+              <a className="link text-green-500" target="_blank" rel="noopener noreferrer">
                 www.njszki.hu
               </a>
             </Link>
