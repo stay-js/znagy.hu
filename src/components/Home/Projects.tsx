@@ -349,8 +349,9 @@ const Projects: React.FC = () => (
             {github && (
               <Link href={github}>
                 <a
-                  target="_blank"
                   className="flex items-center transition-colors hover:text-green-500"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FaGithub />
                 </a>
@@ -360,8 +361,9 @@ const Projects: React.FC = () => (
             {url && (
               <Link href={url}>
                 <a
-                  target="_blank"
                   className="flex items-center transition-colors hover:text-green-500"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FaExternalLinkAlt />
                 </a>
