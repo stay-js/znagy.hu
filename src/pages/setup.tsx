@@ -58,7 +58,7 @@ const Contact: NextPage = () => (
           {
             title: 'Acer NITRO VG240YS',
             image: '/images/acer-vg240ys.jpg',
-            url: 'https://www.acer.com/us-en/monitors/gaming/nitro-vg0/pdp/UM.QV0AA.P011',
+            url: 'https://www.acer.com/us-en/monitors/gaming/nitro-vg0/pdp/UM.QV0AA.P01',
             body: (
               <ul>
                 <li>1920x1080 Full HD</li>
