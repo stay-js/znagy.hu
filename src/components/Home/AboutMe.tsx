@@ -1,4 +1,4 @@
-import Image from 'next/future/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import SectionTitle from './SectionTitle';
 
@@ -21,10 +21,13 @@ const AboutMe: React.FC = () => (
         <p>Glad you are here! </p>
         <p>
           My name is Zétény Nagy AKA stay, I&rsquo;m from Budapest, Hungary. Currently studying in{' '}
-          <Link href="http://njszg.hu/">
-            <a className="link text-green-500" target="_blank" rel="noopener noreferrer">
-              BMSzC Neumann János Informatikai Technikum
-            </a>
+          <Link
+            className="link text-green-500"
+            href="http://njszg.hu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            BMSzC Neumann János Informatikai Technikum
           </Link>
           .
         </p>
@@ -36,8 +39,13 @@ const AboutMe: React.FC = () => (
         </p>
         <p>
           If you are interested check out my{' '}
-          <Link href="/setup">
-            <a className="link text-green-500">setup</a>
+          <Link
+            className="link text-green-500"
+            href="/setup"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            setup
           </Link>
           .
         </p>
@@ -45,47 +53,65 @@ const AboutMe: React.FC = () => (
         <div className="ml-8 flex gap-20">
           <ul className="list-disc text-green-500">
             <li>
-              <Link href="https://www.typescriptlang.org/">
-                <a className="link" target="_blank" rel="noopener noreferrer">
-                  TypeScript
-                </a>
+              <Link
+                className="link text-green-500"
+                href="https://www.typescriptlang.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                TypeScript
               </Link>
             </li>
             <li>
-              <Link href="https://nextjs.org/">
-                <a className="link" target="_blank" rel="noopener noreferrer">
-                  Next.js
-                </a>
+              <Link
+                className="link text-green-500"
+                href="https://nextjs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Next.js
               </Link>
             </li>
             <li>
-              <Link href="https://trpc.io/">
-                <a className="link" target="_blank" rel="noopener noreferrer">
-                  tRPC
-                </a>
+              <Link
+                className="link text-green-500"
+                href="https://trpc.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                tRPC
               </Link>
             </li>
           </ul>
           <ul className="list-disc text-green-500">
             <li>
-              <Link href="https://www.prisma.io/">
-                <a className="link" target="_blank" rel="noopener noreferrer">
-                  Prisma
-                </a>
+              <Link
+                className="link text-green-500"
+                href="https://www.prisma.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Prisma
               </Link>
             </li>
             <li>
-              <Link href="https://tailwindcss.com/">
-                <a className="link" target="_blank" rel="noopener noreferrer">
-                  Tailwind CSS
-                </a>
+              <Link
+                className="link text-green-500"
+                href="https://tailwindcss.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tailwind CSS
               </Link>
             </li>
             <li>
-              <Link href="https://vercel.com/">
-                <a className="link" target="_blank" rel="noopener noreferrer">
-                  Vercel
-                </a>
+              <Link
+                className="link text-green-500"
+                href="https://vercel.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Vercel
               </Link>
             </li>
           </ul>

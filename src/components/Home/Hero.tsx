@@ -22,48 +22,44 @@ const Title: React.FC = () => (
     </div>
 
     <div className="flex gap-2">
-      <Link href="https://github.com/stay-js">
-        <a
-          className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 bg-neutral-700 text-white transition-colors hover:bg-white hover:text-zinc-900 dark:border-0"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="GitHub"
-        >
-          <FaGithub />
-        </a>
+      <Link
+        className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 bg-neutral-700 text-white transition-colors hover:bg-white hover:text-zinc-900 dark:border-0"
+        title="GitHub"
+        href="https://github.com/stay-js"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaGithub />
       </Link>
 
-      <Link href="https://twitter.com/znagyy">
-        <a
-          className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 bg-neutral-700 text-white transition-colors hover:bg-white hover:text-zinc-900 dark:border-0"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Twitter"
-        >
-          <FaTwitter />
-        </a>
+      <Link
+        className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 bg-neutral-700 text-white transition-colors hover:bg-white hover:text-zinc-900 dark:border-0"
+        title="Twitter"
+        href="https://twitter.com/znagyy"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaTwitter />
       </Link>
 
-      <Link href="mailto:nagyzeteny6@gmail.com">
-        <a
-          className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 bg-neutral-700 text-white transition-colors hover:bg-white hover:text-zinc-900 dark:border-0"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="E-mail"
-        >
-          <FaEnvelope />
-        </a>
+      <Link
+        className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 bg-neutral-700 text-white transition-colors hover:bg-white hover:text-zinc-900 dark:border-0"
+        title="E-mail"
+        href="mailto:nagyzeteny6@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaEnvelope />
       </Link>
 
-      <Link href="https://www.youtube.com/channel/UCEGp1S_QTS3goAVX1cVw-tQ">
-        <a
-          className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 bg-neutral-700 text-white transition-colors hover:bg-white hover:text-zinc-900 dark:border-0"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="YouTube"
-        >
-          <FaYoutube />
-        </a>
+      <Link
+        className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 bg-neutral-700 text-white transition-colors hover:bg-white hover:text-zinc-900 dark:border-0"
+        title="YouTube"
+        href="https://www.youtube.com/channel/UCEGp1S_QTS3goAVX1cVw-tQ"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaYoutube />
       </Link>
     </div>
 

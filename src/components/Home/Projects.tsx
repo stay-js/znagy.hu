@@ -17,55 +17,79 @@ const Projects: React.FC = () => (
               <p className="text-neutral-200">Simple Todo App with GitHub authentication.</p>
               <p className="text-neutral-200">
                 Front-end:{' '}
-                <Link href="https://nextjs.org/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Next.js
-                  </a>
+                <Link
+                  className="link"
+                  href="https://nextjs.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Next.js
                 </Link>
                 ,{' '}
-                <Link href="https://tailwindcss.com/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Tailwind CSS
-                  </a>
+                <Link
+                  className="link"
+                  href="https://tailwindcss.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Tailwind CSS
                 </Link>{' '}
                 and{' '}
-                <Link href="https://headlessui.com/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Headless UI
-                  </a>
+                <Link
+                  className="link"
+                  href="https://headlessui.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Headless UI
                 </Link>
                 .
               </p>
               <p className="text-neutral-200">
                 Back-end:{' '}
-                <Link href="https://trpc.io/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    tRPC
-                  </a>
+                <Link
+                  className="link"
+                  href="https://trpc.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  tRPC
                 </Link>
                 ,{' '}
-                <Link href="https://next-auth.js.org">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    NextAuth.js
-                  </a>
+                <Link
+                  className="link"
+                  href="https://next-auth.js.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  NextAuth.js
                 </Link>
                 ,{' '}
-                <Link href="https://planetscale.com">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    PlanetScale
-                  </a>
+                <Link
+                  className="link"
+                  href="https://planetscale.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  PlanetScale
                 </Link>{' '}
                 (MySQL) and{' '}
-                <Link href="https://www.prisma.io/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Prisma
-                  </a>
+                <Link
+                  className="link"
+                  href="https://www.prisma.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Prisma
                 </Link>
                 , running on{' '}
-                <Link href="https://vercel.com/docs/concepts/functions/serverless-functions">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Vercel Serverless
-                  </a>
+                <Link
+                  className="link"
+                  href="https://vercel.com/docs/concepts/functions/serverless-functions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Vercel Serverless
                 </Link>{' '}
                 (/api).
               </p>
@@ -94,16 +118,22 @@ const Projects: React.FC = () => (
               </p>
               <p className="text-neutral-200">
                 Made with{' '}
-                <Link href="https://nextjs.org/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Next.js
-                  </a>
+                <Link
+                  className="link"
+                  href="https://nextjs.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Next.js
                 </Link>{' '}
                 and{' '}
-                <Link href="https://tailwindcss.com/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Tailwind CSS
-                  </a>
+                <Link
+                  className="link"
+                  href="https://tailwindcss.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Tailwind CSS
                 </Link>
                 .
               </p>
@@ -120,43 +150,61 @@ const Projects: React.FC = () => (
               <p className="text-neutral-200">Simple portfolio website.</p>
               <p className="text-neutral-200">
                 Front-end:{' '}
-                <Link href="https://nextjs.org/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Next.js
-                  </a>
+                <Link
+                  className="link"
+                  href="https://nextjs.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Next.js
                 </Link>
                 ,{' '}
-                <Link href="https://tailwindcss.com/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Tailwind CSS
-                  </a>
+                <Link
+                  className="link"
+                  href="https://tailwindcss.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Tailwind CSS
                 </Link>{' '}
                 and{' '}
-                <Link href="https://headlessui.com/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Headless UI
-                  </a>
+                <Link
+                  className="link"
+                  href="https://headlessui.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Headless UI
                 </Link>
                 .
               </p>
               <p className="text-neutral-200">
                 Back-end:{' '}
-                <Link href="https://trpc.io/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    tRPC
-                  </a>
+                <Link
+                  className="link"
+                  href="https://trpc.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  tRPC
                 </Link>{' '}
                 and{' '}
-                <Link href="https://nodemailer.com/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Nodemailer
-                  </a>
+                <Link
+                  className="link"
+                  href="https://nodemailer.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Nodemailer
                 </Link>
                 , running on{' '}
-                <Link href="https://vercel.com/docs/concepts/functions/serverless-functions">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Vercel Serverless
-                  </a>
+                <Link
+                  className="link"
+                  href="https://vercel.com/docs/concepts/functions/serverless-functions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Vercel Serverless
                 </Link>{' '}
                 (/api).
               </p>
@@ -181,16 +229,22 @@ const Projects: React.FC = () => (
               <p className="text-neutral-200">Flappy Matykusz a cheap flappy bird clone...</p>
               <p className="text-neutral-200">
                 Made with{' '}
-                <Link href="https://vitejs.dev/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Vite
-                  </a>
+                <Link
+                  className="link"
+                  href="https://vitejs.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Vite
                 </Link>{' '}
                 and{' '}
-                <Link href="https://tailwindcss.com/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Tailwind CSS
-                  </a>
+                <Link
+                  className="link"
+                  href="https://tailwindcss.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Tailwind CSS
                 </Link>
                 .
               </p>
@@ -205,52 +259,73 @@ const Projects: React.FC = () => (
             <>
               <p className="text-neutral-200">
                 A Discord BOT build back in 2020, with{' '}
-                <Link href="https://discord.js.org/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Discord.js
-                  </a>
+                <Link
+                  className="link"
+                  href="https://discord.js.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Discord.js
                 </Link>{' '}
                 and{' '}
-                <Link href="https://www.mongodb.com/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    MondoDB
-                  </a>
+                <Link
+                  className="link"
+                  href="https://www.mongodb.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  MondoDB
                 </Link>
                 .
               </p>
               <p className="text-neutral-200">
                 All 70+ commands are listed on the website, which is built with{' '}
-                <Link href="https://astro.build/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Astro
-                  </a>
+                <Link
+                  className="link"
+                  href="https://astro.build/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Astro
                 </Link>{' '}
                 and{' '}
-                <Link href="https://tailwindcss.com/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Tailwind CSS
-                  </a>
+                <Link
+                  className="link"
+                  href="https://tailwindcss.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Tailwind CSS
                 </Link>
                 .
               </p>
               <p className="text-neutral-200">
                 Later on I&rsquo;ll migrate the BOT from{' '}
-                <Link href="https://www.javascript.com/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    JavaScript
-                  </a>
+                <Link
+                  className="link"
+                  href="https://www.javascript.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  JavaScript
                 </Link>{' '}
                 to{' '}
-                <Link href="https://www.typescriptlang.org/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    TypeScript
-                  </a>
+                <Link
+                  className="link"
+                  href="https://www.typescriptlang.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  TypeScript
                 </Link>
                 , update to the latest version of{' '}
-                <Link href="https://discord.js.org/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Discord.js
-                  </a>
+                <Link
+                  className="link"
+                  href="https://discord.js.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Discord.js
                 </Link>
                 , and maybe I&rsquo;ll open source the project.
               </p>
@@ -273,55 +348,79 @@ const Projects: React.FC = () => (
               <p className="text-neutral-200">A marketing website for REGALE Energy Zrt.</p>
               <p className="text-neutral-200">
                 Front-end:{' '}
-                <Link href="https://nextjs.org/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Next.js
-                  </a>
+                <Link
+                  className="link"
+                  href="https://nextjs.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Next.js
                 </Link>{' '}
                 ,{' '}
-                <Link href="https://tailwindcss.com/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Tailwind CSS
-                  </a>
+                <Link
+                  className="link"
+                  href="https://tailwindcss.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Tailwind CSS
                 </Link>{' '}
                 and{' '}
-                <Link href="https://headlessui.com/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Headless UI
-                  </a>
+                <Link
+                  className="link"
+                  href="https://headlessui.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Headless UI
                 </Link>
                 .
               </p>
               <p className="text-neutral-200">
                 Back-end:{' '}
-                <Link href="https://trpc.io/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    tRPC
-                  </a>
+                <Link
+                  className="link"
+                  href="https://trpc.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  tRPC
                 </Link>
                 ,{' '}
-                <Link href="https://nodemailer.com/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Nodemailer
-                  </a>
+                <Link
+                  className="link"
+                  href="https://nodemailer.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Nodemailer
                 </Link>
                 ,{' '}
-                <Link href="https://planetscale.com">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    PlanetScale
-                  </a>
+                <Link
+                  className="link"
+                  href="https://planetscale.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  PlanetScale
                 </Link>{' '}
                 (MySQL) and{' '}
-                <Link href="https://www.prisma.io/">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Prisma
-                  </a>
+                <Link
+                  className="link"
+                  href="https://www.prisma.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Prisma
                 </Link>
                 , running on{' '}
-                <Link href="https://vercel.com/docs/concepts/functions/serverless-functions">
-                  <a className="link" target="_blank" rel="noopener noreferrer">
-                    Vercel Serverless
-                  </a>
+                <Link
+                  className="link"
+                  href="https://vercel.com/docs/concepts/functions/serverless-functions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Vercel Serverless
                 </Link>{' '}
                 (/api).
               </p>
@@ -347,26 +446,24 @@ const Projects: React.FC = () => (
             </h1>
 
             {github && (
-              <Link href={github}>
-                <a
-                  className="flex items-center transition-colors hover:text-green-500"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaGithub />
-                </a>
+              <Link
+                className="flex items-center transition-colors hover:text-green-500"
+                href={github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub />
               </Link>
             )}
 
             {url && (
-              <Link href={url}>
-                <a
-                  className="flex items-center transition-colors hover:text-green-500"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaExternalLinkAlt />
-                </a>
+              <Link
+                className="flex items-center transition-colors hover:text-green-500"
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaExternalLinkAlt />
               </Link>
             )}
           </div>

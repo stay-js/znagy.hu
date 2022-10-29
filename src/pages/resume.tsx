@@ -12,14 +12,13 @@ const Resume: NextPage = () => (
       <section className="flex flex-col gap-12">
         <div className="flex flex-col gap-3">
           <h1 className="text-5xl font-bold">Zétény Nagy</h1>
-          <Link href="https://github.com/stay-js">
-            <a
-              className="link block w-fit text-2xl font-medium text-gray-600 dark:text-neutral-200"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              github.com/stay-js
-            </a>
+          <Link
+            className="link block w-fit text-2xl font-medium text-gray-600 dark:text-neutral-200"
+            href="https://github.com/stay-js"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github.com/stay-js
           </Link>
         </div>
 
@@ -98,10 +97,13 @@ const Resume: NextPage = () => (
             <p className="text-neutral-600">
               <b>Address:</b> Ürömi utca 64, 1023, Budapest, Hungary
             </p>
-            <Link href="http://ujlaki.ultranet.hu/">
-              <a className="link text-green-500" target="_blank" rel="noopener noreferrer">
-                ujlaki.ultranet.hu
-              </a>
+            <Link
+              className="link text-green-500"
+              href="http://ujlaki.ultranet.hu/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ujlaki.ultranet.hu
             </Link>
           </div>
 
@@ -112,10 +114,13 @@ const Resume: NextPage = () => (
             <p className="text-neutral-600">
               <b>Address:</b> Kerepesi út 124, 1144, Budapest, Hungary
             </p>
-            <Link href="http://www.njszki.hu/">
-              <a className="link text-green-500" target="_blank" rel="noopener noreferrer">
-                www.njszki.hu
-              </a>
+            <Link
+              className="link text-green-500"
+              href="http://www.njszki.hu/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              www.njszki.hu
             </Link>
           </div>
         </div>

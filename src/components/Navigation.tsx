@@ -73,13 +73,12 @@ const Navigation: React.FC = () => {
             >
               {navItems.map(({ id, path, name }) => (
                 <li key={id}>
-                  <Link href={path}>
-                    <a
-                      className="relative mt-8 block w-full font-bold text-black after:absolute after:-bottom-4 after:block after:h-[1px] after:w-full after:bg-neutral-300 dark:text-white dark:after:bg-neutral-600"
-                      onClick={handleClose}
-                    >
-                      {name}
-                    </a>
+                  <Link
+                    className="relative mt-8 block w-full font-bold text-black after:absolute after:-bottom-4 after:block after:h-[1px] after:w-full after:bg-neutral-300 dark:text-white dark:after:bg-neutral-600"
+                    onClick={handleClose}
+                    href={path}
+                  >
+                    {name}
                   </Link>
                 </li>
               ))}
@@ -89,10 +88,11 @@ const Navigation: React.FC = () => {
           <ul className="flex">
             {navItems.map(({ id, path, name }) => (
               <li key={id}>
-                <Link href={path}>
-                  <a className="rounded-md px-3 py-2 transition-colors hover:bg-neutral-300 dark:hover:bg-neutral-800">
-                    {name}
-                  </a>
+                <Link
+                  className="rounded-md px-3 py-2 transition-colors hover:bg-neutral-300 dark:hover:bg-neutral-800"
+                  href={path}
+                >
+                  {name}
                 </Link>
               </li>
             ))}

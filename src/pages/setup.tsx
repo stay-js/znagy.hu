@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import Image from 'next/future/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import { TbKeyboard, TbMouse, TbHeadphones } from 'react-icons/tb';
 import Title from '@components/Title';
@@ -89,26 +89,32 @@ const Contact: NextPage = () => (
               <ul>
                 <li className="flex items-center gap-1">
                   <TbKeyboard size={28} color="cyan" />
-                  <Link href="https://www.redragonzone.com/products/redragon-k550-rgb-yama-131-key-rgb-led-illuminated-backlit-mechanical-keyboard">
-                    <a target="_blank" rel="noopener noreferrer">
-                      Redragon Yama K550
-                    </a>
+                  <Link
+                    href="https://www.redragonzone.com/products/redragon-k550-rgb-yama-131-key-rgb-led-illuminated-backlit-mechanical-keyboard"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Redragon Yama K550
                   </Link>
                 </li>
                 <li className="flex items-center gap-1">
                   <TbMouse size={28} color="violet" />
-                  <Link href="https://www.gloriousgaming.com/products/glorious-model-o-black">
-                    <a target="_blank" rel="noopener noreferrer">
-                      Glorious Model O
-                    </a>
+                  <Link
+                    href="https://www.gloriousgaming.com/products/glorious-model-o-black"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Glorious Model O
                   </Link>
                 </li>
                 <li className="flex items-center gap-1">
                   <TbHeadphones size={28} color="orange" />
-                  <Link href="https://spcgear.com/en/product/viro/">
-                    <a target="_blank" rel="noopener noreferrer">
-                      SPC Gear Viro
-                    </a>
+                  <Link
+                    href="https://spcgear.com/en/product/viro/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    SPC Gear Viro
                   </Link>
                 </li>
               </ul>
@@ -132,10 +138,13 @@ const Contact: NextPage = () => (
             )}
             {body}
             {url && (
-              <Link href={url}>
-                <a className="text-sm font-bold" target="_blank" rel="noopener noreferrer">
-                  More...
-                </a>
+              <Link
+                className="text-sm font-bold"
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                More...
               </Link>
             )}
           </div>
