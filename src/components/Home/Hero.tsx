@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { FaGithub, FaTwitter, FaEnvelope, FaYoutube } from 'react-icons/fa';
 import { TbArrowNarrowDown } from 'react-icons/tb';
 
-const Title: React.FC = () => (
+const Hero: React.FC = () => (
   <section
     className="content flex flex-col justify-center gap-6"
     style={{
@@ -76,4 +76,4 @@ const Title: React.FC = () => (
   </section>
 );
 
-export default Title;
+export default Hero;
