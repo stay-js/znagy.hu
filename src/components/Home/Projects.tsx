@@ -196,6 +196,7 @@ const Projects: React.FC = () => (
             {github && (
               <Link
                 className="flex items-center transition-colors hover:text-green-500"
+                title={title}
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -220,7 +221,9 @@ const Projects: React.FC = () => (
 
           <ul className="flex flex-wrap gap-y-2 gap-x-3">
             {tags.map((tag) => (
-              <Chips key={tag} variant={tag} />
+              <li>
+                <Chips key={tag} variant={tag} />
+              </li>
             ))}
           </ul>
         </article>
