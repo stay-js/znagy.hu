@@ -66,23 +66,25 @@ const Navigation: React.FC = () => {
               />
             </button>
 
-            <ul
+            <div
               className={`${
                 isToggled ? 'left-0' : 'left-[-100%]'
-              } content fixed top-16 z-10 flex h-screen w-full flex-col gap-8 bg-white py-4 transition-all duration-500 ease-in-out dark:bg-neutral-900`}
+              } fixed top-16 z-10 h-screen w-full bg-white py-4 transition-all duration-500 ease-in-out dark:bg-neutral-900`}
             >
-              {navItems.map(({ id, path, name }) => (
-                <li key={id}>
-                  <Link
-                    className="relative flex font-bold text-black after:absolute after:-bottom-4 after:h-[1px] after:w-full after:bg-neutral-300 dark:text-white dark:after:bg-neutral-600"
-                    onClick={handleClose}
-                    href={path}
-                  >
-                    {name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+              <ul className="content flex flex-col gap-8">
+                {navItems.map(({ id, path, name }) => (
+                  <li key={id}>
+                    <Link
+                      className="relative flex font-bold text-black after:absolute after:-bottom-4 after:h-[1px] after:w-full after:bg-neutral-300 dark:text-white dark:after:bg-neutral-600"
+                      onClick={handleClose}
+                      href={path}
+                    >
+                      {name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </>
         ) : (
           <ul className="flex">
