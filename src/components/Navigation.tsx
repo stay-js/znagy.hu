@@ -69,7 +69,7 @@ const Navigation: React.FC = () => {
             <ul
               className={`${
                 isToggled ? 'left-0' : 'left-[-100%]'
-              } fixed top-16 z-10 flex h-screen w-full flex-col gap-8 bg-white px-8 py-4 transition-all duration-500 ease-in-out dark:bg-neutral-900`}
+              } content fixed top-16 z-10 flex h-screen w-full flex-col gap-8 bg-white py-4 transition-all duration-500 ease-in-out dark:bg-neutral-900`}
             >
               {navItems.map(({ id, path, name }) => (
                 <li key={id}>
