@@ -16,7 +16,7 @@ const Contact: NextPage = () => (
         These are the things that I use everyday, hope you find it interesting...
       </Title>
 
-      <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+      <div className="gap-4 sm:columns-2 lg:columns-3">
         {[
           {
             title: 'Apple MacBook Pro 14"',
@@ -123,7 +123,7 @@ const Contact: NextPage = () => (
         ].map(({ title, image, url, body }) => (
           <div
             key={url}
-            className="flex h-fit flex-col gap-4 rounded-lg bg-white px-4 py-8 text-black shadow-lg"
+            className="mb-4 flex h-fit break-inside-avoid-column flex-col gap-4 rounded-lg bg-white px-4 py-8 text-black shadow-lg"
           >
             <h1 className="text-center text-xl font-bold">{title}</h1>
             {image && (
