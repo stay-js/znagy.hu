@@ -20,140 +20,159 @@ const Chip: React.FC<{
 );
 
 const Chips: React.FC<{ variant: string }> = ({ variant }) => {
-  if (variant === 'JavaScript')
+  if (variant === 'JavaScript') {
     return (
       <Chip color="#fcdc00" href="https://www.javascript.com/">
         JavaScript
       </Chip>
     );
+  }
 
-  if (variant === 'TypeScript')
+  if (variant === 'TypeScript') {
     return (
       <Chip color="#3078c6" href="https://www.typescriptlang.org/">
         TypeScript
       </Chip>
     );
+  }
 
-  if (variant === 'React')
+  if (variant === 'React') {
     return (
       <Chip color="#61dafb" href="https://reactjs.org/">
         React
       </Chip>
     );
+  }
 
-  if (variant === 'Next.js')
+  if (variant === 'Next.js') {
     return (
       <Chip color="#000000" href="https://nextjs.org/">
         Next.js
       </Chip>
     );
+  }
 
-  if (variant === 'Vite')
+  if (variant === 'Vite') {
     return (
       <Chip color="#646cff" href="https://vitejs.dev/">
         Vite
       </Chip>
     );
+  }
 
-  if (variant === 'Astro')
+  if (variant === 'Astro') {
     return (
       <Chip color="#ff5d01" href="https://astro.build/">
         Astro
       </Chip>
     );
+  }
 
-  if (variant === 'tRPC')
+  if (variant === 'tRPC') {
     return (
       <Chip color="#368ccb" href="https://trpc.io/">
         tRPC
       </Chip>
     );
+  }
 
-  if (variant === 'NextAuth.js')
+  if (variant === 'NextAuth.js') {
     return (
       <Chip color="#000000" href="https://next-auth.js.org/">
         NextAuth.js
       </Chip>
     );
+  }
 
-  if (variant === 'Tailwind CSS')
+  if (variant === 'Tailwind CSS') {
     return (
       <Chip color="##38b2ac" href="https://tailwindcss.com/">
         Tailwind CSS
       </Chip>
     );
+  }
 
-  if (variant === 'Headless UI')
+  if (variant === 'Headless UI') {
     return (
       <Chip color="#9ca3af" href="https://headlessui.dev/">
         Headless UI
       </Chip>
     );
+  }
 
-  if (variant === 'Discord.js')
+  if (variant === 'Discord.js') {
     return (
       <Chip color="#5765f2" href="https://discord.js.org/">
         Discord.js
       </Chip>
     );
+  }
 
-  if (variant === 'Nodemailer')
+  if (variant === 'Nodemailer') {
     return (
       <Chip color="#23b574" href="https://nodemailer.com/">
         Nodemailer
       </Chip>
     );
+  }
 
-  if (variant === 'MongoDB')
+  if (variant === 'MongoDB') {
     return (
       <Chip color="#01ec64" href="https://www.mongodb.com/">
         MongoDB
       </Chip>
     );
+  }
 
-  if (variant === 'MySQL')
+  if (variant === 'MySQL') {
     return (
       <Chip color="#0275bf" href="https://www.mysql.com/">
         MySQL
       </Chip>
     );
+  }
 
-  if (variant === 'PostgreSQL')
+  if (variant === 'PostgreSQL') {
     return (
       <Chip color="#336791" href="https://www.postgresql.org/">
         PostgreSQL
       </Chip>
     );
+  }
 
-  if (variant === 'Prisma')
+  if (variant === 'Prisma') {
     return (
       <Chip color="#2d3748" href="https://www.prisma.io/">
         Prisma
       </Chip>
     );
+  }
 
-  if (variant === 'Vercel')
+  if (variant === 'Vercel') {
     return (
       <Chip color="#000000" href="https://vercel.com/">
         Vercel
       </Chip>
     );
+  }
 
-  if (variant === 'Heroku')
+  if (variant === 'Heroku') {
     return (
       <Chip color="#79589f" href="https://www.heroku.com/">
         Heroku
       </Chip>
     );
+  }
 
-  if (variant === 'Netlify')
+  if (variant === 'Netlify') {
     return (
       <Chip color="#02ad9f" href="https://www.netlify.com/">
         Netlify
       </Chip>
     );
+  }
 
-  return <p>no chip for {variant}</p>;
+  return null;
 };
 
 export default Chips;
