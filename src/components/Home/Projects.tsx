@@ -196,7 +196,7 @@ const Projects: React.FC = () => (
             {github && (
               <Link
                 className="flex items-center transition-colors hover:text-green-500"
-                title={title}
+                title={`${title} on GitHub`}
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -208,6 +208,7 @@ const Projects: React.FC = () => (
             {url && (
               <Link
                 className="flex items-center transition-colors hover:text-green-500"
+                title={`${title} on the web`}
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
