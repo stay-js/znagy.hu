@@ -12,7 +12,7 @@ const Chip: React.FC<{
     rel="noopener noreferrer"
     style={{ color }}
   >
-    <div className="h-2 w-2 rounded-full" style={{ backgroundColor: color }} />
+    <div className="h-2 w-2 rounded-full bg-current" />
     <span className="font-mono text-xs font-medium text-neutral-600 dark:text-neutral-200">
       {children}
     </span>
