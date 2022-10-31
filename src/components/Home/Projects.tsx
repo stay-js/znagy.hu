@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-import SectionTitle from './SectionTitle';
 import Chips from '@components/Chips';
+import SectionTitle from './SectionTitle';
 
 const Projects: React.FC = () => (
   <section className="content flex flex-col gap-4" id="projects">
