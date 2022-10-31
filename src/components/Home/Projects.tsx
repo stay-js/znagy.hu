@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import SectionTitle from './SectionTitle';
+import Chips from '@components/Chips';
 
 const Projects: React.FC = () => (
   <section className="content flex flex-col gap-4" id="projects">
@@ -470,9 +471,9 @@ const Projects: React.FC = () => (
 
           <div className="rounded bg-slate-700 p-4 font-medium">{desc}</div>
 
-          <ul className="flex flex-wrap gap-4 font-mono text-xs text-neutral-600 dark:text-neutral-300">
+          <ul className="flex flex-wrap gap-y-2 gap-x-3">
             {tags.map((tag) => (
-              <li key={tag}>{tag}</li>
+              <Chips key={tag} variant={tag} />
             ))}
           </ul>
         </article>
