@@ -19,11 +19,11 @@ const ScrollTop: React.FC = () => {
 
   return (
     <button
-      type="button"
-      title="Back to top"
       className={`${
         isVisible ? 'translate-y-0' : 'translate-y-20'
       } fixed bottom-6 right-6 z-40 rounded-full bg-neutral-700 p-2 transition-all duration-200 hover:bg-neutral-600`}
+      type="button"
+      title="Back to top"
       onClick={scrollToTop}
     >
       <TbArrowUp size={24} color="white" />
