@@ -221,7 +221,7 @@ const Projects: React.FC = () => (
 
           <ul className="flex flex-wrap gap-y-2 gap-x-3">
             {tags.map((tag) => (
-              <li>
+              <li key={tag}>
                 <Chips key={tag} variant={tag} />
               </li>
             ))}
