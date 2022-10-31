@@ -120,20 +120,21 @@ const Contact: NextPage = () => (
               </ul>
             ),
           },
-        ].map(({ title, image, url, body }) => (
+        ].map(({ title, image, url, body }, index) => (
           <div
-            key={url}
+            // eslint-disable-next-line react/no-array-index-key
+            key={index}
             className="mb-4 flex h-fit break-inside-avoid-column flex-col gap-4 rounded-lg bg-white px-4 py-8 text-black shadow-lg"
           >
             <h1 className="text-center text-xl font-bold">{title}</h1>
             {image && (
               <Image
+                className="select-none"
                 src={image}
                 width={512}
                 height={512}
                 title={title}
                 alt={title}
-                className="select-none"
               />
             )}
             {body}
