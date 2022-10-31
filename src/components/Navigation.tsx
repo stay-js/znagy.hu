@@ -39,9 +39,9 @@ const Navigation: React.FC = () => {
       <div className="content flex items-center justify-between">
         <button
           className="rounded-lg bg-neutral-300 p-2 ring-neutral-400 transition-all hover:ring-2 dark:bg-neutral-600"
+          title="Toggle color scheme"
           type="button"
           onClick={toggleColorScheme}
-          title="Toggle color scheme"
         >
           {colorScheme === 'dark' ? <TbSun size={22} /> : <TbMoon size={22} />}
         </button>
@@ -49,9 +49,9 @@ const Navigation: React.FC = () => {
         {!width || width < 1024 ? (
           <>
             <button
-              type="button"
               className="h-6 w-6"
               title="Toggle Hamburger"
+              type="button"
               onClick={handleToggle}
             >
               <span
