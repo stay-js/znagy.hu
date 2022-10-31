@@ -78,7 +78,7 @@ const Chips: React.FC<{ variant: string }> = ({ variant }) => {
 
   if (variant === 'Tailwind CSS')
     return (
-      <Chip color="#338bdf9" href="https://tailwindcss.com/">
+      <Chip color="##38b2ac" href="https://tailwindcss.com/">
         Tailwind CSS
       </Chip>
     );
