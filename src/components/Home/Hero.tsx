@@ -2,12 +2,26 @@ import Link from 'next/link';
 import { FaGithub, FaTwitter, FaEnvelope, FaYoutube } from 'react-icons/fa';
 import { TbArrowNarrowDown } from 'react-icons/tb';
 
+const Icon: React.FC<{
+  children: React.ReactNode;
+  title: string;
+  href: string;
+}> = ({ children, title, href }) => (
+  <Link
+    className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 bg-neutral-700 text-white transition-colors hover:bg-white hover:text-zinc-900 dark:border-0"
+    title={title}
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    {children}
+  </Link>
+);
+
 const Hero: React.FC = () => (
   <section
     className="content flex flex-col justify-center gap-6"
-    style={{
-      minHeight: 'calc(100vh - 5rem)',
-    }}
+    style={{ minHeight: 'calc(100vh - 5rem)' }}
   >
     <div className="flex flex-col gap-2">
       <h1 className="text-4xl font-bold sm:text-5xl md:text-[5rem]">
@@ -22,45 +36,21 @@ const Hero: React.FC = () => (
     </div>
 
     <div className="flex gap-2">
-      <Link
-        className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 bg-neutral-700 text-white transition-colors hover:bg-white hover:text-zinc-900 dark:border-0"
-        title="GitHub"
-        href="https://github.com/stay-js"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <Icon title="GitHub" href="https://github.com/stay-js">
         <FaGithub />
-      </Link>
+      </Icon>
 
-      <Link
-        className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 bg-neutral-700 text-white transition-colors hover:bg-white hover:text-zinc-900 dark:border-0"
-        title="Twitter"
-        href="https://twitter.com/znagyy"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <Icon title="Twitter" href="https://twitter.com/znagyy">
         <FaTwitter />
-      </Link>
+      </Icon>
 
-      <Link
-        className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 bg-neutral-700 text-white transition-colors hover:bg-white hover:text-zinc-900 dark:border-0"
-        title="E-mail"
-        href="mailto:nagyzeteny6@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <Icon title="E-mail" href="mailto:nagyzeteny6@gmail.com">
         <FaEnvelope />
-      </Link>
+      </Icon>
 
-      <Link
-        className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 bg-neutral-700 text-white transition-colors hover:bg-white hover:text-zinc-900 dark:border-0"
-        title="YouTube"
-        href="https://www.youtube.com/channel/UCEGp1S_QTS3goAVX1cVw-tQ"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <Icon title="YouTube" href="https://www.youtube.com/channel/UCEGp1S_QTS3goAVX1cVw-tQ">
         <FaYoutube />
-      </Link>
+      </Icon>
     </div>
 
     <button
