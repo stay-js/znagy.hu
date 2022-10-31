@@ -22,14 +22,14 @@ const Chip: React.FC<{
 const Chips: React.FC<{ variant: string }> = ({ variant }) => {
   if (variant === 'JavaScript')
     return (
-      <Chip color="#f7df1e" href="https://www.javascript.com/">
+      <Chip color="#fcdc00" href="https://www.javascript.com/">
         JavaScript
       </Chip>
     );
 
   if (variant === 'TypeScript')
     return (
-      <Chip color="#3178c6" href="https://www.typescriptlang.org/">
+      <Chip color="#3078c6" href="https://www.typescriptlang.org/">
         TypeScript
       </Chip>
     );
@@ -78,7 +78,7 @@ const Chips: React.FC<{ variant: string }> = ({ variant }) => {
 
   if (variant === 'Tailwind CSS')
     return (
-      <Chip color="#38b2ac" href="https://tailwindcss.com/">
+      <Chip color="#338bdf9" href="https://tailwindcss.com/">
         Tailwind CSS
       </Chip>
     );
@@ -92,7 +92,7 @@ const Chips: React.FC<{ variant: string }> = ({ variant }) => {
 
   if (variant === 'Discord.js')
     return (
-      <Chip color="#7289da" href="https://discord.js.org/">
+      <Chip color="#5765f2" href="https://discord.js.org/">
         Discord.js
       </Chip>
     );
@@ -104,30 +104,16 @@ const Chips: React.FC<{ variant: string }> = ({ variant }) => {
       </Chip>
     );
 
-  if (variant === 'Node.js')
-    return (
-      <Chip color="#339933" href="https://nodejs.org/">
-        Node.js
-      </Chip>
-    );
-
-  if (variant === 'Express')
-    return (
-      <Chip color="#000000" href="https://expressjs.com/">
-        Express
-      </Chip>
-    );
-
   if (variant === 'MongoDB')
     return (
-      <Chip color="#47A248" href="https://www.mongodb.com/">
+      <Chip color="#01ec64" href="https://www.mongodb.com/">
         MongoDB
       </Chip>
     );
 
   if (variant === 'MySQL')
     return (
-      <Chip color="#4479A1" href="https://www.mysql.com/">
+      <Chip color="#0275bf" href="https://www.mysql.com/">
         MySQL
       </Chip>
     );
@@ -141,7 +127,7 @@ const Chips: React.FC<{ variant: string }> = ({ variant }) => {
 
   if (variant === 'Prisma')
     return (
-      <Chip color="#0c344b" href="https://www.prisma.io/">
+      <Chip color="#2d3748" href="https://www.prisma.io/">
         Prisma
       </Chip>
     );
@@ -155,19 +141,19 @@ const Chips: React.FC<{ variant: string }> = ({ variant }) => {
 
   if (variant === 'Heroku')
     return (
-      <Chip color="#430098" href="https://www.heroku.com/">
+      <Chip color="#79589f" href="https://www.heroku.com/">
         Heroku
       </Chip>
     );
 
   if (variant === 'Netlify')
     return (
-      <Chip color="#00C7B7" href="https://www.netlify.com/">
+      <Chip color="#02ad9f" href="https://www.netlify.com/">
         Netlify
       </Chip>
     );
 
-  return null;
+  return <p>no chip for {variant}</p>;
 };
 
 export default Chips;
