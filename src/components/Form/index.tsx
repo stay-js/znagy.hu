@@ -68,7 +68,7 @@ const Form: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex min-w-[30rem] flex-col gap-4 rounded-2xl bg-white p-8 text-sm shadow-2xl dark:bg-neutral-800 sm:p-12 md:px-20"
+      className="flex w-full max-w-lg flex-col gap-4 rounded-2xl bg-white p-8 text-sm shadow-2xl dark:bg-neutral-800 sm:p-12 md:px-20"
     >
       <div className="flex flex-col gap-1">
         <label htmlFor="name" className="w-fit font-medium dark:text-neutral-300">
