@@ -29,9 +29,9 @@ const Resume: NextPage = () => (
       </section>
 
       <section className="flex flex-col gap-4">
-        <h1 className="relative text-xl font-semibold uppercase tracking-widest after:block after:h-[2px] after:w-full after:bg-gray-600">
+        <h2 className="relative text-xl font-semibold uppercase tracking-widest after:block after:h-[2px] after:w-full after:bg-gray-600">
           Skills
-        </h1>
+        </h2>
 
         <div className="grid gap-4 md:grid-cols-3 md:gap-0">
           <div className="flex flex-col gap-2">
@@ -86,9 +86,9 @@ const Resume: NextPage = () => (
       </section>
 
       <section className="flex flex-col gap-4">
-        <h1 className="relative text-xl font-semibold uppercase tracking-widest after:block after:h-[2px] after:w-full after:bg-gray-600">
+        <h2 className="relative text-xl font-semibold uppercase tracking-widest after:block after:h-[2px] after:w-full after:bg-gray-600">
           Education
-        </h1>
+        </h2>
         <div className="grid grid-cols-[1fr_2fr] gap-8">
           <h3 className="text-lg font-semibold">Elementary School</h3>
           <div>
@@ -127,9 +127,9 @@ const Resume: NextPage = () => (
       </section>
 
       <section className="flex flex-col gap-4">
-        <h1 className="relative text-xl font-semibold uppercase tracking-widest after:block after:h-[2px] after:w-full after:bg-gray-600">
+        <h2 className="relative text-xl font-semibold uppercase tracking-widest after:block after:h-[2px] after:w-full after:bg-gray-600">
           Hobbies
-        </h1>
+        </h2>
 
         <p className="text-neutral-600">
           My hobbies are sports, video games, and of course IT, especially Web Dev.
