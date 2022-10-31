@@ -89,7 +89,7 @@ const Resume: NextPage = () => (
         <h1 className="relative text-xl font-semibold uppercase tracking-widest after:block after:h-[2px] after:w-full after:bg-gray-600">
           Education
         </h1>
-        <div className="grid gap-8" style={{ gridTemplateColumns: '1fr 2fr' }}>
+        <div className="grid grid-cols-[1fr_2fr] gap-8">
           <h3 className="text-lg font-semibold">Elementary School</h3>
           <div>
             <h4 className="font-semibold">Újlaki Általános Iskola</h4>
