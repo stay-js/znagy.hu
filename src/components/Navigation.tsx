@@ -62,12 +62,12 @@ const Navigation: React.FC = () => {
               <span
                 className={`${
                   isToggled && 'opacity-0'
-                } absolute block h-[2px] w-6 bg-current transition-all duration-500`}
+                } absolute block h-[2px] w-4 bg-current transition-all duration-500`}
               />
               <span
                 className={`${
-                  isToggled ? '-rotate-45' : 'translate-y-2'
-                } absolute block h-[2px] w-6 bg-current transition-all duration-500`}
+                  isToggled ? 'w-6 -rotate-45' : 'w-2 translate-y-2'
+                } absolute block h-[2px] bg-current transition-all duration-500`}
               />
             </button>
 
