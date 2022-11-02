@@ -28,9 +28,9 @@ const Resume: NextPage = () => (
           </Link>
         </div>
 
-        <p className="max-w-[60ch] text-xl">
+        <p className="max-w-prose text-xl">
           I consider myself as a Web Developer, but I am interested in several areas of IT, eg. Web
-          Development, Data modeling / structuring, DevOps, Cloud and Networking.
+          Development, Back-end Development, DevOps, Cloud and Networking.
         </p>
       </section>
 

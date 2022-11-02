@@ -2,7 +2,7 @@ import Link from 'next/link';
 import SectionTitle from './SectionTitle';
 
 const GetInTouch: React.FC = () => (
-  <section className="content flex min-h-[40vh] flex-col gap-4">
+  <section className="content flex flex-col gap-4">
     <SectionTitle title="Get In Touch" number={3} />
 
     <div className="flex flex-col gap-6">
