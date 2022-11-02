@@ -11,7 +11,7 @@ export const serverSchema = z.object({
 });
 
 export const clientSchema = z.object({
-  NEXT_PUBLIC_VERCEL_URL: z.string(),
+  NEXT_PUBLIC_VERCEL_URL: z.string().optional(),
 });
 
 export const clientEnv = {
