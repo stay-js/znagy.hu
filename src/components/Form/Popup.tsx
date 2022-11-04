@@ -31,7 +31,7 @@ const Popup: React.FC<{
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
-          <Dialog.Panel className="flex w-full flex-col gap-4 rounded-2xl bg-white p-6 shadow-xl dark:bg-neutral-900 sm:max-w-md">
+          <Dialog.Panel className="flex w-full max-w-md flex-col gap-4 rounded-2xl bg-white p-6 shadow-xl dark:bg-neutral-900">
             <div className="flex flex-col gap-2">
               <Dialog.Title className="text-lg font-bold text-neutral-900 dark:text-neutral-50">
                 {isSuccess ? ' Message Sent Successfully' : 'Something went wrong'}
