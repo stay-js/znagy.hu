@@ -13,15 +13,13 @@ const AboutMe: React.FC = () => (
     <SectionTitle title="About Me" number={1} />
 
     <div className="flex flex-col gap-12 lg:flex-row">
-      <div className="self-center lg:order-2">
-        <Image
-          className="relative h-64 w-64 border-t-8 border-l-8 border-green-500 transition-all duration-300 hover:-rotate-6 focus:-rotate-6"
-          src="/images/me.jpg"
-          alt="me"
-          width={720}
-          height={720}
-        />
-      </div>
+      <Image
+        className="relative h-64 w-64 self-center border-t-8 border-l-8 border-green-500 transition-all duration-300 hover:-rotate-6 focus:-rotate-6 lg:order-2"
+        src="/images/me.jpg"
+        alt="me"
+        width={720}
+        height={720}
+      />
 
       <div className="flex w-full flex-col gap-4 lg:w-3/5">
         <p>Glad you are here! </p>
