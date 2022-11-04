@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Layout from '@layouts/Layout';
 
 const SectionTitle: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <h2 className="relative text-xl font-semibold uppercase tracking-widest text-neutral-900 after:block after:h-[2px] after:w-full after:bg-neutral-400 dark:text-neutral-100">
+  <h2 className="relative text-xl font-semibold uppercase tracking-widest text-neutral-900 after:block after:h-0.5 after:w-full after:bg-neutral-400 dark:text-neutral-100">
     {children}
   </h2>
 );

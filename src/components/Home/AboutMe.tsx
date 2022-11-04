@@ -15,7 +15,7 @@ const AboutMe: React.FC = () => (
     <div className="flex flex-col gap-12 lg:flex-row">
       <div className="self-center lg:order-2">
         <Image
-          className="relative h-64 w-64 border-t-[10px] border-l-[10px] border-green-500 transition-all duration-300 hover:-rotate-6 focus:-rotate-6"
+          className="relative h-64 w-64 border-t-8 border-l-8 border-green-500 transition-all duration-300 hover:-rotate-6 focus:-rotate-6"
           src="/images/me.jpg"
           alt="me"
           width={720}
@@ -23,7 +23,7 @@ const AboutMe: React.FC = () => (
         />
       </div>
 
-      <div className="flex w-full flex-col gap-4 lg:w-[60%]">
+      <div className="flex w-full flex-col gap-4 lg:w-3/5">
         <p>Glad you are here! </p>
         <p>
           My name is Zétény Nagy AKA stay, I&rsquo;m from Budapest, Hungary. Currently studying in{' '}

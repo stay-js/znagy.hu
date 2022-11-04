@@ -57,30 +57,30 @@ const Navigation: React.FC = () => {
               <span
                 className={`${
                   isToggled ? 'rotate-45' : '-translate-y-2'
-                } absolute block h-[2px] w-6 bg-current transition-all duration-500`}
+                } absolute block h-0.5 w-6 bg-current transition-all duration-500`}
               />
               <span
                 className={`${
                   isToggled && 'opacity-0'
-                } absolute block h-[2px] w-4 bg-current transition-all duration-500`}
+                } absolute block h-0.5 w-4 bg-current transition-all duration-500`}
               />
               <span
                 className={`${
                   isToggled ? 'w-6 -rotate-45' : 'w-2 translate-y-2'
-                } absolute block h-[2px] bg-current transition-all duration-500`}
+                } absolute block h-0.5 bg-current transition-all duration-500`}
               />
             </button>
 
             <div
               className={`${
-                isToggled ? 'left-0' : 'left-[-100%]'
+                isToggled ? 'left-0' : 'left-full'
               } fixed top-16 z-10 h-screen w-full bg-white py-4 transition-all duration-500 ease-in-out dark:bg-neutral-900`}
             >
               <ul className="content flex flex-col gap-8">
                 {navItems.map(({ id, path, name }) => (
                   <li key={id}>
                     <Link
-                      className="relative flex font-bold text-black after:absolute after:-bottom-4 after:h-[1px] after:w-full after:bg-neutral-300 dark:text-white dark:after:bg-neutral-600"
+                      className="relative flex font-bold text-black after:absolute after:-bottom-4 after:h-px after:w-full after:bg-neutral-300 dark:text-white dark:after:bg-neutral-600"
                       onClick={handleClose}
                       href={path}
                     >

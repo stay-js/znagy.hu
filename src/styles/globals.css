@@ -31,5 +31,5 @@ p {
 }
 
 .content {
-  @apply mx-auto w-full px-6 md:w-[80%] md:px-0 lg:w-[65%] 2xl:w-[55%];
+  @apply mx-auto w-full px-6 md:w-10/12 md:px-0 lg:w-8/12 2xl:w-7/12;
 }
