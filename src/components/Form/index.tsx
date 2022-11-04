@@ -16,11 +16,6 @@ interface Errors {
   msg?: string;
 }
 
-interface InputEvent {
-  key: string;
-  value: string;
-}
-
 const defaultValues: Props = {
   name: '',
   email: '',
@@ -50,8 +45,6 @@ const Form: React.FC = () => {
   const { mutate, isLoading, isSuccess } = trpc.useMutation(['email.send'], {
     onSettled: () => setIsPopupOpen(true),
   });
-
-  const handleChange = ({ key, value }: InputEvent) => setValues({ ...values, [key]: value });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -84,7 +77,7 @@ const Form: React.FC = () => {
             id="name"
             placeholder="Example Peter"
             value={values.name}
-            onChange={(event) => handleChange({ key: 'name', value: event.currentTarget.value })}
+            onChange={(e) => setValues({ ...values, name: e.target.value })}
           />
         </div>
 
@@ -107,7 +100,7 @@ const Form: React.FC = () => {
             id="email"
             placeholder="example@gmail.com"
             value={values.email}
-            onChange={(event) => handleChange({ key: 'email', value: event.currentTarget.value })}
+            onChange={(e) => setValues({ ...values, email: e.target.value })}
           />
         </div>
 
@@ -127,7 +120,7 @@ const Form: React.FC = () => {
           rows={6}
           placeholder="Please try to describe your question in as much detail as possible."
           value={values.msg}
-          onChange={(event) => handleChange({ key: 'msg', value: event.currentTarget.value })}
+          onChange={(e) => setValues({ ...values, msg: e.target.value })}
         />
 
         {errors.msg && <span className="text-xs text-red-500 dark:text-red-500">{errors.msg}</span>}
