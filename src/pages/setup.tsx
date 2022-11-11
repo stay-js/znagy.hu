@@ -124,7 +124,7 @@ const Contact: NextPage = () => (
           <div
             // eslint-disable-next-line react/no-array-index-key
             key={index}
-            className="mb-4 flex h-fit break-inside-avoid-column flex-col gap-4 rounded-lg bg-white px-4 py-8 text-black shadow-lg"
+            className="mb-4 flex break-inside-avoid-column flex-col gap-4 rounded-lg bg-white px-4 py-8 text-black shadow-lg"
           >
             <h1 className="text-center text-xl font-bold">{title}</h1>
             {image && (
