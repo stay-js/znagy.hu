@@ -10,11 +10,7 @@ interface Props {
   msg: string;
 }
 
-interface Errors {
-  name?: string;
-  email?: string;
-  msg?: string;
-}
+type Errors = Partial<Props>;
 
 const defaultValues: Props = {
   name: '',
