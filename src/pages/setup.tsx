@@ -31,14 +31,14 @@ const Contact: NextPage = () => (
             ),
           },
           {
-            title: 'Apple iPhone XR',
-            image: '/images/apple-iphone-xr.jpg',
-            url: 'https://support.apple.com/kb/SP781?locale=en_US',
+            title: 'Apple iPhone 14',
+            image: '/images/apple-iphone-14.jpg',
+            url: 'https://www.apple.com/iphone-14/',
             body: (
               <ul>
-                <li>Apple A12 Bionic</li>
-                <li>3GB memory</li>
-                <li>64GB storage</li>
+                <li>Apple A15 Bionic</li>
+                <li>6GB memory</li>
+                <li>128GB storage</li>
               </ul>
             ),
           },
