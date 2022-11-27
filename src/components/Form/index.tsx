@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { TbUser, TbMail } from 'react-icons/tb';
-import trpc from '@utils/trpc';
+import { trpc } from '@utils/trpc';
 import Loading from './Loading';
 import Popup from './Popup';
 

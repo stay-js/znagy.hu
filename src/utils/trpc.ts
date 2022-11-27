@@ -10,7 +10,7 @@ const getBaseUrl = () => {
   return `http://localhost:${process.env.PORT ?? 3000}`;
 };
 
-const trpc = createTRPCNext<AppRouter>({
+export const trpc = createTRPCNext<AppRouter>({
   config: () => {
     return {
       transformer: superjson,
@@ -34,5 +34,3 @@ const trpc = createTRPCNext<AppRouter>({
 
 export type RouterInputs = inferRouterInputs<AppRouter>;
 export type RouterOutputs = inferRouterOutputs<AppRouter>;
-
-export default trpc;
