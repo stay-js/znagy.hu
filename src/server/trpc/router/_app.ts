@@ -1,5 +1,5 @@
 import { router } from '../trpc';
-import { emailRouter } from './email';
+import emailRouter from './email';
 
 export const appRouter = router({
   email: emailRouter,

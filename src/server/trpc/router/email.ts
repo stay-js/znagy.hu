@@ -14,7 +14,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-export const emailRouter = router({
+const emailRouter = router({
   send: publicProcedure
     .input(
       z.object({
@@ -53,3 +53,5 @@ export const emailRouter = router({
       }
     }),
 });
+
+export default emailRouter;
