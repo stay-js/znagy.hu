@@ -10,7 +10,7 @@
     core-js-pure "^3.25.1"
     regenerator-runtime "^0.13.10"
 
-"@babel/runtime@^7.10.2", "@babel/runtime@^7.18.9", "@babel/runtime@^7.9.0":
+"@babel/runtime@^7.10.2", "@babel/runtime@^7.18.9":
   version "7.20.1"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.20.1.tgz#1148bb33ab252b165a06698fde7576092a78b4a9"
   integrity sha512-mrzLkl6U9YLF8qpqI7TB82PESyEGjm/0Ly91jG575eVxMMlb8fYfOXFZIJ8XfLrJZQbm7dlKry2bJmXBUEkdFg==
@@ -209,13 +209,6 @@
   version "10.3.0"
   resolved "https://registry.yarnpkg.com/@trpc/react-query/-/react-query-10.3.0.tgz#85d2ee27e350555bbdf8708df28096a3a401f231"
   integrity sha512-qxVcGAf5A9i9yaYJmVhgbOysfcHvZj7rnOSiKPNWSEd3k5UHHizTrEcY++lhEzpdTxDLzEr/mV1oisByv0ymXQ==
-
-"@trpc/react@^9.27.4":
-  version "9.27.4"
-  resolved "https://registry.yarnpkg.com/@trpc/react/-/react-9.27.4.tgz#0320e0cbd416506959ddc65a10758fc41d70fb65"
-  integrity sha512-bP74Tf6vWcMoWYiTAvbWrieV9cFQiKUDKRoRj0+VeGJbxdbhdJyUzv4zos0T4SiSKuhgoEm9bP4jWU2NhNhpIA==
-  dependencies:
-    "@babel/runtime" "^7.9.0"
 
 "@trpc/server@^10.3.0":
   version "10.3.0"
