@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const useColorScheme = () => {
+export const useColorScheme = () => {
   const [colorScheme, setColorScheme] = useState<'light' | 'dark' | null>(null);
 
   const toggleColorScheme = () => setColorScheme((value) => (value === 'dark' ? 'light' : 'dark'));
@@ -23,5 +23,3 @@ const useColorScheme = () => {
 
   return { colorScheme, toggleColorScheme };
 };
-
-export default useColorScheme;

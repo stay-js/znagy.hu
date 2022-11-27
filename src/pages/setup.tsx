@@ -2,8 +2,8 @@ import type { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { TbKeyboard, TbMouse, TbHeadphones } from 'react-icons/tb';
-import Title from '@components/Title';
-import Layout from '@layouts/Layout';
+import { Title } from '@components/Title';
+import { Layout } from '@layouts/Layout';
 
 const Contact: NextPage = () => (
   <Layout

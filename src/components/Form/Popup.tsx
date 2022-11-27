@@ -2,7 +2,7 @@ import { Dialog, Transition } from '@headlessui/react';
 import Link from 'next/link';
 import { Fragment } from 'react';
 
-const Popup: React.FC<{
+export const Popup: React.FC<{
   isOpen: boolean;
   isSuccess: boolean;
   setIsOpen: (isOpen: boolean) => void;
@@ -73,5 +73,3 @@ const Popup: React.FC<{
     </Dialog>
   </Transition>
 );
-
-export default Popup;

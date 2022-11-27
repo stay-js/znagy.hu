@@ -19,7 +19,7 @@ const Chip: React.FC<{
   </Link>
 );
 
-const Chips: React.FC<{ variant: string }> = ({ variant }) => {
+export const Chips: React.FC<{ variant: string }> = ({ variant }) => {
   if (variant === 'JavaScript') {
     return (
       <Chip color="#fcdc00" href="https://www.javascript.com/">
@@ -174,5 +174,3 @@ const Chips: React.FC<{ variant: string }> = ({ variant }) => {
 
   return null;
 };
-
-export default Chips;

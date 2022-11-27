@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { TbArrowUp } from 'react-icons/tb';
 
-const ScrollTop: React.FC = () => {
+export const ScrollTop: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -30,4 +30,3 @@ const ScrollTop: React.FC = () => {
     </button>
   );
 };
-export default ScrollTop;

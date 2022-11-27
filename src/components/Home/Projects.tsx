@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-import Chips from '@components/Chips';
-import SectionTitle from './SectionTitle';
+import { Chips } from '@components/Chips';
+import { SectionTitle } from './SectionTitle';
 
 const Anchor: React.FC<{ children: React.ReactNode; href: string }> = ({ children, href }) => (
   <Link className="link" href={href} target="_blank" rel="noopener noreferrer">
@@ -9,7 +9,7 @@ const Anchor: React.FC<{ children: React.ReactNode; href: string }> = ({ childre
   </Link>
 );
 
-const Projects: React.FC = () => (
+export const Projects: React.FC = () => (
   <section className="content flex flex-col gap-4" id="projects">
     <SectionTitle title="Projects" number={2} />
 
@@ -232,5 +232,3 @@ const Projects: React.FC = () => (
     </div>
   </section>
 );
-
-export default Projects;

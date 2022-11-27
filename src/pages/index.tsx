@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import { Hero, AboutMe, Projects, GetInTouch } from '@components/Home';
-import Layout from '@layouts/Layout';
+import { Layout } from '@layouts/Layout';
 
 const Home: NextPage = () => (
   <Layout

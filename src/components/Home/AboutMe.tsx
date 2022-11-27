@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import SectionTitle from './SectionTitle';
+import { SectionTitle } from './SectionTitle';
 
 const Anchor: React.FC<{ children: React.ReactNode; href: string }> = ({ children, href }) => (
   <Link className="link text-green-500" href={href} target="_blank" rel="noopener noreferrer">
@@ -8,7 +8,7 @@ const Anchor: React.FC<{ children: React.ReactNode; href: string }> = ({ childre
   </Link>
 );
 
-const AboutMe: React.FC = () => (
+export const AboutMe: React.FC = () => (
   <section className="content relative flex flex-col gap-4" id="about">
     <SectionTitle title="About Me" number={1} />
 
@@ -65,5 +65,3 @@ const AboutMe: React.FC = () => (
     </div>
   </section>
 );
-
-export default AboutMe;

@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
-import Form from '@components/Form';
-import Title from '@components/Title';
-import Layout from '@layouts/Layout';
+import { Form } from '@components/Form';
+import { Title } from '@components/Title';
+import { Layout } from '@layouts/Layout';
 
 const Contact: NextPage = () => (
   <Layout

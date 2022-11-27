@@ -1,4 +1,4 @@
-const navItems = [
+export const navItems = [
   {
     name: 'Home',
     path: '/',
@@ -30,5 +30,3 @@ const navItems = [
     id: 'cl68bk4fw00062069lgxgpid3',
   },
 ];
-
-export default navItems;

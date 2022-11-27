@@ -18,7 +18,7 @@ const Icon: React.FC<{
   </Link>
 );
 
-const Hero: React.FC = () => (
+export const Hero: React.FC = () => (
   <section
     className="content flex flex-col justify-center gap-6"
     style={{ minHeight: 'calc(100vh - 5rem)' }}
@@ -65,5 +65,3 @@ const Hero: React.FC = () => (
     </button>
   </section>
 );
-
-export default Hero;

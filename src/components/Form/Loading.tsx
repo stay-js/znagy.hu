@@ -1,4 +1,4 @@
-const Loading: React.FC = () => (
+export const Loading: React.FC = () => (
   <div className="flex flex-col items-center gap-2 ">
     <svg className="h-8 w-8 animate-spin" fill="none" viewBox="0 0 24 24">
       <circle className="stroke-green-500 opacity-25" cx="12" cy="12" r="10" strokeWidth="4" />
@@ -10,5 +10,3 @@ const Loading: React.FC = () => (
     Please wait, processing...
   </div>
 );
-
-export default Loading;

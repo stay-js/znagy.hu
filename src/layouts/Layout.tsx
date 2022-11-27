@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-const Layout: React.FC<{
+export const Layout: React.FC<{
   children: React.ReactNode;
   path: string;
   title: string;
@@ -50,5 +50,3 @@ const Layout: React.FC<{
     </>
   );
 };
-
-export default Layout;

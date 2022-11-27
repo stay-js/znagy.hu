@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import SectionTitle from './SectionTitle';
+import { SectionTitle } from './SectionTitle';
 
-const GetInTouch: React.FC = () => (
+export const GetInTouch: React.FC = () => (
   <section className="content flex flex-col gap-4">
     <SectionTitle title="Get In Touch" number={3} />
 
@@ -22,5 +22,3 @@ const GetInTouch: React.FC = () => (
     </div>
   </section>
 );
-
-export default GetInTouch;

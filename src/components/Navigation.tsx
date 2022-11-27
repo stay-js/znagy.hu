@@ -2,10 +2,10 @@ import disableScroll from 'disable-scroll';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { TbSun, TbMoon } from 'react-icons/tb';
-import navItems from '@utils/navItems';
-import useColorScheme from '@utils/useColorScheme';
+import { navItems } from '@utils/navItems';
+import { useColorScheme } from '@utils/useColorScheme';
 
-const Navigation: React.FC = () => {
+export const Navigation: React.FC = () => {
   const { colorScheme, toggleColorScheme } = useColorScheme();
   const [isToggled, setIsToggled] = useState<boolean>(false);
   const [width, setWidth] = useState<number | null>(null);
@@ -109,4 +109,3 @@ const Navigation: React.FC = () => {
     </nav>
   );
 };
-export default Navigation;
