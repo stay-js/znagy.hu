@@ -4,9 +4,7 @@ import superjson from 'superjson';
 
 const t = initTRPC.context<Context>().create({
   transformer: superjson,
-  errorFormatter({ shape }) {
-    return shape;
-  },
+  errorFormatter: ({ shape }) => shape,
 });
 
 export const router = t.router;
