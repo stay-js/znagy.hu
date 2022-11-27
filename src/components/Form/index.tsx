@@ -38,7 +38,7 @@ const Form: React.FC = () => {
   const [values, setValues] = useState<Props>(defaultValues);
   const [isPopupOpen, setIsPopupOpen] = useState<boolean>(false);
 
-  const { mutate, isLoading, isSuccess } = trpc.useMutation(['email.send'], {
+  const { mutate, isLoading, isSuccess } = trpc.email.send.useMutation({
     onSettled: () => setIsPopupOpen(true),
   });
 
