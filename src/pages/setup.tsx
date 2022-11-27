@@ -122,7 +122,6 @@ const Contact: NextPage = () => (
           },
         ].map(({ title, image, url, body }, index) => (
           <div
-            // eslint-disable-next-line react/no-array-index-key
             key={index}
             className="mb-4 flex break-inside-avoid-column flex-col gap-4 rounded-lg bg-white px-4 py-8 text-black shadow-lg"
           >
