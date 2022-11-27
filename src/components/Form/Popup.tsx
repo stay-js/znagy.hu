@@ -1,6 +1,6 @@
-import { Dialog, Transition } from '@headlessui/react';
-import Link from 'next/link';
 import { Fragment } from 'react';
+import Link from 'next/link';
+import { Dialog, Transition } from '@headlessui/react';
 
 export const Popup: React.FC<{
   isOpen: boolean;
