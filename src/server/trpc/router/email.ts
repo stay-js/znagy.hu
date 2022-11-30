@@ -20,10 +20,10 @@ export const emailRouter = router({
       z.object({
         name: z.string(),
         email: z.string().email(),
-        msg: z.string(),
+        message: z.string(),
       }),
     )
-    .mutation(async ({ input: { name, email, msg } }) => {
+    .mutation(async ({ input: { name, email, message } }) => {
       const mailOptions = {
         from: `stay Mail - noreply<${env.NODEMAILER_USER}>`,
         to: env.NODEMAILER_RECIEVER,
@@ -39,7 +39,7 @@ export const emailRouter = router({
         <div>
         Message:
         <br />
-        ${msg.replace(/\n/g, '<br />')}
+        ${message.replace(/\n/g, '<br />')}
         </div>
         `,
       };

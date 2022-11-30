@@ -1,40 +1,26 @@
 import { useState } from 'react';
 import { TbUser, TbMail } from 'react-icons/tb';
+import { z } from 'zod';
 import { trpc } from '@utils/trpc';
 import { Loading } from './Loading';
 import { Popup } from './Popup';
 
-interface Props {
-  name: string;
-  email: string;
-  msg: string;
-}
+const FormSchema = z.object({
+  name: z.string().min(1, 'Please specify a name!'),
+  email: z.string().email('Please provide a valid e-mail address!'),
+  message: z.string().min(1, 'Please specify a message!'),
+});
 
-type Errors = Partial<Props>;
+type Props = z.infer<typeof FormSchema>;
 
 const defaultValues: Props = {
   name: '',
   email: '',
-  msg: '',
-};
-
-const validate = (values: Props): Errors => {
-  const errors: Errors = {};
-
-  if (!values.name) errors.name = 'Please specify a name!';
-  if (!values.msg) errors.msg = 'Please specify a message!';
-
-  if (!values.email) {
-    errors.email = 'Please specify an e-mail address!';
-  } else if (!/\S+@\S+\.\S+/.test(values.email)) {
-    errors.email = 'Please provide a valid e-mail address!';
-  }
-
-  return errors;
+  message: '',
 };
 
 export const Form: React.FC = () => {
-  const [errors, setErrors] = useState<Errors>({});
+  const [errors, setErrors] = useState<Partial<Props>>({});
   const [values, setValues] = useState<Props>(defaultValues);
   const [isPopupOpen, setIsPopupOpen] = useState<boolean>(false);
 
@@ -45,13 +31,23 @@ export const Form: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const newErrors = validate(values);
-    setErrors(newErrors);
+    const results = FormSchema.safeParse(values);
 
-    if (Object.keys(newErrors).length === 0) {
-      mutate(values);
-      setValues(defaultValues);
+    if (!results.success) {
+      const errors = results.error.flatten().fieldErrors;
+
+      setErrors({
+        name: errors.name?.join(', '),
+        email: errors.email?.join(', '),
+        message: errors.message?.join(', '),
+      });
+
+      return;
     }
+
+    setErrors({});
+    setValues(defaultValues);
+    mutate(values);
   };
 
   return (
@@ -106,20 +102,22 @@ export const Form: React.FC = () => {
       </div>
 
       <div className="flex flex-col gap-1">
-        <label htmlFor="msg" className="w-fit font-medium dark:text-neutral-300">
+        <label htmlFor="message" className="w-fit font-medium dark:text-neutral-300">
           Message:
         </label>
 
         <textarea
           className="w-full resize-none rounded border border-neutral-300 px-3 py-2 text-black dark:border-[#373A40] dark:bg-[#25262b] dark:text-white"
-          id="msg"
+          id="message"
           rows={6}
           placeholder="Please try to describe your question in as much detail as possible."
-          value={values.msg}
-          onChange={(e) => setValues({ ...values, msg: e.target.value })}
+          value={values.message}
+          onChange={(e) => setValues({ ...values, message: e.target.value })}
         />
 
-        {errors.msg && <span className="text-xs text-red-500 dark:text-red-500">{errors.msg}</span>}
+        {errors.message && (
+          <span className="text-xs text-red-500 dark:text-red-500">{errors.message}</span>
+        )}
       </div>
 
       <button
