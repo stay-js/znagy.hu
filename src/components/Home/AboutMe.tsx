@@ -28,15 +28,15 @@ export const AboutMe: React.FC = () => (
           <Anchor href="http://njszg.hu/">BMSzC Neumann János Informatikai Technikum</Anchor>.
         </p>
         <p>
-          My intrest in web development started long ago, back in my early elementary school days.
-          My favourite subject is maths since first grade. Also I love doing Kyokushin Karate and
+          My interest in web development started long ago, back in my early elementary school days.
+          My favourite subject is maths since first grade. Also, I love doing Kyokushin Karate and
           Thai-Boxing (Muay Thai). I will improve my coding and fighting skills especially because I
           want to be a Full Stack web developer...
         </p>
         <p>
           If you are interested check out my <Anchor href="/setup">setup</Anchor>.
         </p>
-        <p>Favourite technologies/things I use:</p>
+        <p>Favorite technologies/things I use:</p>
         <div className="ml-8 flex gap-20">
           <ul className="list-disc text-green-500">
             <li>

@@ -29,8 +29,8 @@ const Resume: NextPage = () => (
         </div>
 
         <p className="max-w-prose text-xl">
-          I consider myself as a Web Developer, but I am interested in several areas of IT, eg. Web
-          Development, Back-end Development, DevOps, Cloud and Networking.
+          I consider myself a Web Developer, but I am interested in several areas of IT, eg. Web
+          Development, Back-end Development, DevOps, Cloud, and Networking.
         </p>
       </section>
 
@@ -153,9 +153,9 @@ const Resume: NextPage = () => (
         <SectionTitle>Hobbies</SectionTitle>
 
         <div>
-          <p>My hobbies are sports, video games, and of course IT, especially Web Dev.</p>
+          <p>My hobbies are sports, and of course IT, especially Web Dev.</p>
           <p>
-            I do Kyokushin Karate (2.kyu - brown belt) since 2013, and I started doing Thai-Boxing
+            I do Kyokushin Karate (2. kyu - brown belt) since 2013, and I started doing Thai-Boxing
             (Muay Thai) in 2021.
           </p>
         </div>

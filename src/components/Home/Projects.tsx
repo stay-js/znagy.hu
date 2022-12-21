@@ -27,13 +27,13 @@ export const Projects: React.FC = () => (
               </p>
               <p className="text-neutral-200">
                 Front-end: <Anchor href="https://nextjs.org/">Next.js</Anchor>,{' '}
-                <Anchor href="https://tailwindcss.com/">Tailwind CSS</Anchor> and{' '}
+                <Anchor href="https://tailwindcss.com/">Tailwind CSS</Anchor>, and{' '}
                 <Anchor href="https://headlessui.com/">Headless UI</Anchor>.
               </p>
               <p className="text-neutral-200">
                 Back-end: <Anchor href="https://trpc.io/">tRPC</Anchor>,{' '}
                 <Anchor href="https://next-auth.js.org">NextAuth.js</Anchor>,{' '}
-                <Anchor href="https://planetscale.com">PlanetScale</Anchor> (MySQL) and{' '}
+                <Anchor href="https://planetscale.com">PlanetScale</Anchor> (MySQL), and{' '}
                 <Anchor href="https://www.prisma.io/">Prisma</Anchor>, running on{' '}
                 <Anchor href="https://vercel.com/docs/concepts/functions/serverless-functions">
                   Vercel Serverless
@@ -64,7 +64,7 @@ export const Projects: React.FC = () => (
                 Random Generator (CUID, GUID, UUID, Number, Color, etc.).
               </p>
               <p className="text-neutral-200">
-                Made with <Anchor href="https://nextjs.org/">Next.js</Anchor> and{' '}
+                Made with <Anchor href="https://nextjs.org/">Next.js</Anchor>, and{' '}
                 <Anchor href="https://tailwindcss.com/">Tailwind CSS</Anchor>.
               </p>
             </>
@@ -80,11 +80,11 @@ export const Projects: React.FC = () => (
               <p className="text-neutral-200">Simple portfolio website.</p>
               <p className="text-neutral-200">
                 Front-end: <Anchor href="https://nextjs.org/">Next.js</Anchor>,{' '}
-                <Anchor href="https://tailwindcss.com/">Tailwind CSS</Anchor> and{' '}
+                <Anchor href="https://tailwindcss.com/">Tailwind CSS</Anchor>, and{' '}
                 <Anchor href="https://headlessui.com/">Headless UI</Anchor>.
               </p>
               <p className="text-neutral-200">
-                Back-end: <Anchor href="https://trpc.io/">tRPC</Anchor> and{' '}
+                Back-end: <Anchor href="https://trpc.io/">tRPC</Anchor>, and{' '}
                 <Anchor href="https://nodemailer.com/">Nodemailer</Anchor>, running on{' '}
                 <Anchor href="https://vercel.com/docs/concepts/functions/serverless-functions">
                   Vercel Serverless
@@ -111,7 +111,7 @@ export const Projects: React.FC = () => (
             <>
               <p className="text-neutral-200">Flappy Matykusz a cheap flappy bird clone...</p>
               <p className="text-neutral-200">
-                Made with <Anchor href="https://vitejs.dev/">Vite</Anchor> and{' '}
+                Made with <Anchor href="https://vitejs.dev/">Vite</Anchor>, and{' '}
                 <Anchor href="https://tailwindcss.com/">Tailwind CSS</Anchor>.
               </p>
             </>
@@ -125,12 +125,12 @@ export const Projects: React.FC = () => (
             <>
               <p className="text-neutral-200">
                 A Discord BOT build back in 2020, with{' '}
-                <Anchor href="https://discord.js.org/">Discord.js</Anchor> and{' '}
+                <Anchor href="https://discord.js.org/">Discord.js</Anchor>, and{' '}
                 <Anchor href="https://www.mongodb.com/">MondoDB</Anchor>.
               </p>
               <p className="text-neutral-200">
                 All 70+ commands are listed on the website, which is built with{' '}
-                <Anchor href="https://astro.build/">Astro</Anchor> and{' '}
+                <Anchor href="https://astro.build/">Astro</Anchor>, and{' '}
                 <Anchor href="https://tailwindcss.com/">Tailwind CSS</Anchor>.
               </p>
               <p className="text-neutral-200">
@@ -159,13 +159,13 @@ export const Projects: React.FC = () => (
               <p className="text-neutral-200">A marketing website for REGALE Energy Zrt.</p>
               <p className="text-neutral-200">
                 Front-end: <Anchor href="https://nextjs.org/">Next.js</Anchor> ,{' '}
-                <Anchor href="https://tailwindcss.com/">Tailwind CSS</Anchor> and{' '}
+                <Anchor href="https://tailwindcss.com/">Tailwind CSS</Anchor>, and{' '}
                 <Anchor href="https://headlessui.com/">Headless UI</Anchor>.
               </p>
               <p className="text-neutral-200">
                 Back-end: <Anchor href="https://trpc.io/">tRPC</Anchor>,{' '}
                 <Anchor href="https://nodemailer.com/">Nodemailer</Anchor>,{' '}
-                <Anchor href="https://planetscale.com">PlanetScale</Anchor> (MySQL) and{' '}
+                <Anchor href="https://planetscale.com">PlanetScale</Anchor> (MySQL), and{' '}
                 <Anchor href="https://www.prisma.io/">Prisma</Anchor>, running on{' '}
                 <Anchor href="https://vercel.com/docs/concepts/functions/serverless-functions">
                   Vercel Serverless
