@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import disableScroll from 'disable-scroll';
 import { TbSun, TbMoon } from 'react-icons/tb';
-import { navItems } from '@utils/navItems';
+import { navItems } from '@constants/navItems';
 import { useColorScheme } from '@utils/useColorScheme';
 
 export const Navigation: React.FC = () => {

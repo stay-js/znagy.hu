@@ -29,4 +29,4 @@ export const navItems = [
     path: 'https://links.znagy.hu/',
     id: 'cl68bk4fw00062069lgxgpid3',
   },
-];
+] as const;
