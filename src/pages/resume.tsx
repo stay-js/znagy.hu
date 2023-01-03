@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
-import { Layout } from '@layouts/Layout';
+import { Meta } from '@components/Meta';
 
 const SectionTitle: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <h2 className="relative text-xl font-semibold uppercase tracking-widest text-neutral-900 after:block after:h-0.5 after:w-full after:bg-neutral-400 dark:text-neutral-100">
@@ -8,12 +8,14 @@ const SectionTitle: React.FC<{ children: React.ReactNode }> = ({ children }) => 
   </h2>
 );
 
-const Resume: NextPage = () => (
-  <Layout
-    path="/resume"
-    title="Resume - Zétény Nagy"
-    desc=" I consider myself as a Web Developer, but I am interested in several areas of IT, eg. Web Development, Data modeling / structuring, DevOps, Cloud and Networking."
-  >
+const Page: NextPage = () => (
+  <>
+    <Meta
+      path="/resume"
+      title="Resume - Zétény Nagy"
+      desc=" I consider myself as a Web Developer, but I am interested in several areas of IT, eg. Web Development, Data modeling / structuring, DevOps, Cloud and Networking."
+    />
+
     <main className="content flex flex-col gap-10 pt-8 text-neutral-600 dark:text-neutral-300">
       <section className="flex flex-col gap-12">
         <div className="flex flex-col gap-2">
@@ -161,7 +163,7 @@ const Resume: NextPage = () => (
         </div>
       </section>
     </main>
-  </Layout>
+  </>
 );
 
-export default Resume;
+export default Page;

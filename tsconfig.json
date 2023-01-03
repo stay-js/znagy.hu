@@ -22,7 +22,6 @@
       "@components/*": ["src/components/*"],
       "@constants/*": ["src/constants/*"],
       "@env/*": ["src/env/*"],
-      "@layouts/*": ["src/layouts/*"],
       "@server/*": ["src/server/*"],
       "@styles/*": ["src/styles/*"],
       "@utils/*": ["src/utils/*"]

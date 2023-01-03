@@ -3,14 +3,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { TbKeyboard, TbMouse, TbHeadphones } from 'react-icons/tb';
 import { Title } from '@components/Title';
-import { Layout } from '@layouts/Layout';
+import { Meta } from '@components/Meta';
 
-const Contact: NextPage = () => (
-  <Layout
-    path="/setup"
-    title="Setup - Zétény Nagy"
-    desc="These are the things that I use everyday, hope you find it interesting..."
-  >
+const Page: NextPage = () => (
+  <>
+    <Meta
+      path="/setup"
+      title="Setup - Zétény Nagy"
+      desc="These are the things that I use everyday, hope you find it interesting..."
+    />
+
     <main className="content flex flex-col gap-8">
       <Title title="Setup">
         These are the things that I use everyday, hope you find it interesting...
@@ -151,7 +153,7 @@ const Contact: NextPage = () => (
         ))}
       </div>
     </main>
-  </Layout>
+  </>
 );
 
-export default Contact;
+export default Page;
