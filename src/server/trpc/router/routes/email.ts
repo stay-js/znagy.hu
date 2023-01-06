@@ -2,7 +2,7 @@ import { TRPCError } from '@trpc/server';
 import nodemailer from 'nodemailer';
 import { z } from 'zod';
 import { env } from '@env/server.mjs';
-import { router, publicProcedure } from '../trpc';
+import { router, publicProcedure } from '../../trpc';
 
 const transporter = nodemailer.createTransport({
   host: env.NODEMAILER_HOST,
