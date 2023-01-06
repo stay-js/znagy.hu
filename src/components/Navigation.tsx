@@ -5,7 +5,7 @@ import { TbSun, TbMoon } from 'react-icons/tb';
 import { navItems } from '@constants/navItems';
 import { useColorScheme } from '@utils/useColorScheme';
 
-export const Navigation: React.FC = () => {
+export const Navigation: React.FC<{ route: string }> = ({ route }) => {
   const { colorScheme, toggleColorScheme } = useColorScheme();
   const [isToggled, setIsToggled] = useState<boolean>(false);
 
@@ -64,10 +64,12 @@ export const Navigation: React.FC = () => {
           } fixed top-16 z-10 h-screen w-full bg-white py-4 transition-all duration-500 ease-in-out dark:bg-neutral-900 lg:static lg:flex lg:h-16 lg:w-fit lg:items-center lg:bg-transparent lg:p-0 lg:transition-none`}
         >
           <ul className="content flex flex-col gap-8 lg:w-fit lg:flex-row lg:gap-0">
-            {navItems.map(({ id, path, name }) => (
-              <li key={id}>
+            {navItems.map(({ path, name }) => (
+              <li key={path}>
                 <Link
-                  className="relative flex font-bold text-black transition-colors after:absolute after:-bottom-4 after:h-px after:w-full after:bg-neutral-300 dark:text-white dark:after:bg-neutral-600 lg:static lg:block lg:rounded-md lg:px-3 lg:py-2 lg:font-normal lg:after:hidden lg:hover:bg-neutral-300 lg:dark:hover:bg-neutral-800"
+                  className={`${
+                    path !== route && 'lg:text-neutral-600 lg:dark:text-neutral-400'
+                  } relative flex font-bold text-black transition-colors after:absolute after:-bottom-4 after:h-px after:w-full after:bg-neutral-300 dark:text-white dark:after:bg-neutral-600 lg:static lg:block lg:rounded-md lg:px-3 lg:py-2 lg:font-medium lg:after:hidden lg:hover:bg-neutral-300 lg:dark:hover:bg-neutral-800`}
                   onClick={handleClose}
                   href={path}
                 >
