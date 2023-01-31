@@ -154,6 +154,7 @@ export const Projects: React.FC = () => (
         },
         {
           title: 'REGALE Energy Zrt.',
+          url: 'https://regale.hu/',
           desc: (
             <>
               <p className="text-neutral-200">A marketing website for REGALE Energy Zrt.</p>
