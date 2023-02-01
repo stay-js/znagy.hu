@@ -1,14 +1,18 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import Link from 'next/link';
 import { TbUser, TbMail } from 'react-icons/tb';
+import ReCAPTCHA from 'react-google-recaptcha';
 import { z } from 'zod';
 import { trpc } from '@utils/trpc';
 import { Loading } from './Loading';
 import { Popup } from './Popup';
+import { env } from '@env/client.mjs';
 
-const FormSchema = z.object({
+export const FormSchema = z.object({
   name: z.string().min(1, 'Please specify a name!'),
   email: z.string().email('Please provide a valid e-mail address!'),
   message: z.string().min(1, 'Please specify a message!'),
+  token: z.nullable(z.string().optional()),
 });
 
 type Props = z.infer<typeof FormSchema>;
@@ -23,12 +27,13 @@ export const Form: React.FC = () => {
   const [errors, setErrors] = useState<Partial<Props>>({});
   const [values, setValues] = useState<Props>(defaultValues);
   const [isPopupOpen, setIsPopupOpen] = useState<boolean>(false);
+  const captchaRef = useRef<ReCAPTCHA>(null);
 
   const { mutate, isLoading, isSuccess } = trpc.email.send.useMutation({
     onSettled: () => setIsPopupOpen(true),
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const results = FormSchema.safeParse(values);
@@ -45,9 +50,12 @@ export const Form: React.FC = () => {
       return;
     }
 
+    const token = await captchaRef.current?.executeAsync();
+    captchaRef.current?.reset();
+
     setErrors({});
     setValues(defaultValues);
-    mutate(values);
+    mutate({ ...values, token });
   };
 
   return (
@@ -120,6 +128,28 @@ export const Form: React.FC = () => {
         )}
       </div>
 
+      <div>
+        This site is protected by reCAPTCHA and the Google{' '}
+        <Link
+          className="text-[#1a73e8]"
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Privacy Policy
+        </Link>{' '}
+        and{' '}
+        <Link
+          className="text-[#1a73e8]"
+          href="https://policies.google.com/terms"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Terms of Service
+        </Link>{' '}
+        apply.
+      </div>
+
       <button
         type="submit"
         className="group flex w-full items-center rounded-lg bg-gradient-to-br from-green-400 to-blue-600 p-0.5 font-medium text-gray-900 hover:from-green-400 hover:to-blue-600 hover:text-white dark:text-white"
@@ -132,6 +162,8 @@ export const Form: React.FC = () => {
       {isLoading && <Loading />}
 
       <Popup isOpen={isPopupOpen} setIsOpen={setIsPopupOpen} isSuccess={isSuccess} />
+
+      <ReCAPTCHA ref={captchaRef} sitekey={env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} size="invisible" />
     </form>
   );
 };

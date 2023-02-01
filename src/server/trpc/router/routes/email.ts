@@ -1,8 +1,9 @@
 import { TRPCError } from '@trpc/server';
 import nodemailer from 'nodemailer';
-import { z } from 'zod';
-import { env } from '@env/server.mjs';
+import { validateCaptchaResponse } from '@utils/validateCaptchaResponse';
+import { FormSchema } from '@components/Form';
 import { router, publicProcedure } from '../../trpc';
+import { env } from '@env/server.mjs';
 
 const transporter = nodemailer.createTransport({
   host: env.NODEMAILER_HOST,
@@ -16,14 +17,14 @@ const transporter = nodemailer.createTransport({
 
 export const emailRouter = router({
   send: publicProcedure
-    .input(
-      z.object({
-        name: z.string(),
-        email: z.string().email(),
-        message: z.string(),
-      }),
-    )
-    .mutation(async ({ input: { name, email, message } }) => {
+    .input(FormSchema)
+    .mutation(async ({ input: { name, email, message, token } }) => {
+      const isHuman = await validateCaptchaResponse(token);
+
+      if (!isHuman) {
+        throw new TRPCError({ code: 'BAD_REQUEST', message: 'Captcha validation failed' });
+      }
+
       const mailOptions = {
         from: `stay Mail - noreply<${env.NODEMAILER_USER}>`,
         to: env.NODEMAILER_RECIEVER,
