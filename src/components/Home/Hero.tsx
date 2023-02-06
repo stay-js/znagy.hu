@@ -44,7 +44,7 @@ export const Hero: React.FC = () => (
         <FaTwitter />
       </Icon>
 
-      <Icon title="E-mail" href="mailto:nagyzeteny6@gmail.com">
+      <Icon title="E-mail" href="mailto:znagy@znagy.hu">
         <FaEnvelope />
       </Icon>
 

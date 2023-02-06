@@ -22,11 +22,11 @@ const Page: NextPage = () => (
           Or you can just send me an e-mail at:{' '}
           <Link
             className="bg-gradient-to-r from-teal-400 to-green-500 bg-clip-text text-transparent"
-            href="mailto:nagyzeteny6@gmail.com"
+            href="mailto:znagy@znagy.hu"
             target="_blank"
             rel="noopener noreferrer"
           >
-            nagyzeteny6@gmail.com
+            znagy@znagy.hu
           </Link>
         </p>
       </Title>
