@@ -6,7 +6,7 @@ export const serverSchema = z.object({
   NODEMAILER_PORT: z.string(),
   NODEMAILER_USER: z.string().email(),
   NODEMAILER_PASS: z.string(),
-  NODEMAILER_RECIEVER: z.string().email(),
+  NODEMAILER_RECEIVER: z.string().email(),
   RECAPTCHA_SECRET_KEY: z.string(),
   NODE_ENV: z.enum(['development', 'test', 'production']),
 });

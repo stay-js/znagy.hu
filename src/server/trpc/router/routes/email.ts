@@ -25,29 +25,26 @@ export const emailRouter = router({
         throw new TRPCError({ code: 'BAD_REQUEST', message: 'Captcha validation failed' });
       }
 
-      const mailOptions = {
-        from: `stay Mail - noreply<${env.NODEMAILER_USER}>`,
-        to: env.NODEMAILER_RECIEVER,
-        subject: 'New Message',
-        html: `
-        <div>
-        Name: <b>${name}</b>
-        <br />
-        E-mail: <b>${email}</b>
-        </div>
-        <br />
-    
-        <div>
-        Message:
-        <br />
-        ${message.replace(/\n/g, '<br />')}
-        </div>
-        `,
-      };
-
       try {
-        const status = await transporter.sendMail(mailOptions);
-        return status;
+        return await transporter.sendMail({
+          from: `stay Mail - noreply<${env.NODEMAILER_USER}>`,
+          to: env.NODEMAILER_RECEIVER,
+          subject: 'New Message',
+          html: `
+          <div>
+          Name: <b>${name}</b>
+          <br />
+          E-mail: <b>${email}</b>
+          </div>
+          <br />
+      
+          <div>
+          Message:
+          <br />
+          ${message.replace(/\n/g, '<br />')}
+          </div>
+          `,
+        });
       } catch (error) {
         console.error(error);
         throw new TRPCError({ code: 'INTERNAL_SERVER_ERROR', cause: error });
