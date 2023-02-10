@@ -6,9 +6,4 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [
-    function ({ addVariant }) {
-      addVariant('menuOpen', '.menuOpen &');
-    },
-  ],
 };

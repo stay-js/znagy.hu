@@ -1,4 +1,4 @@
-import type { AppRouter } from '../server/trpc/router';
+import type { AppRouter } from '../server/api/router';
 import type { inferRouterInputs, inferRouterOutputs } from '@trpc/server';
 import SuperJSON from 'superjson';
 import { httpBatchLink, loggerLink } from '@trpc/client';
