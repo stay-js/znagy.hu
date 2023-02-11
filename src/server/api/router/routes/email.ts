@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 import { validateCaptchaResponse } from '@utils/validateCaptchaResponse';
 import { FormSchema } from '@components/Form';
 import { router, publicProcedure } from '../../trpc';
-import { env } from '@env/server.mjs';
+import { env } from 'src/env.mjs';
 
 const transporter = nodemailer.createTransport({
   host: env.NODEMAILER_HOST,

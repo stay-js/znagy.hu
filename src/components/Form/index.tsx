@@ -6,7 +6,7 @@ import { z } from 'zod';
 import { trpc } from '@utils/trpc';
 import { Loading } from './Loading';
 import { Popup } from './Popup';
-import { env } from '@env/client.mjs';
+import { env } from 'src/env.mjs';
 
 export const FormSchema = z.object({
   name: z.string().min(1, 'Please specify a name!'),

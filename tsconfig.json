@@ -21,7 +21,6 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@constants/*": ["src/constants/*"],
-      "@env/*": ["src/env/*"],
       "@server/*": ["src/server/*"],
       "@styles/*": ["src/styles/*"],
       "@utils/*": ["src/utils/*"]

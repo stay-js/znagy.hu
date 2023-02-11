@@ -1,4 +1,4 @@
-import { env } from '@env/server.mjs';
+import { env } from 'src/env.mjs';
 
 export const validateCaptchaResponse = async (token?: string | null) => {
   if (!token) return false;
