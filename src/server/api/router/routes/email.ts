@@ -22,7 +22,7 @@ export const emailRouter = router({
       const isHuman = await validateCaptchaResponse(token);
 
       if (!isHuman) {
-        throw new TRPCError({ code: 'BAD_REQUEST', message: 'Captcha validation failed' });
+        throw new TRPCError({ code: 'BAD_REQUEST', cause: 'Captcha validation failed' });
       }
 
       try {
