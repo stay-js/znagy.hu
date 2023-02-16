@@ -27,8 +27,9 @@ export const emailRouter = router({
 
       try {
         return await transporter.sendMail({
-          from: `stay Mail - noreply<${env.NODEMAILER_USER}>`,
-          to: env.NODEMAILER_RECEIVER,
+          from: 'stay Mail - noreply<noreply@znagy.hu>',
+          to: 'znagy@znagy.hu',
+          replyTo: email,
           subject: 'New Message',
           html: `
           <div>

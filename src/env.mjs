@@ -9,7 +9,6 @@ const server = z.object({
     .refine((value) => !isNaN(Number(value))),
   NODEMAILER_USER: z.string().email(),
   NODEMAILER_PASS: z.string().min(1),
-  NODEMAILER_RECEIVER: z.string().min(1),
 
   RECAPTCHA_SECRET_KEY: z.string().min(1),
 
@@ -28,7 +27,6 @@ const processEnv = {
   NODEMAILER_PORT: process.env.NODEMAILER_PORT,
   NODEMAILER_USER: process.env.NODEMAILER_USER,
   NODEMAILER_PASS: process.env.NODEMAILER_PASS,
-  NODEMAILER_RECEIVER: process.env.NODEMAILER_RECEIVER,
 
   RECAPTCHA_SECRET_KEY: process.env.RECAPTCHA_SECRET_KEY,
   NEXT_PUBLIC_RECAPTCHA_SITE_KEY: process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY,
