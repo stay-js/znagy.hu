@@ -30,6 +30,7 @@ const Page: NextPage = () => (
           </Link>
         </p>
       </Title>
+
       <Form />
     </main>
   </>
