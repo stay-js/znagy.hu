@@ -25,7 +25,7 @@ export const AboutMe: React.FC = () => (
         <p>Glad you are here! </p>
         <p>
           My name is Zétény Nagy AKA stay, I&rsquo;m from Budapest, Hungary. Currently studying in{' '}
-          <Anchor href="http://njszg.hu/">BMSzC Neumann János Informatikai Technikum</Anchor>.
+          <Anchor href="http://njszg.hu">BMSzC Neumann János Informatikai Technikum</Anchor>.
         </p>
         <p>
           My interest in web development started long ago, back in my early elementary school days.
@@ -40,24 +40,24 @@ export const AboutMe: React.FC = () => (
         <div className="ml-8 flex gap-20">
           <ul className="list-disc text-green-500">
             <li>
-              <Anchor href="https://www.typescriptlang.org/">TypeScript</Anchor>
+              <Anchor href="https://www.typescriptlang.org">TypeScript</Anchor>
             </li>
             <li>
-              <Anchor href="https://nextjs.org/">Next.js</Anchor>
+              <Anchor href="https://nextjs.org">Next.js</Anchor>
             </li>
             <li>
-              <Anchor href="https://trpc.io/">tRPC</Anchor>
+              <Anchor href="https://trpc.io">tRPC</Anchor>
             </li>
           </ul>
           <ul className="list-disc text-green-500">
             <li>
-              <Anchor href="https://www.prisma.io/">Prisma</Anchor>
+              <Anchor href="https://www.prisma.io">Prisma</Anchor>
             </li>
             <li>
-              <Anchor href="https://tailwindcss.com/">Tailwind CSS</Anchor>
+              <Anchor href="https://tailwindcss.com">Tailwind CSS</Anchor>
             </li>
             <li>
-              <Anchor href="https://vercel.com/">Vercel</Anchor>
+              <Anchor href="https://vercel.com">Vercel</Anchor>
             </li>
           </ul>
         </div>

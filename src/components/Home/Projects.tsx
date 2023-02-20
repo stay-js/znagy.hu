@@ -17,24 +17,24 @@ export const Projects: React.FC = () => (
       {[
         {
           title: 'Todo App',
-          url: 'https://todo.znagy.hu/',
+          url: 'https://todo.znagy.hu',
           github: 'https://github.com/stay-js/todo',
           desc: (
             <>
               <p className="text-neutral-200">
-                Simple Todo App with <Anchor href="https://github.com/">GitHub</Anchor>{' '}
+                Simple Todo App with <Anchor href="https://github.com">GitHub</Anchor>{' '}
                 authentication.
               </p>
               <p className="text-neutral-200">
-                Front-end: <Anchor href="https://nextjs.org/">Next.js</Anchor>,{' '}
-                <Anchor href="https://tailwindcss.com/">Tailwind CSS</Anchor>, and{' '}
-                <Anchor href="https://headlessui.com/">Headless UI</Anchor>.
+                Front-end: <Anchor href="https://nextjs.org">Next.js</Anchor>,{' '}
+                <Anchor href="https://tailwindcss.com">Tailwind CSS</Anchor>, and{' '}
+                <Anchor href="https://headlessui.com">Headless UI</Anchor>.
               </p>
               <p className="text-neutral-200">
-                Back-end: <Anchor href="https://trpc.io/">tRPC</Anchor>,{' '}
+                Back-end: <Anchor href="https://trpc.io">tRPC</Anchor>,{' '}
                 <Anchor href="https://next-auth.js.org">NextAuth.js</Anchor>,{' '}
                 <Anchor href="https://planetscale.com">PlanetScale</Anchor> (MySQL), and{' '}
-                <Anchor href="https://www.prisma.io/">Prisma</Anchor>, running on{' '}
+                <Anchor href="https://www.prisma.io">Prisma</Anchor>, running on{' '}
                 <Anchor href="https://vercel.com/docs/concepts/functions/serverless-functions">
                   Vercel Serverless
                 </Anchor>{' '}
@@ -56,7 +56,7 @@ export const Projects: React.FC = () => (
         },
         {
           title: 'Stay Random',
-          url: 'https://random.znagy.hu/',
+          url: 'https://random.znagy.hu',
           github: 'https://github.com/stay-js/random',
           desc: (
             <>
@@ -64,8 +64,8 @@ export const Projects: React.FC = () => (
                 Random Generator (CUID, GUID, UUID, Number, Color, etc.).
               </p>
               <p className="text-neutral-200">
-                Made with <Anchor href="https://nextjs.org/">Next.js</Anchor>, and{' '}
-                <Anchor href="https://tailwindcss.com/">Tailwind CSS</Anchor>.
+                Made with <Anchor href="https://nextjs.org">Next.js</Anchor>, and{' '}
+                <Anchor href="https://tailwindcss.com">Tailwind CSS</Anchor>.
               </p>
             </>
           ),
@@ -73,19 +73,20 @@ export const Projects: React.FC = () => (
         },
         {
           title: 'Portfolio (znagy.hu)',
-          url: 'https://znagy.hu/',
+          url: 'https://znagy.hu',
           github: 'https://github.com/stay-js/stay',
           desc: (
             <>
               <p className="text-neutral-200">Simple portfolio website.</p>
               <p className="text-neutral-200">
-                Front-end: <Anchor href="https://nextjs.org/">Next.js</Anchor>,{' '}
-                <Anchor href="https://tailwindcss.com/">Tailwind CSS</Anchor>, and{' '}
-                <Anchor href="https://headlessui.com/">Headless UI</Anchor>.
+                Front-end: <Anchor href="https://nextjs.org">Next.js</Anchor>,{' '}
+                <Anchor href="https://tailwindcss.com">Tailwind CSS</Anchor>, and{' '}
+                <Anchor href="https://headlessui.com">Headless UI</Anchor>.
               </p>
               <p className="text-neutral-200">
-                Back-end: <Anchor href="https://trpc.io/">tRPC</Anchor>, and{' '}
-                <Anchor href="https://nodemailer.com/">Nodemailer</Anchor>, running on{' '}
+                Back-end: <Anchor href="https://trpc.io">tRPC</Anchor>,{' '}
+                <Anchor href="https://nodemailer.com">Nodemailer</Anchor>, and{' '}
+                <Anchor href="https://aws.amazon.com/ses">Amazon SES</Anchor>, running on{' '}
                 <Anchor href="https://vercel.com/docs/concepts/functions/serverless-functions">
                   Vercel Serverless
                 </Anchor>{' '}
@@ -100,19 +101,20 @@ export const Projects: React.FC = () => (
             'Headless UI',
             'tRPC',
             'Nodemailer',
+            'Amazon SES',
             'Vercel',
           ],
         },
         {
           title: 'Flappy Matykusz',
-          url: 'https://flappy.znagy.hu/',
+          url: 'https://flappy.znagy.hu',
           github: 'https://github.com/stay-js/flappy-matykusz',
           desc: (
             <>
               <p className="text-neutral-200">Flappy Matykusz a cheap flappy bird clone...</p>
               <p className="text-neutral-200">
-                Made with <Anchor href="https://vitejs.dev/">Vite</Anchor>, and{' '}
-                <Anchor href="https://tailwindcss.com/">Tailwind CSS</Anchor>.
+                Made with <Anchor href="https://vitejs.dev">Vite</Anchor>, and{' '}
+                <Anchor href="https://tailwindcss.com">Tailwind CSS</Anchor>.
               </p>
             </>
           ),
@@ -120,24 +122,24 @@ export const Projects: React.FC = () => (
         },
         {
           title: 'Anything',
-          url: 'https://anything.znagy.hu/',
+          url: 'https://anything.znagy.hu',
           desc: (
             <>
               <p className="text-neutral-200">
                 A Discord BOT build back in 2020, with{' '}
-                <Anchor href="https://discord.js.org/">Discord.js</Anchor>, and{' '}
-                <Anchor href="https://www.mongodb.com/">MondoDB</Anchor>.
+                <Anchor href="https://discord.js.org">Discord.js</Anchor>, and{' '}
+                <Anchor href="https://www.mongodb.com">MondoDB</Anchor>.
               </p>
               <p className="text-neutral-200">
                 All 70+ commands are listed on the website, which is built with{' '}
-                <Anchor href="https://astro.build/">Astro</Anchor>, and{' '}
-                <Anchor href="https://tailwindcss.com/">Tailwind CSS</Anchor>.
+                <Anchor href="https://astro.build">Astro</Anchor>, and{' '}
+                <Anchor href="https://tailwindcss.com">Tailwind CSS</Anchor>.
               </p>
               <p className="text-neutral-200">
                 Later on I&rsquo;ll migrate the BOT from{' '}
-                <Anchor href="https://www.javascript.com/">JavaScript</Anchor> to{' '}
-                <Anchor href="https://www.typescriptlang.org/">TypeScript</Anchor>, update to the
-                latest version of <Anchor href="https://discord.js.org/">Discord.js</Anchor>, and
+                <Anchor href="https://www.javascript.com">JavaScript</Anchor> to{' '}
+                <Anchor href="https://www.typescriptlang.org">TypeScript</Anchor>, update to the
+                latest version of <Anchor href="https://discord.js.org">Discord.js</Anchor>, and
                 maybe I&rsquo;ll open source the project.
               </p>
             </>
@@ -154,20 +156,21 @@ export const Projects: React.FC = () => (
         },
         {
           title: 'REGALE Energy Zrt.',
-          url: 'https://regale.hu/',
+          url: 'https://regale.hu',
           desc: (
             <>
               <p className="text-neutral-200">A marketing website for REGALE Energy Zrt.</p>
               <p className="text-neutral-200">
-                Front-end: <Anchor href="https://nextjs.org/">Next.js</Anchor> ,{' '}
-                <Anchor href="https://tailwindcss.com/">Tailwind CSS</Anchor>, and{' '}
-                <Anchor href="https://headlessui.com/">Headless UI</Anchor>.
+                Front-end: <Anchor href="https://nextjs.org">Next.js</Anchor>,{' '}
+                <Anchor href="https://tailwindcss.com">Tailwind CSS</Anchor>, and{' '}
+                <Anchor href="https://headlessui.com">Headless UI</Anchor>.
               </p>
               <p className="text-neutral-200">
-                Back-end: <Anchor href="https://trpc.io/">tRPC</Anchor>,{' '}
-                <Anchor href="https://nodemailer.com/">Nodemailer</Anchor>,{' '}
+                Back-end: <Anchor href="https://trpc.io">tRPC</Anchor>,{' '}
+                <Anchor href="https://nodemailer.com">Nodemailer</Anchor>,{' '}
+                <Anchor href="https://aws.amazon.com/ses">Amazon SES</Anchor>,{' '}
                 <Anchor href="https://planetscale.com">PlanetScale</Anchor> (MySQL), and{' '}
-                <Anchor href="https://www.prisma.io/">Prisma</Anchor>, running on{' '}
+                <Anchor href="https://www.prisma.io">Prisma</Anchor>, running on{' '}
                 <Anchor href="https://vercel.com/docs/concepts/functions/serverless-functions">
                   Vercel Serverless
                 </Anchor>{' '}
@@ -182,6 +185,7 @@ export const Projects: React.FC = () => (
             'Headless UI',
             'tRPC',
             'Nodemailer',
+            'Amazon SES',
             'MySQL',
             'Prisma',
             'Vercel',

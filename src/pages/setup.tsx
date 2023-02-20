@@ -35,7 +35,7 @@ const Page: NextPage = () => (
           {
             title: 'Apple iPhone 14',
             image: '/images/apple-iphone-14.jpg',
-            url: 'https://www.apple.com/iphone-14/',
+            url: 'https://www.apple.com/iphone-14',
             body: (
               <ul>
                 <li>Apple A15 Bionic</li>
@@ -112,7 +112,7 @@ const Page: NextPage = () => (
                 <li className="flex items-center gap-1">
                   <TbHeadphones size={28} color="orange" />
                   <Link
-                    href="https://spcgear.com/en/product/viro/"
+                    href="https://spcgear.com/en/product/viro"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

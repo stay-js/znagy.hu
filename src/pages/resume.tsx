@@ -88,6 +88,10 @@ const Page: NextPage = () => (
               <li>Railway</li>
               <li>PlanetScale</li>
               <li>Heroku</li>
+              <li>Render</li>
+              <li>Cloudflare</li>
+              <li>AWS Services (Lambda, EC2, S3, SES, etc.)</li>
+              <li>Serverless Framework</li>
             </ul>
           </div>
         </div>

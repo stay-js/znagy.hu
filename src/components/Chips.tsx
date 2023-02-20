@@ -20,157 +20,134 @@ const Chip: React.FC<{
 );
 
 export const Chips: React.FC<{ variant: string }> = ({ variant }) => {
-  if (variant === 'JavaScript') {
-    return (
-      <Chip color="#fcdc00" href="https://www.javascript.com/">
-        JavaScript
-      </Chip>
-    );
-  }
+  switch (variant) {
+    case 'JavaScript':
+      return (
+        <Chip color="#fcdc00" href="https://www.javascript.com">
+          JavaScript
+        </Chip>
+      );
 
-  if (variant === 'TypeScript') {
-    return (
-      <Chip color="#3078c6" href="https://www.typescriptlang.org/">
-        TypeScript
-      </Chip>
-    );
-  }
+    case 'TypeScript':
+      return (
+        <Chip color="#3078c6" href="https://www.typescriptlang.org">
+          TypeScript
+        </Chip>
+      );
 
-  if (variant === 'React') {
-    return (
-      <Chip color="#61dafb" href="https://reactjs.org/">
-        React
-      </Chip>
-    );
-  }
+    case 'Next.js':
+      return (
+        <Chip color="#000000" href="https://nextjs.org">
+          Next.js
+        </Chip>
+      );
 
-  if (variant === 'Next.js') {
-    return (
-      <Chip color="#000000" href="https://nextjs.org/">
-        Next.js
-      </Chip>
-    );
-  }
+    case 'Vite':
+      return (
+        <Chip color="#646cff" href="https://vitejs.dev">
+          Vite
+        </Chip>
+      );
 
-  if (variant === 'Vite') {
-    return (
-      <Chip color="#646cff" href="https://vitejs.dev/">
-        Vite
-      </Chip>
-    );
-  }
+    case 'Astro':
+      return (
+        <Chip color="#ff5d01" href="https://astro.build">
+          Astro
+        </Chip>
+      );
 
-  if (variant === 'Astro') {
-    return (
-      <Chip color="#ff5d01" href="https://astro.build/">
-        Astro
-      </Chip>
-    );
-  }
+    case 'tRPC':
+      return (
+        <Chip color="#368ccb" href="https://trpc.io">
+          tRPC
+        </Chip>
+      );
 
-  if (variant === 'tRPC') {
-    return (
-      <Chip color="#368ccb" href="https://trpc.io/">
-        tRPC
-      </Chip>
-    );
-  }
+    case 'NextAuth.js':
+      return (
+        <Chip color="#000000" href="https://next-auth.js.org">
+          NextAuth.js
+        </Chip>
+      );
 
-  if (variant === 'NextAuth.js') {
-    return (
-      <Chip color="#000000" href="https://next-auth.js.org/">
-        NextAuth.js
-      </Chip>
-    );
-  }
+    case 'Tailwind CSS':
+      return (
+        <Chip color="#38b2ac" href="https://tailwindcss.com">
+          Tailwind CSS
+        </Chip>
+      );
 
-  if (variant === 'Tailwind CSS') {
-    return (
-      <Chip color="#38b2ac" href="https://tailwindcss.com/">
-        Tailwind CSS
-      </Chip>
-    );
-  }
+    case 'Headless UI':
+      return (
+        <Chip color="#9ca3af" href="https://headlessui.dev">
+          Headless UI
+        </Chip>
+      );
 
-  if (variant === 'Headless UI') {
-    return (
-      <Chip color="#9ca3af" href="https://headlessui.dev/">
-        Headless UI
-      </Chip>
-    );
-  }
+    case 'Discord.js':
+      return (
+        <Chip color="#5765f2" href="https://discord.js.org">
+          Discord.js
+        </Chip>
+      );
 
-  if (variant === 'Discord.js') {
-    return (
-      <Chip color="#5765f2" href="https://discord.js.org/">
-        Discord.js
-      </Chip>
-    );
-  }
+    case 'Nodemailer':
+      return (
+        <Chip color="#23b574" href="https://nodemailer.com">
+          Nodemailer
+        </Chip>
+      );
 
-  if (variant === 'Nodemailer') {
-    return (
-      <Chip color="#23b574" href="https://nodemailer.com/">
-        Nodemailer
-      </Chip>
-    );
-  }
+    case 'Amazon SES':
+      return (
+        <Chip color="#ec7211" href="https://aws.amazon.com/ses">
+          Amazon SES
+        </Chip>
+      );
 
-  if (variant === 'MongoDB') {
-    return (
-      <Chip color="#01ec64" href="https://www.mongodb.com/">
-        MongoDB
-      </Chip>
-    );
-  }
+    case 'MongoDB':
+      return (
+        <Chip color="#01ec64" href="https://www.mongodb.com">
+          MongoDB
+        </Chip>
+      );
 
-  if (variant === 'MySQL') {
-    return (
-      <Chip color="#0275bf" href="https://www.mysql.com/">
-        MySQL
-      </Chip>
-    );
-  }
+    case 'MySQL':
+      return (
+        <Chip color="#0275bf" href="https://www.mysql.com">
+          MySQL
+        </Chip>
+      );
 
-  if (variant === 'PostgreSQL') {
-    return (
-      <Chip color="#336791" href="https://www.postgresql.org/">
-        PostgreSQL
-      </Chip>
-    );
-  }
+    case 'Prisma':
+      return (
+        <Chip color="#2d3748" href="https://www.prisma.io">
+          Prisma
+        </Chip>
+      );
 
-  if (variant === 'Prisma') {
-    return (
-      <Chip color="#2d3748" href="https://www.prisma.io/">
-        Prisma
-      </Chip>
-    );
-  }
+    case 'Vercel':
+      return (
+        <Chip color="#000000" href="https://vercel.com">
+          Vercel
+        </Chip>
+      );
 
-  if (variant === 'Vercel') {
-    return (
-      <Chip color="#000000" href="https://vercel.com/">
-        Vercel
-      </Chip>
-    );
-  }
+    case 'Netlify':
+      return (
+        <Chip color="#02ad9f" href="https://www.netlify.com">
+          Netlify
+        </Chip>
+      );
 
-  if (variant === 'Heroku') {
-    return (
-      <Chip color="#79589f" href="https://www.heroku.com/">
-        Heroku
-      </Chip>
-    );
-  }
+    case 'Heroku':
+      return (
+        <Chip color="#79589f" href="https://www.heroku.com">
+          Heroku
+        </Chip>
+      );
 
-  if (variant === 'Netlify') {
-    return (
-      <Chip color="#02ad9f" href="https://www.netlify.com/">
-        Netlify
-      </Chip>
-    );
+    default:
+      return null;
   }
-
-  return null;
 };

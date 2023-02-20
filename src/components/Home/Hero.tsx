@@ -48,7 +48,7 @@ export const Hero: React.FC = () => (
         <FaEnvelope />
       </Icon>
 
-      <Icon title="YouTube" href="https://www.youtube.com/channel/UCEGp1S_QTS3goAVX1cVw-tQ">
+      <Icon title="YouTube" href="https://www.youtube.com/@stay0y0">
         <FaYoutube />
       </Icon>
     </div>

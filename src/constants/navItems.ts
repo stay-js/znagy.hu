@@ -21,6 +21,6 @@ export const navItems = [
   },
   {
     name: 'Links',
-    path: 'https://links.znagy.hu/',
+    path: 'https://links.znagy.hu',
   },
 ] as const;
