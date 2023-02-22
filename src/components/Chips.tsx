@@ -37,7 +37,7 @@ export const Chips: React.FC<{ variant: string }> = ({ variant }) => {
 
     case 'Next.js':
       return (
-        <Chip color="#000000" href="https://nextjs.org">
+        <Chip color="#000" href="https://nextjs.org">
           Next.js
         </Chip>
       );
@@ -65,7 +65,7 @@ export const Chips: React.FC<{ variant: string }> = ({ variant }) => {
 
     case 'NextAuth.js':
       return (
-        <Chip color="#000000" href="https://next-auth.js.org">
+        <Chip color="#000" href="https://next-auth.js.org">
           NextAuth.js
         </Chip>
       );
@@ -128,7 +128,7 @@ export const Chips: React.FC<{ variant: string }> = ({ variant }) => {
 
     case 'Vercel':
       return (
-        <Chip color="#000000" href="https://vercel.com">
+        <Chip color="#000" href="https://vercel.com">
           Vercel
         </Chip>
       );
@@ -144,6 +144,20 @@ export const Chips: React.FC<{ variant: string }> = ({ variant }) => {
       return (
         <Chip color="#79589f" href="https://www.heroku.com">
           Heroku
+        </Chip>
+      );
+
+    case 'AWS Lambda':
+      return (
+        <Chip color="#ec7211" href="https://aws.amazon.com/lambda">
+          AWS Lambda
+        </Chip>
+      );
+
+    case 'PlanetScale':
+      return (
+        <Chip color="#000" href="https://planetscale.com">
+          PlanetScale
         </Chip>
       );
 

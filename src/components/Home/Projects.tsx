@@ -28,7 +28,8 @@ export const Projects: React.FC = () => (
               <p className="text-neutral-200">
                 Front-end: <Anchor href="https://nextjs.org">Next.js</Anchor>,{' '}
                 <Anchor href="https://tailwindcss.com">Tailwind CSS</Anchor>, and{' '}
-                <Anchor href="https://headlessui.com">Headless UI</Anchor>.
+                <Anchor href="https://headlessui.com">Headless UI</Anchor>, deployed to{' '}
+                <Anchor href="https://vercel.com">Vercel</Anchor>.
               </p>
               <p className="text-neutral-200">
                 Back-end: <Anchor href="https://trpc.io">tRPC</Anchor>,{' '}
@@ -38,7 +39,7 @@ export const Projects: React.FC = () => (
                 <Anchor href="https://vercel.com/docs/concepts/functions/serverless-functions">
                   Vercel Serverless
                 </Anchor>{' '}
-                (/api).
+                (Next.js /api).
               </p>
             </>
           ),
@@ -51,6 +52,7 @@ export const Projects: React.FC = () => (
             'NextAuth.js',
             'MySQL',
             'Prisma',
+            'PlanetScale',
             'Vercel',
           ],
         },
@@ -65,11 +67,51 @@ export const Projects: React.FC = () => (
               </p>
               <p className="text-neutral-200">
                 Made with <Anchor href="https://nextjs.org">Next.js</Anchor>, and{' '}
-                <Anchor href="https://tailwindcss.com">Tailwind CSS</Anchor>.
+                <Anchor href="https://tailwindcss.com">Tailwind CSS</Anchor>, deployed to{' '}
+                <Anchor href="https://vercel.com">Vercel</Anchor>.
               </p>
             </>
           ),
           tags: ['TypeScript', 'Next.js', 'Tailwind CSS', 'Vercel'],
+        },
+        {
+          title: 'REGALE Energy Zrt.',
+          url: 'https://regale.hu',
+          desc: (
+            <>
+              <p className="text-neutral-200">A marketing website for REGALE Energy Zrt.</p>
+              <p className="text-neutral-200">
+                Front-end: <Anchor href="https://nextjs.org">Next.js</Anchor>,{' '}
+                <Anchor href="https://tailwindcss.com">Tailwind CSS</Anchor>, and{' '}
+                <Anchor href="https://headlessui.com">Headless UI</Anchor>, deployed to{' '}
+                <Anchor href="https://netlify.com">Netlify</Anchor>.
+              </p>
+              <p className="text-neutral-200">
+                Back-end: <Anchor href="https://trpc.io">tRPC</Anchor>,{' '}
+                <Anchor href="https://nodemailer.com">Nodemailer</Anchor>,{' '}
+                <Anchor href="https://aws.amazon.com/ses">Amazon SES</Anchor>,{' '}
+                <Anchor href="https://planetscale.com">PlanetScale</Anchor> (MySQL), and{' '}
+                <Anchor href="https://www.prisma.io">Prisma</Anchor>, running on{' '}
+                <Anchor href="https://www.netlify.com/products/functions">Netlify Functions</Anchor>{' '}
+                (Next.js /api) and some back-end functions run on{' '}
+                <Anchor href="https://aws.amazon.com/lambda">AWS Lambda</Anchor>.
+              </p>
+            </>
+          ),
+          tags: [
+            'TypeScript',
+            'Next.js',
+            'Tailwind CSS',
+            'Headless UI',
+            'tRPC',
+            'Nodemailer',
+            'Amazon SES',
+            'MySQL',
+            'Prisma',
+            'PlanetScale',
+            'Netlify',
+            'AWS Lambda',
+          ],
         },
         {
           title: 'Portfolio (znagy.hu)',
@@ -81,7 +123,8 @@ export const Projects: React.FC = () => (
               <p className="text-neutral-200">
                 Front-end: <Anchor href="https://nextjs.org">Next.js</Anchor>,{' '}
                 <Anchor href="https://tailwindcss.com">Tailwind CSS</Anchor>, and{' '}
-                <Anchor href="https://headlessui.com">Headless UI</Anchor>.
+                <Anchor href="https://headlessui.com">Headless UI</Anchor>, deployed to{' '}
+                <Anchor href="https://vercel.com">Vercel</Anchor>.
               </p>
               <p className="text-neutral-200">
                 Back-end: <Anchor href="https://trpc.io">tRPC</Anchor>,{' '}
@@ -90,7 +133,7 @@ export const Projects: React.FC = () => (
                 <Anchor href="https://vercel.com/docs/concepts/functions/serverless-functions">
                   Vercel Serverless
                 </Anchor>{' '}
-                (/api).
+                (Next.js /api).
               </p>
             </>
           ),
@@ -114,7 +157,8 @@ export const Projects: React.FC = () => (
               <p className="text-neutral-200">Flappy Matykusz a cheap flappy bird clone...</p>
               <p className="text-neutral-200">
                 Made with <Anchor href="https://vitejs.dev">Vite</Anchor>, and{' '}
-                <Anchor href="https://tailwindcss.com">Tailwind CSS</Anchor>.
+                <Anchor href="https://tailwindcss.com">Tailwind CSS</Anchor>, deployed to{' '}
+                <Anchor href="https://netlify.com">Netlify</Anchor>.
               </p>
             </>
           ),
@@ -128,16 +172,17 @@ export const Projects: React.FC = () => (
               <p className="text-neutral-200">
                 A Discord BOT build back in 2020, with{' '}
                 <Anchor href="https://discord.js.org">Discord.js</Anchor>, and{' '}
-                <Anchor href="https://www.mongodb.com">MondoDB</Anchor>.
+                <Anchor href="https://www.mongodb.com">MondoDB</Anchor>, currently not deployed,
+                since Heroku free tier died.
               </p>
               <p className="text-neutral-200">
                 All 70+ commands are listed on the website, which is built with{' '}
                 <Anchor href="https://astro.build">Astro</Anchor>, and{' '}
-                <Anchor href="https://tailwindcss.com">Tailwind CSS</Anchor>.
+                <Anchor href="https://tailwindcss.com">Tailwind CSS</Anchor>, deployed to{' '}
+                <Anchor href="https://netlify.com">Netlify</Anchor>.
               </p>
               <p className="text-neutral-200">
-                Later on I&rsquo;ll migrate the BOT from{' '}
-                <Anchor href="https://www.javascript.com">JavaScript</Anchor> to{' '}
+                Later on I&rsquo;ll migrate the BOT to{' '}
                 <Anchor href="https://www.typescriptlang.org">TypeScript</Anchor>, update to the
                 latest version of <Anchor href="https://discord.js.org">Discord.js</Anchor>, and
                 maybe I&rsquo;ll open source the project.
@@ -152,43 +197,6 @@ export const Projects: React.FC = () => (
             'Astro',
             'Tailwind CSS',
             'Netlify',
-          ],
-        },
-        {
-          title: 'REGALE Energy Zrt.',
-          url: 'https://regale.hu',
-          desc: (
-            <>
-              <p className="text-neutral-200">A marketing website for REGALE Energy Zrt.</p>
-              <p className="text-neutral-200">
-                Front-end: <Anchor href="https://nextjs.org">Next.js</Anchor>,{' '}
-                <Anchor href="https://tailwindcss.com">Tailwind CSS</Anchor>, and{' '}
-                <Anchor href="https://headlessui.com">Headless UI</Anchor>.
-              </p>
-              <p className="text-neutral-200">
-                Back-end: <Anchor href="https://trpc.io">tRPC</Anchor>,{' '}
-                <Anchor href="https://nodemailer.com">Nodemailer</Anchor>,{' '}
-                <Anchor href="https://aws.amazon.com/ses">Amazon SES</Anchor>,{' '}
-                <Anchor href="https://planetscale.com">PlanetScale</Anchor> (MySQL), and{' '}
-                <Anchor href="https://www.prisma.io">Prisma</Anchor>, running on{' '}
-                <Anchor href="https://vercel.com/docs/concepts/functions/serverless-functions">
-                  Vercel Serverless
-                </Anchor>{' '}
-                (/api).
-              </p>
-            </>
-          ),
-          tags: [
-            'TypeScript',
-            'Next.js',
-            'Tailwind CSS',
-            'Headless UI',
-            'tRPC',
-            'Nodemailer',
-            'Amazon SES',
-            'MySQL',
-            'Prisma',
-            'Vercel',
           ],
         },
       ].map(({ title, url, github, desc, tags }) => (

@@ -10,8 +10,9 @@ export const validateCaptchaResponse = async (token?: string | null) => {
   try {
     const res = await fetch(url, { method: 'POST' });
     if (!res.ok) throw res;
-    const data = await res.json();
-    return data.success;
+    const data: unknown = await res.json();
+    if (data && typeof data === 'object' && 'success' in data) return data.success;
+    throw new Error('Invalid response');
   } catch (error) {
     console.error(error);
     return false;
