@@ -1,3 +1,5 @@
+import '@total-typescript/ts-reset';
+
 import type { AppType } from 'next/dist/shared/lib/utils';
 import { useRouter } from 'next/router';
 import { Navigation } from '@components/Navigation';
