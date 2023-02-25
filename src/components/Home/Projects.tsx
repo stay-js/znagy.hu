@@ -119,7 +119,7 @@ export const Projects: React.FC = () => (
           github: 'https://github.com/stay-js/stay',
           desc: (
             <>
-              <p className="text-neutral-200">Simple portfolio website.</p>
+              <p className="text-neutral-200">My portfolio website.</p>
               <p className="text-neutral-200">
                 Front-end: <Anchor href="https://nextjs.org">Next.js</Anchor>,{' '}
                 <Anchor href="https://tailwindcss.com">Tailwind CSS</Anchor>, and{' '}

@@ -1,6 +1,6 @@
 # znagy.hu
 
-Simple portfolio website, built with [t3-stack](https://create.t3.gg).
+My portfolio website, built with [t3-stack](https://create.t3.gg).
 
 ### Front-end:
 
