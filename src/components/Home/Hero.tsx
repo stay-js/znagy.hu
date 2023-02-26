@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaGithub, FaTwitter, FaEnvelope, FaYoutube } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaInstagram, FaEnvelope } from 'react-icons/fa';
 import { TbArrowNarrowDown } from 'react-icons/tb';
 
 const Icon: React.FC<{
@@ -44,12 +44,12 @@ export const Hero: React.FC = () => (
         <FaTwitter />
       </Icon>
 
-      <Icon title="E-mail" href="mailto:znagy@znagy.hu">
-        <FaEnvelope />
+      <Icon title="Instagram" href="https://www.instagram.com/zeteny_ngy">
+        <FaInstagram />
       </Icon>
 
-      <Icon title="YouTube" href="https://www.youtube.com/@stay0y0">
-        <FaYoutube />
+      <Icon title="E-mail" href="mailto:znagy@znagy.hu">
+        <FaEnvelope />
       </Icon>
     </div>
 
