@@ -150,7 +150,7 @@ export const Form: React.FC = () => {
         apply.
       </div>
 
-      <Button type="submit" variant="wide-light-bg">
+      <Button type="submit" variant="wide">
         Send
       </Button>
 
