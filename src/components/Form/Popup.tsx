@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import Link from 'next/link';
 import { Dialog, Transition } from '@headlessui/react';
+import { Button } from '@components/Button';
 
 export const Popup: React.FC<{
   isOpen: boolean;
@@ -58,15 +59,9 @@ export const Popup: React.FC<{
               </Dialog.Description>
             </div>
 
-            <button
-              type="button"
-              className="group flex w-fit items-center rounded-lg bg-gradient-to-br from-green-400 to-blue-600 p-0.5 font-medium text-gray-900 hover:from-green-400 hover:to-blue-600 hover:text-white dark:text-white"
-              onClick={() => setIsOpen(false)}
-            >
-              <span className="flex w-fit items-center justify-center rounded-md bg-white px-4 py-2 text-sm transition-all group-hover:bg-opacity-0 dark:bg-neutral-900">
-                Got it!
-              </span>
-            </button>
+            <Button variant="small" onClick={() => setIsOpen(false)}>
+              Got it!
+            </Button>
           </Dialog.Panel>
         </Transition.Child>
       </div>
