@@ -57,6 +57,47 @@ export const Projects: React.FC = () => (
           ],
         },
         {
+          title: 'Flashcards App',
+          url: 'https://flashcards.znagy.hu',
+          github: 'https://github.com/stay-js/flashcards',
+          desc: (
+            <>
+              <p className="text-neutral-200">
+                Quizlet like Flashcards App with <Anchor href="https://github.com">GitHub</Anchor>{' '}
+                authentication.
+              </p>
+              <p className="text-neutral-200">
+                Front-end: <Anchor href="https://nextjs.org">Next.js</Anchor>,{' '}
+                <Anchor href="https://tailwindcss.com">Tailwind CSS</Anchor>, and{' '}
+                <Anchor href="https://headlessui.com">Headless UI</Anchor>, deployed to{' '}
+                <Anchor href="https://vercel.com">Vercel</Anchor>.
+              </p>
+              <p className="text-neutral-200">
+                Back-end: <Anchor href="https://trpc.io">tRPC</Anchor>,{' '}
+                <Anchor href="https://next-auth.js.org">NextAuth.js</Anchor>,{' '}
+                <Anchor href="https://planetscale.com">PlanetScale</Anchor> (MySQL), and{' '}
+                <Anchor href="https://www.prisma.io">Prisma</Anchor>, running on{' '}
+                <Anchor href="https://vercel.com/docs/concepts/functions/serverless-functions">
+                  Vercel Serverless
+                </Anchor>{' '}
+                (Next.js /api).
+              </p>
+            </>
+          ),
+          tags: [
+            'TypeScript',
+            'Next.js',
+            'Tailwind CSS',
+            'Headless UI',
+            'tRPC',
+            'NextAuth.js',
+            'MySQL',
+            'Prisma',
+            'PlanetScale',
+            'Vercel',
+          ],
+        },
+        {
           title: 'Stay Random',
           url: 'https://random.znagy.hu',
           github: 'https://github.com/stay-js/random',
@@ -233,7 +274,7 @@ export const Projects: React.FC = () => (
 
           <div className="rounded bg-slate-700 p-4 font-medium">{desc}</div>
 
-          <ul className="flex flex-wrap gap-y-2 gap-x-3">
+          <ul className="flex flex-wrap gap-x-3 gap-y-2">
             {tags.map((tag) => (
               <li key={tag}>
                 <Chips key={tag} variant={tag} />

@@ -14,7 +14,7 @@ export const AboutMe: React.FC = () => (
 
     <div className="flex flex-col gap-12 lg:flex-row">
       <Image
-        className="relative h-64 w-64 self-center border-t-8 border-l-8 border-green-500 transition-all duration-300 hover:-rotate-6 focus:-rotate-6 lg:order-2"
+        className="relative h-64 w-64 self-center border-l-8 border-t-8 border-green-500 transition-all duration-300 hover:-rotate-6 focus:-rotate-6 lg:order-2"
         src="/images/me.jpg"
         alt="me"
         width={720}

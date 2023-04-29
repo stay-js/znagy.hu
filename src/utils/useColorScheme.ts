@@ -7,8 +7,16 @@ export const useColorScheme = () => {
 
   useEffect(() => {
     if (!colorScheme) {
-      if (localStorage.theme) return setColorScheme(localStorage.theme);
+      if (
+        localStorage.theme &&
+        typeof localStorage.theme === 'string' &&
+        (localStorage.theme === 'dark' || localStorage.theme === 'light')
+      ) {
+        return setColorScheme(localStorage.theme);
+      }
+
       if (window.matchMedia('(prefers-color-scheme: dark)').matches) return setColorScheme('dark');
+
       return setColorScheme('light');
     }
 

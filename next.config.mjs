@@ -1,10 +1,9 @@
-/** @type {import("next").NextConfig} */
-
 await import('./src/env.mjs');
 
-const nextConfig = {
+/** @type {import("next").NextConfig} */
+const config = {
   reactStrictMode: true,
   swcMinify: true,
 };
 
-export default nextConfig;
+export default config;

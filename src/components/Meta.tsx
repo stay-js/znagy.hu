@@ -7,9 +7,11 @@ export const Meta: React.FC<{
 }> = ({ path, title, desc }) => (
   <Head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+
     <link rel="icon" href="/favicon.ico" />
 
-    <meta name="author" content="stay" />
+    <meta name="author" content="Zétény Nagy" />
     <meta
       name="keywords"
       content="stay, Zétény, Nagy, Zétény Nagy, Full stack dev, Full stack developer, IT, IT Student, Kyokushin, Kyokushin Karate, Muay Thai, Thai Box, Thai-Boxing, Hungary, JavaScript, TypeScript, Node.js, Express, React, Next.js, Sass, SCSS, Tailwind CSS, TailwindCSS, tailwind, Mantine, tRPC, MySQL, Postgres, PostgreSQL,

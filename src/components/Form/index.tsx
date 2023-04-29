@@ -4,7 +4,6 @@ import { TbUser, TbMail } from 'react-icons/tb';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { z } from 'zod';
 import { trpc } from '@utils/trpc';
-import { Loading } from './Loading';
 import { Popup } from './Popup';
 import { env } from 'src/env.mjs';
 
@@ -60,7 +59,7 @@ export const Form: React.FC = () => {
 
   return (
     <form
-      onSubmit={handleSubmit}
+      onSubmit={(e) => void handleSubmit(e)}
       className="flex w-full max-w-lg flex-col gap-4 rounded-2xl bg-white p-8 text-sm shadow-2xl dark:bg-neutral-800 sm:p-12 md:px-20"
     >
       <div className="flex flex-col gap-1">
@@ -159,7 +158,24 @@ export const Form: React.FC = () => {
         </span>
       </button>
 
-      {isLoading && <Loading />}
+      {isLoading && (
+        <div className="flex flex-col items-center gap-2 ">
+          <svg className="h-8 w-8 animate-spin" fill="none" viewBox="0 0 24 24">
+            <circle
+              className="stroke-green-500 opacity-25"
+              cx="12"
+              cy="12"
+              r="10"
+              strokeWidth="4"
+            />
+            <path
+              className="fill-green-500"
+              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+            />
+          </svg>
+          Please wait, processing...
+        </div>
+      )}
 
       <Popup isOpen={isPopupOpen} setIsOpen={setIsPopupOpen} isSuccess={isSuccess} />
 

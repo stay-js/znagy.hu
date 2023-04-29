@@ -6,8 +6,9 @@ import { navItems } from '@constants/navItems';
 import { useColorScheme } from '@utils/useColorScheme';
 
 export const Navigation: React.FC<{ route: string }> = ({ route }) => {
-  const { colorScheme, toggleColorScheme } = useColorScheme();
   const [isToggled, setIsToggled] = useState<boolean>(false);
+
+  const { colorScheme, toggleColorScheme } = useColorScheme();
 
   const handleClose = () => {
     setIsToggled(false);
@@ -48,7 +49,7 @@ export const Navigation: React.FC<{ route: string }> = ({ route }) => {
           />
           <span
             className={`${
-              isToggled && 'opacity-0'
+              isToggled ? 'opacity-0' : ''
             } absolute block h-0.5 w-4 bg-current transition-all duration-500`}
           />
           <span
@@ -68,7 +69,7 @@ export const Navigation: React.FC<{ route: string }> = ({ route }) => {
               <li key={path}>
                 <Link
                   className={`${
-                    path !== route && 'lg:text-neutral-600 lg:dark:text-neutral-400'
+                    path !== route ? 'lg:text-neutral-600 lg:dark:text-neutral-400' : ''
                   } relative flex font-bold text-black transition-colors after:absolute after:-bottom-4 after:h-px after:w-full after:bg-neutral-300 dark:text-white dark:after:bg-neutral-600 lg:static lg:block lg:rounded-md lg:px-3 lg:py-2 lg:font-medium lg:after:hidden lg:hover:bg-neutral-300 lg:dark:hover:bg-neutral-800`}
                   onClick={handleClose}
                   href={path}

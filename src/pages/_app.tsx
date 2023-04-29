@@ -7,17 +7,13 @@ import { useRouter } from 'next/router';
 
 import '@styles/globals.css';
 
-const App: AppType = ({ Component, pageProps }) => {
-  const router = useRouter();
-
-  return (
-    <>
-      <Analytics />
-      <ScrollTop />
-      <Navigation route={router.asPath} />
-      <Component {...pageProps} />
-    </>
-  );
-};
+const App: AppType = ({ Component, pageProps }) => (
+  <>
+    <Analytics />
+    <ScrollTop />
+    <Navigation route={useRouter().asPath} />
+    <Component {...pageProps} />
+  </>
+);
 
 export default trpc.withTRPC(App);
