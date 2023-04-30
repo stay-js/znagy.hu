@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Meta } from '@components/Meta';
 
 const SectionTitle: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <h2 className="relative text-xl font-semibold uppercase tracking-widest text-neutral-900 after:block after:h-0.5 after:w-full after:bg-neutral-400 dark:text-neutral-100">
+  <h2 className="after:h-0.5 relative text-xl font-semibold uppercase tracking-widest text-neutral-900 after:block after:w-full after:bg-neutral-400 dark:text-neutral-100">
     {children}
   </h2>
 );
@@ -13,7 +13,7 @@ const Page: NextPage = () => (
     <Meta
       path="/resume"
       title="Resume - Zétény Nagy"
-      desc=" I consider myself as a Web Developer, but I am interested in several areas of IT, eg. Web Development, Data modeling / structuring, DevOps, Cloud and Networking."
+      description="I consider myself a Full-stack Web Developer, but I am interested in several areas of IT, eg. Front-end Development, Back-end Development, DevOps, Cloud, and Networking."
     />
 
     <main className="content flex flex-col gap-10 pt-8 text-neutral-600 dark:text-neutral-300">

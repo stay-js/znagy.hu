@@ -7,7 +7,7 @@ const Page: NextPage = () => (
     <Meta
       path="/"
       title="Home - Zétény Nagy"
-      desc="Full stack developer wannabe. IT Student. Kyokushin. Muay Thai."
+      description="Full stack developer wannabe. IT Student. Kyokushin. Muay Thai."
     />
 
     <main className="flex flex-col gap-20">

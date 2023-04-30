@@ -10,7 +10,7 @@ const Page: NextPage = () => (
     <Meta
       path="/setup"
       title="Setup - Zétény Nagy"
-      desc="These are the things that I use everyday, hope you find it interesting..."
+      description="These are the things that I use everyday, hope you find it interesting..."
     />
 
     <main className="content flex flex-col gap-8">

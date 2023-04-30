@@ -9,7 +9,7 @@ const Page: NextPage = () => (
     <Meta
       path="/contact"
       title="Contact - Zétény Nagy"
-      desc="Got something you would like to say? Or have a question? Feel free to send me a message using the form down below. I&rsquo;m just a few clicks away..."
+      description="Got something you would like to say? Or have a question? Feel free to send me a message using the form down below. I&rsquo;m just a few clicks away..."
     />
 
     <main className="content flex flex-col items-center gap-8">
