@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { keywords } from '@constants/keywords';
 
 export const Meta: React.FC<{
   path: string;
@@ -6,23 +7,22 @@ export const Meta: React.FC<{
   desc: string;
 }> = ({ path, title, desc }) => (
   <Head>
+    <meta charSet="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
     <link rel="icon" href="/favicon.ico" />
 
     <meta name="author" content="Zétény Nagy" />
-    <meta
-      name="keywords"
-      content="stay, Zétény, Nagy, Zétény Nagy, Full stack dev, Full stack developer, IT, IT Student, Kyokushin, Kyokushin Karate, Muay Thai, Thai Box, Thai-Boxing, Hungary, JavaScript, TypeScript, Node.js, Express, React, Next.js, Sass, SCSS, Tailwind CSS, TailwindCSS, tailwind, Mantine, tRPC, MySQL, Postgres, PostgreSQL,
-          PlanetScale, Railway, Bootstrap, t3-stack, MongoDB, HTML, HTML5, CSS, CSS3, Nodemailer, Vercel, Netlify, Heroku, Linode, DigitalOcean, Vercel, Discord.js, REGALE Energy Zrt., Anything, Resume, Education, Skills, Hobbies, IT, Web Development, Web Developer, Data modeling, Data structuring, DevOps, Cloud, Networking,
-          Languages & Libraries, Technologies, Platforms, School, Újlaki Általános Iskola, BMSzC Neumann János Informatikai Technikum"
-    />
+
+    <meta name="keywords" content={keywords.join(', ')} />
+
+    <meta name="theme-color" content="#4ade80" />
 
     <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" key="og_type" />
-    <meta property="og:site_name" content="Zétény Nagy" key="site_name" />
-    <meta property="og:image" content="https://znagy.hu/images/me.png" key="image" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Zétény Nagy" />
+    <meta property="og:image" content="https://znagy.hu/images/me.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="znagy.hu" />
@@ -33,7 +33,7 @@ export const Meta: React.FC<{
     <meta name="rating" content="general" />
 
     <title>{title}</title>
-    <meta property="og:title" content={title} key="title" />
+    <meta property="og:title" content={title} />
     <meta name="twitter:title" content={title} />
 
     <meta name="description" content={desc} />

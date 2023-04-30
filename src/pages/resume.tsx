@@ -31,8 +31,8 @@ const Page: NextPage = () => (
         </div>
 
         <p className="max-w-prose text-xl">
-          I consider myself a Web Developer, but I am interested in several areas of IT, eg. Web
-          Development, Back-end Development, DevOps, Cloud, and Networking.
+          I consider myself a Full-stack Web Developer, but I am interested in several areas of IT,
+          eg. Front-end Development, Back-end Development, DevOps, Cloud, and Networking.
         </p>
       </section>
 
@@ -48,7 +48,9 @@ const Page: NextPage = () => (
               <li>JavaScript</li>
               <li>TypeScript</li>
               <li>Next.js</li>
+              <li>Auth.js (NextAuth.js)</li>
               <li>React</li>
+              <li>React Query</li>
               <li>Astro</li>
               <li>Vite</li>
               <li>tRPC</li>
