@@ -22,11 +22,11 @@ export const Meta: React.FC<{
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Zétény Nagy" />
-    <meta property="og:image" content="https://znagy.hu/images/me.png" />
+    <meta property="og:image" content="https://znagy.hu/images/me.jpg" />
 
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary" />
     <meta property="twitter:domain" content="znagy.hu" />
-    <meta name="twitter:image" content="https://znagy.hu/images/me.png" />
+    <meta name="twitter:image" content="https://znagy.hu/images/me.jpg" />
 
     <meta name="robots" content="index, follow" />
     <meta name="language" content="English" />
