@@ -17,8 +17,6 @@ export const Meta: React.FC<{
 
     <meta name="keywords" content={keywords.join(', ')} />
 
-    <meta name="theme-color" content="#4ade80" />
-
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Zétény Nagy" />
