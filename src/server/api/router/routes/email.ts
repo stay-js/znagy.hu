@@ -24,7 +24,7 @@ export const emailRouter = router({
     }
 
     try {
-      return await transporter.sendMail({
+      await transporter.sendMail({
         from: 'stay Mail - noreply<noreply@znagy.hu>',
         to: 'znagy@znagy.hu',
         replyTo: input.email,
@@ -44,6 +44,8 @@ export const emailRouter = router({
           </div>
           `,
       });
+
+      return { message: 'Success' };
     } catch (error) {
       console.error(error);
       throw new TRPCError({ code: 'INTERNAL_SERVER_ERROR', cause: error });
