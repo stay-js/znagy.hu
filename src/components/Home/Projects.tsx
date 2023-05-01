@@ -168,8 +168,7 @@ export const Projects: React.FC = () => (
                 <Anchor href="https://vercel.com">Vercel</Anchor>.
               </p>
               <p className="text-neutral-200">
-                Back-end: <Anchor href="https://trpc.io">tRPC</Anchor>,{' '}
-                <Anchor href="https://nodemailer.com">Nodemailer</Anchor>, and{' '}
+                Back-end: <Anchor href="https://nodemailer.com">Nodemailer</Anchor>, and{' '}
                 <Anchor href="https://aws.amazon.com/ses">Amazon SES</Anchor>, running on{' '}
                 <Anchor href="https://vercel.com/docs/concepts/functions/serverless-functions">
                   Vercel Serverless
