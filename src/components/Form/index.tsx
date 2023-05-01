@@ -1,9 +1,9 @@
 import { useState, useRef } from 'react';
 import Link from 'next/link';
+import { useMutation } from '@tanstack/react-query';
 import { z } from 'zod';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { TbUser, TbMail } from 'react-icons/tb';
-import { trpc } from '@utils/trpc';
 import { Popup } from './Popup';
 import { Button } from '@components/Button';
 import { env } from 'src/env.mjs';
@@ -29,9 +29,20 @@ export const Form: React.FC = () => {
   const [isPopupOpen, setIsPopupOpen] = useState<boolean>(false);
   const captchaRef = useRef<ReCAPTCHA>(null);
 
-  const { mutate, isLoading, isSuccess } = trpc.email.send.useMutation({
-    onSettled: () => setIsPopupOpen(true),
-  });
+  const { mutate, isSuccess, isLoading } = useMutation(
+    async (data: Props) => {
+      return fetch('/api/send-email', {
+        method: 'POST',
+        body: JSON.stringify(data),
+      }).then(async (res) => {
+        if (!res.ok) throw new Error(await res.text());
+        return res.json();
+      });
+    },
+    {
+      onSettled: () => setIsPopupOpen(true),
+    },
+  );
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
