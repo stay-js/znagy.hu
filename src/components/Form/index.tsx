@@ -40,7 +40,7 @@ export const Form: React.FC = () => {
       });
     },
     {
-      onSettled: () => setIsPopupOpen(true),
+      onMutate: () => setIsPopupOpen(true),
     },
   );
 
