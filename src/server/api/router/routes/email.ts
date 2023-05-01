@@ -16,39 +16,37 @@ const transporter = nodemailer.createTransport({
 });
 
 export const emailRouter = router({
-  send: publicProcedure
-    .input(FormSchema)
-    .mutation(async ({ input: { name, email, message, token } }) => {
-      const isHuman = await validateCaptchaResponse(token);
+  send: publicProcedure.input(FormSchema).mutation(async ({ input }) => {
+    const isHuman = await validateCaptchaResponse(input.token);
 
-      if (!isHuman) {
-        throw new TRPCError({ code: 'BAD_REQUEST', cause: 'Captcha validation failed' });
-      }
+    if (!isHuman) {
+      throw new TRPCError({ code: 'BAD_REQUEST', cause: 'Captcha validation failed' });
+    }
 
-      try {
-        return await transporter.sendMail({
-          from: 'stay Mail - noreply<noreply@znagy.hu>',
-          to: 'znagy@znagy.hu',
-          replyTo: email,
-          subject: 'New Message',
-          html: `
+    try {
+      return await transporter.sendMail({
+        from: 'stay Mail - noreply<noreply@znagy.hu>',
+        to: 'znagy@znagy.hu',
+        replyTo: input.email,
+        subject: 'New Message',
+        html: `
           <div>
-          Name: <b>${name}</b>
+          Name: <b>${input.name}</b>
           <br />
-          E-mail: <b>${email}</b>
+          E-mail: <b>${input.email}</b>
           </div>
           <br />
       
           <div>
           Message:
           <br />
-          ${message.replace(/\n/g, '<br />')}
+          ${input.message.replace(/\n/g, '<br />')}
           </div>
           `,
-        });
-      } catch (error) {
-        console.error(error);
-        throw new TRPCError({ code: 'INTERNAL_SERVER_ERROR', cause: error });
-      }
-    }),
+      });
+    } catch (error) {
+      console.error(error);
+      throw new TRPCError({ code: 'INTERNAL_SERVER_ERROR', cause: error });
+    }
+  }),
 });
