@@ -8,7 +8,6 @@ const computeOuterClasses = (variant: Variant) => {
 
   switch (variant) {
     case 'normal':
-      return `${base} w-fit`;
     case 'small':
       return `${base} w-fit`;
     case 'wide':
@@ -22,11 +21,11 @@ const computeInnerClasses = (variant: Variant) => {
 
   switch (variant) {
     case 'normal':
-      return `${base} px-6 py-3 bg-neutral-100 dark:bg-neutral-900`;
+      return `${base} bg-neutral-100 px-6 py-3 dark:bg-neutral-900`;
     case 'small':
-      return `${base} px-4 py-2 bg-white text-sm dark:bg-neutral-900`;
+      return `${base} bg-white px-4 py-2 text-sm dark:bg-neutral-900`;
     case 'wide':
-      return `${base} p-3 bg-white dark:bg-neutral-800`;
+      return `${base} bg-white p-3 dark:bg-neutral-800`;
   }
 };
 
