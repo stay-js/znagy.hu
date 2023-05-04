@@ -242,9 +242,9 @@ export const Projects: React.FC = () => (
       ].map(({ title, url, github, desc, tags }) => (
         <article key={title} className="flex max-w-[60ch] flex-col gap-4">
           <div className="flex gap-3">
-            <h1 className="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+            <h2 className="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
               {title}
-            </h1>
+            </h2>
 
             {github && (
               <Link
