@@ -7,7 +7,6 @@ import { Dialog, Transition } from '@headlessui/react';
 import { z } from 'zod';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { TbUser, TbMail } from 'react-icons/tb';
-import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 import { Button } from '@components/Button';
 import { env } from 'src/env.mjs';
 
@@ -20,17 +19,14 @@ export const FormSchema = z.object({
 
 type Props = z.infer<typeof FormSchema>;
 
-const defaultValues: Props = {
-  name: '',
-  email: '',
-  message: '',
-};
-
 export const Form: React.FC = () => {
   const [errors, setErrors] = useState<Partial<Props>>({});
-  const [values, setValues] = useState<Props>(defaultValues);
   const [isPopupOpen, setIsPopupOpen] = useState<boolean>(false);
+
   const captchaRef = useRef<ReCAPTCHA>(null);
+  const nameRef = useRef<HTMLInputElement>(null);
+  const emailRef = useRef<HTMLInputElement>(null);
+  const messageRef = useRef<HTMLTextAreaElement>(null);
 
   const { mutate, isSuccess, isLoading } = useMutation(
     async (data: Props) => {
@@ -50,7 +46,13 @@ export const Form: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const results = FormSchema.safeParse(values);
+    if (!nameRef.current || !emailRef.current || !messageRef.current) return;
+
+    const results = FormSchema.safeParse({
+      name: nameRef.current.value,
+      email: emailRef.current.value,
+      message: messageRef.current.value,
+    });
 
     if (!results.success) {
       const errors = results.error.flatten().fieldErrors;
@@ -68,8 +70,11 @@ export const Form: React.FC = () => {
     captchaRef.current?.reset();
 
     setErrors({});
-    setValues(defaultValues);
-    mutate({ ...values, token });
+    mutate({ ...results.data, token });
+
+    nameRef.current.value = '';
+    emailRef.current.value = '';
+    messageRef.current.value = '';
   };
 
   return (
@@ -151,8 +156,7 @@ export const Form: React.FC = () => {
               type="text"
               id="name"
               placeholder="Example Peter"
-              value={values.name}
-              onChange={(e) => setValues({ ...values, name: e.target.value })}
+              ref={nameRef}
             />
           </div>
 
@@ -174,8 +178,7 @@ export const Form: React.FC = () => {
               type="text"
               id="email"
               placeholder="example@gmail.com"
-              value={values.email}
-              onChange={(e) => setValues({ ...values, email: e.target.value })}
+              ref={emailRef}
             />
           </div>
 
@@ -194,8 +197,7 @@ export const Form: React.FC = () => {
             id="message"
             rows={6}
             placeholder="Please try to describe your question in as much detail as possible."
-            value={values.message}
-            onChange={(e) => setValues({ ...values, message: e.target.value })}
+            ref={messageRef}
           />
 
           {errors.message && (
@@ -226,7 +228,20 @@ export const Form: React.FC = () => {
         </div>
 
         <Button type="submit" disabled={isLoading} variant="wide">
-          {isLoading && <AiOutlineLoading3Quarters className="animate-spin" />}
+          {isLoading && (
+            <svg className="h-5 w-5 animate-spin fill-none" viewBox="0 0 24 24">
+              <circle
+                className="stroke-neutral-800 stroke-[4] opacity-25 group-hover:stroke-neutral-200 dark:stroke-neutral-200"
+                cx="12"
+                cy="12"
+                r="10"
+              />
+              <path
+                className="fill-neutral-800 group-hover:fill-neutral-200 dark:fill-neutral-200"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              />
+            </svg>
+          )}
           {isLoading ? 'Sending...' : 'Send'}
         </Button>
 
