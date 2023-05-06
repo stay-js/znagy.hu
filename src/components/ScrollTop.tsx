@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useState } from 'react';
 import { TbArrowUp } from 'react-icons/tb';
 

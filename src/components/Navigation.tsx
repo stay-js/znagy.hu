@@ -1,14 +1,19 @@
+'use client';
+
 import { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import disableScroll from 'disable-scroll';
 import { TbSun, TbMoon } from 'react-icons/tb';
 import { navItems } from '@constants/navItems';
 import { useColorScheme } from '@utils/useColorScheme';
 
-export const Navigation: React.FC<{ route: string }> = ({ route }) => {
+export const Navigation: React.FC = () => {
   const [isToggled, setIsToggled] = useState<boolean>(false);
 
   const { colorScheme, toggleColorScheme } = useColorScheme();
+
+  const route = usePathname();
 
   const handleClose = () => {
     setIsToggled(false);
