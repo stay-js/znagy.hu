@@ -3,7 +3,7 @@ import { validateCaptchaResponse } from '@utils/validateCaptchaResponse';
 import { z } from 'zod';
 import { env } from 'src/env.mjs';
 
-export const Schema = z.object({
+const Schema = z.object({
   name: z.string(),
   email: z.string().email(),
   message: z.string(),
