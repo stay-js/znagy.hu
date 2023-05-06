@@ -4,6 +4,8 @@ import { Form } from '@components/Form';
 import { Title } from '@components/Title';
 import { createMetadata } from '@utils/createMetadata';
 
+import { TempScrollToTopFix } from '@components/TempScrollToTopFix';
+
 export const metadata = createMetadata({
   path: '/contact',
   title: 'Contact',
@@ -13,6 +15,8 @@ export const metadata = createMetadata({
 
 const Page: NextPage = () => (
   <main className="content flex flex-col items-center gap-8">
+    <TempScrollToTopFix />
+
     <Title title="Send me a message!">
       <p>
         Got something you would like to say? Or have a question? Feel free to send me a message
