@@ -7,6 +7,7 @@ import { Dialog, Transition } from '@headlessui/react';
 import { z } from 'zod';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { TbUser, TbMail } from 'react-icons/tb';
+import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 import { Button } from '@components/Button';
 import { env } from 'src/env.mjs';
 
@@ -224,28 +225,10 @@ export const Form: React.FC = () => {
           apply.
         </div>
 
-        <Button type="submit" variant="wide">
-          Send
+        <Button type="submit" disabled={isLoading} variant="wide">
+          {isLoading && <AiOutlineLoading3Quarters className="animate-spin" />}
+          {isLoading ? 'Sending...' : 'Send'}
         </Button>
-
-        {isLoading && (
-          <div className="flex flex-col items-center gap-2 ">
-            <svg className="h-8 w-8 animate-spin" fill="none" viewBox="0 0 24 24">
-              <circle
-                className="stroke-green-500 opacity-25"
-                cx="12"
-                cy="12"
-                r="10"
-                strokeWidth="4"
-              />
-              <path
-                className="fill-green-500"
-                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-              />
-            </svg>
-            Please wait, processing...
-          </div>
-        )}
 
         <ReCAPTCHA ref={captchaRef} sitekey={env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} size="invisible" />
       </form>
