@@ -20,17 +20,14 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
+      "@app/*": ["src/app/*"],
       "@components/*": ["src/components/*"],
       "@constants/*": ["src/constants/*"],
       "@server/*": ["src/server/*"],
       "@styles/*": ["src/styles/*"],
       "@utils/*": ["src/utils/*"]
     },
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    "plugins": [{ "name": "next" }]
   },
   "include": [
     ".eslintrc.cjs",
