@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import Link from 'next/link';
+import { Anchor } from '@components/Anchor';
 import { createMetadata } from '@utils/createMetadata';
 
 import { TempScrollToTopFix } from '@components/TempScrollToTopFix';
@@ -24,14 +24,13 @@ const Page: NextPage = () => (
     <section className="flex flex-col gap-12">
       <div className="flex flex-col gap-2">
         <h1 className="text-5xl font-bold text-black dark:text-white">Zétény Nagy</h1>
-        <Link
-          className="link block w-fit text-2xl font-medium"
+        <Anchor
+          className="w-fit text-2xl font-medium"
           href="https://github.com/stay-js"
           target="_blank"
-          rel="noopener noreferrer"
         >
           github.com/stay-js
-        </Link>
+        </Anchor>
       </div>
 
       <p className="max-w-prose text-xl">
@@ -119,14 +118,9 @@ const Page: NextPage = () => (
             <p>
               <b>Address:</b> Ürömi utca 64, 1023, Budapest, Hungary
             </p>
-            <Link
-              className="link text-green-500"
-              href="http://ujlaki.ultranet.hu/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Anchor className="text-green-500" href="http://ujlaki.ultranet.hu/" target="_blank">
               ujlaki.ultranet.hu
-            </Link>
+            </Anchor>
           </div>
         </div>
 
@@ -146,14 +140,9 @@ const Page: NextPage = () => (
             <p>
               <b>Address:</b> Kerepesi út 124, 1144, Budapest, Hungary
             </p>
-            <Link
-              className="link text-green-500"
-              href="http://www.njszki.hu/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Anchor className="text-green-500" href="http://www.njszki.hu/" target="_blank">
               www.njszki.hu
-            </Link>
+            </Anchor>
           </div>
         </div>
       </div>

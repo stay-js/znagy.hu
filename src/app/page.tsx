@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaGithub, FaTwitter, FaInstagram, FaEnvelope, FaExternalLinkAlt } from 'react-icons/fa';
+import { Anchor } from '@components/Anchor';
 import { Button } from '@components/Button';
 import { Chips } from '@components/Chips';
 import { HeroButton } from '@components/HeroButton';
@@ -23,12 +24,6 @@ const SectionTitle: React.FC<{ title: string; number: number }> = ({ title, numb
   </h2>
 );
 
-const Anchor: React.FC<{ children: React.ReactNode; href: string }> = ({ children, href }) => (
-  <Link className="link text-green-500" href={href} target="_blank" rel="noopener noreferrer">
-    {children}
-  </Link>
-);
-
 const Icon: React.FC<{
   children: React.ReactNode;
   title: string;
@@ -46,11 +41,11 @@ const Icon: React.FC<{
 );
 
 const Page: NextPage = () => (
-  <main className="flex flex-col gap-20">
+  <main className="content flex flex-col gap-20">
     <TempScrollToTopFix />
 
     <section
-      className="content flex flex-col justify-center gap-6"
+      className="flex flex-col justify-center gap-6"
       style={{ minHeight: 'calc(100vh - 5rem)' }}
     >
       <div className="flex flex-col gap-2">
@@ -86,12 +81,12 @@ const Page: NextPage = () => (
       <HeroButton />
     </section>
 
-    <section className="content relative flex flex-col gap-4" id="about">
+    <section className="flex flex-col gap-4" id="about">
       <SectionTitle title="About Me" number={1} />
 
       <div className="flex flex-col gap-12 lg:flex-row">
         <Image
-          className="relative h-64 w-64 self-center border-l-8 border-t-8 border-green-500 transition-all duration-300 hover:-rotate-6 focus:-rotate-6 lg:order-2"
+          className="h-64 w-64 self-center border-l-8 border-t-8 border-green-500 transition-all duration-300 hover:-rotate-6 focus:-rotate-6 lg:order-2"
           src="/images/me.jpg"
           alt="me"
           width={720}
@@ -102,7 +97,10 @@ const Page: NextPage = () => (
           <p>Glad you are here! </p>
           <p>
             My name is Zétény Nagy AKA stay, I&rsquo;m from Budapest, Hungary. Currently studying in{' '}
-            <Anchor href="http://njszg.hu">BMSzC Neumann János Informatikai Technikum</Anchor>.
+            <Anchor className="text-green-500" href="http://njszg.hu" target="_blank">
+              BMSzC Neumann János Informatikai Technikum
+            </Anchor>
+            .
           </p>
           <p>
             My interest in web development started long ago, back in my early elementary school
@@ -111,30 +109,46 @@ const Page: NextPage = () => (
             especially because I want to be a Full Stack web developer...
           </p>
           <p>
-            If you are interested check out my <Anchor href="/setup">setup</Anchor>.
+            If you are interested check out my{' '}
+            <Anchor className="text-green-500" href="/setup">
+              setup
+            </Anchor>
+            .
           </p>
           <p>Favorite technologies/things I use:</p>
-          <div className="ml-8 flex gap-20">
-            <ul className="list-disc text-green-500">
+          <div className="ml-8 flex gap-20 text-green-500">
+            <ul className="list-disc">
               <li>
-                <Anchor href="https://www.typescriptlang.org">TypeScript</Anchor>
+                <Anchor href="https://www.typescriptlang.org" target="_blank">
+                  TypeScript
+                </Anchor>
               </li>
               <li>
-                <Anchor href="https://nextjs.org">Next.js</Anchor>
+                <Anchor href="https://nextjs.org" target="_blank">
+                  Next.js
+                </Anchor>
               </li>
               <li>
-                <Anchor href="https://trpc.io">tRPC</Anchor>
+                <Anchor href="https://trpc.io" target="_blank">
+                  tRPC
+                </Anchor>
               </li>
             </ul>
-            <ul className="list-disc text-green-500">
+            <ul className="list-disc">
               <li>
-                <Anchor href="https://www.prisma.io">Prisma</Anchor>
+                <Anchor href="https://www.prisma.io" target="_blank">
+                  Prisma
+                </Anchor>
               </li>
               <li>
-                <Anchor href="https://tailwindcss.com">Tailwind CSS</Anchor>
+                <Anchor href="https://tailwindcss.com" target="_blank">
+                  Tailwind CSS
+                </Anchor>
               </li>
               <li>
-                <Anchor href="https://vercel.com">Vercel</Anchor>
+                <Anchor href="https://vercel.com" target="_blank">
+                  Vercel
+                </Anchor>
               </li>
             </ul>
           </div>
@@ -142,7 +156,7 @@ const Page: NextPage = () => (
       </div>
     </section>
 
-    <section className="content flex flex-col gap-4" id="projects">
+    <section className="flex flex-col gap-4" id="projects">
       <SectionTitle title="Projects" number={2} />
 
       <div className="flex flex-col gap-16">
@@ -192,7 +206,7 @@ const Page: NextPage = () => (
       </div>
     </section>
 
-    <section className="content flex flex-col gap-4">
+    <section className="flex flex-col gap-4">
       <SectionTitle title="Get In Touch" number={3} />
 
       <div className="flex flex-col gap-6">
