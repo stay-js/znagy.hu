@@ -46,7 +46,7 @@ export const projects = [
           <Anchor href="https://planetscale.com" target="_blank">
             PlanetScale
           </Anchor>{' '}
-          (MySQL), and{' '}
+          (MySQL),{' '}
           <Anchor href="https://www.prisma.io" target="_blank">
             Prisma
           </Anchor>
@@ -54,9 +54,9 @@ export const projects = [
           <Anchor href="https://upstash.com" target="_blank">
             Upstash
           </Anchor>{' '}
-          (Redis),
+          (Redis), and{' '}
           <Anchor href="https://github.com/upstash/ratelimit" target="_blank">
-            Upstash Rate Limit
+            Upstash Rate Limiter
           </Anchor>{' '}
           running on{' '}
           <Anchor
@@ -226,7 +226,7 @@ export const projects = [
           <Anchor href="https://planetscale.com" target="_blank">
             PlanetScale
           </Anchor>{' '}
-          (MySQL), and{' '}
+          (MySQL),{' '}
           <Anchor href="https://www.prisma.io" target="_blank">
             Prisma
           </Anchor>
@@ -234,11 +234,11 @@ export const projects = [
           <Anchor href="https://upstash.com" target="_blank">
             Upstash
           </Anchor>{' '}
-          (Redis),
+          (Redis), and{' '}
           <Anchor href="https://github.com/upstash/ratelimit" target="_blank">
-            Upstash Rate Limit
+            Upstash Rate Limiter
           </Anchor>{' '}
-          , running on{' '}
+          running on{' '}
           <Anchor href="https://www.netlify.com/products/functions" target="_blank">
             Netlify Functions
           </Anchor>{' '}
@@ -304,11 +304,11 @@ export const projects = [
           <Anchor href="https://upstash.com" target="_blank">
             Upstash
           </Anchor>{' '}
-          (Redis),
+          (Redis), and{' '}
           <Anchor href="https://github.com/upstash/ratelimit" target="_blank">
-            Upstash Rate Limit
+            Upstash Rate Limiter
           </Anchor>{' '}
-          , running on{' '}
+          running on{' '}
           <Anchor
             href="https://vercel.com/docs/concepts/functions/serverless-functions"
             target="_blank"
