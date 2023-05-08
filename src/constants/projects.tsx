@@ -50,7 +50,15 @@ export const projects = [
           <Anchor href="https://www.prisma.io" target="_blank">
             Prisma
           </Anchor>
-          , running on{' '}
+          ,{' '}
+          <Anchor href="https://upstash.com" target="_blank">
+            Upstash
+          </Anchor>{' '}
+          (Redis),
+          <Anchor href="https://github.com/upstash/ratelimit" target="_blank">
+            Upstash Rate Limit
+          </Anchor>{' '}
+          running on{' '}
           <Anchor
             href="https://vercel.com/docs/concepts/functions/serverless-functions"
             target="_blank"
@@ -222,6 +230,14 @@ export const projects = [
           <Anchor href="https://www.prisma.io" target="_blank">
             Prisma
           </Anchor>
+          ,{' '}
+          <Anchor href="https://upstash.com" target="_blank">
+            Upstash
+          </Anchor>{' '}
+          (Redis),
+          <Anchor href="https://github.com/upstash/ratelimit" target="_blank">
+            Upstash Rate Limit
+          </Anchor>{' '}
           , running on{' '}
           <Anchor href="https://www.netlify.com/products/functions" target="_blank">
             Netlify Functions
@@ -284,6 +300,14 @@ export const projects = [
           <Anchor href="https://aws.amazon.com/ses" target="_blank">
             Amazon SES
           </Anchor>
+          ,{' '}
+          <Anchor href="https://upstash.com" target="_blank">
+            Upstash
+          </Anchor>{' '}
+          (Redis),
+          <Anchor href="https://github.com/upstash/ratelimit" target="_blank">
+            Upstash Rate Limit
+          </Anchor>{' '}
           , running on{' '}
           <Anchor
             href="https://vercel.com/docs/concepts/functions/serverless-functions"

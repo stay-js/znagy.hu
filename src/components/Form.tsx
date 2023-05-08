@@ -124,7 +124,8 @@ export const Form: React.FC = () => {
                         >
                           znagy@znagy.hu
                         </Link>
-                        .
+                        . If you sent more then 3 messages per minute and you are being rate
+                        limited. Please wait a minute and try again.
                       </>
                     )}
                   </Dialog.Description>

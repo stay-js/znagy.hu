@@ -14,3 +14,5 @@ My portfolio website, built with [t3-stack](https://create.t3.gg).
 - **Deployment**: [Vercel Serverless (/api)](https://vercel.com/docs/concepts/functions/serverless-functions)
 - [Nodemailer](https://nodemailer.com)
 - [Amazon SES](https://aws.amazon.com/ses)
+- [Upstash (Redis)](https://upstash.com)
+- [Upstash Rate Limit](https://github.com/upstash/ratelimit)

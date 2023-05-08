@@ -1,6 +1,8 @@
 import nodemailer from 'nodemailer';
 import { validateCaptchaResponse } from '@utils/validateCaptchaResponse';
 import { z } from 'zod';
+import { Ratelimit } from '@upstash/ratelimit';
+import { Redis } from '@upstash/redis';
 import { env } from 'src/env.mjs';
 
 const Schema = z.object({
@@ -31,6 +33,21 @@ export const POST = async (request: Request) => {
 
   if (!isHuman) {
     return new Response(JSON.stringify({ error: 'Captcha validation failed' }), { status: 400 });
+  }
+
+  const ratelimit = new Ratelimit({
+    redis: Redis.fromEnv(),
+    limiter: Ratelimit.slidingWindow(3, '1 m'),
+    analytics: true,
+    prefix: '@upstash/ratelimit',
+  });
+
+  const ip = request.headers.get('cf-connecting-ip') || request.headers.get('x-forwarded-for');
+  if (!ip) return new Response(JSON.stringify({ error: 'No IP' }), { status: 400 });
+
+  const { success } = await ratelimit.limit(ip);
+  if (!success) {
+    return new Response(JSON.stringify({ error: 'Too many requests' }), { status: 429 });
   }
 
   try {
