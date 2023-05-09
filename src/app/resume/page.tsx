@@ -76,6 +76,7 @@ const Page: NextPage = () => (
             <li>MongoDB</li>
             <li>MySQL</li>
             <li>PostgreSQL</li>
+            <li>Redis</li>
             <li>Git</li>
             <li>GitHub</li>
           </ul>
@@ -90,6 +91,7 @@ const Page: NextPage = () => (
             <li>Netlify</li>
             <li>Railway</li>
             <li>PlanetScale</li>
+            <li>Upstash</li>
             <li>Heroku</li>
             <li>Render</li>
             <li>Cloudflare</li>
