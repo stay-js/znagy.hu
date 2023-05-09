@@ -2,6 +2,18 @@ name: Typecheck and Lint
 
 on: pull_request
 
+env:
+  UPSTASH_REDIS_REST_URL: https://domain.com
+  UPSTASH_REDIS_REST_TOKEN: token
+
+  NODEMAILER_HOST: smtp.email.com
+  NODEMAILER_PORT: 465
+  NODEMAILER_USER: user
+  NODEMAILER_PASS: password
+
+  RECAPTCHA_SECRET_KEY: secret
+  NEXT_PUBLIC_RECAPTCHA_SITE_KEY: sitekey
+
 jobs:
   typecheck-and-lint:
     runs-on: ubuntu-latest
