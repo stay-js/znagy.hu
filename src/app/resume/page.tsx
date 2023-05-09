@@ -79,6 +79,7 @@ const Page: NextPage = () => (
             <li>Redis</li>
             <li>Git</li>
             <li>GitHub</li>
+            <li>GitHub CI/CD</li>
           </ul>
         </div>
 

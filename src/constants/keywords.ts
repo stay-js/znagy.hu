@@ -243,6 +243,12 @@ export const keywords = [
   'git',
 
   'github',
+  'ci',
+  'cd',
+  'github ci',
+  'github cd',
+  'github ci/cd',
+  'github actions',
 
   'digitalocean',
   'digital ocean',
