@@ -1,14 +1,19 @@
+'use client';
+
 import { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import disableScroll from 'disable-scroll';
 import { TbSun, TbMoon } from 'react-icons/tb';
 import { navItems } from '@constants/navItems';
 import { useColorScheme } from '@utils/useColorScheme';
 
-export const Navigation: React.FC<{ route: string }> = ({ route }) => {
+export const Navigation: React.FC = () => {
   const [isToggled, setIsToggled] = useState<boolean>(false);
 
   const { colorScheme, toggleColorScheme } = useColorScheme();
+
+  const route = usePathname();
 
   const handleClose = () => {
     setIsToggled(false);
@@ -25,7 +30,7 @@ export const Navigation: React.FC<{ route: string }> = ({ route }) => {
   };
 
   return (
-    <nav className="fixed top-0 z-10 flex h-16 w-full select-none items-center bg-neutral-100 shadow dark:bg-neutral-900">
+    <nav className="sticky top-0 z-10 flex h-16 w-full select-none items-center bg-neutral-100 shadow dark:bg-neutral-900">
       <div className="content flex items-center justify-between">
         <button
           className="rounded-lg bg-neutral-300 p-2 ring-neutral-400 transition-all hover:ring-2 dark:bg-neutral-600"
@@ -62,7 +67,7 @@ export const Navigation: React.FC<{ route: string }> = ({ route }) => {
         <div
           className={`${
             isToggled ? 'left-0' : 'left-full'
-          } fixed top-16 z-10 h-screen w-full bg-white py-4 transition-all duration-500 ease-in-out dark:bg-neutral-900 lg:static lg:flex lg:h-16 lg:w-fit lg:items-center lg:bg-transparent lg:p-0 lg:transition-none`}
+          } absolute top-16 h-screen w-full bg-white py-4 transition-all duration-500 ease-in-out dark:bg-neutral-900 lg:static lg:flex lg:h-16 lg:w-fit lg:items-center lg:bg-transparent lg:p-0 lg:transition-none`}
         >
           <ul className="content flex flex-col gap-8 lg:w-fit lg:flex-row lg:gap-0">
             {navItems.map(({ path, name }) => (

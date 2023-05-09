@@ -231,9 +231,24 @@ export const keywords = [
   'postgre-sql',
   'postgres-sql',
 
+  'redis',
+  'upstash',
+  'upstash redis',
+  'upstash-redis',
+  'upstash rate limit',
+  'upstash-rate-limit',
+  '@upstash/redis',
+  '@upstash/ratelimit',
+
   'git',
 
   'github',
+  'ci',
+  'cd',
+  'github ci',
+  'github cd',
+  'github ci/cd',
+  'github actions',
 
   'digitalocean',
   'digital ocean',

@@ -17,7 +17,7 @@ const computeOuterClasses = (variant: Variant) => {
 
 const computeInnerClasses = (variant: Variant) => {
   const base =
-    'flex w-full items-center justify-center rounded-md transition-all group-hover:bg-opacity-0';
+    'flex w-full gap-2 items-center justify-center rounded-md transition-all group-hover:bg-opacity-0';
 
   switch (variant) {
     case 'normal':
@@ -34,8 +34,9 @@ export const Button: React.FC<{
   href?: string;
   variant?: Variant;
   type?: 'button' | 'submit' | 'reset';
+  disabled?: boolean;
   children: React.ReactNode;
-}> = ({ onClick, href, variant = 'normal', type = 'button', children }) => {
+}> = ({ onClick, href, variant = 'normal', type = 'button', disabled, children }) => {
   if (href) {
     return (
       <Link className={computeOuterClasses(variant)} href={href}>
@@ -45,7 +46,12 @@ export const Button: React.FC<{
   }
 
   return (
-    <button type={type} className={computeOuterClasses(variant)} onClick={onClick}>
+    <button
+      type={type}
+      disabled={disabled}
+      className={computeOuterClasses(variant)}
+      onClick={onClick}
+    >
       <span className={computeInnerClasses(variant)}>{children}</span>
     </button>
   );
