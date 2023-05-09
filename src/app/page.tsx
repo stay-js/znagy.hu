@@ -9,8 +9,6 @@ import { HeroButton } from '@components/HeroButton';
 import { projects } from '@constants/projects';
 import { createMetadata } from '@utils/createMetadata';
 
-import { TempScrollToTopFix } from '@components/TempScrollToTopFix';
-
 export const metadata = createMetadata({
   path: '',
   title: 'Home',
@@ -42,8 +40,6 @@ const Icon: React.FC<{
 
 const Page: NextPage = () => (
   <main className="content flex flex-col gap-20">
-    <TempScrollToTopFix />
-
     <section
       className="flex flex-col justify-center gap-6"
       style={{ minHeight: 'calc(100vh - 5rem)' }}
