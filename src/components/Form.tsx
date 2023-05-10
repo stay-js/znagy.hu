@@ -1,7 +1,7 @@
 'use client';
 
 import type { SubmitHandler } from 'react-hook-form';
-import { useState, useRef, Fragment } from 'react';
+import { useState, useEffect, useRef, Fragment } from 'react';
 import Link from 'next/link';
 import { useMutation } from '@tanstack/react-query';
 import { useForm } from 'react-hook-form';
@@ -25,6 +25,12 @@ type Data = FormSchema & {
   token: string;
 };
 
+const defaultValues = {
+  name: '',
+  email: '',
+  message: '',
+} satisfies FormSchema;
+
 export const Form: React.FC = () => {
   const [isSuccess, setIsSuccess] = useState<boolean>(false);
   const [isPopupOpen, setIsPopupOpen] = useState<boolean>(false);
@@ -34,9 +40,11 @@ export const Form: React.FC = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isSubmitSuccessful },
+    reset,
   } = useForm<FormSchema>({
     resolver: zodResolver(formSchema),
+    defaultValues,
   });
 
   const { mutate, isLoading } = useMutation(
@@ -68,6 +76,10 @@ export const Form: React.FC = () => {
 
     mutate({ ...data, token });
   };
+
+  useEffect(() => {
+    if (isSubmitSuccessful) reset(defaultValues);
+  }, [isSubmitSuccessful, reset]);
 
   return (
     <>
