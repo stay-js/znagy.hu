@@ -25,11 +25,11 @@ type Data = FormSchema & {
   token: string;
 };
 
-const defaultValues = {
+const defaultValues: FormSchema = {
   name: '',
   email: '',
   message: '',
-} satisfies FormSchema;
+};
 
 export const Form: React.FC = () => {
   const [isSuccess, setIsSuccess] = useState<boolean>(false);
