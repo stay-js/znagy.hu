@@ -1,35 +1,46 @@
 'use client';
 
+import type { SubmitHandler } from 'react-hook-form';
 import { useState, useRef, Fragment } from 'react';
 import Link from 'next/link';
 import { useMutation } from '@tanstack/react-query';
-import { Dialog, Transition } from '@headlessui/react';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
+import { Dialog, Transition } from '@headlessui/react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { TbUser, TbMail } from 'react-icons/tb';
 import { Button } from '@components/Button';
 import { env } from 'src/env.mjs';
 
-export const FormSchema = z.object({
+export const formSchema = z.object({
   name: z.string().min(1, 'Please specify a name!'),
   email: z.string().email('Please provide a valid e-mail address!'),
   message: z.string().min(1, 'Please specify a message!'),
-  token: z.nullable(z.string().optional()),
 });
 
-type Props = z.infer<typeof FormSchema>;
+type FormSchema = z.infer<typeof formSchema>;
+
+type Data = FormSchema & {
+  token: string;
+};
 
 export const Form: React.FC = () => {
-  const [errors, setErrors] = useState<Partial<Props>>({});
+  const [isSuccess, setIsSuccess] = useState<boolean>(false);
   const [isPopupOpen, setIsPopupOpen] = useState<boolean>(false);
 
   const captchaRef = useRef<ReCAPTCHA>(null);
-  const nameRef = useRef<HTMLInputElement>(null);
-  const emailRef = useRef<HTMLInputElement>(null);
-  const messageRef = useRef<HTMLTextAreaElement>(null);
 
-  const { mutate, isSuccess, isLoading } = useMutation(
-    async (data: Props) => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormSchema>({
+    resolver: zodResolver(formSchema),
+  });
+
+  const { mutate, isLoading } = useMutation(
+    async (data: Data) => {
       return fetch('/api/send-email', {
         method: 'POST',
         body: JSON.stringify(data),
@@ -39,42 +50,23 @@ export const Form: React.FC = () => {
       });
     },
     {
+      onSuccess: () => setIsSuccess(true),
+      onError: () => setIsSuccess(false),
       onSettled: () => setIsPopupOpen(true),
     },
   );
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const onSubmit: SubmitHandler<FormSchema> = async (data) => {
+    const token = await captchaRef.current?.executeAsync().catch(() => null);
+    captchaRef.current?.reset();
 
-    if (!nameRef.current || !emailRef.current || !messageRef.current) return;
-
-    const results = FormSchema.safeParse({
-      name: nameRef.current.value,
-      email: emailRef.current.value,
-      message: messageRef.current.value,
-    });
-
-    if (!results.success) {
-      const errors = results.error.flatten().fieldErrors;
-
-      setErrors({
-        name: errors.name?.join(', '),
-        email: errors.email?.join(', '),
-        message: errors.message?.join(', '),
-      });
-
+    if (!token) {
+      setIsSuccess(false);
+      setIsPopupOpen(true);
       return;
     }
 
-    const token = await captchaRef.current?.executeAsync();
-    captchaRef.current?.reset();
-
-    setErrors({});
-    mutate({ ...results.data, token });
-
-    nameRef.current.value = '';
-    emailRef.current.value = '';
-    messageRef.current.value = '';
+    mutate({ ...data, token });
   };
 
   return (
@@ -141,7 +133,8 @@ export const Form: React.FC = () => {
       </Transition>
 
       <form
-        onSubmit={(e) => void handleSubmit(e)}
+        // eslint-disable-next-line @typescript-eslint/no-misused-promises
+        onSubmit={handleSubmit(onSubmit)}
         className="flex w-full max-w-lg flex-col gap-4 rounded-2xl bg-white p-8 text-sm shadow-2xl dark:bg-neutral-800 sm:p-12 md:px-20"
       >
         <div className="flex flex-col gap-1">
@@ -157,12 +150,12 @@ export const Form: React.FC = () => {
               type="text"
               id="name"
               placeholder="Example Peter"
-              ref={nameRef}
+              {...register('name')}
             />
           </div>
 
           {errors.name && (
-            <span className="text-xs text-red-500 dark:text-red-500">{errors.name}</span>
+            <span className="text-xs text-red-500 dark:text-red-500">{errors.name.message}</span>
           )}
         </div>
 
@@ -179,12 +172,12 @@ export const Form: React.FC = () => {
               type="text"
               id="email"
               placeholder="example@gmail.com"
-              ref={emailRef}
+              {...register('email')}
             />
           </div>
 
           {errors.email && (
-            <span className="text-xs text-red-500 dark:text-red-500">{errors.email}</span>
+            <span className="text-xs text-red-500 dark:text-red-500">{errors.email.message}</span>
           )}
         </div>
 
@@ -198,11 +191,11 @@ export const Form: React.FC = () => {
             id="message"
             rows={6}
             placeholder="Please try to describe your question in as much detail as possible."
-            ref={messageRef}
+            {...register('message')}
           />
 
           {errors.message && (
-            <span className="text-xs text-red-500 dark:text-red-500">{errors.message}</span>
+            <span className="text-xs text-red-500 dark:text-red-500">{errors.message.message}</span>
           )}
         </div>
 
