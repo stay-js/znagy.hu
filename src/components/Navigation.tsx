@@ -11,7 +11,7 @@ import { useTheme } from 'next-themes';
 const ThemeToggleButton: React.FC = () => {
   const [mounted, setMounted] = useState<boolean>(false);
 
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
@@ -22,11 +22,11 @@ const ThemeToggleButton: React.FC = () => {
   return (
     <button
       className="rounded-lg bg-neutral-300 p-2 ring-neutral-400 transition-all hover:ring-2 dark:bg-neutral-600"
-      title="Toggle color scheme"
+      title={`Switch to ${resolvedTheme === 'dark' ? 'light' : 'dark'} theme`}
       type="button"
-      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
     >
-      {theme === 'dark' ? <TbSun size={22} /> : <TbMoon size={22} />}
+      {resolvedTheme === 'dark' ? <TbSun size={22} /> : <TbMoon size={22} />}
     </button>
   );
 };
