@@ -1,19 +1,40 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import disableScroll from 'disable-scroll';
 import { TbSun, TbMoon } from 'react-icons/tb';
 import { navItems } from '@constants/navItems';
-import { useColorScheme } from '@utils/useColorScheme';
+import { useTheme } from 'next-themes';
+
+const ThemeToggleButton: React.FC = () => {
+  const [mounted, setMounted] = useState<boolean>(false);
+
+  const { resolvedTheme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return <div />;
+
+  return (
+    <button
+      className="rounded-lg bg-neutral-300 p-2 ring-neutral-400 transition-all hover:ring-2 dark:bg-neutral-600"
+      title={`Switch to ${resolvedTheme === 'dark' ? 'light' : 'dark'} theme`}
+      type="button"
+      onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
+    >
+      {resolvedTheme === 'dark' ? <TbSun size={22} /> : <TbMoon size={22} />}
+    </button>
+  );
+};
 
 export const Navigation: React.FC = () => {
   const [isToggled, setIsToggled] = useState<boolean>(false);
 
-  const { colorScheme, toggleColorScheme } = useColorScheme();
-
-  const route = usePathname();
+  const pathname = usePathname();
 
   const handleClose = () => {
     setIsToggled(false);
@@ -32,14 +53,7 @@ export const Navigation: React.FC = () => {
   return (
     <nav className="sticky top-0 z-10 flex h-16 w-full select-none items-center bg-neutral-100 shadow dark:bg-neutral-900">
       <div className="content flex items-center justify-between">
-        <button
-          className="rounded-lg bg-neutral-300 p-2 ring-neutral-400 transition-all hover:ring-2 dark:bg-neutral-600"
-          title="Toggle color scheme"
-          type="button"
-          onClick={toggleColorScheme}
-        >
-          {colorScheme === 'dark' ? <TbSun size={22} /> : <TbMoon size={22} />}
-        </button>
+        <ThemeToggleButton />
 
         <button
           className="h-6 w-6 lg:hidden"
@@ -74,7 +88,7 @@ export const Navigation: React.FC = () => {
               <li key={path}>
                 <Link
                   className={`${
-                    path !== route ? 'lg:text-neutral-600 lg:dark:text-neutral-400' : ''
+                    path !== pathname ? 'lg:text-neutral-600 lg:dark:text-neutral-400' : ''
                   } relative flex font-bold text-black transition-colors after:absolute after:-bottom-4 after:h-px after:w-full after:bg-neutral-300 dark:text-white dark:after:bg-neutral-600 lg:static lg:block lg:rounded-md lg:px-3 lg:py-2 lg:font-medium lg:after:hidden lg:hover:bg-neutral-300 lg:dark:hover:bg-neutral-800`}
                   onClick={handleClose}
                   href={path}
