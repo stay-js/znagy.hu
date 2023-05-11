@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root.dark {
-  color-scheme: dark;
-}
-
-:root {
-  color-scheme: light;
-}
-
 main {
   @apply pb-24 pt-4;
 }
