@@ -22,6 +22,8 @@ export const createMetadata = ({
   title: absoluteTitle ?? `${title} - Zétény Nagy`,
   description,
 
+  applicationName: 'Zétény Nagy',
+
   robots: {
     index: true,
     follow: true,
@@ -35,12 +37,12 @@ export const createMetadata = ({
   },
 
   openGraph: {
+    type: 'website',
     url: `https://znagy.hu${path}`,
     title: absoluteTitle ?? `${title} - Zétény Nagy`,
     description,
-    locale: 'en-US',
     siteName: 'Zétény Nagy',
-    type: 'website',
+    locale: 'en-US',
   },
 
   twitter: {
