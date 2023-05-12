@@ -2,18 +2,12 @@ import { Anchor } from '@components/Anchor';
 
 export const projects = [
   {
-    title: 'Todo App',
-    url: 'https://todo.znagy.hu',
-    github: 'https://github.com/stay-js/todo',
+    title: 'REGALE Energy Zrt.',
+    url: 'https://www.regale.hu',
+    github: null,
     desc: (
       <>
-        <p className="text-neutral-200">
-          Simple Todo App with{' '}
-          <Anchor href="https://github.com" target="_blank">
-            GitHub
-          </Anchor>{' '}
-          authentication.
-        </p>
+        <p className="text-neutral-200">A marketing website for REGALE Energy Zrt.</p>
         <p className="text-neutral-200">
           Front-end:{' '}
           <Anchor href="https://nextjs.org" target="_blank">
@@ -28,8 +22,8 @@ export const projects = [
             Headless UI
           </Anchor>
           , deployed to{' '}
-          <Anchor href="https://vercel.com" target="_blank">
-            Vercel
+          <Anchor href="https://netlify.com" target="_blank">
+            Netlify
           </Anchor>
           .
         </p>
@@ -39,8 +33,12 @@ export const projects = [
             tRPC
           </Anchor>
           ,{' '}
-          <Anchor href="https://next-auth.js.org" target="_blank">
-            NextAuth.js
+          <Anchor href="https://nodemailer.com" target="_blank">
+            Nodemailer
+          </Anchor>
+          ,{' '}
+          <Anchor href="https://aws.amazon.com/ses" target="_blank">
+            Amazon SES
           </Anchor>
           ,{' '}
           <Anchor href="https://planetscale.com" target="_blank">
@@ -59,13 +57,14 @@ export const projects = [
             Upstash Rate Limiter
           </Anchor>{' '}
           running on{' '}
-          <Anchor
-            href="https://vercel.com/docs/concepts/functions/serverless-functions"
-            target="_blank"
-          >
-            Vercel Serverless
+          <Anchor href="https://www.netlify.com/products/functions" target="_blank">
+            Netlify Functions
           </Anchor>{' '}
-          (Next.js /api).
+          (Next.js /api) and some back-end functions run on{' '}
+          <Anchor href="https://aws.amazon.com/lambda" target="_blank">
+            AWS Lambda
+          </Anchor>
+          .
         </p>
       </>
     ),
@@ -75,11 +74,13 @@ export const projects = [
       'Tailwind CSS',
       'Headless UI',
       'tRPC',
-      'NextAuth.js',
+      'Nodemailer',
+      'Amazon SES',
       'MySQL',
       'Prisma',
       'PlanetScale',
-      'Vercel',
+      'Netlify',
+      'AWS Lambda',
     ],
   },
   {
@@ -184,12 +185,18 @@ export const projects = [
     tags: ['TypeScript', 'Next.js', 'Tailwind CSS', 'Vercel'],
   },
   {
-    title: 'REGALE Energy Zrt.',
-    url: 'https://www.regale.hu',
-    github: null,
+    title: 'Todo App',
+    url: 'https://todo.znagy.hu',
+    github: 'https://github.com/stay-js/todo',
     desc: (
       <>
-        <p className="text-neutral-200">A marketing website for REGALE Energy Zrt.</p>
+        <p className="text-neutral-200">
+          Simple Todo App with{' '}
+          <Anchor href="https://github.com" target="_blank">
+            GitHub
+          </Anchor>{' '}
+          authentication.
+        </p>
         <p className="text-neutral-200">
           Front-end:{' '}
           <Anchor href="https://nextjs.org" target="_blank">
@@ -204,8 +211,8 @@ export const projects = [
             Headless UI
           </Anchor>
           , deployed to{' '}
-          <Anchor href="https://netlify.com" target="_blank">
-            Netlify
+          <Anchor href="https://vercel.com" target="_blank">
+            Vercel
           </Anchor>
           .
         </p>
@@ -215,12 +222,8 @@ export const projects = [
             tRPC
           </Anchor>
           ,{' '}
-          <Anchor href="https://nodemailer.com" target="_blank">
-            Nodemailer
-          </Anchor>
-          ,{' '}
-          <Anchor href="https://aws.amazon.com/ses" target="_blank">
-            Amazon SES
+          <Anchor href="https://next-auth.js.org" target="_blank">
+            NextAuth.js
           </Anchor>
           ,{' '}
           <Anchor href="https://planetscale.com" target="_blank">
@@ -239,14 +242,13 @@ export const projects = [
             Upstash Rate Limiter
           </Anchor>{' '}
           running on{' '}
-          <Anchor href="https://www.netlify.com/products/functions" target="_blank">
-            Netlify Functions
+          <Anchor
+            href="https://vercel.com/docs/concepts/functions/serverless-functions"
+            target="_blank"
+          >
+            Vercel Serverless
           </Anchor>{' '}
-          (Next.js /api) and some back-end functions run on{' '}
-          <Anchor href="https://aws.amazon.com/lambda" target="_blank">
-            AWS Lambda
-          </Anchor>
-          .
+          (Next.js /api).
         </p>
       </>
     ),
@@ -256,15 +258,14 @@ export const projects = [
       'Tailwind CSS',
       'Headless UI',
       'tRPC',
-      'Nodemailer',
-      'Amazon SES',
+      'NextAuth.js',
       'MySQL',
       'Prisma',
       'PlanetScale',
-      'Netlify',
-      'AWS Lambda',
+      'Vercel',
     ],
   },
+
   {
     title: 'Portfolio (znagy.hu)',
     url: 'https://znagy.hu',
@@ -329,32 +330,6 @@ export const projects = [
       'Amazon SES',
       'Vercel',
     ],
-  },
-  {
-    title: 'Flappy Matykusz',
-    url: 'https://flappy.znagy.hu',
-    github: 'https://github.com/stay-js/flappy-matykusz',
-    desc: (
-      <>
-        <p className="text-neutral-200">Flappy Matykusz a cheap flappy bird clone...</p>
-        <p className="text-neutral-200">
-          Made with{' '}
-          <Anchor href="https://vitejs.dev" target="_blank">
-            Vite
-          </Anchor>
-          , and{' '}
-          <Anchor href="https://tailwindcss.com" target="_blank">
-            Tailwind CSS
-          </Anchor>
-          , deployed to{' '}
-          <Anchor href="https://netlify.com" target="_blank">
-            Netlify
-          </Anchor>
-          .
-        </p>
-      </>
-    ),
-    tags: ['TypeScript', 'Vite', 'Tailwind CSS', 'Netlify'],
   },
   {
     title: 'Anything',
