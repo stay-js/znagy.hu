@@ -5,7 +5,7 @@ export const navItems = [
   },
 
   // Temporarily removed, because scroll is not behaving as expected
-  // https://github.com/vercel/next.js/issues/49255
+  // https://github.com/vercel/next.js/issues/49427
 
   // {
   //   name: 'Projects',
