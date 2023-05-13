@@ -5,7 +5,7 @@ import { NextThemesThemeProviderWrapper, ReactQueryWrapper } from '@components/W
 
 import '@styles/globals.css';
 
-const RootLayout = ({ children }: { children: React.ReactNode }) => {
+const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <html lang="en" className="antialiased">
       <body className="overflow-x-hidden bg-neutral-100 text-black dark:bg-neutral-900 dark:text-white">
