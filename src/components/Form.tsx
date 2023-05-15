@@ -14,9 +14,9 @@ import { Button } from '@components/Button';
 import { env } from 'src/env.mjs';
 
 export const formSchema = z.object({
-  name: z.string().min(1, 'Please specify a name!'),
-  email: z.string().email('Please provide a valid e-mail address!'),
-  message: z.string().min(1, 'Please specify a message!'),
+  name: z.string().min(1, { message: 'Please specify a name!' }),
+  email: z.string().email({ message: 'Please provide a valid e-mail address!' }),
+  message: z.string().min(1, { message: 'Please specify a message!' }),
 });
 
 type FormSchema = z.infer<typeof formSchema>;
@@ -154,7 +154,7 @@ export const Form: React.FC = () => {
             <TbUser size={18} className="pointer-events-none absolute left-3 text-neutral-400" />
 
             <input
-              className="h-10 w-full rounded border border-neutral-300 pl-10 pr-2 text-black dark:border-[#373A40] dark:bg-[#25262b] dark:text-white"
+              className="h-10 w-full rounded border border-neutral-300 pl-10 pr-3 text-black dark:border-[#373A40] dark:bg-[#25262b] dark:text-white"
               type="text"
               id="name"
               placeholder="Example Peter"
@@ -176,7 +176,7 @@ export const Form: React.FC = () => {
             <TbMail size={18} className="pointer-events-none absolute left-3 text-neutral-400" />
 
             <input
-              className="h-10 w-full rounded border border-neutral-300 pl-10 pr-2 text-black dark:border-[#373A40] dark:bg-[#25262b] dark:text-white"
+              className="h-10 w-full rounded border border-neutral-300 pl-10 pr-3 text-black dark:border-[#373A40] dark:bg-[#25262b] dark:text-white"
               type="text"
               id="email"
               placeholder="example@gmail.com"

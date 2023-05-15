@@ -13,9 +13,7 @@ const ThemeToggleButton: React.FC = () => {
 
   const { resolvedTheme, setTheme } = useTheme();
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  useEffect(() => setMounted(true), []);
 
   if (!mounted) return <div />;
 
