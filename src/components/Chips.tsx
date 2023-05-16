@@ -6,7 +6,7 @@ const Chip: React.FC<{
   href: string;
 }> = ({ children, color, href }) => (
   <Link
-    className="flex w-fit items-center gap-2 rounded-full border-2 border-current px-4 py-1 ring-current transition-all hover:bg-neutral-200 hover:ring dark:hover:bg-neutral-800"
+    className="flex w-fit items-center gap-2 rounded-full border-2 border-current px-4 py-1 ring-current transition hover:bg-neutral-200 hover:ring dark:hover:bg-neutral-800"
     href={href}
     target="_blank"
     rel="noopener noreferrer"

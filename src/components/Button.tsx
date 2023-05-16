@@ -17,7 +17,7 @@ const computeOuterClasses = (variant: Variant) => {
 
 const computeInnerClasses = (variant: Variant) => {
   const base =
-    'flex w-full gap-2 items-center justify-center rounded-md transition-all group-hover:bg-opacity-0';
+    'flex w-full gap-2 items-center justify-center rounded-md transition group-hover:bg-opacity-0';
 
   switch (variant) {
     case 'normal':

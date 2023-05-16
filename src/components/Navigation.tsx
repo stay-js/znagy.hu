@@ -19,7 +19,7 @@ const ThemeToggleButton: React.FC = () => {
 
   return (
     <button
-      className="rounded-lg bg-neutral-300 p-2 ring-neutral-400 transition-all hover:ring-2 dark:bg-neutral-600"
+      className="rounded-lg bg-neutral-300 p-2 ring-neutral-400 transition hover:ring-2 dark:bg-neutral-600"
       title={`Switch to ${resolvedTheme === 'dark' ? 'light' : 'dark'} theme`}
       type="button"
       onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
@@ -62,24 +62,24 @@ export const Navigation: React.FC = () => {
           <span
             className={`${
               isToggled ? 'rotate-45' : '-translate-y-2'
-            } absolute block h-0.5 w-6 bg-current transition-all duration-500`}
+            } absolute block h-0.5 w-6 bg-current transition duration-500`}
           />
           <span
             className={`${
               isToggled ? 'opacity-0' : ''
-            } absolute block h-0.5 w-4 bg-current transition-all duration-500`}
+            } absolute block h-0.5 w-4 bg-current transition duration-500`}
           />
           <span
             className={`${
               isToggled ? 'w-6 -rotate-45' : 'w-2 translate-y-2'
-            } absolute block h-0.5 bg-current transition-all duration-500`}
+            } absolute block h-0.5 bg-current transition duration-500`}
           />
         </button>
 
         <div
           className={`${
             !isToggled ? 'translate-x-full' : ''
-          } fixed left-0 top-16 h-screen w-full bg-white py-4 transition duration-500 ease-in-out dark:bg-neutral-900 lg:static lg:flex lg:h-16 lg:w-fit lg:items-center lg:bg-transparent lg:p-0 lg:transition-none`}
+          } fixed left-0 top-16 h-screen w-full bg-white py-4 transition duration-500 ease-in-out dark:bg-neutral-900 lg:static lg:flex lg:h-16 lg:w-fit lg:translate-x-0 lg:items-center lg:bg-transparent lg:p-0 lg:transition-none`}
         >
           <ul className="content flex flex-col gap-8 lg:w-fit lg:flex-row lg:gap-0">
             {navItems.map(({ path, name }) => (
