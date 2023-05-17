@@ -152,7 +152,7 @@ const Page: NextPage = () => (
       </div>
     </section>
 
-    <section className="flex flex-col gap-4" id="projects">
+    <section className="flex flex-col gap-4">
       <SectionTitle title="Projects" number={2} />
 
       <div className="flex flex-col gap-16">

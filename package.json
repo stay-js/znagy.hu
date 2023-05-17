@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@types/eslint": "^8.37.0",
-    "@types/node": "^20.1.5",
+    "@types/node": "^20.1.7",
     "@types/nodemailer": "^6.4.7",
     "@types/prettier": "^2.7.2",
     "@types/react": "18.2.6",

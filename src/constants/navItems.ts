@@ -3,15 +3,6 @@ export const navItems = [
     name: 'Home',
     path: '/',
   },
-
-  // Temporarily removed, because scroll is not behaving as expected
-  // https://github.com/vercel/next.js/issues/49427
-
-  // {
-  //   name: 'Projects',
-  //   path: '/#projects',
-  // },
-
   {
     name: 'Contact',
     path: '/contact',
