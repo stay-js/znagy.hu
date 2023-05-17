@@ -77,7 +77,9 @@ const Page: NextPage = () => (
       <HeroButton />
     </section>
 
-    <section className="flex flex-col gap-4" id="about">
+    <div id="about" data-about-scroll-to />
+
+    <section className="flex flex-col gap-4">
       <SectionTitle title="About Me" number={1} />
 
       <div className="flex flex-col gap-12 lg:flex-row">
