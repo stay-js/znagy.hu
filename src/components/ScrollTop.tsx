@@ -8,10 +8,7 @@ export const ScrollTop: React.FC = () => {
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
-  const handleScroll = () => {
-    if (window.pageYOffset > 300) setIsVisible(true);
-    else setIsVisible(false);
-  };
+  const handleScroll = () => (window.pageYOffset > 300 ? setIsVisible(true) : setIsVisible(false));
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
