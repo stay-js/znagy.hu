@@ -1,7 +1,7 @@
 import { Analytics } from '@vercel/analytics/react';
 import { Navigation } from '@components/Navigation';
 import { ScrollTop } from '@components/ScrollTop';
-import { NextThemesThemeProviderWrapper, ReactQueryWrapper } from '@components/Wrappers';
+import { NextThemesWrapper, ReactQueryWrapper } from '@components/Wrappers';
 
 import '@styles/globals.css';
 
@@ -11,13 +11,13 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <body className="overflow-x-hidden bg-neutral-100 text-black dark:bg-neutral-900 dark:text-white">
         <Analytics />
 
-        <NextThemesThemeProviderWrapper>
+        <NextThemesWrapper>
           <ReactQueryWrapper>
             <ScrollTop />
             <Navigation />
             {children}
           </ReactQueryWrapper>
-        </NextThemesThemeProviderWrapper>
+        </NextThemesWrapper>
       </body>
     </html>
   );

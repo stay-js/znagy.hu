@@ -1,4 +1,2 @@
-import { NextThemesThemeProviderWrapper } from './NextThemesThemeProviderWrapper';
-import { ReactQueryWrapper } from './ReactQueryWrapper';
-
-export { NextThemesThemeProviderWrapper, ReactQueryWrapper };
+export * from './NextThemesWrapper';
+export * from './ReactQueryWrapper';

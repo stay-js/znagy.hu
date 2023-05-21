@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from 'next-themes';
 
-export const NextThemesThemeProviderWrapper: React.FC<{
+export const NextThemesWrapper: React.FC<{
   children: React.ReactNode;
 }> = ({ children }) => (
   <ThemeProvider
