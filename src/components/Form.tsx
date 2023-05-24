@@ -20,10 +20,7 @@ export const formSchema = z.object({
 });
 
 type FormSchema = z.infer<typeof formSchema>;
-
-type Data = FormSchema & {
-  token: string;
-};
+type Data = FormSchema & { token: string };
 
 const defaultValues: FormSchema = {
   name: '',
