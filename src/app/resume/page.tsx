@@ -1,8 +1,6 @@
 import type { NextPage } from 'next';
-import { Anchor } from '@components/Anchor';
-import { createMetadata } from '@utils/createMetadata';
-
-import { TempScrollToTopFix } from '@components/TempScrollToTopFix';
+import { Anchor } from '~/components/anchor';
+import { createMetadata } from '~/utils/create-metadata';
 
 export const metadata = createMetadata({
   path: '/resume',
@@ -19,8 +17,6 @@ const SectionTitle: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 
 const Page: NextPage = () => (
   <main className="content flex flex-col gap-10 pt-8 text-neutral-600 dark:text-neutral-300">
-    <TempScrollToTopFix />
-
     <section className="flex flex-col gap-12">
       <div className="flex flex-col gap-2">
         <h1 className="text-5xl font-bold text-black dark:text-white">Zétény Nagy</h1>

@@ -1,4 +1,4 @@
-import { env } from 'src/env.mjs';
+import { env } from '~/env.mjs';
 import { z } from 'zod';
 
 const responseSchema = z.object({ success: z.boolean() });

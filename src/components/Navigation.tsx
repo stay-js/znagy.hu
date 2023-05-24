@@ -6,8 +6,8 @@ import { usePathname } from 'next/navigation';
 import disableScroll from 'disable-scroll';
 import { TbSun, TbMoon } from 'react-icons/tb';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import { navItems } from '@constants/navItems';
 import { useTheme } from 'next-themes';
+import { navItems } from '~/constants/navItems';
 
 const ThemeToggleButton: React.FC = () => {
   const [mounted, setMounted] = useState<boolean>(false);

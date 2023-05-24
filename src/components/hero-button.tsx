@@ -1,7 +1,7 @@
 'use client';
 
 import { TbArrowNarrowDown } from 'react-icons/tb';
-import { Button } from '@components/Button';
+import { Button } from '~/components/button';
 
 export const HeroButton = () => (
   <Button onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}>

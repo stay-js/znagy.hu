@@ -1,9 +1,9 @@
 import nodemailer from 'nodemailer';
-import { validateCaptchaResponse } from '@utils/validateCaptchaResponse';
+import { validateCaptchaResponse } from '~/utils/validate-captcha-response';
 import { z } from 'zod';
 import { Ratelimit } from '@upstash/ratelimit';
 import { Redis } from '@upstash/redis';
-import { env } from 'src/env.mjs';
+import { env } from '~/env.mjs';
 
 const Schema = z.object({
   name: z.string(),

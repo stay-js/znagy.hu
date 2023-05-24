@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { keywords } from '@constants/keywords';
+import { keywords } from '~/constants/keywords';
 
 export const createMetadata = ({
   path,

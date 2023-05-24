@@ -1,10 +1,8 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
-import { Form } from '@components/Form';
-import { Title } from '@components/Title';
-import { createMetadata } from '@utils/createMetadata';
-
-import { TempScrollToTopFix } from '@components/TempScrollToTopFix';
+import { Form } from '~/components/form';
+import { Title } from '~/components/title';
+import { createMetadata } from '~/utils/create-metadata';
 
 export const metadata = createMetadata({
   path: '/contact',
@@ -15,8 +13,6 @@ export const metadata = createMetadata({
 
 const Page: NextPage = () => (
   <main className="content flex flex-col items-center gap-8">
-    <TempScrollToTopFix />
-
     <Title title="Send me a message!">
       <p>
         Got something you would like to say? Or have a question? Feel free to send me a message

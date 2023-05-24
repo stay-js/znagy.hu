@@ -2,14 +2,12 @@ import type { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaGithub, FaTwitter, FaInstagram, FaEnvelope, FaExternalLinkAlt } from 'react-icons/fa';
-import { Anchor } from '@components/Anchor';
-import { Button } from '@components/Button';
-import { Chips } from '@components/Chips';
-import { HeroButton } from '@components/HeroButton';
-import { projects } from '@constants/projects';
-import { createMetadata } from '@utils/createMetadata';
-
-import { TempScrollToTopFix } from '@components/TempScrollToTopFix';
+import { Anchor } from '~/components/anchor';
+import { Button } from '~/components/button';
+import { Chips } from '~/components/chips';
+import { HeroButton } from '~/components/hero-button';
+import { projects } from '~/constants/projects';
+import { createMetadata } from '~/utils/create-metadata';
 
 export const metadata = createMetadata({
   path: '',
@@ -42,8 +40,6 @@ const Icon: React.FC<{
 
 const Page: NextPage = () => (
   <main className="content flex flex-col gap-20">
-    <TempScrollToTopFix />
-
     <section
       className="flex flex-col justify-center gap-6"
       style={{ minHeight: 'calc(100vh - 5rem)' }}

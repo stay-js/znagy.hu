@@ -1,4 +1,5 @@
 import Link from 'next/link';
+
 export const Anchor: React.FC<{
   href: string;
   target?: '_blank' | '_self' | '_parent' | '_top';

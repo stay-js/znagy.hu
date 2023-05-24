@@ -2,10 +2,8 @@ import type { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { TbKeyboard, TbMouse, TbHeadphones } from 'react-icons/tb';
-import { Title } from '@components/Title';
-import { createMetadata } from '@utils/createMetadata';
-
-import { TempScrollToTopFix } from '@components/TempScrollToTopFix';
+import { Title } from '~/components/title';
+import { createMetadata } from '~/utils/create-metadata';
 
 export const metadata = createMetadata({
   path: '/setup',
@@ -15,8 +13,6 @@ export const metadata = createMetadata({
 
 const Page: NextPage = () => (
   <main className="content flex flex-col gap-8">
-    <TempScrollToTopFix />
-
     <Title title="Setup">
       These are the things that I use everyday, hope you find it interesting...
     </Title>

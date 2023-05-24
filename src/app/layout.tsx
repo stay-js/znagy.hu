@@ -1,9 +1,11 @@
 import { Analytics } from '@vercel/analytics/react';
-import { Navigation } from '@components/Navigation';
-import { ScrollTop } from '@components/ScrollTop';
-import { NextThemesWrapper, ReactQueryWrapper } from '@components/Wrappers';
+import { Navigation } from '~/components/navigation';
+import { ScrollTop } from '~/components/scroll-top';
+import { ClientProviders } from '~/app/client-providers';
 
-import '@styles/globals.css';
+import { TempScrollToTopFix } from '~/app/temp-scroll-to-top-fix';
+
+import '~/styles/globals.css';
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
@@ -11,13 +13,13 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <body className="overflow-x-hidden bg-neutral-100 text-black dark:bg-neutral-900 dark:text-white">
         <Analytics />
 
-        <NextThemesWrapper>
-          <ReactQueryWrapper>
-            <ScrollTop />
-            <Navigation />
-            {children}
-          </ReactQueryWrapper>
-        </NextThemesWrapper>
+        <TempScrollToTopFix />
+
+        <ClientProviders>
+          <ScrollTop />
+          <Navigation />
+          {children}
+        </ClientProviders>
       </body>
     </html>
   );
