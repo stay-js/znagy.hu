@@ -19,6 +19,8 @@ export const createMetadata = ({
 
   keywords: keywords.join(', '),
 
+  colorScheme: 'dark light',
+
   title: absoluteTitle ?? `${title} - Zétény Nagy`,
   description,
 
