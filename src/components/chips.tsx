@@ -63,10 +63,10 @@ export const Chips: React.FC<{ variant: string }> = ({ variant }) => {
         </Chip>
       );
 
-    case 'NextAuth.js':
+    case 'Auth.js':
       return (
-        <Chip color="#000" href="https://next-auth.js.org">
-          NextAuth.js
+        <Chip color="#000" href="https://authjs.dev">
+          Auth.js
         </Chip>
       );
 

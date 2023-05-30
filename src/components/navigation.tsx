@@ -79,7 +79,7 @@ export const Navigation: React.FC = () => {
         <div
           className={`${
             !isToggled ? 'translate-x-full' : ''
-          } fixed left-0 top-16 h-screen w-full bg-white py-4 transition duration-500 ease-in-out dark:bg-neutral-900 lg:static lg:flex lg:h-16 lg:w-fit lg:translate-x-0 lg:items-center lg:bg-transparent lg:p-0 lg:transition-none`}
+          } fixed left-0 top-16 h-screen w-full bg-white py-4 transition duration-500 ease-in-out dark:bg-neutral-900 lg:static lg:flex lg:h-fit lg:w-fit lg:translate-x-0 lg:bg-transparent lg:transition-none`}
         >
           <ul className="content flex flex-col gap-8 lg:w-fit lg:flex-row lg:gap-0">
             {navItems.map(({ path, name }) => (
