@@ -123,10 +123,11 @@ const Page: NextPage = () => (
         },
       ].map(({ title, image, url, body }, index) => (
         <div
-          key={index}
+          key={`setup-${index}`}
           className="mb-4 flex break-inside-avoid-column flex-col gap-4 rounded-lg bg-white px-4 py-8 text-black shadow-lg"
         >
-          <h1 className="text-center text-xl font-bold">{title}</h1>
+          <h2 className="text-center text-xl font-bold">{title}</h2>
+
           {image && (
             <Image
               className="select-none"

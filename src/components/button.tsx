@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { cn } from '~/utils/cn';
 
 type Variant = 'normal' | 'small' | 'wide';
 
@@ -9,7 +10,7 @@ const computeOuterClasses = (variant: Variant) => {
   switch (variant) {
     case 'normal':
     case 'small':
-      return `${base} w-fit`;
+      return cn(base, 'w-fit');
     case 'wide':
       return base;
   }
@@ -21,11 +22,11 @@ const computeInnerClasses = (variant: Variant) => {
 
   switch (variant) {
     case 'normal':
-      return `${base} bg-neutral-100 px-6 py-3 dark:bg-neutral-900`;
+      return cn(base, 'bg-neutral-100 px-6 py-3 dark:bg-neutral-900');
     case 'small':
-      return `${base} bg-white px-4 py-2 text-sm dark:bg-neutral-900`;
+      return cn(base, 'bg-white px-4 py-2 text-sm dark:bg-neutral-900');
     case 'wide':
-      return `${base} bg-white p-3 dark:bg-neutral-800`;
+      return cn(base, 'bg-white p-3 dark:bg-neutral-800');
   }
 };
 

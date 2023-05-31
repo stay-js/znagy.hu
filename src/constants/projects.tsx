@@ -319,7 +319,6 @@ export const projects = [
       'Vercel',
     ],
   },
-
   {
     title: 'Portfolio (znagy.hu)',
     url: 'https://znagy.hu',

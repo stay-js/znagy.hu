@@ -16,7 +16,7 @@ export const metadata = createMetadata({
 });
 
 const SectionTitle: React.FC<{ title: string; number: number }> = ({ title, number }) => (
-  <h2 className="relative flex w-fit gap-3 text-2xl font-semibold after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-green-500">
+  <h2 className="relative flex w-fit gap-2 text-2xl font-semibold after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-green-500">
     <span className="text-green-500">{number}.</span>
     {title}
   </h2>
@@ -40,10 +40,7 @@ const Icon: React.FC<{
 
 const Page: NextPage = () => (
   <main className="content flex flex-col gap-20">
-    <section
-      className="flex flex-col justify-center gap-6"
-      style={{ minHeight: 'calc(100vh - 5rem)' }}
-    >
+    <section className="flex min-h-[calc(100vh-5rem)] flex-col justify-center gap-6">
       <div className="flex flex-col gap-2">
         <h1 className="text-4xl font-bold sm:text-5xl md:text-[5rem]">
           <span className="bg-gradient-to-r from-teal-400 to-green-500 bg-clip-text text-transparent">
@@ -156,8 +153,8 @@ const Page: NextPage = () => (
       <SectionTitle title="Projects" number={2} />
 
       <div className="flex flex-col gap-16">
-        {projects.map(({ title, url, github, desc, tags }) => (
-          <article key={title} className="flex max-w-[60ch] flex-col gap-4">
+        {projects.map(({ title, url, github, desc, tags }, index) => (
+          <article key={`projects-${index}`} className="flex max-w-[60ch] flex-col gap-4">
             <div className="flex gap-3">
               <h2 className="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
                 {title}
