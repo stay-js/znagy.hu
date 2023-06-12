@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import disableScroll from 'disable-scroll';
 import { TbSun, TbMoon } from 'react-icons/tb';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { useTheme } from 'next-themes';
@@ -38,12 +37,14 @@ export const Navigation: React.FC = () => {
 
   const handleClose = () => {
     setIsToggled(false);
-    disableScroll.off();
+    document.body.style.overflowY = 'scroll';
   };
 
   const handleToggle = () => {
     setIsToggled((value) => {
-      value ? disableScroll.off() : disableScroll.on();
+      value
+        ? (document.body.style.overflowY = 'scroll')
+        : (document.body.style.overflowY = 'hidden');
 
       return !value;
     });
@@ -82,11 +83,11 @@ export const Navigation: React.FC = () => {
 
         <div
           className={cn(
-            'fixed left-0 top-16 h-screen w-full bg-white py-4 transition duration-500 ease-in-out dark:bg-neutral-900 lg:static lg:flex lg:h-fit lg:w-fit lg:translate-x-0 lg:bg-transparent lg:transition-none',
-            !isToggled && 'translate-x-full',
+            'fixed left-0 top-16 h-[calc(100vh-4rem)] w-full overflow-scroll bg-white dark:bg-neutral-900 lg:static lg:flex lg:h-fit lg:w-fit',
+            !isToggled && 'hidden',
           )}
         >
-          <ul className="content flex flex-col gap-8 lg:w-fit lg:flex-row lg:gap-0">
+          <ul className="content flex flex-col gap-8 py-4 pb-20 lg:w-fit lg:flex-row lg:gap-1 lg:p-0">
             {navItems.map(({ path, name }) => (
               <li key={path}>
                 <Link

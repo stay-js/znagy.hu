@@ -40,7 +40,7 @@ const Icon: React.FC<{
 
 const Page: NextPage = () => (
   <main className="content flex flex-col gap-20">
-    <section className="flex min-h-[calc(100vh-5rem)] flex-col justify-center gap-6">
+    <section className="flex min-h-[calc(100vh-4rem)] flex-col justify-center gap-6">
       <div className="flex flex-col gap-2">
         <h1 className="text-4xl font-bold sm:text-5xl md:text-[5rem]">
           <span className="bg-gradient-to-r from-teal-400 to-green-500 bg-clip-text text-transparent">
