@@ -35,6 +35,13 @@ export const Chips: React.FC<{ variant: string }> = ({ variant }) => {
         </Chip>
       );
 
+    case 'Rust':
+      return (
+        <Chip color="#f74c01" href="https://www.rust-lang.org">
+          Rust
+        </Chip>
+      );
+
     case 'Next.js':
       return (
         <Chip color="#000" href="https://nextjs.org">
@@ -98,6 +105,13 @@ export const Chips: React.FC<{ variant: string }> = ({ variant }) => {
         </Chip>
       );
 
+    case 'lettre':
+      return (
+        <Chip color="#ccc" href="https://lettre.rs">
+          lettre
+        </Chip>
+      );
+
     case 'Amazon SES':
       return (
         <Chip color="#ec7211" href="https://aws.amazon.com/ses">
@@ -123,6 +137,13 @@ export const Chips: React.FC<{ variant: string }> = ({ variant }) => {
       return (
         <Chip color="#2d3748" href="https://www.prisma.io">
           Prisma
+        </Chip>
+      );
+
+    case 'sqlx':
+      return (
+        <Chip color="#f00" href="https://github.com/launchbadge/sqlx">
+          sqlx
         </Chip>
       );
 
