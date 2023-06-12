@@ -34,34 +34,30 @@ export const projects = [
               AWS Lambda
             </Anchor>
             ,{' '}
+            <Anchor href="https://www.rust-lang.org" target="_blank">
+              Rust
+            </Anchor>
+            ,{' '}
             <Anchor href="https://aws.amazon.com/ses" target="_blank">
               Amazon SES
             </Anchor>
             ,{' '}
-            <Anchor href="https://nodemailer.com" target="_blank">
-              Nodemailer
+            <Anchor href="https://lettre.rs" target="_blank">
+              lettre
             </Anchor>
             ,{' '}
             <Anchor href="https://planetscale.com" target="_blank">
               PlanetScale
             </Anchor>{' '}
             (MySQL),{' '}
-            <Anchor href="https://www.prisma.io" target="_blank">
-              Prisma
+            <Anchor href="https://github.com/launchbadge/sqlx" target="_blank">
+              sqlx
             </Anchor>
             ,{' '}
             <Anchor href="https://upstash.com" target="_blank">
               Upstash
             </Anchor>{' '}
-            (Redis), and{' '}
-            <Anchor href="https://github.com/upstash/ratelimit" target="_blank">
-              Upstash Rate Limiter
-            </Anchor>{' '}
-            running on{' '}
-            <Anchor href="https://aws.amazon.com/lambda" target="_blank">
-              AWS Lambda
-            </Anchor>
-            .
+            (Redis).
           </p>
         </div>
 

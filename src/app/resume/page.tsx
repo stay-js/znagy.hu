@@ -44,6 +44,7 @@ const Page: NextPage = () => (
           <ul>
             <li>JavaScript</li>
             <li>TypeScript</li>
+            <li>Rust</li>
             <li>Next.js</li>
             <li>Auth.js (NextAuth.js)</li>
             <li>React</li>
@@ -67,8 +68,9 @@ const Page: NextPage = () => (
           <p className="font-bold text-neutral-900 dark:text-neutral-100">Technologies</p>
           <ul>
             <li>Node.js</li>
-            <li>Yarn</li>
             <li>NPM</li>
+            <li>PNPM</li>
+            <li>Yarn</li>
             <li>MongoDB</li>
             <li>MySQL</li>
             <li>PostgreSQL</li>
