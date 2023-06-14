@@ -83,7 +83,7 @@ export const Navigation: React.FC = () => {
 
         <div
           className={cn(
-            'fixed left-0 top-16 h-[calc(100vh-4rem)] w-full overflow-y-auto bg-white dark:bg-neutral-900 lg:static lg:flex lg:h-fit lg:w-fit',
+            'fixed left-0 top-16 h-[calc(100vh-4rem)] w-full overflow-y-auto bg-neutral-100 dark:bg-neutral-900 lg:static lg:flex lg:h-fit lg:w-fit',
             !isToggled && 'hidden',
           )}
         >
