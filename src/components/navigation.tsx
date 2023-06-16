@@ -87,7 +87,7 @@ export const Navigation: React.FC = () => {
             !isToggled && 'hidden',
           )}
         >
-          <ul className="content flex flex-col gap-8 py-4 pb-20 lg:w-fit lg:flex-row lg:gap-1 lg:p-0">
+          <ul className="content flex flex-col gap-8 pb-20 pt-4 lg:w-fit lg:flex-row lg:gap-1 lg:p-0">
             {navItems.map(({ path, name }) => (
               <li key={path}>
                 <Link
