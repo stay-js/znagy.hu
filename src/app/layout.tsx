@@ -7,22 +7,20 @@ import { TempScrollToTopFix } from '~/app/temp-scroll-to-top-fix';
 
 import '~/styles/globals.css';
 
-const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  return (
-    <html lang="en" className="scroll-pt-20 antialiased">
-      <body className="overflow-x-hidden bg-neutral-100 text-black dark:bg-neutral-900 dark:text-white">
-        <ClientProviders>
-          <Analytics />
+const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+  <html lang="en" className="scroll-pt-20 antialiased">
+    <body className="overflow-x-hidden bg-neutral-100 text-black dark:bg-neutral-900 dark:text-white">
+      <ClientProviders>
+        <Analytics />
 
-          <TempScrollToTopFix />
+        <TempScrollToTopFix />
 
-          <ScrollTop />
-          <Navigation />
-          {children}
-        </ClientProviders>
-      </body>
-    </html>
-  );
-};
+        <ScrollTop />
+        <Navigation />
+        {children}
+      </ClientProviders>
+    </body>
+  </html>
+);
 
 export default RootLayout;

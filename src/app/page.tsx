@@ -12,7 +12,7 @@ import { createMetadata } from '~/utils/create-metadata';
 export const metadata = createMetadata({
   path: '',
   title: 'Home',
-  description: 'Full stack developer wannabe. IT Student. Kyokushin. Muay Thai.',
+  description: 'Full-stack developer. IT Student. Kyokushin. Muay Thai.',
 });
 
 const SectionTitle: React.FC<{ title: string; number: number }> = ({ title, number }) => (
@@ -49,7 +49,7 @@ const Page: NextPage = () => (
           Nagy.
         </h1>
         <p className="font-medium md:text-xl">
-          Full stack developer wannabe. IT Student. Kyokushin. Muay Thai.
+          Full-stack developer. IT Student. Kyokushin. Muay Thai.
         </p>
       </div>
 
@@ -99,7 +99,7 @@ const Page: NextPage = () => (
             My interest in web development started long ago, back in my early elementary school
             days. My favourite subject is maths since first grade. Also, I love doing Kyokushin
             Karate and Thai-Boxing (Muay Thai). I will improve my coding and fighting skills
-            especially because I want to be a Full Stack web developer...
+            especially because I want to be a full time Full-stack web developer...
           </p>
           <p>
             If you are interested check out my{' '}
