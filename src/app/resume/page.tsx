@@ -30,8 +30,8 @@ const Page: NextPage = () => (
       </div>
 
       <p className="max-w-prose text-xl">
-        I consider myself a Full-stack Web Developer, but I am interested in several areas of IT,
-        eg. Front-end Development, Back-end Development, DevOps, Cloud, and Networking.
+        I consider myself a Full-stack web developer, but I am interested in several areas of IT,
+        eg. Front-end development, Back-end development, DevOps, Cloud, and Networking.
       </p>
     </section>
 
