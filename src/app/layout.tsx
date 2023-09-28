@@ -15,9 +15,9 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
 
         <TempScrollToTopFix />
 
-        <ScrollTop />
         <Navigation />
         {children}
+        <ScrollTop />
       </ClientProviders>
     </body>
   </html>
