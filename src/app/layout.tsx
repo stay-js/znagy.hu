@@ -3,8 +3,6 @@ import { Navigation } from '~/components/navigation';
 import { ScrollTop } from '~/components/scroll-top';
 import { ClientProviders } from '~/app/client-providers';
 
-import { TempScrollToTopFix } from '~/app/temp-scroll-to-top-fix';
-
 import '~/styles/globals.css';
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
@@ -12,8 +10,6 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
     <body className="overflow-x-hidden bg-neutral-100 text-black dark:bg-neutral-900 dark:text-white">
       <ClientProviders>
         <Analytics />
-
-        <TempScrollToTopFix />
 
         <Navigation />
         {children}
