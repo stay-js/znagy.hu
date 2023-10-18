@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { TbKeyboard, TbMouse, TbHeadphones } from 'react-icons/tb';
 import { Title } from '~/components/title';
 import { createMetadata } from '~/utils/create-metadata';
 
@@ -78,46 +77,20 @@ const Page: NextPage = () => (
               <li>Intel® Core™ i5-4460</li>
               <li>16GB DDR3 RAM</li>
               <li>GIGABYTE B85M-D2V</li>
-              <li>Seasonic SSP-350SE Active PFC F3</li>
+              <li>Seasonic SSP-350SE Active PFC F3 350W 80+ Bronze</li>
               <li>Crucial BX500 240GB SSD</li>
-              <li>Samsung 870 EVO 1TB SSD</li>
             </ul>
           ),
         },
         {
-          title: 'Peripherals',
+          title: 'Dell OptiPlex 7060 SFF',
+          image: '/images/dell-optiplex-7060-sff.jpg',
           body: (
             <ul>
-              <li className="flex items-center gap-1">
-                <TbKeyboard size={28} color="cyan" />
-                <Link
-                  href="https://www.redragonzone.com/products/redragon-k550-rgb-yama-131-key-rgb-led-illuminated-backlit-mechanical-keyboard"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Redragon Yama K550
-                </Link>
-              </li>
-              <li className="flex items-center gap-1">
-                <TbMouse size={28} color="violet" />
-                <Link
-                  href="https://www.gloriousgaming.com/products/glorious-model-o-black"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Glorious Model O
-                </Link>
-              </li>
-              <li className="flex items-center gap-1">
-                <TbHeadphones size={28} color="orange" />
-                <Link
-                  href="https://spcgear.com/en/product/viro"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  SPC Gear Viro
-                </Link>
-              </li>
+              <li>Intel® Core™ i7-8700</li>
+              <li>16GB DDR4 RAM</li>
+              <li>SK hynix BC711 256GB NVMe SSD</li>
+              <li>Samsung 870 EVO 1TB SSD</li>
             </ul>
           ),
         },
