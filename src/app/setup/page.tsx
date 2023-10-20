@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
+import { Anchor } from '~/components/anchor';
+import { TbKeyboard, TbMouse, TbHeadphones } from 'react-icons/tb';
 import { Title } from '~/components/title';
 import { createMetadata } from '~/utils/create-metadata';
 
@@ -94,6 +95,37 @@ const Page: NextPage = () => (
             </ul>
           ),
         },
+        {
+          title: 'Peripherals',
+          body: (
+            <ul>
+              <li className="flex items-center gap-1">
+                <TbKeyboard size={28} className="text-green-400" />
+                <Anchor
+                  href="https://www.logitech.com/products/keyboards/mx-keys-mini.html"
+                  target="_blank"
+                >
+                  Logitech MX Keys Mini
+                </Anchor>
+              </li>
+              <li className="flex items-center gap-1">
+                <TbMouse size={28} className="text-green-500" />
+                <Anchor
+                  href="https://www.logitechg.com/products/gaming-mice/g305-lightspeed-wireless-gaming-mouse.910-005282.html"
+                  target="_blank"
+                >
+                  Logitech G305
+                </Anchor>
+              </li>
+              <li className="flex items-center gap-1">
+                <TbHeadphones size={28} className="text-green-600" />
+                <Anchor href="https://spcgear.com/en/product/viro" target="_blank">
+                  SPC Gear Viro
+                </Anchor>
+              </li>
+            </ul>
+          ),
+        },
       ].map(({ title, image, url, body }, index) => (
         <div
           key={`setup-${index}`}
@@ -113,14 +145,9 @@ const Page: NextPage = () => (
           )}
           {body}
           {url && (
-            <Link
-              className="text-sm font-bold"
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Anchor className="w-fit text-sm font-bold" href={url} target="_blank">
               More...
-            </Link>
+            </Anchor>
           )}
         </div>
       ))}
