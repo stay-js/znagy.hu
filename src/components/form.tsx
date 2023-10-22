@@ -41,8 +41,8 @@ export const Form: React.FC = () => {
     reset,
   } = useForm<FormSchema>({ resolver: zodResolver(formSchema), defaultValues });
 
-  const { mutate, isLoading } = useMutation(
-    async (data: Data) => {
+  const { mutate, status } = useMutation({
+    mutationFn: async (data: Data) => {
       return fetch('/api/send-email', {
         method: 'POST',
         body: JSON.stringify(data),
@@ -51,12 +51,10 @@ export const Form: React.FC = () => {
         return res.json();
       });
     },
-    {
-      onSuccess: () => setIsSuccess(true),
-      onError: () => setIsSuccess(false),
-      onSettled: () => setIsPopupOpen(true),
-    },
-  );
+    onSuccess: () => setIsSuccess(true),
+    onError: () => setIsSuccess(false),
+    onSettled: () => setIsPopupOpen(true),
+  });
 
   const onSubmit: SubmitHandler<FormSchema> = async (data) => {
     const token = await captchaRef.current?.executeAsync().catch(() => null);
@@ -226,8 +224,8 @@ export const Form: React.FC = () => {
           apply.
         </div>
 
-        <Button type="submit" disabled={isLoading} variant="wide">
-          {isLoading && (
+        <Button type="submit" disabled={status === 'pending'} variant="wide">
+          {status === 'pending' && (
             <svg className="h-5 w-5 animate-spin fill-none" viewBox="0 0 24 24">
               <circle
                 className="stroke-neutral-800 stroke-[4] opacity-25 group-hover:stroke-neutral-200 dark:stroke-neutral-200"
@@ -241,7 +239,7 @@ export const Form: React.FC = () => {
               />
             </svg>
           )}
-          {isLoading ? 'Sending...' : 'Send'}
+          {status === 'pending' ? 'Sending...' : 'Send'}
         </Button>
 
         <ReCAPTCHA ref={captchaRef} sitekey={env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} size="invisible" />
