@@ -7,8 +7,6 @@ import { cn } from '~/utils/cn';
 export const ScrollTop: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
-  const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
-
   const handleScroll = () => (window.scrollY > 300 ? setIsVisible(true) : setIsVisible(false));
 
   useEffect(() => {
@@ -25,7 +23,7 @@ export const ScrollTop: React.FC = () => {
       )}
       type="button"
       title="Back to top"
-      onClick={scrollToTop}
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
     >
       <TbArrowUp size={24} color="white" />
     </button>

@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import { Anchor } from '~/components/anchor';
-import { TbKeyboard, TbMouse, TbHeadphones } from 'react-icons/tb';
 import { Title } from '~/components/title';
 import { createMetadata } from '~/utils/create-metadata';
 
@@ -92,37 +91,6 @@ const Page: NextPage = () => (
               <li>16GB DDR4 RAM</li>
               <li>SK hynix BC711 256GB NVMe SSD</li>
               <li>Samsung 870 EVO 1TB SSD</li>
-            </ul>
-          ),
-        },
-        {
-          title: 'Peripherals',
-          body: (
-            <ul>
-              <li className="flex items-center gap-1">
-                <TbKeyboard size={28} className="text-green-400" />
-                <Anchor
-                  href="https://www.logitech.com/products/keyboards/mx-keys-mini.html"
-                  target="_blank"
-                >
-                  Logitech MX Keys Mini
-                </Anchor>
-              </li>
-              <li className="flex items-center gap-1">
-                <TbMouse size={28} className="text-green-500" />
-                <Anchor
-                  href="https://www.logitechg.com/products/gaming-mice/g305-lightspeed-wireless-gaming-mouse.910-005282.html"
-                  target="_blank"
-                >
-                  Logitech G305
-                </Anchor>
-              </li>
-              <li className="flex items-center gap-1">
-                <TbHeadphones size={28} className="text-green-600" />
-                <Anchor href="https://spcgear.com/en/product/viro" target="_blank">
-                  SPC Gear Viro
-                </Anchor>
-              </li>
             </ul>
           ),
         },
