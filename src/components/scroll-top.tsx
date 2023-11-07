@@ -7,7 +7,7 @@ import { cn } from '~/utils/cn';
 export const ScrollTop: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
-  const handleScroll = () => (window.scrollY > 300 ? setIsVisible(true) : setIsVisible(false));
+  const handleScroll = () => setIsVisible(window.scrollY > 300);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
