@@ -206,34 +206,6 @@ export const projects = [
     ],
   },
   {
-    title: 'Stay Random',
-    url: 'https://random.znagy.hu',
-    github: 'https://github.com/stay-js/random',
-    desc: (
-      <>
-        <p className="text-neutral-200">
-          Random Generator (CUID, GUID, UUID, Number, Color, etc.).
-        </p>
-        <p className="text-neutral-200">
-          Made with{' '}
-          <Anchor href="https://nextjs.org" target="_blank">
-            Next.js
-          </Anchor>
-          , and{' '}
-          <Anchor href="https://tailwindcss.com" target="_blank">
-            Tailwind CSS
-          </Anchor>
-          , deployed to{' '}
-          <Anchor href="https://vercel.com" target="_blank">
-            Vercel
-          </Anchor>
-          .
-        </p>
-      </>
-    ),
-    tags: ['TypeScript', 'Next.js', 'Tailwind CSS', 'Vercel'],
-  },
-  {
     title: 'Todo App',
     url: 'https://todo.znagy.hu',
     github: 'https://github.com/stay-js/todo',
@@ -316,6 +288,63 @@ export const projects = [
       'PlanetScale',
       'Vercel',
     ],
+  },
+  {
+    title: 'Frontend Mentor',
+    url: 'https://www.frontendmentor.io/profile/stay-js',
+    github: null,
+    desc: (
+      <>
+        <p>
+          Frontend Mentor offers invaluable real-world web development challenges, to sharpen HTML,
+          CSS, and JavaScript skills.
+        </p>
+        <p>
+          Challanges:{' '}
+          <Anchor href="https://fm-multi-step-form.znagy.hu" target="_blank">
+            Multi-step Form
+          </Anchor>{' '}
+          (Next.JS, Tailwind CSS, Headless UI, Zod, React Hook Form),{' '}
+          <Anchor href="https://fm-age-calculator.znagy.hu" target="_blank">
+            Age calculator
+          </Anchor>{' '}
+          (Next.JS, Tailwind CSS, Zod, React Hook Form),{' '}
+          <Anchor href="https://fm-news-homepage.znagy.hu" target="_blank">
+            News homepage
+          </Anchor>{' '}
+          (Astro, Tailwind CSS)
+        </p>
+      </>
+    ),
+    tags: ['JavaScript', 'TypeScript', 'Next.js', 'Astro', 'Tailwind CSS', 'Headless UI'],
+  },
+  {
+    title: 'Stay Random',
+    url: 'https://random.znagy.hu',
+    github: 'https://github.com/stay-js/random',
+    desc: (
+      <>
+        <p className="text-neutral-200">
+          Random Generator (CUID, GUID, UUID, Number, Color, etc.).
+        </p>
+        <p className="text-neutral-200">
+          Made with{' '}
+          <Anchor href="https://nextjs.org" target="_blank">
+            Next.js
+          </Anchor>
+          , and{' '}
+          <Anchor href="https://tailwindcss.com" target="_blank">
+            Tailwind CSS
+          </Anchor>
+          , deployed to{' '}
+          <Anchor href="https://vercel.com" target="_blank">
+            Vercel
+          </Anchor>
+          .
+        </p>
+      </>
+    ),
+    tags: ['TypeScript', 'Next.js', 'Tailwind CSS', 'Vercel'],
   },
   {
     title: 'Portfolio (znagy.hu)',

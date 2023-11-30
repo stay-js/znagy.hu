@@ -292,4 +292,9 @@ export const keywords = [
   'aws cloudfront',
   'serverless',
   'serverless framework',
+
+  'frontend mentor',
+  'frontendmentor',
+  'frontendmentor.io',
+  'fem',
 ] as const;
