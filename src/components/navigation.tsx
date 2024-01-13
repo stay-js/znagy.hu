@@ -37,14 +37,19 @@ export const Navigation: React.FC = () => {
 
   const handleClose = () => {
     setIsToggled(false);
+
     document.body.style.overflowY = 'scroll';
+
+    const main = document.querySelector('main');
+    if (main) main.ariaHidden = 'false';
   };
 
   const handleToggle = () => {
     setIsToggled((value) => {
-      value
-        ? (document.body.style.overflowY = 'scroll')
-        : (document.body.style.overflowY = 'hidden');
+      document.body.style.overflowY = value ? 'scroll' : 'hidden';
+
+      const main = document.querySelector('main');
+      if (main) main.ariaHidden = value ? 'true' : 'false';
 
       return !value;
     });
@@ -89,15 +94,21 @@ export const Navigation: React.FC = () => {
         >
           <ul className="content flex flex-col gap-8 pb-20 pt-4 lg:w-fit lg:flex-row lg:gap-1 lg:p-0">
             {navItems.map(({ path, name }) => (
-              <li key={path}>
+              <li
+                key={path}
+                className="relative after:absolute after:-bottom-4 after:h-px after:w-full after:bg-neutral-300 dark:after:bg-neutral-600 lg:after:hidden"
+              >
                 <Link
                   className={cn(
-                    'relative flex items-center gap-2 font-bold text-black transition-colors after:absolute after:-bottom-4 after:h-px after:w-full after:bg-neutral-300 dark:text-white dark:after:bg-neutral-600 lg:static lg:rounded-md lg:px-3 lg:py-2 lg:font-medium lg:after:hidden lg:hover:bg-neutral-300 lg:dark:hover:bg-neutral-800',
+                    'flex items-center gap-2 font-bold text-black transition-colors dark:text-white lg:static lg:rounded-md lg:px-3 lg:py-2 lg:font-medium lg:hover:bg-neutral-300 lg:dark:hover:bg-neutral-800',
                     path !== pathname && 'lg:text-neutral-600 lg:dark:text-neutral-400',
                   )}
                   onClick={handleClose}
                   href={path}
-                  {...(path.startsWith('https://') && { target: '_blank' })}
+                  {...(path.startsWith('https://') && {
+                    target: '_blank',
+                    rel: 'noopener noreferrer',
+                  })}
                 >
                   {name}
                   {path.startsWith('https://') && <FaExternalLinkAlt />}
