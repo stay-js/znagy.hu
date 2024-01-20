@@ -5,7 +5,7 @@ import { TbArrowUp } from 'react-icons/tb';
 import { cn } from '~/utils/cn';
 
 export const ScrollTop: React.FC = () => {
-  const [isVisible, setIsVisible] = useState<boolean>(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => setIsVisible(window.scrollY > 300);
 

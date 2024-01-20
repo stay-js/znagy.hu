@@ -10,7 +10,7 @@ import { navItems } from '~/constants/nav-items';
 import { cn } from '~/utils/cn';
 
 const ThemeToggleButton: React.FC = () => {
-  const [mounted, setMounted] = useState<boolean>(false);
+  const [mounted, setMounted] = useState(false);
 
   const { resolvedTheme, setTheme } = useTheme();
 
@@ -31,25 +31,22 @@ const ThemeToggleButton: React.FC = () => {
 };
 
 export const Navigation: React.FC = () => {
-  const [isToggled, setIsToggled] = useState<boolean>(false);
+  const [isToggled, setIsToggled] = useState(false);
 
   const pathname = usePathname();
 
   const handleClose = () => {
     setIsToggled(false);
 
-    document.body.style.overflowY = 'scroll';
-
-    const main = document.querySelector('main');
-    if (main) main.ariaHidden = 'false';
+    document.querySelector('main')?.classList.remove('max-lg:hidden');
   };
 
   const handleToggle = () => {
     setIsToggled((value) => {
-      document.body.style.overflowY = value ? 'scroll' : 'hidden';
-
       const main = document.querySelector('main');
-      if (main) main.ariaHidden = value ? 'true' : 'false';
+
+      if (value) main?.classList.remove('max-lg:hidden');
+      else main?.classList.add('max-lg:hidden');
 
       return !value;
     });

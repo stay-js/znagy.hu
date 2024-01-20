@@ -84,14 +84,10 @@ export const projects = [
           </p>
           <p className="text-neutral-200">
             Back-end:{' '}
-            <Anchor href="https://trpc.io" target="_blank">
-              tRPC
-            </Anchor>
-            ,{' '}
             <Anchor href="https://authjs.dev" target="_blank">
               Auth.js
             </Anchor>{' '}
-            (NextAuth) ,{' '}
+            (NextAuth),{' '}
             <Anchor href="https://planetscale.com" target="_blank">
               PlanetScale
             </Anchor>{' '}
@@ -117,7 +113,6 @@ export const projects = [
       'Next.js',
       'Tailwind CSS',
       'Headless UI',
-      'tRPC',
       'Auth.js',
       'Amazon SES',
       'lettre',
@@ -295,11 +290,11 @@ export const projects = [
     github: null,
     desc: (
       <>
-        <p>
+        <p className="text-neutral-200">
           Frontend Mentor offers invaluable real-world web development challenges, to sharpen HTML,
           CSS, and JavaScript skills.
         </p>
-        <p>
+        <p className="text-neutral-200">
           Challanges:{' '}
           <Anchor href="https://fm-multi-step-form.znagy.hu" target="_blank">
             Multi-step Form

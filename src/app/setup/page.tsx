@@ -16,7 +16,7 @@ const Page: NextPage = () => (
       These are the things that I use everyday, hope you find it interesting...
     </Title>
 
-    <div className="gap-4 sm:columns-2 lg:columns-3">
+    <div className="sm:columns-2 lg:columns-3">
       {[
         {
           title: 'Apple MacBook Pro 14"',

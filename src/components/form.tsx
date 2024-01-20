@@ -28,8 +28,8 @@ const defaultValues: FormSchema = {
 };
 
 export const Form: React.FC = () => {
-  const [isSuccess, setIsSuccess] = useState<boolean>(false);
-  const [isPopupOpen, setIsPopupOpen] = useState<boolean>(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const captchaRef = useRef<ReCAPTCHA>(null);
 
