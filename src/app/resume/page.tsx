@@ -119,8 +119,8 @@ const Page: NextPage = () => (
             <p>
               <b>Address:</b> Ürömi utca 64, 1023, Budapest, Hungary
             </p>
-            <Anchor className="text-green-500" href="http://ujlaki.ultranet.hu/" target="_blank">
-              ujlaki.ultranet.hu
+            <Anchor className="text-green-500" href="https://www.ujlakischool.org/" target="_blank">
+              ujlakischool.org
             </Anchor>
           </div>
         </div>
@@ -155,8 +155,8 @@ const Page: NextPage = () => (
       <div>
         <p>My hobbies are sports, and of course IT, especially Web Dev.</p>
         <p>
-          I do Kyokushin Karate (2. kyu - brown belt) since 2013, and I started doing Thai-Boxing
-          (Muay Thai) in 2021.
+          I do Kyokushin Karate (2. kyu - brown belt) since 2013, and I started doing Muay Thai in
+          2021.
         </p>
       </div>
     </section>

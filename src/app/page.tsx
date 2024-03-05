@@ -98,8 +98,8 @@ const Page: NextPage = () => (
           <p>
             My interest in web development started long ago, back in my early elementary school
             days. My favourite subject is maths since first grade. Also, I love doing Kyokushin
-            Karate and Thai-Boxing (Muay Thai). I will improve my coding and fighting skills
-            especially because I want to be a full time Full-stack web developer...
+            Karate and Muay Thai. I will improve my coding and fighting skills especially because I
+            want to be a full time Full-stack web developer...
           </p>
           <p>
             If you are interested check out my{' '}
