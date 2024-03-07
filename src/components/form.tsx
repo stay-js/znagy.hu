@@ -10,7 +10,7 @@ import { Dialog, Transition } from '@headlessui/react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { TbUser, TbMail } from 'react-icons/tb';
 import { Button } from '~/components/button';
-import { env } from '~/env.mjs';
+import { env } from '~/env';
 
 export const formSchema = z.object({
   name: z.string().min(1, { message: 'Please specify a name!' }),
