@@ -89,7 +89,7 @@ const Page: NextPage = () => (
         <div className="flex w-full flex-col gap-4 lg:w-3/5">
           <p>Glad you are here! </p>
           <p>
-            My name is Zétény Nagy AKA stay, I&rsquo;m from Budapest, Hungary. Currently studying in{' '}
+            My name is Zétény Nagy, I&rsquo;m from Budapest, Hungary, currently enrolled at{' '}
             <Anchor className="text-green-500" href="http://njszg.hu" target="_blank">
               BMSzC Neumann János Informatikai Technikum
             </Anchor>
@@ -97,9 +97,10 @@ const Page: NextPage = () => (
           </p>
           <p>
             My interest in web development started long ago, back in my early elementary school
-            days. My favourite subject is maths since first grade. Also, I love doing Kyokushin
-            Karate and Muay Thai. I will improve my coding and fighting skills especially because I
-            want to be a full time Full-stack web developer...
+            days. Mathematics has been my favorite subject since the first grade of elementary
+            school. Additionally, I have a deep passion for Kyokushin Karate and Muay Thai. I aim to
+            enhance both my coding and fighting skills, with the goal of becoming a full-time
+            full-stack web developer.
           </p>
           <p>
             If you are interested check out my{' '}
