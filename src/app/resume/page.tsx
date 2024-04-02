@@ -30,9 +30,80 @@ const Page: NextPage = () => (
       </div>
 
       <p className="max-w-prose text-xl">
-        I consider myself a Full-stack web developer, but I am interested in several areas of IT,
-        eg. Front-end development, Back-end development, DevOps, Cloud, and Networking.
+        I consider myself a Full-stack web developer with a keen interest spanning various IT
+        domains, including Front-end development, Back-end development, DevOps, Cloud computing, and
+        Networking.
       </p>
+    </section>
+
+    <section className="flex flex-col gap-4">
+      <SectionTitle>Work Experience</SectionTitle>
+
+      <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-2">
+          <div>
+            <h4 className="font-bold text-black dark:text-white">
+              Full-stack Web Developer at REGALE Energy Zrt.
+            </h4>
+            <p>
+              <b>Address:</b> Krisztina krt. 99, 1016, Budapest, Hungary
+            </p>
+            <p>
+              <b>Web:</b>{' '}
+              <Anchor className="text-green-500" href="https://www.regale.hu" target="_blank">
+                regale.hu
+              </Anchor>
+            </p>
+          </div>
+
+          <div>
+            <ul className="text-neutral-900 dark:text-neutral-100 [&_li]:before:content-['-_']">
+              <li>
+                Creation and maintenance of{' '}
+                <Anchor className="text-green-500" href="https://www.regale.hu" target="_blank">
+                  regale.hu
+                </Anchor>{' '}
+                website
+              </li>
+              <li>
+                Creation and maintenance of{' '}
+                <Anchor className="text-green-500" href="https://admin.regale.hu" target="_blank">
+                  admin.regale.hu
+                </Anchor>{' '}
+                web application
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-2">
+          <div>
+            <h4 className="font-bold text-black dark:text-white">
+              Catering staff / Runner / Set up at Nebuló Meló (Rampart Public Catering, SPORTFIVE
+              MPA)
+            </h4>
+            <p>
+              <b>Web:</b>{' '}
+              <Anchor className="text-green-500" href="https://nebulomelo.hu" target="_blank">
+                nebulomelo.hu
+              </Anchor>
+            </p>
+          </div>
+
+          <div>
+            <p>
+              At Puskás Aréna, MVM Dome, Groupama Aréna, Bozsik Aréna, National Athletics Center:
+            </p>
+            <ul className="text-neutral-900 dark:text-neutral-100 [&_li]:before:content-['-_']">
+              <li>Counter service (cashiering, back-end tasks)</li>
+              <li>
+                Performing runner / set up tasks (filling concession stants before/during events,
+                moving goods, dismantling)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section className="flex flex-col gap-4">
@@ -45,9 +116,10 @@ const Page: NextPage = () => (
             <li>JavaScript</li>
             <li>TypeScript</li>
             <li>Rust</li>
+            <li>C#</li>
+            <li>React</li>
             <li>Next.js</li>
             <li>Auth.js (NextAuth.js)</li>
-            <li>React</li>
             <li>React Query</li>
             <li>Astro</li>
             <li>Vite</li>
@@ -56,6 +128,8 @@ const Page: NextPage = () => (
             <li>Express.js</li>
             <li>Tailwind CSS</li>
             <li>Headless UI</li>
+            <li>Radix UI</li>
+            <li>shadcn/ui</li>
             <li>Mantine</li>
             <li>Bootstrap</li>
             <li>Sass/SCSS</li>
@@ -84,13 +158,13 @@ const Page: NextPage = () => (
         <div className="flex flex-col gap-1">
           <p className="font-bold text-neutral-900 dark:text-neutral-100">Platforms</p>
           <ul>
-            <li>DigitalOcean</li>
-            <li>Linode</li>
             <li>Vercel</li>
             <li>Netlify</li>
-            <li>Railway</li>
             <li>PlanetScale</li>
             <li>Upstash</li>
+            <li>Railway</li>
+            <li>DigitalOcean</li>
+            <li>Linode</li>
             <li>Heroku</li>
             <li>Render</li>
             <li>Cloudflare</li>
@@ -105,6 +179,28 @@ const Page: NextPage = () => (
       <SectionTitle> Education</SectionTitle>
 
       <div className="grid grid-cols-[1fr_2fr] gap-8">
+        <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+          High school
+        </h3>
+
+        <div className="flex flex-col gap-2">
+          <div>
+            <h4 className="font-bold text-black dark:text-white">
+              BMSzC Neumann János Informatikai Technikum
+            </h4>
+            <p>01/09/2021 - Current</p>
+          </div>
+
+          <div>
+            <p>
+              <b>Address:</b> Kerepesi út 124, 1144, Budapest, Hungary
+            </p>
+            <Anchor className="text-green-500" href="http://www.njszki.hu/" target="_blank">
+              njszki.hu
+            </Anchor>
+          </div>
+        </div>
+
         <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
           Elementary School
         </h3>
@@ -124,28 +220,6 @@ const Page: NextPage = () => (
             </Anchor>
           </div>
         </div>
-
-        <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
-          High school
-        </h3>
-
-        <div className="flex flex-col gap-2">
-          <div>
-            <h4 className="font-bold text-black dark:text-white">
-              BMSzC Neumann János Informatikai Technikum
-            </h4>
-            <p>01/09/2021 - Current</p>
-          </div>
-
-          <div>
-            <p>
-              <b>Address:</b> Kerepesi út 124, 1144, Budapest, Hungary
-            </p>
-            <Anchor className="text-green-500" href="http://www.njszki.hu/" target="_blank">
-              www.njszki.hu
-            </Anchor>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -153,13 +227,24 @@ const Page: NextPage = () => (
       <SectionTitle>Hobbies</SectionTitle>
 
       <div>
-        <p>My hobbies are sports, and of course IT, especially Web Dev.</p>
         <p>
-          I do Kyokushin Karate (2. kyu - brown belt) since 2013, and I started doing Muay Thai in
-          2021.
+          In my free time I enjoy engaging is sports, also I&lsquo;m deeply passionate about IT,
+          with a particular focus on Web Development.
+        </p>
+        <p>
+          I&lsquo;ve been practicing Kyokushin Karate since 2013, where I hold a brown belt (2nd
+          kyu), and more recently, I&lsquo;ve been training in Muay Thai since 2021.
         </p>
       </div>
     </section>
+
+    <Anchor
+      href="https://uploads.znagy.hu/oneletrajz-europass.pdf"
+      target="_blank"
+      className="w-fit font-bold text-black dark:text-white"
+    >
+      Magyar nyelvű Europass önéletrajz
+    </Anchor>
   </main>
 );
 
