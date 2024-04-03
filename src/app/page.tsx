@@ -79,7 +79,7 @@ const Page: NextPage = () => (
 
       <div className="flex flex-col gap-12 lg:flex-row">
         <Image
-          className="h-64 w-64 self-center border-l-8 border-t-8 border-green-500 transition duration-300 hover:-rotate-6 focus:-rotate-6 lg:order-2"
+          className="aspect-square w-full max-w-64 self-center border-l-8 border-t-8 border-green-500 transition duration-300 hover:-rotate-6 focus:-rotate-6 lg:order-2"
           src="/images/me.jpg"
           alt="me"
           width={720}
