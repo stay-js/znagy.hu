@@ -162,6 +162,7 @@ const Page: NextPage = () => (
             <li>Netlify</li>
             <li>PlanetScale</li>
             <li>Upstash</li>
+            <li>Aiven</li>
             <li>Railway</li>
             <li>DigitalOcean</li>
             <li>Linode</li>

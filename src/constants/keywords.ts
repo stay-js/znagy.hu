@@ -270,6 +270,8 @@ export const keywords = [
 
   'planetscale',
 
+  'aiven',
+
   'heroku',
 
   'render',

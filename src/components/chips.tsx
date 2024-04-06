@@ -182,6 +182,13 @@ export const Chips: React.FC<{ variant: string }> = ({ variant }) => {
         </Chip>
       );
 
+    case 'Aiven':
+      return (
+        <Chip color="#ff5200" href="https://aiven.io">
+          Aiven
+        </Chip>
+      );
+
     default:
       return null;
   }

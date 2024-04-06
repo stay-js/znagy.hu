@@ -46,8 +46,8 @@ export const projects = [
               lettre
             </Anchor>
             ,{' '}
-            <Anchor href="https://planetscale.com" target="_blank">
-              PlanetScale
+            <Anchor href="https://aiven.io" target="_blank">
+              Aiven
             </Anchor>{' '}
             (MySQL),{' '}
             <Anchor href="https://github.com/launchbadge/sqlx" target="_blank">
@@ -88,8 +88,8 @@ export const projects = [
               Auth.js
             </Anchor>{' '}
             (NextAuth),{' '}
-            <Anchor href="https://planetscale.com" target="_blank">
-              PlanetScale
+            <Anchor href="https://aiven.io" target="_blank">
+              Aiven
             </Anchor>{' '}
             (MySQL), and{' '}
             <Anchor href="https://www.prisma.io" target="_blank">
@@ -119,7 +119,7 @@ export const projects = [
       'MySQL',
       'Prisma',
       'sqlx',
-      'PlanetScale',
+      'Aiven',
       'Vercel',
       'AWS Lambda',
     ],
@@ -168,8 +168,8 @@ export const projects = [
               Auth.js
             </Anchor>{' '}
             (NextAuth) ,{' '}
-            <Anchor href="https://planetscale.com" target="_blank">
-              PlanetScale
+            <Anchor href="https://aiven.io" target="_blank">
+              Aiven
             </Anchor>{' '}
             (MySQL), and{' '}
             <Anchor href="https://www.prisma.io" target="_blank">
@@ -196,7 +196,7 @@ export const projects = [
       'Auth.js',
       'MySQL',
       'Prisma',
-      'PlanetScale',
+      'Aiven',
       'Vercel',
     ],
   },
@@ -244,8 +244,8 @@ export const projects = [
               Auth.js
             </Anchor>{' '}
             (NextAuth) ,{' '}
-            <Anchor href="https://planetscale.com" target="_blank">
-              PlanetScale
+            <Anchor href="https://aiven.io" target="_blank">
+              Aiven
             </Anchor>{' '}
             (MySQL),{' '}
             <Anchor href="https://www.prisma.io" target="_blank">
@@ -280,7 +280,7 @@ export const projects = [
       'Auth.js',
       'MySQL',
       'Prisma',
-      'PlanetScale',
+      'Aiven',
       'Vercel',
     ],
   },
