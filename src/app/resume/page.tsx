@@ -80,7 +80,7 @@ const Page: NextPage = () => (
           <div>
             <h4 className="font-bold text-black dark:text-white">
               Catering staff / Runner / Set up at Nebuló Meló (Rampart Public Catering, SPORTFIVE
-              MPA)
+              MPA, Stadion Event)
             </h4>
             <p>
               <b>Web:</b>{' '}
