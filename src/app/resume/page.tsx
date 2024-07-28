@@ -79,8 +79,7 @@ const Page: NextPage = () => (
         <div className="flex flex-col gap-2">
           <div>
             <h4 className="font-bold text-black dark:text-white">
-              Catering staff / Runner / Set up at Nebuló Meló (Rampart Public Catering, SPORTFIVE
-              MPA, Stadion Event)
+              Catering staff at Nebuló Meló (Rampart Public Catering, SPORTFIVE MPA, Stadion Event)
             </h4>
             <p>
               <b>Web:</b>{' '}
@@ -95,11 +94,11 @@ const Page: NextPage = () => (
               At Puskás Aréna, MVM Dome, Groupama Aréna, Bozsik Aréna, National Athletics Center:
             </p>
             <ul className="text-neutral-900 dark:text-neutral-100 [&_li]:before:content-['-_']">
-              <li>Counter service (cashiering, back-end tasks)</li>
               <li>
-                Performing runner / set up tasks (filling concession stants before/during events,
-                moving goods, dismantling)
+                Performing runner / set up tasks (filling concession stands before/during events,
+                moving goods, building / dismantling pop-up stands, etc.)
               </li>
+              <li>Counter service (cashiering, back-end tasks)</li>
             </ul>
           </div>
         </div>
