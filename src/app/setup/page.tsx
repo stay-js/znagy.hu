@@ -31,27 +31,25 @@ const Page: NextPage = () => (
           ),
         },
         {
-          title: 'Apple iPhone 14',
-          image: '/images/apple-iphone-14.jpg',
-          url: 'https://www.apple.com/iphone-14',
+          title: 'Apple iPhone 15 Pro Max',
+          image: '/images/apple-iphone-15-pro-max.jpg',
+          url: 'https://support.apple.com/en-us/111828',
           body: (
             <ul>
-              <li>Apple A15 Bionic</li>
-              <li>6GB memory</li>
-              <li>128GB storage</li>
+              <li>Apple A17 Pro</li>
+              <li>8GB memory</li>
+              <li>256GB storage</li>
             </ul>
           ),
         },
         {
-          title: 'Apple AirPods 3',
-          image: '/images/apple-airpods-3.jpg',
-          url: 'https://www.apple.com/shop/product/MME73AM/A/airpods-3rd-generation',
+          title: 'Apple AirPods 4 (ANC)',
+          image: '/images/apple-airpods-4.jpg',
+          url: 'https://www.apple.com/airpods-4',
           body: (
             <ul>
-              <li>Apple H1 headphone chip</li>
-              <li>Spatial Audio</li>
-              <li>Adaptive EQ</li>
-              <li>Sweat and water resistant (IPX4)</li>
+              <li>Apple H2 headphone chip</li>
+              <li>Active Noise Cancellation</li>
             </ul>
           ),
         },
