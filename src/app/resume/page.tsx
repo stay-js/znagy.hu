@@ -98,7 +98,10 @@ const Page: NextPage = () => (
                 Performing runner / set up tasks (filling concession stands before/during events,
                 moving goods, building / dismantling pop-up stands, etc.)
               </li>
-              <li>Counter service, supervisor (cashiering, back-end tasks, supervisor tasks, coordinating staff, handling customer complaints, etc.)</li>
+              <li>
+                Counter service, supervisor (cashiering, back-end tasks, supervisor tasks,
+                coordinating staff, handling customer complaints, etc.)
+              </li>
             </ul>
           </div>
         </div>
@@ -239,11 +242,11 @@ const Page: NextPage = () => (
     </section>
 
     <Anchor
-      href="https://uploads.znagy.hu/oneletrajz-europass.pdf"
+      href="https://uploads.znagy.hu/oneletrajz.pdf"
       target="_blank"
       className="w-fit font-bold text-black dark:text-white"
     >
-      Magyar nyelvű Europass önéletrajz
+      Magyar nyelvű önéletrajz
     </Anchor>
   </main>
 );
