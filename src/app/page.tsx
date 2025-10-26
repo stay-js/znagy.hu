@@ -1,11 +1,12 @@
 import { Hero } from '~/components/hero';
 import { About } from '~/components/about';
+import { Projects } from '~/components/projects';
 
 const Page: React.FC = () => (
   <>
     <Hero />
     <About />
-    <div className="min-h-[200vh]"></div>
+    <Projects />
   </>
 );
 

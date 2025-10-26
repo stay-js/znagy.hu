@@ -3,7 +3,7 @@ import { Github, Instagram, Mail } from 'lucide-react';
 import { Button } from '~/components/ui/button';
 
 export const Hero: React.FC = () => (
-  <section className="container flex min-h-screen max-w-4xl flex-col justify-center gap-12 py-16">
+  <section className="container flex min-h-screen flex-col justify-center gap-12 py-16">
     <div className="flex flex-col gap-3">
       <h1 className="text-foreground text-5xl font-bold text-balance md:text-7xl">Zétény Nagy</h1>
       <h2 className="text-muted-foreground text-xl md:text-2xl">Full-stack Developer</h2>

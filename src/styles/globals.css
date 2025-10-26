@@ -124,8 +124,8 @@
   body {
     @apply bg-background text-foreground;
   }
+}
 
-  .container {
-    @apply mx-auto max-w-[1400px] px-6;
-  }
+.container {
+  @apply mx-auto max-w-4xl px-6;
 }

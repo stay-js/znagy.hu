@@ -3,7 +3,7 @@ import { Card, CardHeader, CardTitle, CardContent } from '~/components/ui/card';
 import { FAVORITES } from '~/constants/favorites';
 
 export const About: React.FC = () => (
-  <section id="about" className="container mx-auto flex max-w-4xl flex-col gap-8 py-20">
+  <section id="about" className="container flex flex-col gap-8 py-20">
     <h2 className="text-foreground text-3xl font-bold md:text-4xl">About Me</h2>
 
     <div className="flex flex-col gap-6">
