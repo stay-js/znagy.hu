@@ -57,7 +57,7 @@ export const Navigation: React.FC = () => {
   return (
     <header
       className={cn(
-        'fixed top-0 left-0 z-50 w-full transition-all duration-300',
+        'lg:supports-backdrop-filter:bg-background/60 fixed top-0 left-0 z-50 w-full transition-all duration-300',
         isScrolled
           ? 'bg-background/95 translate-y-0 border-b backdrop-blur-md'
           : '-translate-y-full bg-transparent',
