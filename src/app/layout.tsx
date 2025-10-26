@@ -1,12 +1,14 @@
 import type { Viewport } from 'next/types';
 import { Geist } from 'next/font/google';
+import { ThemeProvider } from 'next-themes';
+import { Navigation } from '~/components/navigation';
 
 import '~/styles/globals.css';
 
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  colorScheme: 'dark',
+  colorScheme: 'dark light',
 };
 
 const geist = Geist({
@@ -15,8 +17,20 @@ const geist = Geist({
 });
 
 const RootLayout: React.FC<Readonly<{ children: React.ReactNode }>> = ({ children }) => (
-  <html lang="en" className={`${geist.variable}`}>
-    <body>{children}</body>
+  <html lang="en" className={`${geist.variable} scroll-smooth`} suppressHydrationWarning>
+    <body className="overflow-x-hidden antialiased">
+      <ThemeProvider
+        storageKey="theme"
+        defaultTheme="system"
+        attribute="class"
+        enableColorScheme
+        disableTransitionOnChange
+      >
+        <Navigation />
+
+        <main>{children}</main>
+      </ThemeProvider>
+    </body>
   </html>
 );
 
