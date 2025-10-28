@@ -13,7 +13,7 @@ import Link from 'next/link';
 import { PROJECTS } from '~/constants/projects';
 
 export const Projects: React.FC = () => (
-  <section id="projects" className="scroll-m-8 py-20">
+  <section id="projects" className="scroll-m-8 py-24">
     <div className="container flex flex-col gap-8">
       <H2>Projects</H2>
 

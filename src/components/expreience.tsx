@@ -4,7 +4,7 @@ import { Card, CardHeader, CardTitle, CardContent } from '~/components/ui/card';
 import { H2 } from './ui/h2';
 
 export const Experience: React.FC = () => (
-  <section id="experience" className="scroll-m-8 py-20">
+  <section id="experience" className="scroll-m-8 py-24">
     <div className="container flex flex-col gap-8">
       <H2>Experience</H2>
 

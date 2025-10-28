@@ -4,7 +4,7 @@ import { H2 } from './ui/h2';
 import { FAVORITES } from '~/constants/favorites';
 
 export const About: React.FC = () => (
-  <section id="about" className="bg-muted/30 scroll-m-8 py-20">
+  <section id="about" className="bg-muted/30 scroll-m-8 py-24">
     <div className="container flex flex-col gap-8">
       <H2>About Me</H2>
 

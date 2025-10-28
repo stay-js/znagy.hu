@@ -4,7 +4,7 @@ import { H2 } from './ui/h2';
 import { SKILLS } from '~/constants/skills';
 
 export const Skills: React.FC = () => (
-  <section id="skills" className="bg-muted/30 scroll-m-8 py-20">
+  <section id="skills" className="bg-muted/30 scroll-m-8 py-24">
     <div className="container flex flex-col gap-8">
       <H2>Skills</H2>
 
