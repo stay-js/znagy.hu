@@ -21,7 +21,7 @@ const RootLayout: React.FC<Readonly<{ children: React.ReactNode }>> = ({ childre
     <body className="overflow-x-hidden antialiased">
       <ThemeProvider
         storageKey="theme"
-        defaultTheme="system"
+        defaultTheme="dark"
         attribute="class"
         enableColorScheme
         disableTransitionOnChange
