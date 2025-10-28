@@ -5,18 +5,18 @@ export const NAV_ITEMS = [
     external: false,
   },
   {
+    label: 'Projects',
+    href: '/#projects',
+    external: false,
+  },
+  {
+    label: 'Experience',
+    href: '/#experience',
+    external: false,
+  },
+  {
     label: 'Contact',
-    href: '/contact',
-    external: false,
-  },
-  {
-    label: 'Setup',
-    href: '/setup',
-    external: false,
-  },
-  {
-    label: 'Resume',
-    href: '/resume',
+    href: '/#contact',
     external: false,
   },
   {
