@@ -4,7 +4,7 @@ import { Card, CardHeader, CardTitle, CardContent } from '~/components/ui/card';
 import { H2 } from './ui/h2';
 
 export const Experience: React.FC = () => (
-  <section id="experience" className="bg-muted/30 scroll-m-8 py-20">
+  <section id="experience" className="scroll-m-8 py-20">
     <div className="container flex flex-col gap-8">
       <H2>Experience</H2>
 
@@ -25,6 +25,32 @@ export const Experience: React.FC = () => (
               <li>
                 Creation and maintenance of{' '}
                 <Link
+                  href="https://babaconstructioncorp.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold underline-offset-4 hover:underline"
+                >
+                  babaconstructioncorp.com
+                </Link>{' '}
+                website
+              </li>
+
+              <li>
+                Creation and maintenance of{' '}
+                <Link
+                  href="https://tatabanyaultrahang.eu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold underline-offset-4 hover:underline"
+                >
+                  tatabanyaultrahang.eu
+                </Link>{' '}
+                website
+              </li>
+
+              <li>
+                Creation and maintenance of{' '}
+                <Link
                   href="https://regale.hu"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -42,30 +68,6 @@ export const Experience: React.FC = () => (
                   admin.regale.hu
                 </Link>{' '}
                 web applications
-              </li>
-              <li>
-                Creation and maintenance of{' '}
-                <Link
-                  href="https://babaconstructioncorp.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold underline-offset-4 hover:underline"
-                >
-                  babaconstructioncorp.com
-                </Link>{' '}
-                website
-              </li>
-              <li>
-                Creation and maintenance of{' '}
-                <Link
-                  href="https://tatabanyaultrahang.eu"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold underline-offset-4 hover:underline"
-                >
-                  tatabanyaultrahang.eu
-                </Link>{' '}
-                website
               </li>
             </ul>
           </CardContent>
