@@ -72,7 +72,6 @@ export const SKILLS = [
       'Cloudflare',
       'AWS Services',
       'Serverless Framework',
-      'Cloudflare',
       'Clerk',
     ],
   },
