@@ -7,6 +7,7 @@ import {
   CardFooter,
 } from '~/components/ui/card';
 import { Badge } from '~/components/ui/badge';
+import { H2 } from './ui/h2';
 import { ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 import { PROJECTS } from '~/constants/projects';
@@ -14,7 +15,7 @@ import { PROJECTS } from '~/constants/projects';
 export const Projects: React.FC = () => (
   <section id="projects" className="bg-muted/30 scroll-m-8 py-20">
     <div className="container flex flex-col gap-8">
-      <h2 className="text-foreground text-3xl font-bold md:text-4xl">Projects</h2>
+      <H2>Projects</H2>
 
       <div className="gap-6 md:columns-2">
         {PROJECTS.map((project) => (
