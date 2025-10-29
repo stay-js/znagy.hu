@@ -86,7 +86,7 @@ export const Experience: React.FC = () => (
 
           <CardContent>
             <ul className="text-card-foreground flex list-inside list-disc flex-col gap-2">
-              <li>F&B operations (Puskás Arena, external venues)</li>
+              <li>F&B operations (Puskás Aréna, external venues)</li>
               <ul className="flex list-inside list-disc flex-col gap-2 pl-4">
                 <li>
                   performing runner / set-up tasks (restocking concession stands before and during
