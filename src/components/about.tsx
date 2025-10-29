@@ -8,8 +8,8 @@ export const About: React.FC = () => (
     <div className="container flex flex-col gap-8">
       <H2>About Me</H2>
 
-      <div className="flex flex-col gap-6">
-        <Card>
+      <div className="grid gap-4 md:grid-cols-3">
+        <Card className="md:col-span-3">
           <CardContent className="flex flex-col gap-4 leading-relaxed">
             <p>Glad you are here!</p>
             <p>
@@ -32,22 +32,20 @@ export const About: React.FC = () => (
           </CardContent>
         </Card>
 
-        <div className="grid gap-4 md:grid-cols-3">
-          {FAVORITES.map(({ title, items }) => (
-            <Card key={title} className="gap-4">
-              <CardHeader>
-                <CardTitle>{title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="flex flex-col gap-1 text-sm">
-                  {items.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+        {FAVORITES.map(({ title, items }) => (
+          <Card key={title} className="gap-4">
+            <CardHeader>
+              <CardTitle>{title}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="flex flex-col gap-1 text-sm">
+                {items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
+        ))}
       </div>
     </div>
   </section>
