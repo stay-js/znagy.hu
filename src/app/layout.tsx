@@ -1,6 +1,7 @@
 import type { Viewport } from 'next/types';
 import { Geist } from 'next/font/google';
 import { ThemeProvider } from 'next-themes';
+import { Toaster } from '~/components/ui/sonner';
 import { Navigation } from '~/components/navigation';
 
 import '~/styles/globals.css';
@@ -29,6 +30,8 @@ const RootLayout: React.FC<Readonly<{ children: React.ReactNode }>> = ({ childre
         <Navigation />
 
         <main>{children}</main>
+
+        <Toaster position="top-left" />
       </ThemeProvider>
     </body>
   </html>

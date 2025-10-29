@@ -3,6 +3,7 @@ import { About } from '~/components/about';
 import { Projects } from '~/components/projects';
 import { Skills } from '~/components/skills';
 import { Experience } from '~/components/expreience';
+import { Contact } from '~/components/contact';
 
 const Page: React.FC = () => (
   <>
@@ -11,6 +12,7 @@ const Page: React.FC = () => (
     <Projects />
     <Skills />
     <Experience />
+    <Contact />
   </>
 );
 
