@@ -10,7 +10,7 @@ export const Skills: React.FC = () => (
 
       <div className="grid gap-6 md:grid-cols-2">
         {SKILLS.map((category) => (
-          <Card key={category.title}>
+          <Card key={category.title} className="hover:border-foreground/50 transition-colors">
             <CardHeader>
               <CardTitle className="text-lg">
                 <h3>{category.title}</h3>

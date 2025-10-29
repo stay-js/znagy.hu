@@ -1,7 +1,7 @@
 export const FAVORITES = [
   {
     title: 'Favorite Stack',
-    items: ['Next.js', 'TypeScript', 'tRPC', 'Clerk'],
+    items: ['TypeScript', 'Next.js', 'tRPC', 'Clerk'],
   },
   {
     title: 'Backend',
