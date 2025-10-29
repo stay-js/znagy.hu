@@ -8,7 +8,7 @@ import { cn } from '~/lib/utils';
 export const metadata = createMetadata({
   path: '/links',
   title: 'Links',
-  description: ' Full-stack developer • IT Student • Kyokushin • Muay Thai',
+  description: 'Full-stack developer • IT Student • Kyokushin • Muay Thai',
 });
 
 const Item: React.FC<(typeof LINKS)[number]['links'][number]> = (item) => (
