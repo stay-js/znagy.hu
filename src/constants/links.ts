@@ -22,7 +22,7 @@ export const LINKS = [
         icon: IconBrandGithub,
       },
       {
-        label: 'X / Twitter',
+        label: 'X (Twitter)',
         url: 'https://x.com/znagyy',
         icon: IconBrandX,
       },
