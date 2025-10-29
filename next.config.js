@@ -9,6 +9,11 @@ const config = {
         destination: '/#experience',
         permanent: true,
       },
+      {
+        source: '/contact',
+        destination: '/#contact',
+        permanent: true,
+      },
     ];
   },
 };
