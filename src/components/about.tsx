@@ -33,10 +33,10 @@ export const About: React.FC = () => (
         </Card>
 
         <div className="grid gap-4 md:grid-cols-3">
-          {Object.entries(FAVORITES).map(([category, items]) => (
-            <Card key={category} className="gap-4">
+          {FAVORITES.map(({ title, items }) => (
+            <Card key={title} className="gap-4">
               <CardHeader>
-                <CardTitle>{category}</CardTitle>
+                <CardTitle>{title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="flex flex-col gap-1 text-sm">
