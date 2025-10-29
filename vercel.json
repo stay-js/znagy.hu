@@ -1,9 +1,14 @@
 {
-  "rewrites": [
+  "redirects": [
     {
-      "source": "/(.*)",
-      "has": [{ "type": "host", "value": "links.znagy.hu" }],
-      "destination": "/links"
+      "source": "/:path(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "links.znagy.hu"
+        }
+      ],
+      "destination": "https://znagy.hu/links"
     }
   ]
 }
