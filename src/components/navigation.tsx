@@ -30,17 +30,9 @@ const ThemeToggleButton: React.FC = () => {
   );
 };
 
-const Item: React.FC<(typeof NAV_ITEMS)[number]> = ({ label, href, external }) => (
-  <Link
-    href={href}
-    {...(external && {
-      target: '_blank',
-      rel: 'noopener noreferrer',
-    })}
-    className="text-foreground/70 hover:text-foreground flex items-center gap-2 transition-colors"
-  >
-    <span>{label}</span>
-    {external && <ExternalLink size={18} />}
+const Item: React.FC<(typeof NAV_ITEMS)[number]> = ({ label, href }) => (
+  <Link href={href} className="text-foreground/70 hover:text-foreground transition-colors">
+    {label}
   </Link>
 );
 export const Navigation: React.FC = () => {

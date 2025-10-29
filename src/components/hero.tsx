@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Github, Instagram, Mail } from 'lucide-react';
+import { IconMail, IconBrandGithub, IconBrandInstagram } from '@tabler/icons-react';
 import { Button } from '~/components/ui/button';
 
 export const Hero: React.FC = () => (
@@ -28,17 +28,17 @@ export const Hero: React.FC = () => (
         {[
           {
             href: 'https://github.com/stay-js',
-            icon: Github,
+            icon: IconBrandGithub,
             label: 'GitHub',
           },
           {
             href: 'https://instagram.com/zeteny_ngy',
-            icon: Instagram,
+            icon: IconBrandInstagram,
             label: 'Instagram',
           },
           {
             href: 'mailto:znagy@znagy.hu',
-            icon: Mail,
+            icon: IconMail,
             label: 'Email',
           },
         ].map((item) => (

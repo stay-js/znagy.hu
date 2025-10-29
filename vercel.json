@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "links.znagy.hu" }],
+      "destination": "/links"
+    }
+  ]
+}

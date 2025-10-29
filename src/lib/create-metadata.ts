@@ -53,12 +53,22 @@ export const createMetadata = ({
     description,
     siteName: 'Zétény Nagy',
     locale: 'en-US',
+    images: [
+      {
+        url: '/me.jpg',
+        width: 1024,
+        height: 1024,
+        alt: 'Zétény Nagy',
+        type: 'image/jpeg',
+      },
+    ],
   },
 
   twitter: {
     card: 'summary',
     title: absoluteTitle ?? `${title} - Zétény Nagy`,
     description,
+    images: ['/me.jpg'],
   },
 
   icons: {
