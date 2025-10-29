@@ -63,7 +63,7 @@ export const Navigation: React.FC = () => {
           : '-translate-y-full bg-transparent',
       )}
     >
-      <div className="flex items-center justify-between p-4">
+      <div className="flex items-center justify-between px-6 py-4">
         <ThemeToggleButton />
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -73,7 +73,7 @@ export const Navigation: React.FC = () => {
         </nav>
 
         <button
-          className="h-6 w-6 cursor-pointer lg:hidden"
+          className="size-6 cursor-pointer lg:hidden"
           title="Toggle Hamburger"
           type="button"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -100,7 +100,7 @@ export const Navigation: React.FC = () => {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="border-t p-4 lg:hidden">
+        <div className="border-t px-6 py-4 lg:hidden">
           <nav className="flex flex-col gap-4">
             {NAV_ITEMS.map((item) => (
               <Item key={item.href} {...item} onClick={() => setIsMobileMenuOpen(false)} />
