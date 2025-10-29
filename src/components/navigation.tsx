@@ -30,8 +30,16 @@ const ThemeToggleButton: React.FC = () => {
   );
 };
 
-const Item: React.FC<(typeof NAV_ITEMS)[number]> = ({ label, href }) => (
-  <Link href={href} className="text-foreground/70 hover:text-foreground transition-colors">
+const Item: React.FC<(typeof NAV_ITEMS)[number] & { onClick?: () => void }> = ({
+  label,
+  href,
+  onClick,
+}) => (
+  <Link
+    href={href}
+    className="text-foreground/70 hover:text-foreground transition-colors"
+    onClick={onClick}
+  >
     {label}
   </Link>
 );
@@ -95,7 +103,7 @@ export const Navigation: React.FC = () => {
         <div className="border-t p-4 lg:hidden">
           <nav className="flex flex-col gap-4">
             {NAV_ITEMS.map((item) => (
-              <Item key={item.href} {...item} />
+              <Item key={item.href} {...item} onClick={() => setIsMobileMenuOpen(false)} />
             ))}
           </nav>
         </div>
