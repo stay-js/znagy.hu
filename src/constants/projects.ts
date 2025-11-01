@@ -1,12 +1,5 @@
 export const PROJECTS = [
   {
-    title: 'Tatabányai Ultrahang Centrum',
-    link: 'https://www.tatabanyaultrahang.eu',
-    description:
-      'Marketing website for Tatabányai Ultrahang Centrum. Built with TypeScript, Next.js, Tailwind CSS, and shadcn/ui.',
-    tags: ['TypeScript', 'Next.js', 'Tailwind CSS', 'shadcn/ui', 'Vercel'],
-  },
-  {
     title: 'BABA Construction Corp.',
     link: 'https://www.babaconstructioncorp.com/',
     description:
@@ -22,6 +15,13 @@ export const PROJECTS = [
       'Redis',
       'Vercel',
     ],
+  },
+  {
+    title: 'Tatabányai Ultrahang Centrum',
+    link: 'https://www.tatabanyaultrahang.eu',
+    description:
+      'Marketing website for Tatabányai Ultrahang Centrum. Built with TypeScript, Next.js, Tailwind CSS, and shadcn/ui.',
+    tags: ['TypeScript', 'Next.js', 'Tailwind CSS', 'shadcn/ui', 'Vercel'],
   },
   {
     title: 'REGALE Energy Zrt.',
