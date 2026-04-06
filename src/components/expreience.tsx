@@ -41,19 +41,6 @@ export function Experience() {
                   Creation and maintenance of{' '}
                   <Link
                     className="font-semibold underline-offset-4 hover:underline"
-                    href="https://tatabanyaultrahang.eu"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    tatabanyaultrahang.eu
-                  </Link>{' '}
-                  website
-                </li>
-
-                <li>
-                  Creation and maintenance of{' '}
-                  <Link
-                    className="font-semibold underline-offset-4 hover:underline"
                     href="https://regale.hu"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -71,6 +58,19 @@ export function Experience() {
                   </Link>{' '}
                   web applications
                 </li>
+
+                <li>
+                  Creation and maintenance of{' '}
+                  <Link
+                    className="font-semibold underline-offset-4 hover:underline"
+                    href="https://tatabanyaultrahang.eu"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    tatabanyaultrahang.eu
+                  </Link>{' '}
+                  website
+                </li>
               </ul>
             </CardContent>
           </Card>
@@ -82,13 +82,36 @@ export function Experience() {
                 <span className="text-muted-foreground text-sm">Nebuló Meló</span>
               </div>
               <p className="text-muted-foreground text-sm">
-                Puskás Aréna, MVM Dome, Groupama Aréna, Bozsik Aréna, National Athletics Center
+                Puskás Aréna, MVM Dome, Papp László Budapest Sportaréna, Groupama Aréna, Bozsik
+                Aréna, National Athletics Center
               </p>
             </CardHeader>
 
             <CardContent>
               <ul className="text-card-foreground flex list-inside list-disc flex-col gap-2">
-                <li>F&B operations (Puskás Aréna, MVM Dome, external venues)</li>
+                <li>IT Tasks</li>
+                <ul className="flex list-inside list-disc flex-col gap-2 pl-4">
+                  <li>creating and maintaining spreadsheets for stock keeping</li>
+                  <li>
+                    creating and maintaining{' '}
+                    <Link
+                      className="font-semibold underline-offset-4 hover:underline"
+                      href="https://stand.rampartpublic.hu/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      stand.rampartpublic.hu
+                    </Link>{' '}
+                    web app for stock keeping, restocking concession stands, tracking movement of
+                    goods between venues, tracking inventory in real time (via real time sales data
+                    from concession stands)
+                  </li>
+                </ul>
+
+                <li className="mt-4">
+                  F&B operations (Puskás Aréna, MVM Dome, Papp László Budapest Sportaréna, external
+                  venues)
+                </li>
                 <ul className="flex list-inside list-disc flex-col gap-2 pl-4">
                   <li>
                     performing runner / set-up tasks (restocking concession stands before and during
@@ -98,7 +121,10 @@ export function Experience() {
                   <li>handling customer complaints</li>
                 </ul>
 
-                <li className="mt-4">Concession stand supervisor (MVM Dome, Groupama Aréna)</li>
+                <li className="mt-4">
+                  Concession stand supervisor (MVM Dome, Papp László Budapest Sportaréna, Groupama
+                  Aréna)
+                </li>
                 <ul className="flex list-inside list-disc flex-col gap-2 pl-4">
                   <li>continuous communication with the operations team</li>
                   <li>stocktaking, opening / closing concession stand</li>
