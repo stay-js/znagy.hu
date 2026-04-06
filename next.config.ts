@@ -1,7 +1,8 @@
 import './src/env.js';
 
-/** @type {import("next").NextConfig} */
-const config = {
+import { type NextConfig } from 'next';
+
+const nextConfig: NextConfig = {
   redirects() {
     return [
       {
@@ -18,4 +19,4 @@ const config = {
   },
 };
 
-export default config;
+export default nextConfig;
