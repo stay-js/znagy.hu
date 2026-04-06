@@ -33,7 +33,7 @@ export function Navigation() {
       <div className="flex items-center justify-between px-6 py-4">
         <ThemeToggleButton />
 
-        <nav className="hidden items-center gap-8 lg:flex">
+        <nav className="hidden items-center gap-6 lg:flex">
           {NAV_ITEMS.map((item) => (
             <Item key={item.href} {...item} />
           ))}
@@ -82,7 +82,7 @@ export function Navigation() {
 function Item({ href, label, onClick }: { onClick?: () => void } & (typeof NAV_ITEMS)[number]) {
   return (
     <Link
-      className="text-foreground/70 hover:text-foreground transition-colors"
+      className="text-foreground/70 hover:text-foreground text-sm transition-colors"
       href={href}
       onClick={onClick}
     >
