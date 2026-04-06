@@ -32,7 +32,7 @@ export function Projects() {
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <ExternalLink size={22} />
+                      <ExternalLink className="size-5.5" />
                     </Link>
                   </CardTitle>
                 </CardHeader>

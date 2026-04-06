@@ -105,7 +105,7 @@ function ThemeToggleButton() {
       type="button"
       variant="ghost"
     >
-      {resolvedTheme === 'dark' ? <Sun size={22} /> : <Moon size={22} />}
+      {resolvedTheme === 'dark' ? <Sun className="size-4.5" /> : <Moon className="size-4.5" />}
     </Button>
   );
 }

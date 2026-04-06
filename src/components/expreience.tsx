@@ -12,7 +12,7 @@ export function Experience() {
 
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-2">
-            <Briefcase className="text-muted-foreground" size={20} />
+            <Briefcase className="text-muted-foreground size-5" />
             <h3 className="text-foreground text-2xl font-semibold">Work Experience</h3>
           </div>
 
@@ -140,7 +140,7 @@ export function Experience() {
 
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-2">
-            <GraduationCap className="text-muted-foreground" size={20} />
+            <GraduationCap className="text-muted-foreground size-5" />
             <h3 className="text-foreground text-2xl font-semibold">Education</h3>
           </div>
 
