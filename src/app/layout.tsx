@@ -1,18 +1,19 @@
 import '~/styles/globals.css';
 
 import type { Viewport } from 'next/types';
-import { Geist, Geist_Mono } from 'next/font/google';
+
 import { ThemeProvider } from 'next-themes';
+import { Geist, Geist_Mono } from 'next/font/google';
 import { Suspense } from 'react';
 
-import { Toaster } from '~/components/ui/sonner';
 import { Navigation } from '~/components/navigation';
+import { Toaster } from '~/components/ui/sonner';
 import { cn } from '~/lib/utils';
 
 export const viewport: Viewport = {
-  width: 'device-width',
-  initialScale: 1,
   colorScheme: 'dark light',
+  initialScale: 1,
+  width: 'device-width',
 };
 
 const fontSans = Geist({
@@ -28,18 +29,18 @@ const fontMono = Geist_Mono({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
-      lang="en"
       className={cn(fontMono.variable, 'font-sans', fontSans.variable)}
       data-scroll-behavior="smooth"
+      lang="en"
       suppressHydrationWarning
     >
       <body className="overflow-x-hidden antialiased">
         <ThemeProvider
-          storageKey="theme"
-          defaultTheme="dark"
           attribute="class"
-          enableColorScheme
+          defaultTheme="dark"
           disableTransitionOnChange
+          enableColorScheme
+          storageKey="theme"
         >
           <Navigation />
 

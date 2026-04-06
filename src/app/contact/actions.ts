@@ -1,17 +1,18 @@
 'use server';
 
-import { headers } from 'next/headers';
-import nodemailer from 'nodemailer';
 import { Ratelimit } from '@upstash/ratelimit';
 import { Redis } from '@upstash/redis';
+import { headers } from 'next/headers';
+import nodemailer from 'nodemailer';
 import { z } from 'zod';
-import { validateCaptchaResponse } from '~/lib/validate-captcha-response';
+
 import { env } from '~/env.js';
+import { validateCaptchaResponse } from '~/lib/validate-captcha-response';
 
 const schema = z.object({
-  name: z.string(),
   email: z.email(),
   message: z.string(),
+  name: z.string(),
   token: z.string(),
 });
 
@@ -25,10 +26,10 @@ export default async function sendEmail(formData: Data) {
   if (!isHuman) throw new Error('Captcha validation failed');
 
   const ratelimit = new Ratelimit({
-    redis: Redis.fromEnv(),
-    limiter: Ratelimit.slidingWindow(3, '1 m'),
     analytics: true,
+    limiter: Ratelimit.slidingWindow(3, '1 m'),
     prefix: '@upstash/ratelimit',
+    redis: Redis.fromEnv(),
   });
 
   const ip = (await headers()).get('x-forwarded-for');
@@ -39,20 +40,17 @@ export default async function sendEmail(formData: Data) {
 
   try {
     const transporter = nodemailer.createTransport({
+      auth: {
+        pass: env.NODEMAILER_PASS,
+        user: env.NODEMAILER_USER,
+      },
       host: env.NODEMAILER_HOST,
       port: Number(env.NODEMAILER_PORT),
       secure: true,
-      auth: {
-        user: env.NODEMAILER_USER,
-        pass: env.NODEMAILER_PASS,
-      },
     });
 
     await transporter.sendMail({
       from: 'Message notification - noreply<noreply@znagy.hu>',
-      to: env.NODEMAILER_TO_EMAIL,
-      replyTo: data.email,
-      subject: `New message from ${data.name} (${data.email})`,
       html: `
 				<div>
         Name: <b>${data.name}</b>
@@ -67,6 +65,9 @@ export default async function sendEmail(formData: Data) {
 				${data.message.replace(/\n/g, '<br />')}
 				</div>
 				`,
+      replyTo: data.email,
+      subject: `New message from ${data.name} (${data.email})`,
+      to: env.NODEMAILER_TO_EMAIL,
     });
 
     return { success: true };

@@ -1,43 +1,42 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { Button } from '~/components/ui/button';
-import { Moon, Sun, ExternalLink } from 'lucide-react';
+import { Moon, Sun } from 'lucide-react';
 import { useTheme } from 'next-themes';
-import { cn } from '~/lib/utils';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
+
+import { Button } from '~/components/ui/button';
 import { NAV_ITEMS } from '~/constants/nav-items';
+import { useMounted } from '~/hooks/use-mounted';
+import { cn } from '~/lib/utils';
 
 const ThemeToggleButton: React.FC = () => {
-  const [mounted, setMounted] = useState(false);
-
+  const mounted = useMounted();
   const { resolvedTheme, setTheme } = useTheme();
-
-  useEffect(() => setMounted(true), []);
 
   if (!mounted) return <div />;
 
   return (
     <Button
+      onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
       size="icon"
-      variant="ghost"
       title={`Switch to ${resolvedTheme === 'dark' ? 'light' : 'dark'} theme`}
       type="button"
-      onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
+      variant="ghost"
     >
       {resolvedTheme === 'dark' ? <Sun size={22} /> : <Moon size={22} />}
     </Button>
   );
 };
 
-const Item: React.FC<(typeof NAV_ITEMS)[number] & { onClick?: () => void }> = ({
-  label,
+const Item: React.FC<{ onClick?: () => void } & (typeof NAV_ITEMS)[number]> = ({
   href,
+  label,
   onClick,
 }) => (
   <Link
-    href={href}
     className="text-foreground/70 hover:text-foreground transition-colors"
+    href={href}
     onClick={onClick}
   >
     {label}
@@ -74,9 +73,9 @@ export const Navigation: React.FC = () => {
 
         <button
           className="size-6 cursor-pointer lg:hidden"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           title="Toggle Hamburger"
           type="button"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           <span
             className={cn(

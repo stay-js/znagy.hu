@@ -1,5 +1,6 @@
+import { IconBrandGithub, IconBrandInstagram, IconMail } from '@tabler/icons-react';
 import Link from 'next/link';
-import { IconMail, IconBrandGithub, IconBrandInstagram } from '@tabler/icons-react';
+
 import { Button } from '~/components/ui/button';
 
 export const Hero: React.FC = () => (
@@ -19,7 +20,7 @@ export const Hero: React.FC = () => (
           <Link href="/#contact">Get In Touch</Link>
         </Button>
 
-        <Button asChild variant="outline" size="lg">
+        <Button asChild size="lg" variant="outline">
           <Link href="/#projects">View Projects</Link>
         </Button>
       </div>
@@ -43,11 +44,11 @@ export const Hero: React.FC = () => (
           },
         ].map((item) => (
           <Link
-            key={item.href}
-            href={item.href}
-            target="_blank"
-            rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground transition-colors"
+            href={item.href}
+            key={item.href}
+            rel="noopener noreferrer"
+            target="_blank"
           >
             <item.icon size={24} />
             <span className="sr-only">{item.label}</span>

@@ -1,18 +1,19 @@
 import type { Metadata } from 'next';
+
 import { keywords } from '~/constants/keywords';
 
 export const createMetadata = ({
-  path,
-  title,
   absoluteTitle,
   description,
   noIndex,
+  path,
+  title,
 }: {
-  path: string;
-  title: string;
   absoluteTitle?: string;
   description: string;
   noIndex?: boolean;
+  path: string;
+  title: string;
 }): Metadata => ({
   metadataBase: new URL('https://znagy.hu'),
 
@@ -21,54 +22,54 @@ export const createMetadata = ({
 
   keywords: keywords.join(', '),
 
-  title: absoluteTitle ?? `${title} - Zétény Nagy`,
   description,
+  title: absoluteTitle ?? `${title} - Zétény Nagy`,
 
   applicationName: 'Zétény Nagy',
 
   robots: noIndex
     ? {
-        index: false,
         follow: false,
-        'max-video-preview': -1,
+        index: false,
         'max-image-preview': 'none',
         'max-snippet': -1,
+        'max-video-preview': -1,
       }
     : {
-        index: true,
         follow: true,
         googleBot: {
-          index: true,
           follow: true,
-          'max-video-preview': -1,
+          index: true,
           'max-image-preview': 'large',
           'max-snippet': -1,
+          'max-video-preview': -1,
         },
+        index: true,
       },
 
   openGraph: {
-    type: 'website',
-    url: `https://znagy.hu${path}`,
-    title: absoluteTitle ?? `${title} - Zétény Nagy`,
     description,
-    siteName: 'Zétény Nagy',
-    locale: 'en-US',
     images: [
       {
+        alt: 'Zétény Nagy',
+        height: 1024,
+        type: 'image/jpeg',
         url: '/me.jpg',
         width: 1024,
-        height: 1024,
-        alt: 'Zétény Nagy',
-        type: 'image/jpeg',
       },
     ],
+    locale: 'en-US',
+    siteName: 'Zétény Nagy',
+    title: absoluteTitle ?? `${title} - Zétény Nagy`,
+    type: 'website',
+    url: `https://znagy.hu${path}`,
   },
 
   twitter: {
     card: 'summary',
-    title: absoluteTitle ?? `${title} - Zétény Nagy`,
     description,
     images: ['/me.jpg'],
+    title: absoluteTitle ?? `${title} - Zétény Nagy`,
   },
 
   icons: {

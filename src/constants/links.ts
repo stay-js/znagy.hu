@@ -1,45 +1,44 @@
 import {
+  IconBrandGithub,
+  IconBrandInstagram,
+  IconBrandX,
   IconMail,
   IconWorld,
-  IconBrandGithub,
-  IconBrandX,
-  IconBrandInstagram,
 } from '@tabler/icons-react';
 
 export const LINKS = [
   {
-    title: 'Connect with me',
     grid: false,
     links: [
       {
+        icon: IconWorld,
         label: 'Website',
         url: 'https://znagy.hu',
-        icon: IconWorld,
       },
       {
+        icon: IconBrandGithub,
         label: 'GitHub',
         url: 'https://github.com/stay-js',
-        icon: IconBrandGithub,
       },
       {
+        icon: IconBrandX,
         label: 'X (Twitter)',
         url: 'https://x.com/znagyy',
-        icon: IconBrandX,
       },
       {
+        icon: IconBrandInstagram,
         label: 'Instagram',
         url: 'https://www.instagram.com/zeteny_ngy',
-        icon: IconBrandInstagram,
       },
       {
+        icon: IconMail,
         label: 'E-mail',
         url: 'mailto:znagy@znagy.hu',
-        icon: IconMail,
       },
     ],
+    title: 'Connect with me',
   },
   {
-    title: 'Featured Projects',
     grid: true,
     links: [
       {
@@ -79,5 +78,6 @@ export const LINKS = [
         url: 'https://ratelimit.znagy.hu',
       },
     ],
+    title: 'Featured Projects',
   },
 ] as const;

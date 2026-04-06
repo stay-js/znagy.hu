@@ -1,16 +1,18 @@
-import Link from 'next/link';
 import { Briefcase, GraduationCap } from 'lucide-react';
-import { Card, CardHeader, CardTitle, CardContent } from '~/components/ui/card';
+import Link from 'next/link';
+
+import { Card, CardContent, CardHeader, CardTitle } from '~/components/ui/card';
+
 import { H2 } from './ui/h2';
 
 export const Experience: React.FC = () => (
-  <section id="experience" className="scroll-m-8 py-24">
+  <section className="scroll-m-8 py-24" id="experience">
     <div className="container flex flex-col gap-8">
       <H2>Experience</H2>
 
       <div className="flex flex-col gap-6">
         <div className="flex items-center gap-2">
-          <Briefcase size={20} className="text-muted-foreground" />
+          <Briefcase className="text-muted-foreground" size={20} />
           <h3 className="text-foreground text-2xl font-semibold">Work Experience</h3>
         </div>
 
@@ -25,10 +27,10 @@ export const Experience: React.FC = () => (
               <li>
                 Creation and maintenance of{' '}
                 <Link
-                  href="https://babaconstructioncorp.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="font-semibold underline-offset-4 hover:underline"
+                  href="https://babaconstructioncorp.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   babaconstructioncorp.com
                 </Link>{' '}
@@ -38,10 +40,10 @@ export const Experience: React.FC = () => (
               <li>
                 Creation and maintenance of{' '}
                 <Link
-                  href="https://tatabanyaultrahang.eu"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="font-semibold underline-offset-4 hover:underline"
+                  href="https://tatabanyaultrahang.eu"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   tatabanyaultrahang.eu
                 </Link>{' '}
@@ -51,19 +53,19 @@ export const Experience: React.FC = () => (
               <li>
                 Creation and maintenance of{' '}
                 <Link
-                  href="https://regale.hu"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="font-semibold underline-offset-4 hover:underline"
+                  href="https://regale.hu"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   regale.hu
                 </Link>{' '}
                 and{' '}
                 <Link
-                  href="https://admin.regale.hu"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="font-semibold underline-offset-4 hover:underline"
+                  href="https://admin.regale.hu"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   admin.regale.hu
                 </Link>{' '}
@@ -112,7 +114,7 @@ export const Experience: React.FC = () => (
 
       <div className="flex flex-col gap-6">
         <div className="flex items-center gap-2">
-          <GraduationCap size={20} className="text-muted-foreground" />
+          <GraduationCap className="text-muted-foreground" size={20} />
           <h3 className="text-foreground text-2xl font-semibold">Education</h3>
         </div>
 

@@ -1,6 +1,5 @@
 export const SKILLS = [
   {
-    title: 'Languages & Libraries',
     skills: [
       'JavaScript',
       'TypeScript',
@@ -21,9 +20,9 @@ export const SKILLS = [
       'Drizzle',
       'Express.js',
     ],
+    title: 'Languages & Libraries',
   },
   {
-    title: 'Styling & UI',
     skills: [
       'Tailwind CSS',
       'Headless UI',
@@ -35,9 +34,9 @@ export const SKILLS = [
       'CSS3',
       'HTML5',
     ],
+    title: 'Styling & UI',
   },
   {
-    title: 'Technologies',
     skills: [
       'Node.js',
       'NPM',
@@ -55,9 +54,9 @@ export const SKILLS = [
       'GitLab',
       'GitHub CI/CD',
     ],
+    title: 'Technologies',
   },
   {
-    title: 'Platforms & Cloud',
     skills: [
       'Vercel',
       'Netlify',
@@ -74,5 +73,6 @@ export const SKILLS = [
       'Serverless Framework',
       'Clerk',
     ],
+    title: 'Platforms & Cloud',
   },
 ] as const;

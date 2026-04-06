@@ -1,13 +1,13 @@
 import type { MetadataRoute } from 'next';
 
 const robots = (): MetadataRoute.Robots => ({
+  host: 'https://znagy.hu',
   rules: [
     {
-      userAgent: '*',
       allow: '/',
+      userAgent: '*',
     },
   ],
-  host: 'https://znagy.hu',
   sitemap: 'https://znagy.hu/sitemap.xml',
 });
 

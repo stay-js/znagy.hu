@@ -1,10 +1,12 @@
 import Link from 'next/link';
-import { Card, CardHeader, CardTitle, CardContent } from '~/components/ui/card';
-import { H2 } from './ui/h2';
+
+import { Card, CardContent, CardHeader, CardTitle } from '~/components/ui/card';
 import { FAVORITES } from '~/constants/favorites';
 
+import { H2 } from './ui/h2';
+
 export const About: React.FC = () => (
-  <section id="about" className="bg-muted/30 scroll-m-8 py-24">
+  <section className="bg-muted/30 scroll-m-8 py-24" id="about">
     <div className="container flex flex-col gap-8">
       <H2>About Me</H2>
 
@@ -13,10 +15,10 @@ export const About: React.FC = () => (
           <CardContent className="flex flex-col gap-4 leading-relaxed">
             <p>Glad you are here!</p>
             <p>
-              My name is Zétény Nagy, I'm from Budapest, Hungary, currently enrolled at{' '}
+              My name is Zétény Nagy, I&apos;m from Budapest, Hungary, currently enrolled at{' '}
               <Link
-                href="https://neumann.bmszc.hu"
                 className="font-semibold underline-offset-4 hover:underline"
+                href="https://neumann.bmszc.hu"
               >
                 BMSzC Neumann János Informatikai Technikum
               </Link>
@@ -32,8 +34,8 @@ export const About: React.FC = () => (
           </CardContent>
         </Card>
 
-        {FAVORITES.map(({ title, items }) => (
-          <Card key={title} className="gap-4">
+        {FAVORITES.map(({ items, title }) => (
+          <Card className="gap-4" key={title}>
             <CardHeader>
               <CardTitle>{title}</CardTitle>
             </CardHeader>

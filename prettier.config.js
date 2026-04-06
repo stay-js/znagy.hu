@@ -3,13 +3,13 @@
 const config = {
   plugins: ['prettier-plugin-tailwindcss'],
 
-  tabWidth: 2,
-  useTabs: false,
+  jsxSingleQuote: false,
+  printWidth: 100,
   semi: true,
   singleQuote: true,
-  jsxSingleQuote: false,
+  tabWidth: 2,
   trailingComma: 'all',
-  printWidth: 100,
+  useTabs: false,
 };
 
 export default config;

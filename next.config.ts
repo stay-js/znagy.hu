@@ -1,19 +1,19 @@
 import './src/env.js';
 
-import { type NextConfig } from 'next';
+import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   redirects() {
     return [
       {
-        source: '/resume',
         destination: '/#experience',
         permanent: true,
+        source: '/resume',
       },
       {
-        source: '/contact',
         destination: '/#contact',
         permanent: true,
+        source: '/contact',
       },
     ];
   },

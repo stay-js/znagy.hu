@@ -1,22 +1,22 @@
 export const NAV_ITEMS = [
   {
-    label: 'Home',
     href: '/',
+    label: 'Home',
   },
   {
-    label: 'Projects',
     href: '/#projects',
+    label: 'Projects',
   },
   {
-    label: 'Experience',
     href: '/#experience',
+    label: 'Experience',
   },
   {
-    label: 'Contact',
     href: '/#contact',
+    label: 'Contact',
   },
   {
-    label: 'Links',
     href: '/links',
+    label: 'Links',
   },
 ] as const;

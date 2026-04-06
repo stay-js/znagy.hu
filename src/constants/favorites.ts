@@ -1,14 +1,14 @@
 export const FAVORITES = [
   {
-    title: 'Favorite Stack',
     items: ['TypeScript', 'Next.js', 'tRPC', 'Clerk'],
+    title: 'Favorite Stack',
   },
   {
-    title: 'Backend',
     items: ['Drizzle', 'MySQL', 'Redis'],
+    title: 'Backend',
   },
   {
-    title: 'Styling',
     items: ['Tailwind CSS', 'shadcn/ui'],
+    title: 'Styling',
   },
 ] as const;

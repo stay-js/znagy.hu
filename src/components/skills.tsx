@@ -1,16 +1,17 @@
-import { Card, CardHeader, CardTitle, CardContent } from '~/components/ui/card';
-import { Badge } from './ui/badge';
-import { H2 } from './ui/h2';
+import { Card, CardContent, CardHeader, CardTitle } from '~/components/ui/card';
 import { SKILLS } from '~/constants/skills';
 
+import { Badge } from './ui/badge';
+import { H2 } from './ui/h2';
+
 export const Skills: React.FC = () => (
-  <section id="skills" className="bg-muted/30 scroll-m-8 py-24">
+  <section className="bg-muted/30 scroll-m-8 py-24" id="skills">
     <div className="container flex flex-col gap-8">
       <H2>Skills</H2>
 
       <div className="grid gap-6 md:grid-cols-2">
         {SKILLS.map((category) => (
-          <Card key={category.title} className="hover:border-foreground/50 transition-colors">
+          <Card className="hover:border-foreground/50 transition-colors" key={category.title}>
             <CardHeader>
               <CardTitle className="text-lg">
                 <h3>{category.title}</h3>
@@ -19,7 +20,7 @@ export const Skills: React.FC = () => (
 
             <CardContent className="flex flex-wrap gap-2">
               {category.skills.map((skill) => (
-                <Badge variant="secondary" key={skill}>
+                <Badge key={skill} variant="secondary">
                   {skill}
                 </Badge>
               ))}

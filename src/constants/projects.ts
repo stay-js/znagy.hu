@@ -1,9 +1,8 @@
 export const PROJECTS = [
   {
-    title: 'BABA Construction Corp.',
-    link: 'https://www.babaconstructioncorp.com/',
     description:
       'Marketing website for BABA Construction Corp. Built with TypeScript, Next.js, Tailwind CSS, shadcn/ui, React Hook Form, and Upstash Redis for rate limiting.',
+    link: 'https://www.babaconstructioncorp.com/',
     tags: [
       'TypeScript',
       'Next.js',
@@ -15,19 +14,19 @@ export const PROJECTS = [
       'Redis',
       'Vercel',
     ],
+    title: 'BABA Construction Corp.',
   },
   {
-    title: 'Tatabányai Ultrahang Centrum',
-    link: 'https://www.tatabanyaultrahang.eu',
     description:
       'Marketing website for Tatabányai Ultrahang Centrum. Built with TypeScript, Next.js, Tailwind CSS, and shadcn/ui.',
+    link: 'https://www.tatabanyaultrahang.eu',
     tags: ['TypeScript', 'Next.js', 'Tailwind CSS', 'shadcn/ui', 'Vercel'],
+    title: 'Tatabányai Ultrahang Centrum',
   },
   {
-    title: 'REGALE Energy Zrt.',
-    link: 'https://www.regale.hu',
     description:
       'Marketing website and admin dashboard for REGALE Energy Zrt. Built with Rust, TypeScript, Next.js, Tailwind CSS, MySQL and Upstash Redis for rate limiting.',
+    link: 'https://www.regale.hu',
     tags: [
       'Rust',
       'TypeScript',
@@ -46,19 +45,19 @@ export const PROJECTS = [
       'Vercel',
       'AWS Lambda',
     ],
+    title: 'REGALE Energy Zrt.',
   },
   {
-    title: 'Frontend Mentor',
-    link: 'https://www.frontendmentor.io/profile/stay-js',
     description:
       'Frontend Mentor offers invaluable real-world web development challenges, to sharpen HTML, CSS, and JavaScript skills.',
+    link: 'https://www.frontendmentor.io/profile/stay-js',
     tags: ['JavaScript', 'TypeScript', 'Next.js', 'Astro', 'Tailwind CSS', 'Headless UI'],
+    title: 'Frontend Mentor',
   },
   {
-    title: 'JobKeeper',
-    link: 'https://job-keeper.znagy.hu',
     description:
       'A powerful dashboard for managing all your jobs, tracking positions, and monitoring earnings. Built with TypeScript, Next.js, Tailwind CSS, shadcn/ui, React Hook Form, Clerk, tRPC, Drizzle and MySQL.',
+    link: 'https://job-keeper.znagy.hu',
     tags: [
       'TypeScript',
       'Next.js',
@@ -73,12 +72,12 @@ export const PROJECTS = [
       'Aiven',
       'Vercel',
     ],
+    title: 'JobKeeper',
   },
   {
-    title: 'Flashcards App',
-    link: 'https://flashcards.znagy.hu',
     description:
       'Quizlet-like flashcard app with GitHub authentication. Built with TypeScript, Next.js, Tailwind CSS, Headless UI, React Hook Form, tRPC, Prisma and MySQL.',
+    link: 'https://flashcards.znagy.hu',
     tags: [
       'TypeScript',
       'Next.js',
@@ -93,12 +92,12 @@ export const PROJECTS = [
       'Aiven',
       'Vercel',
     ],
+    title: 'Flashcards App',
   },
   {
-    title: 'Todo App',
-    link: 'https://todo.znagy.hu',
     description:
       'Todo app with GitHub authentication. Built with TypeScript, Next.js, Tailwind CSS, Headless UI, tRPC, Prisma, MySQL, and Upstash Redis for rate limiting.',
+    link: 'https://todo.znagy.hu',
     tags: [
       'TypeScript',
       'Next.js',
@@ -112,12 +111,13 @@ export const PROJECTS = [
       'Aiven',
       'Vercel',
     ],
+    title: 'Todo App',
   },
   {
-    title: 'Stay Random',
-    link: 'https://random.znagy.hu',
     description:
       'Random generator for CUIDs, GUIDs, UUIDs, numbers, colors, and more. Built with Next.js and Tailwind CSS.',
+    link: 'https://random.znagy.hu',
     tags: ['TypeScript', 'Next.js', 'Tailwind CSS', 'Vercel'],
+    title: 'Stay Random',
   },
 ] as const;
