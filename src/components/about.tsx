@@ -6,7 +6,7 @@ import { FAVORITES } from '~/constants/favorites';
 
 export function About() {
   return (
-    <section className="bg-muted/30 scroll-m-8 py-24" id="about">
+    <section className="dark:bg-muted/30 bg-input/30 scroll-m-8 py-24" id="about">
       <div className="container flex flex-col gap-8">
         <H2>About Me</H2>
 

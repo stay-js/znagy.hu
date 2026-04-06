@@ -63,7 +63,7 @@ export function Contact() {
   }, [isSubmitSuccessful, reset]);
 
   return (
-    <section className="bg-muted/30 scroll-m-8 py-24" id="contact">
+    <section className="dark:bg-muted/30 bg-input/30 scroll-m-8 py-24" id="contact">
       <div className="container flex flex-col gap-8">
         <div className="flex flex-col gap-2">
           <H2>Get In Touch</H2>

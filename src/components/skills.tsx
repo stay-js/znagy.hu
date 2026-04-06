@@ -5,7 +5,7 @@ import { SKILLS } from '~/constants/skills';
 
 export function Skills() {
   return (
-    <section className="bg-muted/30 scroll-m-8 py-24" id="skills">
+    <section className="dark:bg-muted/30 bg-input/30 scroll-m-8 py-24" id="skills">
       <div className="container flex flex-col gap-8">
         <H2>Skills</H2>
 
