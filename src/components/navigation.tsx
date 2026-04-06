@@ -30,7 +30,7 @@ export function Navigation() {
           : '-translate-y-full bg-transparent',
       )}
     >
-      <div className="flex items-center justify-between px-6 py-4">
+      <div className="flex items-center justify-between px-6 py-3.5">
         <ThemeToggleButton />
 
         <nav className="hidden items-center gap-6 lg:flex">
@@ -40,27 +40,27 @@ export function Navigation() {
         </nav>
 
         <button
-          className="size-6 cursor-pointer lg:hidden"
+          className="size-4 cursor-pointer lg:hidden"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           title="Toggle Hamburger"
           type="button"
         >
           <span
             className={cn(
-              'absolute block h-0.5 w-6 bg-current transition-all duration-300',
-              isMobileMenuOpen ? 'rotate-45' : '-translate-y-2',
+              'bg-foreground absolute block h-[1.5px] w-4 transition-all duration-300',
+              isMobileMenuOpen ? 'rotate-45' : '-translate-y-1.5',
             )}
           />
           <span
             className={cn(
-              'absolute block h-0.5 w-4 bg-current transition-all duration-300',
+              'bg-foreground absolute block h-[1.5px] w-3 transition-all duration-300',
               isMobileMenuOpen && 'opacity-0',
             )}
           />
           <span
             className={cn(
-              'absolute block h-0.5 bg-current transition-all duration-300',
-              isMobileMenuOpen ? 'w-6 -rotate-45' : 'w-2 translate-y-2',
+              'bg-foreground absolute block h-[1.5px] transition-all duration-300',
+              isMobileMenuOpen ? 'w-4 -rotate-45' : 'w-1.5 translate-y-1.5',
             )}
           />
         </button>
