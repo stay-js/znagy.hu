@@ -1,10 +1,13 @@
+import '~/styles/globals.css';
+
 import type { Viewport } from 'next/types';
-import { Geist } from 'next/font/google';
+import { Geist, Geist_Mono } from 'next/font/google';
 import { ThemeProvider } from 'next-themes';
+import { Suspense } from 'react';
+
 import { Toaster } from '~/components/ui/sonner';
 import { Navigation } from '~/components/navigation';
-
-import '~/styles/globals.css';
+import { cn } from '~/lib/utils';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -12,29 +15,41 @@ export const viewport: Viewport = {
   colorScheme: 'dark light',
 };
 
-const geist = Geist({
+const fontSans = Geist({
   subsets: ['latin-ext'],
-  variable: '--font-geist-sans',
+  variable: '--font-sans',
 });
 
-const RootLayout: React.FC<Readonly<{ children: React.ReactNode }>> = ({ children }) => (
-  <html lang="en" className={`${geist.variable} scroll-smooth`} suppressHydrationWarning>
-    <body className="overflow-x-hidden antialiased">
-      <ThemeProvider
-        storageKey="theme"
-        defaultTheme="dark"
-        attribute="class"
-        enableColorScheme
-        disableTransitionOnChange
-      >
-        <Navigation />
+const fontMono = Geist_Mono({
+  subsets: ['latin-ext'],
+  variable: '--font-mono',
+});
 
-        <main>{children}</main>
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html
+      lang="en"
+      className={cn(fontMono.variable, 'font-sans', fontSans.variable)}
+      data-scroll-behavior="smooth"
+      suppressHydrationWarning
+    >
+      <body className="overflow-x-hidden antialiased">
+        <ThemeProvider
+          storageKey="theme"
+          defaultTheme="dark"
+          attribute="class"
+          enableColorScheme
+          disableTransitionOnChange
+        >
+          <Navigation />
 
-        <Toaster position="top-left" />
-      </ThemeProvider>
-    </body>
-  </html>
-);
+          <main>
+            <Suspense>{children}</Suspense>
+          </main>
 
-export default RootLayout;
+          <Toaster position="top-left" />
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}
