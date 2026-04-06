@@ -1,37 +1,32 @@
-import {
-  IconBrandGithub,
-  IconBrandInstagram,
-  IconBrandX,
-  IconMail,
-  IconWorld,
-} from '@tabler/icons-react';
+import { SiGithub, SiInstagram, SiX } from '@icons-pack/react-simple-icons';
+import { Globe, Mail } from 'lucide-react';
 
 export const LINKS = [
   {
     grid: false,
     links: [
       {
-        icon: IconWorld,
+        icon: Globe,
         label: 'Website',
         url: 'https://znagy.hu',
       },
       {
-        icon: IconBrandGithub,
+        icon: SiGithub,
         label: 'GitHub',
         url: 'https://github.com/stay-js',
       },
       {
-        icon: IconBrandX,
+        icon: SiX,
         label: 'X (Twitter)',
         url: 'https://x.com/znagyy',
       },
       {
-        icon: IconBrandInstagram,
+        icon: SiInstagram,
         label: 'Instagram',
         url: 'https://www.instagram.com/zeteny_ngy',
       },
       {
-        icon: IconMail,
+        icon: Mail,
         label: 'E-mail',
         url: 'mailto:znagy@znagy.hu',
       },

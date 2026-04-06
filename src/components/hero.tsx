@@ -1,4 +1,5 @@
-import { IconBrandGithub, IconBrandInstagram, IconMail } from '@tabler/icons-react';
+import { SiGithub, SiInstagram } from '@icons-pack/react-simple-icons';
+import { Mail } from 'lucide-react';
 import Link from 'next/link';
 
 import { Button } from '~/components/ui/button';
@@ -15,7 +16,7 @@ export function Hero() {
         </p>
       </div>
 
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-8">
         <div className="flex flex-wrap gap-4">
           <Button asChild size="lg">
             <Link href="/#contact">Get In Touch</Link>
@@ -30,17 +31,17 @@ export function Hero() {
           {[
             {
               href: 'https://github.com/stay-js',
-              icon: IconBrandGithub,
+              icon: SiGithub,
               label: 'GitHub',
             },
             {
               href: 'https://instagram.com/zeteny_ngy',
-              icon: IconBrandInstagram,
+              icon: SiInstagram,
               label: 'Instagram',
             },
             {
               href: 'mailto:znagy@znagy.hu',
-              icon: IconMail,
+              icon: Mail,
               label: 'Email',
             },
           ].map((item) => (
@@ -51,7 +52,7 @@ export function Hero() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <item.icon size={24} />
+              <item.icon className="size-5.5" />
               <span className="sr-only">{item.label}</span>
             </Link>
           ))}

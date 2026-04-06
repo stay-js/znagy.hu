@@ -58,7 +58,7 @@ function Item(item: (typeof LINKS)[number]['links'][number]) {
         <Link href={item.url} rel="noopener noreferrer" target="_blank">
           {'icon' in item && (
             <span className="text-muted-foreground group-hover:text-foreground transition-colors duration-200">
-              <item.icon size={20} />
+              <item.icon className="size-4" />
             </span>
           )}
 
