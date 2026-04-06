@@ -2,11 +2,11 @@ import '~/styles/globals.css';
 
 import type { Viewport } from 'next/types';
 
-import { ThemeProvider } from 'next-themes';
 import { Geist, Geist_Mono } from 'next/font/google';
 import { Suspense } from 'react';
 
 import { Navigation } from '~/components/navigation';
+import { ThemeProvider } from '~/components/theme-provider';
 import { Toaster } from '~/components/ui/sonner';
 import { cn } from '~/lib/utils';
 
@@ -35,13 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       suppressHydrationWarning
     >
       <body className="overflow-x-hidden antialiased">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          disableTransitionOnChange
-          enableColorScheme
-          storageKey="theme"
-        >
+        <ThemeProvider>
           <Navigation />
 
           <main>
