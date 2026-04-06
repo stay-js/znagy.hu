@@ -17,9 +17,9 @@ import { Textarea } from '~/components/ui/textarea';
 import { env } from '~/env.js';
 
 const formSchema = z.object({
-  email: z.email('Invalid email address!'),
-  message: z.string().min(1, 'Message is required!'),
-  name: z.string().min(1, 'Name is required!'),
+  email: z.email({ error: 'Invalid email address!' }),
+  message: z.string().min(1, { error: 'Message is required!' }),
+  name: z.string().min(1, { error: 'Name is required!' }),
 });
 
 type FormSchema = z.infer<typeof formSchema>;
