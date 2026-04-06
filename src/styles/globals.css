@@ -119,6 +119,15 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  html {
+    @apply scroll-smooth font-sans;
+  }
+
+  button:not([disabled]),
+  [role='button']:not([disabled]) {
+    @apply cursor-pointer;
+  }
 }
 
 @utility container {
