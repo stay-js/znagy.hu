@@ -1,54 +1,55 @@
 import Link from 'next/link';
 
 import { Card, CardContent, CardHeader, CardTitle } from '~/components/ui/card';
+import { H2 } from '~/components/ui/h2';
 import { FAVORITES } from '~/constants/favorites';
 
-import { H2 } from './ui/h2';
+export function About() {
+  return (
+    <section className="bg-muted/30 scroll-m-8 py-24" id="about">
+      <div className="container flex flex-col gap-8">
+        <H2>About Me</H2>
 
-export const About: React.FC = () => (
-  <section className="bg-muted/30 scroll-m-8 py-24" id="about">
-    <div className="container flex flex-col gap-8">
-      <H2>About Me</H2>
-
-      <div className="grid gap-4 md:grid-cols-3">
-        <Card className="md:col-span-3">
-          <CardContent className="flex flex-col gap-4 leading-relaxed">
-            <p>Glad you are here!</p>
-            <p>
-              My name is Zétény Nagy, I&apos;m from Budapest, Hungary, currently enrolled at{' '}
-              <Link
-                className="font-semibold underline-offset-4 hover:underline"
-                href="https://neumann.bmszc.hu"
-              >
-                BMSzC Neumann János Informatikai Technikum
-              </Link>
-              .
-            </p>
-            <p>
-              My interest in web development started long ago, back in my early elementary school
-              days. Mathematics has been my favorite subject since the first grade of elementary
-              school. Additionally, I have a deep passion for Kyokushin Karate and Muay Thai. I aim
-              to enhance both my coding and fighting skills, with the goal of becoming a full-time
-              full-stack web developer.
-            </p>
-          </CardContent>
-        </Card>
-
-        {FAVORITES.map(({ items, title }) => (
-          <Card className="gap-4" key={title}>
-            <CardHeader>
-              <CardTitle>{title}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="flex flex-col gap-1 text-sm">
-                {items.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
+        <div className="grid gap-4 md:grid-cols-3">
+          <Card className="md:col-span-3">
+            <CardContent className="flex flex-col gap-4 leading-relaxed">
+              <p>Glad you are here!</p>
+              <p>
+                My name is Zétény Nagy, I&apos;m from Budapest, Hungary, currently enrolled at{' '}
+                <Link
+                  className="font-semibold underline-offset-4 hover:underline"
+                  href="https://neumann.bmszc.hu"
+                >
+                  BMSzC Neumann János Informatikai Technikum
+                </Link>
+                .
+              </p>
+              <p>
+                My interest in web development started long ago, back in my early elementary school
+                days. Mathematics has been my favorite subject since the first grade of elementary
+                school. Additionally, I have a deep passion for Kyokushin Karate and Muay Thai. I
+                aim to enhance both my coding and fighting skills, with the goal of becoming a
+                full-time full-stack web developer.
+              </p>
             </CardContent>
           </Card>
-        ))}
+
+          {FAVORITES.map(({ items, title }) => (
+            <Card className="gap-4" key={title}>
+              <CardHeader>
+                <CardTitle>{title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="flex flex-col gap-1 text-sm">
+                  {items.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+}

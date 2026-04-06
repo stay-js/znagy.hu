@@ -13,15 +13,15 @@ export const metadata = createMetadata({
   title: 'Home',
 });
 
-const Page: React.FC = () => (
-  <>
-    <Hero />
-    <About />
-    <Projects />
-    <Skills />
-    <Experience />
-    <Contact />
-  </>
-);
-
-export default Page;
+export default function LandingPage() {
+  return (
+    <>
+      <Hero />
+      <About />
+      <Projects />
+      <Skills />
+      <Experience />
+      <Contact />
+    </>
+  );
+}

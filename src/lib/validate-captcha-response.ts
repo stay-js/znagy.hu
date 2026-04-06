@@ -4,7 +4,7 @@ import { env } from '~/env.js';
 
 const responseSchema = z.object({ success: z.boolean() });
 
-export const validateCaptchaResponse = async (token: string) => {
+export async function validateCaptchaResponse(token: string) {
   const url = new URL('https://www.google.com/recaptcha/api/siteverify');
   url.searchParams.set('secret', env.RECAPTCHA_SECRET_KEY);
   url.searchParams.set('response', token);
@@ -19,4 +19,4 @@ export const validateCaptchaResponse = async (token: string) => {
     console.error(error);
     return false;
   }
-};
+}

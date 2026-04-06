@@ -10,39 +10,7 @@ import { NAV_ITEMS } from '~/constants/nav-items';
 import { useMounted } from '~/hooks/use-mounted';
 import { cn } from '~/lib/utils';
 
-const ThemeToggleButton: React.FC = () => {
-  const mounted = useMounted();
-  const { resolvedTheme, setTheme } = useTheme();
-
-  if (!mounted) return <div />;
-
-  return (
-    <Button
-      onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
-      size="icon"
-      title={`Switch to ${resolvedTheme === 'dark' ? 'light' : 'dark'} theme`}
-      type="button"
-      variant="ghost"
-    >
-      {resolvedTheme === 'dark' ? <Sun size={22} /> : <Moon size={22} />}
-    </Button>
-  );
-};
-
-const Item: React.FC<{ onClick?: () => void } & (typeof NAV_ITEMS)[number]> = ({
-  href,
-  label,
-  onClick,
-}) => (
-  <Link
-    className="text-foreground/70 hover:text-foreground transition-colors"
-    href={href}
-    onClick={onClick}
-  >
-    {label}
-  </Link>
-);
-export const Navigation: React.FC = () => {
+export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -109,4 +77,35 @@ export const Navigation: React.FC = () => {
       )}
     </header>
   );
-};
+}
+
+function Item({ href, label, onClick }: { onClick?: () => void } & (typeof NAV_ITEMS)[number]) {
+  return (
+    <Link
+      className="text-foreground/70 hover:text-foreground transition-colors"
+      href={href}
+      onClick={onClick}
+    >
+      {label}
+    </Link>
+  );
+}
+
+function ThemeToggleButton() {
+  const mounted = useMounted();
+  const { resolvedTheme, setTheme } = useTheme();
+
+  if (!mounted) return <div />;
+
+  return (
+    <Button
+      onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
+      size="icon"
+      title={`Switch to ${resolvedTheme === 'dark' ? 'light' : 'dark'} theme`}
+      type="button"
+      variant="ghost"
+    >
+      {resolvedTheme === 'dark' ? <Sun size={22} /> : <Moon size={22} />}
+    </Button>
+  );
+}

@@ -30,7 +30,7 @@ const defaultValues = {
   name: '',
 } satisfies FormSchema;
 
-export const Contact: React.FC = () => {
+export function Contact() {
   const captchaRef = useRef<ReCAPTCHA>(null);
 
   const {
@@ -161,4 +161,4 @@ export const Contact: React.FC = () => {
       </div>
     </section>
   );
-};
+}
