@@ -4,7 +4,7 @@ export const FAVORITES = [
     title: 'Favorite Stack',
   },
   {
-    items: ['Drizzle', 'MySQL', 'Redis'],
+    items: ['Drizzle', 'PostgreSQL', 'Redis'],
     title: 'Backend',
   },
   {
