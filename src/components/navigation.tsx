@@ -1,13 +1,10 @@
 'use client';
 
-import { Moon, Sun } from 'lucide-react';
-import { useTheme } from 'next-themes';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
-import { Button } from '~/components/ui/button';
+import { ThemeToggler } from '~/components/theme-toggler';
 import { NAV_ITEMS } from '~/constants/nav-items';
-import { useMounted } from '~/hooks/use-mounted';
 import { cn } from '~/lib/utils';
 
 export function Navigation() {
@@ -31,7 +28,7 @@ export function Navigation() {
       )}
     >
       <div className="flex items-center justify-between px-6 py-3.5">
-        <ThemeToggleButton />
+        <ThemeToggler />
 
         <nav className="hidden items-center gap-6 lg:flex">
           {NAV_ITEMS.map((item) => (
@@ -88,24 +85,5 @@ function Item({ href, label, onClick }: { onClick?: () => void } & (typeof NAV_I
     >
       {label}
     </Link>
-  );
-}
-
-function ThemeToggleButton() {
-  const mounted = useMounted();
-  const { resolvedTheme, setTheme } = useTheme();
-
-  if (!mounted) return <div />;
-
-  return (
-    <Button
-      onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
-      size="icon"
-      title={`Switch to ${resolvedTheme === 'dark' ? 'light' : 'dark'} theme`}
-      type="button"
-      variant="ghost"
-    >
-      {resolvedTheme === 'dark' ? <Sun className="size-4.5" /> : <Moon className="size-4.5" />}
-    </Button>
   );
 }
