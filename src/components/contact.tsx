@@ -3,17 +3,15 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useCallback, useEffect, useRef } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
-import { Controller, useForm } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 import { z } from 'zod';
 
 import sendEmail from '~/app/contact/actions';
+import { FormInput, FormTextarea } from '~/components/form';
 import { Button } from '~/components/ui/button';
 import { Card, CardContent } from '~/components/ui/card';
-import { Field, FieldError, FieldGroup, FieldLabel } from '~/components/ui/field';
 import { H2 } from '~/components/ui/h2';
-import { Input } from '~/components/ui/input';
-import { Textarea } from '~/components/ui/textarea';
 import { env } from '~/env.js';
 
 const formSchema = z.object({
@@ -75,76 +73,23 @@ export function Contact() {
 
         <Card>
           <CardContent>
-            <form className="flex flex-col gap-6" onSubmit={handleFormSubmit}>
-              <FieldGroup>
-                <Controller
-                  control={control}
-                  name="name"
-                  render={({ field, fieldState }) => (
-                    <Field data-invalid={fieldState.invalid}>
-                      <div className="flex flex-wrap justify-between gap-4">
-                        <FieldLabel htmlFor="name">Name</FieldLabel>
-                        {fieldState.invalid && <FieldError errors={[fieldState.error]} />}
-                      </div>
+            <form className="flex flex-col gap-4" onSubmit={handleFormSubmit}>
+              <FormInput control={control} label="Name" name="name" placeholder="John Doe" />
 
-                      <Input
-                        {...field}
-                        aria-invalid={fieldState.invalid}
-                        className="bg-background border-border text-foreground"
-                        id="name"
-                        placeholder="Your name"
-                        type="text"
-                      />
-                    </Field>
-                  )}
-                />
-              </FieldGroup>
+              <FormInput
+                control={control}
+                label="Email"
+                name="email"
+                placeholder="example@domain.com"
+              />
 
-              <FieldGroup>
-                <Controller
-                  control={control}
-                  name="email"
-                  render={({ field, fieldState }) => (
-                    <Field data-invalid={fieldState.invalid}>
-                      <div className="flex flex-wrap justify-between gap-4">
-                        <FieldLabel htmlFor="email">Email</FieldLabel>
-                        {fieldState.invalid && <FieldError errors={[fieldState.error]} />}
-                      </div>
-
-                      <Input
-                        {...field}
-                        aria-invalid={fieldState.invalid}
-                        id="email"
-                        placeholder="example@domain.com"
-                        type="text"
-                      />
-                    </Field>
-                  )}
-                />
-              </FieldGroup>
-
-              <FieldGroup>
-                <Controller
-                  control={control}
-                  name="message"
-                  render={({ field, fieldState }) => (
-                    <Field data-invalid={fieldState.invalid}>
-                      <div className="flex flex-wrap justify-between gap-4">
-                        <FieldLabel htmlFor="message">Message</FieldLabel>
-                        {fieldState.invalid && <FieldError errors={[fieldState.error]} />}
-                      </div>
-
-                      <Textarea
-                        {...field}
-                        aria-invalid={fieldState.invalid}
-                        id="message"
-                        placeholder="Please try to describe your message in detail..."
-                        rows={6}
-                      />
-                    </Field>
-                  )}
-                />
-              </FieldGroup>
+              <FormTextarea
+                className="min-h-30"
+                control={control}
+                label="Message"
+                name="message"
+                placeholder="Please try to describe your message in detail..."
+              />
 
               <ReCAPTCHA
                 ref={captchaRef}
@@ -152,7 +97,7 @@ export function Contact() {
                 size="invisible"
               />
 
-              <Button className="w-full" size="lg" type="submit">
+              <Button className="sm:w-fit sm:self-end" type="submit">
                 Send Message
               </Button>
             </form>
