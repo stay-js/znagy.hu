@@ -12,6 +12,7 @@ import { FormInput, FormTextarea } from '~/components/form';
 import { Button } from '~/components/ui/button';
 import { Card, CardContent } from '~/components/ui/card';
 import { H2 } from '~/components/ui/h2';
+import { Spinner } from '~/components/ui/spinner';
 import { env } from '~/env.js';
 
 const formSchema = z.object({
@@ -33,7 +34,7 @@ export function Contact() {
 
   const {
     control,
-    formState: { isSubmitSuccessful },
+    formState: { isSubmitSuccessful, isSubmitting },
     handleSubmit,
     reset,
   } = useForm<FormSchema>({ defaultValues, resolver: zodResolver(formSchema) });
@@ -46,11 +47,13 @@ export function Contact() {
 
         if (!token) return;
 
-        toast.promise(sendEmail({ ...data, token }), {
-          error: () => 'Something went wrong. Please try again later.',
-          loading: 'Sending message...',
-          success: () => 'Message sent successfully! I will get back to you as soon as possible.',
-        });
+        try {
+          await sendEmail({ ...data, token });
+          toast.success('Message sent successfully! I will get back to you as soon as possible.');
+        } catch (err) {
+          toast.error('Something went wrong. Please try again later.');
+          throw err;
+        }
       })(e);
     },
     [handleSubmit],
@@ -97,8 +100,9 @@ export function Contact() {
                 size="invisible"
               />
 
-              <Button className="sm:w-fit sm:self-end" type="submit">
-                Send Message
+              <Button className="sm:w-fit sm:self-end" disabled={isSubmitting} type="submit">
+                {isSubmitting && <Spinner />}
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </Button>
             </form>
           </CardContent>
