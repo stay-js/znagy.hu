@@ -1,4 +1,4 @@
-import { Briefcase, GraduationCap } from 'lucide-react';
+import { Briefcase, FileBadge, GraduationCap } from 'lucide-react';
 import Link from 'next/link';
 
 import { Card, CardContent, CardHeader, CardTitle } from '~/components/ui/card';
@@ -183,6 +183,68 @@ export function Experience() {
                 <p className="text-card-foreground">Újlaki Általános Iskola</p>
                 <p className="text-muted-foreground text-sm">
                   Ürömi utca 64, 1023, Budapest, Hungary
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-6">
+          <div className="flex items-center gap-2">
+            <FileBadge className="text-muted-foreground size-5" />
+            <h3 className="text-foreground text-2xl font-semibold">
+              Certifications & Qualifications
+            </h3>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-1">
+            <Card>
+              <CardHeader className="flex items-center justify-between gap-4">
+                <CardTitle>Programtervező informatikus BSc / Computer Science</CardTitle>
+                <span className="text-muted-foreground text-sm">2026 - Current</span>
+              </CardHeader>
+
+              <CardContent className="flex flex-col gap-2">
+                <p className="text-card-foreground">ELTE Informatikai Kar</p>
+                <p className="text-muted-foreground text-sm">
+                  Pázmány Péter sétány 1/C, 1117, Budapest, Hungary
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader className="flex items-center justify-between gap-4">
+                <CardTitle>
+                  Multimédia fejlesztő és Webdesigner / Multimedia Developer and Web Designer
+                </CardTitle>
+                <span className="text-muted-foreground text-sm">2026 - Current</span>
+              </CardHeader>
+
+              <CardContent className="flex flex-col gap-2">
+                <p className="text-card-foreground">International Education Centre</p>
+                <p className="text-muted-foreground text-sm">
+                  Hunyadi tér 24/A, 6724, Szeged, Hungary
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader className="flex items-center justify-between gap-4">
+                <CardTitle className="flex flex-col gap-2">
+                  <p>
+                    Okleveles Szoftverfejlesztő és -tesztelő (Óbudai Egyetem) / Software Engineer
+                  </p>
+                  <p className="text-muted-foreground text-sm">
+                    Duális képzés / Dual training: Szalézi Ágazati Képzőközpont, DevCorner Kft.
+                  </p>
+                </CardTitle>
+                <span className="text-muted-foreground text-sm">2021 - 2026</span>
+              </CardHeader>
+
+              <CardContent className="flex flex-col gap-2">
+                <p className="text-card-foreground">BMSzC Neumann János Informatikai Technikum</p>
+                <p className="text-muted-foreground text-sm">
+                  Kerepesi út 124, 1144, Budapest, Hungary
                 </p>
               </CardContent>
             </Card>
