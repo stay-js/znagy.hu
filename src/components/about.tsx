@@ -15,12 +15,13 @@ export function About() {
             <CardContent className="flex flex-col gap-4 leading-relaxed">
               <p>Glad you are here!</p>
               <p>
-                My name is Zétény Nagy, I&apos;m from Budapest, Hungary, currently enrolled at{' '}
+                I&apos;m Zétény Nagy, a Budapest-based developer soon starting my Computer Science
+                BSc at{' '}
                 <Link
                   className="font-semibold underline-offset-4 hover:underline"
-                  href="https://neumann.bmszc.hu"
+                  href="https://www.inf.elte.hu/"
                 >
-                  BMSzC Neumann János Informatikai Technikum
+                  ELTE IK
                 </Link>
                 .
               </p>

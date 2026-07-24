@@ -147,8 +147,22 @@ export function Experience() {
           <div className="grid gap-6 md:grid-cols-2">
             <Card>
               <CardHeader className="flex items-center justify-between gap-4">
+                <CardTitle>University</CardTitle>
+                <span className="text-muted-foreground text-sm">2026 - Current</span>
+              </CardHeader>
+
+              <CardContent className="flex flex-col gap-2">
+                <p className="text-card-foreground">ELTE Informatikai Kar</p>
+                <p className="text-muted-foreground text-sm">
+                  Pázmány Péter sétány 1/C, 1117, Budapest, Hungary
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader className="flex items-center justify-between gap-4">
                 <CardTitle>High School</CardTitle>
-                <span className="text-muted-foreground text-sm">2021 - Present</span>
+                <span className="text-muted-foreground text-sm">2021 - 2026</span>
               </CardHeader>
 
               <CardContent className="flex flex-col gap-2">

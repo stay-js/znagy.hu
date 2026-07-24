@@ -11,8 +11,9 @@ export function Hero() {
         <h1 className="text-foreground text-5xl font-bold text-balance md:text-7xl">Zétény Nagy</h1>
         <h2 className="text-muted-foreground text-xl md:text-2xl">Full-stack Developer</h2>
         <p className="text-muted-foreground max-w-2xl text-lg leading-relaxed">
-          I build digital experiences with modern technologies and thoughtful engineering. Currently
-          studying at BMSzC Neumann János Informatikai Technikum in Budapest, Hungary.
+          I build digital experiences with modern technologies and thoughtful engineering. I
+          recently graduated from BMSzC Neumann János Informatikai Technikum, and I&apos;m heading
+          to ELTE Informatikai Kar next to continue my studies.
         </p>
       </div>
 
