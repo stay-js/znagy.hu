@@ -18,10 +18,25 @@ export const PROJECTS = [
   },
   {
     description:
-      'Marketing website for Tatabányai Ultrahang Centrum. Built with TypeScript, Next.js, Tailwind CSS, and shadcn/ui.',
-    link: 'https://www.tatabanyaultrahang.eu',
-    tags: ['TypeScript', 'Next.js', 'Tailwind CSS', 'shadcn/ui', 'Vercel'],
-    title: 'Tatabányai Ultrahang Centrum',
+      'A recipe app that helps you find the perfect dish based on whatever ingredients you already have at home - like a dating app, but for recipes. Built with TypeScript, Next.js, Tailwind CSS, shadcn/ui, React Hook Form, drizzle, PostgreSQL.',
+    link: 'https://find-your-dinner.znagy.hu/',
+    tags: [
+      'TypeScript',
+      'Next.js',
+      'Tailwind CSS',
+      'shadcn/ui',
+      'React Hook Form',
+      'Zod',
+      'Framer Motion',
+      'PostgreSQL',
+      'Drizzle',
+      'Clerk',
+      'Vitest',
+      'Playwright',
+      'PlanetScale',
+      'Vercel',
+    ],
+    title: 'Find Your Dinner.',
   },
   {
     description:
@@ -53,6 +68,13 @@ export const PROJECTS = [
     link: 'https://www.frontendmentor.io/profile/stay-js',
     tags: ['JavaScript', 'TypeScript', 'Next.js', 'Astro', 'Tailwind CSS', 'Headless UI'],
     title: 'Frontend Mentor',
+  },
+  {
+    description:
+      'Marketing website for Tatabányai Ultrahang Centrum. Built with TypeScript, Next.js, Tailwind CSS, and shadcn/ui.',
+    link: 'https://www.tatabanyaultrahang.eu',
+    tags: ['TypeScript', 'Next.js', 'Tailwind CSS', 'shadcn/ui', 'Vercel'],
+    title: 'Tatabányai Ultrahang Centrum',
   },
   {
     description:
@@ -112,12 +134,5 @@ export const PROJECTS = [
       'Vercel',
     ],
     title: 'Todo App',
-  },
-  {
-    description:
-      'Random generator for CUIDs, GUIDs, UUIDs, numbers, colors, and more. Built with Next.js and Tailwind CSS.',
-    link: 'https://random.znagy.hu',
-    tags: ['TypeScript', 'Next.js', 'Tailwind CSS', 'Vercel'],
-    title: 'Stay Random',
   },
 ] as const;
