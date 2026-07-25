@@ -3,6 +3,7 @@ import { Contact } from '~/components/contact';
 import { Experience } from '~/components/expreience';
 import { Hero } from '~/components/hero';
 import { Projects } from '~/components/projects';
+import { ScrollHint } from '~/components/scroll-hint';
 import { Skills } from '~/components/skills';
 import { createMetadata } from '~/lib/create-metadata';
 
@@ -22,6 +23,8 @@ export default function LandingPage() {
       <Skills />
       <Experience />
       <Contact />
+
+      <ScrollHint />
     </>
   );
 }

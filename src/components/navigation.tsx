@@ -1,22 +1,17 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import { ThemeToggler } from '~/components/theme-toggler';
 import { NAV_ITEMS } from '~/constants/nav-items';
+import { useIsScrolled } from '~/hooks/use-is-scrolled';
 import { cn } from '~/lib/utils';
 
 export function Navigation() {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const isScrolled = useIsScrolled();
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 30);
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
     <header
