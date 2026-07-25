@@ -57,6 +57,10 @@ export const LINKS = [
         url: 'https://job-keeper.znagy.hu',
       },
       {
+        label: 'Find Your Dinner.',
+        url: 'https://find-your-dinner.znagy.hu',
+      },
+      {
         label: 'Flashcards App',
         url: 'https://flashcards.znagy.hu',
       },
