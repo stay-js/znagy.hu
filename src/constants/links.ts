@@ -73,7 +73,7 @@ export const LINKS = [
         url: 'https://todo.znagy.hu',
       },
       {
-        label: 'Rate Limiter',
+        label: 'Rate Limit Test',
         url: 'https://ratelimit.znagy.hu',
       },
     ],
