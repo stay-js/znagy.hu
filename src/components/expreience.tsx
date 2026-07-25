@@ -148,8 +148,8 @@ export function Experience() {
             <Card>
               <CardHeader className="flex items-center justify-between gap-4">
                 <CardTitle>University</CardTitle>
-                <span className="text-muted-foreground text-sm whitespace-nowrap">
-                  2026 - Current
+                <span className="text-muted-foreground text-right text-sm">
+                  <span className="whitespace-nowrap">2026 -</span> Current
                 </span>
               </CardHeader>
 
@@ -164,7 +164,9 @@ export function Experience() {
             <Card>
               <CardHeader className="flex items-center justify-between gap-4">
                 <CardTitle>High School</CardTitle>
-                <span className="text-muted-foreground text-sm whitespace-nowrap">2021 - 2026</span>
+                <span className="text-muted-foreground text-right text-sm">
+                  <span className="whitespace-nowrap">2021 -</span> 2026
+                </span>
               </CardHeader>
 
               <CardContent className="flex flex-col gap-2">
@@ -178,7 +180,9 @@ export function Experience() {
             <Card>
               <CardHeader className="flex items-center justify-between gap-4">
                 <CardTitle>Elementary School</CardTitle>
-                <span className="text-muted-foreground text-sm whitespace-nowrap">2013 - 2021</span>
+                <span className="text-muted-foreground text-right text-sm">
+                  <span className="whitespace-nowrap">2013 -</span> 2021
+                </span>
               </CardHeader>
 
               <CardContent className="flex flex-col gap-2">
@@ -203,8 +207,8 @@ export function Experience() {
             <Card>
               <CardHeader className="flex items-center justify-between gap-4">
                 <CardTitle>Programtervező informatikus BSc / Computer Science BSc</CardTitle>
-                <span className="text-muted-foreground text-sm whitespace-nowrap">
-                  2026 - Current
+                <span className="text-muted-foreground text-right text-sm">
+                  <span className="whitespace-nowrap">2026 -</span> Current
                 </span>
               </CardHeader>
 
@@ -221,8 +225,8 @@ export function Experience() {
                 <CardTitle>
                   Multimédia fejlesztő és Webdesigner / Multimedia Developer and Web Designer
                 </CardTitle>
-                <span className="text-muted-foreground text-sm whitespace-nowrap">
-                  2026 - Current
+                <span className="text-muted-foreground text-right text-sm">
+                  <span className="whitespace-nowrap">2026 -</span> Current
                 </span>
               </CardHeader>
 
@@ -244,7 +248,9 @@ export function Experience() {
                     Duális képzés / Dual training: Szalézi Ágazati Képzőközpont, DevCorner Kft.
                   </p>
                 </CardTitle>
-                <span className="text-muted-foreground text-sm whitespace-nowrap">2021 - 2026</span>
+                <span className="text-muted-foreground text-right text-sm">
+                  <span className="whitespace-nowrap">2021 -</span> 2026
+                </span>
               </CardHeader>
 
               <CardContent className="flex flex-col gap-2">
