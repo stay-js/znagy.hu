@@ -170,7 +170,7 @@ export function Experience() {
               </CardHeader>
 
               <CardContent className="flex flex-col gap-2">
-                <p className="text-card-foreground">BMSzC Neumann János Informatikai Technikum</p>
+                <p className="text-card-foreground">BMSZC Neumann János Informatikai Technikum</p>
                 <p className="text-muted-foreground text-sm">
                   Kerepesi út 124, 1144, Budapest, Hungary
                 </p>
@@ -222,24 +222,6 @@ export function Experience() {
 
             <Card>
               <CardHeader className="flex items-center justify-between gap-4">
-                <CardTitle>
-                  Multimédia fejlesztő és Webdesigner / Multimedia Developer and Web Designer
-                </CardTitle>
-                <span className="text-muted-foreground text-right text-sm">
-                  <span className="whitespace-nowrap">2026 -</span> Current
-                </span>
-              </CardHeader>
-
-              <CardContent className="flex flex-col gap-2">
-                <p className="text-card-foreground">International Education Centre</p>
-                <p className="text-muted-foreground text-sm">
-                  Hunyadi tér 24/A, 6724, Szeged, Hungary
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader className="flex items-center justify-between gap-4">
                 <CardTitle className="flex flex-col gap-2">
                   <p>
                     Okleveles Szoftverfejlesztő és -tesztelő (Óbudai Egyetem) / Software Engineer
@@ -254,7 +236,7 @@ export function Experience() {
               </CardHeader>
 
               <CardContent className="flex flex-col gap-2">
-                <p className="text-card-foreground">BMSzC Neumann János Informatikai Technikum</p>
+                <p className="text-card-foreground">BMSZC Neumann János Informatikai Technikum</p>
                 <p className="text-muted-foreground text-sm">
                   Kerepesi út 124, 1144, Budapest, Hungary
                 </p>

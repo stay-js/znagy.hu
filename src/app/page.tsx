@@ -9,7 +9,7 @@ import { createMetadata } from '~/lib/create-metadata';
 
 export const metadata = createMetadata({
   description:
-    'I build digital experiences with modern technologies and thoughtful engineering. Currently studying at BMSzC Neumann János Informatikai Technikum in Budapest, Hungary.',
+    'I build digital experiences with modern technologies and thoughtful engineering. I recently graduated from BMSZC Neumann János Informatikai Technikum, and am currently pursuing my studies at ELTE Faculty of Informatics.',
   path: '/',
   title: 'Home',
 });

@@ -141,6 +141,20 @@ export const keywords = [
   'neumann jános informatikai szakközépiskola',
   'neumann janos informatikai szakkozepiskola',
 
+  'elte',
+  'elte faculty of informatics',
+  'elte informatikai kar',
+  'elte ik',
+  'elte ik budapest',
+  'programtervező informatikus',
+  'programtervezo informatikus',
+  'proginfo',
+
+  'computer science',
+  'informatics',
+  'informatics student',
+  'computer science student',
+
   'javascript',
   'js',
 

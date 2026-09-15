@@ -12,8 +12,8 @@ export function Hero() {
         <h2 className="text-muted-foreground text-xl md:text-2xl">Full-stack Developer</h2>
         <p className="text-muted-foreground max-w-2xl text-lg leading-relaxed">
           I build digital experiences with modern technologies and thoughtful engineering. I
-          recently graduated from BMSzC Neumann János Informatikai Technikum, and I&apos;m heading
-          to ELTE Informatikai Kar next to continue my studies.
+          recently graduated from BMSZC Neumann János Informatikai Technikum, and am currently
+          pursuing my studies at ELTE Faculty of Informatics.
         </p>
       </div>
 
