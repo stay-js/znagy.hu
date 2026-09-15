@@ -2,3 +2,6 @@ allowBuilds:
   msw: true
   sharp: true
   unrs-resolver: true
+minimumReleaseAgeExclude:
+  - '@types/node@26.6.0'
+  - eslint-plugin-perfectionist@5.11.1
