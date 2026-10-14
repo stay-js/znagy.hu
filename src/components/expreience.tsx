@@ -242,6 +242,24 @@ export function Experience() {
                 </p>
               </CardContent>
             </Card>
+
+            <Card>
+              <CardHeader className="flex items-center justify-between gap-4">
+                <CardTitle>Villanyszerelő (Épületvillamossági szerelő) / Electrician</CardTitle>
+                <span className="text-muted-foreground text-right text-sm">
+                  <span className="whitespace-nowrap">2026 -</span> Current
+                </span>
+              </CardHeader>
+
+              <CardContent className="flex flex-col gap-2">
+                <p className="text-card-foreground">
+                  Tanulhass Kft. / Tett Technikum, Szakképző Iskola és Gimnázium
+                </p>
+                <p className="text-muted-foreground text-sm">
+                  Ér utca 7, 4400, Nyíregyháza, Hungary
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
