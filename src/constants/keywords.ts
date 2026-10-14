@@ -86,6 +86,10 @@ export const keywords = [
   'cloud engineer',
   'cloud architect',
 
+  'villanyszerelő',
+  'épületvillamossági szerelő',
+  'electrician',
+
   'kyo',
   'kyokushin',
   'kyokushin karate',
@@ -141,6 +145,20 @@ export const keywords = [
   'neumann jános informatikai szakközépiskola',
   'neumann janos informatikai szakkozepiskola',
 
+  'dual training',
+  'szalézi',
+  'szalézi ákk',
+  'szalézi ágazati képző központ',
+  'ákk',
+  'devcorner',
+
+  'óbudai egyetem',
+  'obudai egyetem',
+  'óe',
+  'oe',
+  'okleveles',
+  'okleveles technikus',
+
   'elte',
   'elte faculty of informatics',
   'elte informatikai kar',
@@ -149,6 +167,10 @@ export const keywords = [
   'programtervező informatikus',
   'programtervezo informatikus',
   'proginfo',
+
+  'tett technikum',
+  'tanulhass',
+  'tanulhass kft',
 
   'computer science',
   'informatics',
